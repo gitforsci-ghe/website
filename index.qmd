@@ -10,7 +10,7 @@ editor_options:
 
 Thank you for your interest in this course. Your course instructor [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) is looking forward to meet you. 
 
-We will meet on Tuesday, 27 May 2025 - 10:00 am to 12:00 noon CET at the PhD retreat of the Center for Comparative and International Studies (CIS) at ETH Zurich.
+We will meet on Wednesday, 15 July 2026 - 09:30 to 14:30 (Europe/Zurich) at ETH Zurich.
 
 ## Prior knowledge
 
@@ -39,10 +39,10 @@ Prior to the workshop, complete the following seven steps:
 -   [Step 1](0-1-pre-work/01-element.html): Setup Element as a communication channel
 -   [Step 2](0-1-pre-work/02-install-r.html): Download and install R and RStudio
 -   [Step 3](0-1-pre-work/03-github-acc.html): Get an account for GitHub
--   [Step 4](0-1-pre-work/04-survey.html): Complete the pre-course survey by [**Thursday, 22 May 2025**]{.highlight-yellow}.
+-   [Step 4](0-1-pre-work/04-survey.html): Complete the pre-course survey by [**Wednesday, 08 July 2026**]{.highlight-yellow}.
 -   [Step 5](0-1-pre-work/05-github-pat.html): Create a personal access token for GitHub
 -   [Step 6](0-1-pre-work/06-install-git.html): Install Git
--   [Step 7](0-1-pre-work/07-first-repo.html): Check your complete setup by [**Monday, 26 May 2025 13:00 CET**]{.highlight-yellow}. (unlocked after pre-course survey is completed)
+-   [Step 7](0-1-pre-work/07-first-repo.html): Check your complete setup by [**Monday, 13 July 2026**]{.highlight-yellow}. (unlocked after pre-course survey is completed)
 -   [Step 8](0-1-pre-work/08-big-picture.html): Read "Why Git? Why GitHub?" from "Happy Git and GitHub for the useR"!
 
 ```{r}

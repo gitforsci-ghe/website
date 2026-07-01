@@ -1,15 +1,21 @@
 author: "Lars Schöbitz"
 institute: "ETH Zurich"
 department: "Global Health Engineering"
+orcid: "0000-0003-2196-5015"
+github-handle: "larnsce"
+email: "lschoebitz@ethz.ch"
 
 course:
-  code: "gitforsci-cis"
-  short-title: "gitforsci-cis"
+  code: "gitforsci-ghe"
+  short-title: "gitforsci-ghe"
   long-title: "Git for Scientists"
-  site: "https://gitforsci-cis.github.io/website/"
-  site-short: "https://gitforsci-cis.github.io/website/"
-  github-org: "https://github.com/gitforsci-cis/"
+  cohort-label: "Summer 2026"
+  start-date: "2026-07-15"
+  end-date: "2026-07-15"
+  timezone: "Europe/Zurich"
+  site: "https://gitforsci-ghe.github.io/website/"
+  site-short: "https://gitforsci-ghe.github.io/website/"
+  github-org: "https://github.com/gitforsci-ghe/"
 
 md-01:
   title: "I have no title, yet."
-
