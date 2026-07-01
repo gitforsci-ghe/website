@@ -8,7 +8,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-Thank you for your interest in this course. Your course instructor [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) is looking forward to meet you. 
+Thank you for your interest in this course. Your course instructor [Lars Schöbitz](https://www.linkedin.com/in/larsschoebitz/) is looking forward to meet you. 
 
 We will meet on Wednesday, 15 July 2026 - 09:30 to 14:30 (Europe/Zurich) at ETH Zurich.
 
