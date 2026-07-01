@@ -1,6 +1,12 @@
 ## Complete pre-course survey
 
+::: {.callout-note}
+## Survey still under development
+
+This survey is still under development. It will be published on **Tuesday, 07 July 2026**, once registration is completed. Please check back then.
+:::
+
 At this point, we need your GitHub username. We have also developed this survey to get an idea about your prior knowledge. It will help us shape the course to ensure that everyone gets an opportunity to learn at their pace.
 
-- Complete the survey by [**Thursday, 22 May 2025**]{.highlight-yellow}: <https://forms.gle/RJpK1fibAS6VbjcH7>
+- Complete the survey by [**Wednesday, 08 July 2026**]{.highlight-yellow}: link to be added once the survey is published.
 

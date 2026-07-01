@@ -56,7 +56,7 @@ library(readr)
 ```{r}
 #| tbl-colwidths: [25,75]
 
-read_csv(here::here("data/tbl-01-gitforsci-cis-course-schedule.csv")) |> 
+read_csv(here::here("data/tbl-01-gitforsci-ghe-course-schedule.csv")) |>
   filter(day == 1) |> 
   select(Time = time, Module = title) |> 
   kable()

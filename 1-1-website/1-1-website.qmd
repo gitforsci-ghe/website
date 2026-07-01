@@ -6,7 +6,7 @@ author:
     affiliations:
         - name: Global Health Engineering - ETH Zurich
           url: https://ghe.ethz.ch/
-date: "2025-05-27"
+date: "{{< var course.start-date >}}"
 date-format: long
 footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
 format:
@@ -67,7 +67,7 @@ By the end of this workshop, participants will be able to:
 #| tbl-colwidths: [25,75]
 #| echo: false
 
-read_csv(here::here("data/tbl-01-gitforsci-cis-course-schedule.csv")) |> 
+read_csv(here::here("data/tbl-01-gitforsci-ghe-course-schedule.csv")) |>
   filter(day == 1) |> 
   select(Time = time, Module = title) |> 
   kable()
