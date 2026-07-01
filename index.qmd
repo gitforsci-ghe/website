@@ -14,6 +14,8 @@ AI coding agents are rapidly entering scientific work, and using them with confi
 
 We will meet on Wednesday, 15 July 2026 - 09:30 to 14:30 (Europe/Zurich) at ETH Zurich.
 
+To register for the workshop, complete the signup form: <https://forms.gle/Zf5fPsPJqUxEoLgKA>
+
 ## Prior knowledge
 
 For this course, we assume that you have some prior knowledge of R and RStudio. You should be able to:
