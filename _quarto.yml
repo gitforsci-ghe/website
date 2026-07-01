@@ -10,11 +10,14 @@ project:
 website:
   page-navigation: true
   title: "Git for Scientists (Summer 2026)"
-  description: "As the expectations of researchers increase, publishing
-      reproducible scientific articles becomes essential. However,
-      choosing tools for these tasks can be difficult.
-      This course aims to guide researchers through these
-      challenges by introducing a modern collaborative research workflows using Git, GitHub, and RStudio"
+  description: "A strategic foundation workshop for the Global Health
+      Engineering group. As research teams begin to work alongside AI
+      agents, a shared and confident command of Git and GitHub becomes the
+      basis for safe and effective collaboration. This course gets
+      researchers ready for that shift, teaching the core Git and GitHub
+      workflows (clone, commit, push, pull, branches, pull requests, and
+      issues) that let a team collaborate clearly and harness coding
+      agents such as Claude Code with confidence."
   site-url: "https://gitforsci-ghe.github.io/website/"
 
   repo-url: https://github.com/gitforsci-ghe/website
