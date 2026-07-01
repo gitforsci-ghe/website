@@ -15,7 +15,7 @@ library(stringr)
 
 # course schedule ------------------------------------------------------------
 
-tbl_schedule_link <- "https://docs.google.com/spreadsheets/d/17II8gBniyIGet2T9OLPnFzX-mDs8cCCAZ6p3slZ8uSA/edit?gid=0#gid=0"
+tbl_schedule_link <- "1zYgeX5MPFb4cDBni5hrx9OZVp6OpH86orFuO1GVQZuE"
 
 googlesheets4::read_sheet(tbl_schedule_link) |>
   mutate(title = case_when(
@@ -27,4 +27,4 @@ googlesheets4::read_sheet(tbl_schedule_link) |>
   mutate(end_time = as.character(end_time)) |>
   mutate(end_time = str_extract(end_time, "\\b\\d{2}:\\d{2}\\b")) |>
   mutate(time = paste(start_time, end_time, sep = " - ")) |>
-  write_csv(here::here("data/tbl-01-gitforsci-cis-course-schedule.csv"))
+  write_csv(here::here("data/tbl-01-gitforsci-ghe-course-schedule.csv"))
