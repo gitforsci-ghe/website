@@ -1,0 +1,79 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    # Render site content only; keep project docs (TEMPLATING.md,
+    # SETUP-CHECKLIST.md) out of the rendered site.
+    - "*.qmd"
+    - "**/*.qmd"
+
+website:
+  page-navigation: true
+  title: "Quarto"
+  description: "As the expectations of researchers increase, publishing
+      reproducible scientific articles becomes essential. However,
+      choosing tools for these tasks can be difficult.
+      This course aims to guide researchers through these
+      challenges by introducing a modern collaborative research workflows using Git, GitHub, and RStudio"
+  site-url: "https://gitforsci-cis.github.io/website/"
+
+  repo-url: https://github.com/gitforsci-cis/website
+  repo-actions: [edit, issue]
+
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    background: "#eceef8"
+
+  sidebar:
+    background: "#eceef8"
+    logo: "images/ghe-square-logo-vector.svg"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/gitforsci-cis/website
+        text: "GitHub organization"
+    style: "docked"
+    search: false
+    collapse-level: 1
+    contents:
+      - text: "---"
+      - section: "Pre-course work"
+        href: index.qmd
+        contents:
+          - href: 0-1-pre-work/01-element.qmd
+            text: "Step 1: Communication"
+          - href: 0-1-pre-work/02-install-r.qmd
+            text: "Step 2: Install R & RStudio"
+          - href: 0-1-pre-work/03-github-acc.qmd
+            text: "Step 3: GitHub account"
+          - href: 0-1-pre-work/04-survey.qmd
+            text: "Step 4: Pre-course survey"
+          - href: 0-1-pre-work/05-github-pat.qmd
+            text: "Step 5: GitHub PAT"
+          - href: 0-1-pre-work/06-install-git.qmd
+            text: "Step 6: Install Git"
+          - href: 0-1-pre-work/07-first-repo.qmd
+            text: "Step 7: Test your setup"
+          - href: 0-1-pre-work/08-big-picture.qmd
+            text: "Step 8: Why Git? Why GitHub?"
+      - section: "Workshop"
+        contents:
+          - href: 1-1-website/index.qmd
+            text: "Git for Scientists"
+
+format:
+  html:
+    theme:
+      light: [litera, theme.scss]
+    link-external-icon: true
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    mainfont: "Atkinson Hyperlegible"
+    include-in-header:
+        - text: |
+            <script defer data-domain="gitforsci-cis.github.io/website" src="https://plausible.io/js/script.js"></script>
+
+freeze: auto
+editor: source

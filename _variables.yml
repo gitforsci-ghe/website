@@ -1,0 +1,15 @@
+author: "Lars Schöbitz"
+institute: "ETH Zurich"
+department: "Global Health Engineering"
+
+course:
+  code: "gitforsci-cis"
+  short-title: "gitforsci-cis"
+  long-title: "Git for Scientists"
+  site: "https://gitforsci-cis.github.io/website/"
+  site-short: "https://gitforsci-cis.github.io/website/"
+  github-org: "https://github.com/gitforsci-cis/"
+
+md-01:
+  title: "I have no title, yet."
+

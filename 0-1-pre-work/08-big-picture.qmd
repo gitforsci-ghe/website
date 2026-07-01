@@ -1,0 +1,15 @@
+---
+title: "Why Git? Why GitHub? "
+format: html
+---
+
+The book Happy Git and GitHub for the useR is a great resource for learning about Git and GitHub. Today you have worked through almost all elements of the first 14 chapters of the book. I am taking a lot of resources from the book itself and highly recommend it as a reference for you.
+
+Before we start our workshop on Tuesday, it is important to learn about the big picture of Git and GitHub. This will help you understand why we are using these tools and how they fit into the larger context of data science and research. 
+
+1. Read the chapter, "Why Git? Why GitHub?" <https://happygitwithr.com/big-picture>
+
+2. Take notes and write down questions. Ask them on Element.
+
+[Reading this will allow me to focus on the practical aspects of Git and GitHub during the workshop, rather than spending time on the theory. I will assume you have read this chapter and understand the big picture of why we are using these tools.]{.highlight-yellow}
+

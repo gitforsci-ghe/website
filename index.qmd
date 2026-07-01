@@ -1,0 +1,79 @@
+---
+title: "Pre-course work: Git for Scientists"
+editor: source
+execute: 
+  echo: false
+  warning: false
+editor_options: 
+  chunk_output_type: console
+---
+
+Thank you for your interest in this course. Your course instructor [Lars Schöbitz](https://ghe.ethz.ch/about/people/person-detail.MjkyODc2.TGlzdC80MTI2LC0xNDYwMDMwNTU3.html) is looking forward to meet you. 
+
+We will meet on Tuesday, 27 May 2025 - 10:00 am to 12:00 noon CET at the PhD retreat of the Center for Comparative and International Studies (CIS) at ETH Zurich.
+
+## Prior knowledge
+
+For this course, we assume that you have some prior knowledge of R and RStudio. You should be able to:
+
+- install and load R packages
+- read and run short R scripts
+- edit and run R Markdown / Quarto documents
+- navigate the RStudio IDE
+- identify the four panes of the RStudio IDE (Script, Environment, Files, Console)
+
+## What do I need to bring to the workshop?
+
+Please ensure you have the following available:
+
+-   a laptop, connected to wifi
+-   a web browser (preferably Chrome or Firefox)
+-   a completed list of pre-work tasks with intermediate due dates
+
+[Prior to the workshop, there is some pre-work for you to do]{.highlight-yellow}. This pre-work will ensure that we can focus our time together on learning instead of setting up infrastructure.
+
+## {{< fa circle-question >}} What do I need to prepare before the workshop?
+
+Prior to the workshop, complete the following seven steps:
+
+-   [Step 1](0-1-pre-work/01-element.html): Setup Element as a communication channel
+-   [Step 2](0-1-pre-work/02-install-r.html): Download and install R and RStudio
+-   [Step 3](0-1-pre-work/03-github-acc.html): Get an account for GitHub
+-   [Step 4](0-1-pre-work/04-survey.html): Complete the pre-course survey by [**Thursday, 22 May 2025**]{.highlight-yellow}.
+-   [Step 5](0-1-pre-work/05-github-pat.html): Create a personal access token for GitHub
+-   [Step 6](0-1-pre-work/06-install-git.html): Install Git
+-   [Step 7](0-1-pre-work/07-first-repo.html): Check your complete setup by [**Monday, 26 May 2025 13:00 CET**]{.highlight-yellow}. (unlocked after pre-course survey is completed)
+-   [Step 8](0-1-pre-work/08-big-picture.html): Read "Why Git? Why GitHub?" from "Happy Git and GitHub for the useR"!
+
+```{r}
+library(dplyr)
+library(knitr)
+library(readr)
+```
+
+## Schedule
+
+```{r}
+#| tbl-colwidths: [25,75]
+
+read_csv(here::here("data/tbl-01-gitforsci-cis-course-schedule.csv")) |> 
+  filter(day == 1) |> 
+  select(Time = time, Module = title) |> 
+  kable()
+  
+```
+
+## Learning objectives
+
+By the end of this workshop, participants will be able to:
+
+1. Create and clone repositories, and clearly explain the difference between cloning and forking a repository, enabling effective collaboration and local development workflows.
+
+2. Apply the standard Git workflow using RStudio IDE—including pulling, staging, committing, and pushing changes—and resolve basic merge conflicts (if time permits) when they arise.
+
+3. Work with branches and pull requests by creating and managing development branches (using both RStudio and the terminal), submitting pull requests, and reviewing and commenting on others’ pull requests to facilitate code review and collaborative development
+
+## Thanks!
+
+Thank you for working through these steps. We are looking forward to meeting you at the workshop.
+
