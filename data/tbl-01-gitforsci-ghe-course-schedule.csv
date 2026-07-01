@@ -1,0 +1,11 @@
+day,start_time,end_time,duration,module,title,page_link,real_start_time,real_end_time,comments,time
+1,09:30,10:00,1899-12-30T00:30:00Z,NA,[Arrival](1-1-website/),1-1-website,NA,NA,NA,09:30 - 10:00
+1,10:00,10:30,1899-12-30T00:30:00Z,NA,[GitHub for Collaboration](1-1-website/),1-1-website,NA,NA,NA,10:00 - 10:30
+1,10:30,11:00,1899-12-30T00:30:00Z,NA,[Create & Clone](1-1-website/),1-1-website,NA,NA,NA,10:30 - 11:00
+1,11:00,11:15,1899-12-30T00:15:00Z,NA,Break,NA,NA,NA,NA,11:00 - 11:15
+1,11:15,12:00,1899-12-30T00:45:00Z,NA,[Clone & Branch](1-1-website/),1-1-website,NA,NA,NA,11:15 - 12:00
+1,12:00,12:45,1899-12-30T00:45:00Z,NA,Lunch Break,NA,NA,NA,NA,12:00 - 12:45
+1,12:45,13:30,1899-12-30T00:45:00Z,NA,[Pull Request & Merge](1-1-website/),1-1-website,NA,NA,NA,12:45 - 13:30
+1,13:30,13:45,1899-12-30T00:15:00Z,NA,[Publish](1-1-website/),1-1-website,NA,NA,NA,13:30 - 13:45
+1,13:45,14:00,1899-12-30T00:15:00Z,NA,[Wrap-up](1-1-website/),1-1-website,NA,NA,NA,13:45 - 14:00
+1,14:00,14:30,1899-12-30T00:30:00Z,NA,Buffer,NA,NA,NA,NA,14:00 - 14:30

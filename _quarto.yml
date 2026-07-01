@@ -9,15 +9,15 @@ project:
 
 website:
   page-navigation: true
-  title: "Quarto"
+  title: "Git for Scientists (Summer 2026)"
   description: "As the expectations of researchers increase, publishing
       reproducible scientific articles becomes essential. However,
       choosing tools for these tasks can be difficult.
       This course aims to guide researchers through these
       challenges by introducing a modern collaborative research workflows using Git, GitHub, and RStudio"
-  site-url: "https://gitforsci-cis.github.io/website/"
+  site-url: "https://gitforsci-ghe.github.io/website/"
 
-  repo-url: https://github.com/gitforsci-cis/website
+  repo-url: https://github.com/gitforsci-ghe/website
   repo-actions: [edit, issue]
 
   page-footer:
@@ -31,7 +31,7 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/gitforsci-cis/website
+        href: https://github.com/gitforsci-ghe/website
         text: "GitHub organization"
     style: "docked"
     search: false
@@ -73,7 +73,7 @@ format:
     mainfont: "Atkinson Hyperlegible"
     include-in-header:
         - text: |
-            <script defer data-domain="gitforsci-cis.github.io/website" src="https://plausible.io/js/script.js"></script>
+            <script defer data-domain="gitforsci-ghe.github.io/website" src="https://plausible.io/js/script.js"></script>
 
 freeze: auto
 editor: source
