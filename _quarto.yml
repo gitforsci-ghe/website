@@ -9,7 +9,7 @@ project:
 
 website:
   page-navigation: true
-  title: "Quarto"
+  title: "Git for Scientists (Summer 2026)"
   description: "As the expectations of researchers increase, publishing
       reproducible scientific articles becomes essential. However,
       choosing tools for these tasks can be difficult.
