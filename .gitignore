@@ -6,7 +6,6 @@
 /.quarto/
 .DS_Store
 
-/docs/
 /_freeze/
 **/*.quarto_ipynb
 
