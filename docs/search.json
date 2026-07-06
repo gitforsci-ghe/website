@@ -682,5 +682,40 @@
     "title": "GitHub for Collaboration",
     "section": "What just happened?",
     "text": "What just happened?\n\nYour push failed: you can read their repository, but you have no write access.\nGiving everyone write access (“collaborator”) exists, but it does not scale, and it means anyone can change anything at any time.\n(Forking, making your own copy under your account, exists too; one sentence, not today’s topic.)\nSo how do teams actually propose and review changes? That is exactly what we solve after lunch: branches and pull requests.\n\n\nThe cliffhanger, stated explicitly. The morning ends with a question the afternoon answers. Do not resolve it now."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-your-map-revisited",
+    "href": "workshop/slides.html#your-turn-your-map-revisited",
+    "title": "GitHub for Collaboration",
+    "section": "Your turn: your map, revisited",
+    "text": "Your turn: your map, revisited\n\nDraw a concept map of Git and GitHub as you understand them now.\n\nUse the words from today: repository, clone, commit, push, pull, branch, pull request, merge, review.\nThen put it next to your morning map and share both with your partner.\n\n\nWith your consent, I would like to photograph both maps (anonymously) to improve this workshop.\n\n\n\n\n\n\n\n\nHard start at 14:15: whatever block is running stops. B8 is protected and runs even on the worst day.\nThe comparison is the measurement instrument for the whole redesign. Consent is asked on the slide; photograph only the maps of learners who agree, no names on the photos.\nFallback if the morning baseline went badly: draw the Git concept map yourself on the board as the closing recap and have the room call out the verb for each arrow (see the handbook, concept maps as bookends)."
+  },
+  {
+    "objectID": "workshop/slides.html#the-day-in-one-line",
+    "href": "workshop/slides.html#the-day-in-one-line",
+    "title": "GitHub for Collaboration",
+    "section": "The day in one line",
+    "text": "The day in one line\ncreate , clone , commit , push , branch , pull request , review , merge , publish\n\nRecap as verbs, spoken while pointing at the drawings on the board. What you also picked up on the side: RStudio fluency, a first taste of Quarto, and reversibility as a habit."
+  },
+  {
+    "objectID": "workshop/slides.html#what-you-also-learned-today",
+    "href": "workshop/slides.html#what-you-also-learned-today",
+    "title": "GitHub for Collaboration",
+    "section": "What you also learned today",
+    "text": "What you also learned today\n\nRStudio, now with muscle memory\nQuarto: one document, rendered to the web\nReversibility as a habit: commit early, revert without fear"
+  },
+  {
+    "objectID": "workshop/slides.html#what-comes-next",
+    "href": "workshop/slides.html#what-comes-next",
+    "title": "GitHub for Collaboration",
+    "section": "What comes next",
+    "text": "What comes next\n\nWorking with AI coding agents is the follow-up workshop, and it builds on exactly what you did today: branches, pull requests, review.\nInterested? Post “interested” in the Element channel thread pinned today; you will hear from me when dates are set.\nStart your first own project with Git and GitHub this week (already have a project? Read here).\nKeep learning by doing: open pull requests to yourself, review your own diffs."
+  },
+  {
+    "objectID": "workshop/slides.html#feedback-and-thanks",
+    "href": "workshop/slides.html#feedback-and-thanks",
+    "title": "GitHub for Collaboration",
+    "section": "Feedback, and thanks!",
+    "text": "Feedback, and thanks!\n\nPlease fill in the post-course survey (link in the Element channel, 5 minutes, anonymous).\nPost your open questions in the Element channel; I answer all of them this week.\n\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\nSurvey link goes into the Element channel right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks, done by 14:30."
   }
 ]

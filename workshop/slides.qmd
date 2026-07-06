@@ -522,9 +522,18 @@ This slide stands alone for the cut case: show it, say the one breath, hand the 
 
 # B8: Concept map revisit and wrap-up {background-color="#4C326A"}
 
-## Your turn
+## Your turn: your map, revisited {.smaller}
 
-<!-- Filled by issue #20: closing concept map, compare with the morning map -->
+:::: task
+[Draw a concept map of Git and GitHub as you understand them now.]{.highlight-yellow}
+
+-   Use the words from today: repository, clone, commit, push, pull, branch, pull request, merge, review.
+-   Then put it [next to your morning map]{.highlight-yellow} and share both with your partner.
+
+::: hand
+With your consent, I would like to photograph both maps (anonymously) to improve this workshop.
+:::
+::::
 
 ```{r}
 #| echo: false
@@ -533,11 +542,45 @@ countdown(minutes = 8)
 
 ::: {.notes}
 Hard start at 14:15: whatever block is running stops. B8 is protected and runs even on the worst day.
+
+The comparison is the measurement instrument for the whole redesign. Consent is asked on the slide; photograph only the maps of learners who agree, no names on the photos.
+
+Fallback if the morning baseline went badly: draw the Git concept map yourself on the board as the closing recap and have the room call out the verb for each arrow (see the handbook, concept maps as bookends).
 :::
 
-## Wrap-up
+## The day in one line
 
-<!-- Filled by issue #20: recap, side benefits, follow-up, feedback -->
+[create]{.highlight-yellow} , [clone]{.highlight-yellow} , [commit]{.highlight-yellow} , [push]{.highlight-yellow} , [branch]{.highlight-yellow} , [pull request]{.highlight-yellow} , [review]{.highlight-yellow} , [merge]{.highlight-yellow} , [publish]{.highlight-yellow}
+
+::: {.notes}
+Recap as verbs, spoken while pointing at the drawings on the board. What you also picked up on the side: RStudio fluency, a first taste of Quarto, and reversibility as a habit.
+:::
+
+## What you also learned today
+
+-   RStudio, now with muscle memory
+-   Quarto: one document, rendered to the web
+-   Reversibility as a habit: commit early, revert without fear
+
+## What comes next {.smaller}
+
+::: incremental
+-   [Working with AI coding agents]{.highlight-yellow} is the follow-up workshop, and it builds on exactly what you did today: branches, pull requests, review.
+-   Interested? Post "interested" in the Element channel thread pinned today; you will hear from me when dates are set.
+-   Start your first own project with Git and GitHub this week (already have a project? [Read here](https://happygitwithr.com/existing-github-first#existing-github-first)).
+-   Keep learning by doing: open pull requests to yourself, review your own diffs.
+:::
+
+## Feedback, and thanks!
+
+-   Please fill in the post-course survey (link in the Element channel, 5 minutes, anonymous).
+-   Post your open questions in the Element channel; I answer all of them this week.
+
+All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+
+::: {.notes}
+Survey link goes into the Element channel right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks, done by 14:30.
+:::
 
 ## Thanks!
 
