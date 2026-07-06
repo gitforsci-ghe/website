@@ -30,9 +30,9 @@
   {
     "objectID": "workshop/slides.html#your-turn",
     "href": "workshop/slides.html#your-turn",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\nThink about the last time you published a written document:\n\nWhich tasks gave you joy?\nWhich tasks were challenging or frustrating?\n\n\nTake some written notes."
+    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break."
   },
   {
     "objectID": "workshop/slides.html#section",
@@ -107,16 +107,16 @@
   {
     "objectID": "workshop/slides.html#your-turn-1",
     "href": "workshop/slides.html#your-turn-1",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\nOpen github.com\nNavigate to your profile\nWhen completed, place a yellow sticky note on your laptop\n\n\nNow, follow along the screen and instructor."
+    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break."
   },
   {
     "objectID": "workshop/slides.html#your-turn-2",
     "href": "workshop/slides.html#your-turn-2",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\nClone a GitHub repository of a fellow student (browse: github.com/username to fine the repository website)\nOpen the repository in RStudio IDE\nMake a change the README.md file\nSave the file\nStage, Commit & Push the changes\n\n\n\n\nid\nusername1\nusername2\n\n\n\n\n1\nMadliboom\nfdaguanno\n\n\n2\nTillRoost\nmag-wer\n\n\n3\npacotvj99\nlouma3000\n\n\n4\nellahenninger\nCamilleFournierDL\n\n\n5\ndheimgartner\njineichen\n\n\n6\nvgeier\nrjalcock\n\n\n7\nJonathan-Elkobi\nrainbow-train\n\n\n\n\nWhat happens?"
+    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break."
   },
   {
     "objectID": "workshop/slides.html#read-on-fork-and-clone",
@@ -128,23 +128,23 @@
   {
     "objectID": "workshop/slides.html#take-a-break",
     "href": "workshop/slides.html#take-a-break",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Leave your emails alone.\n\n\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+    "text": "Take a break\nPlease get up and move! Leave your emails alone. We continue at 11:15.\n\n\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   },
   {
     "objectID": "workshop/slides.html#your-turn-3",
     "href": "workshop/slides.html#your-turn-3",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\nOpen the landing page for the GitHub organization ‘gitforsci-cis’: https://github.com/gitforsci-cis (try to use your bookmark)\nNavigate down the page to the section “Repositories” and use the search field to find the repository called man-washinvestments-USERNAME where USERNAME is your GitHub username.\nClick on the repository name to open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard by clicking on the clipboard sign.\nOpen the RStudio IDE on your laptop.\nClick on File &gt; New Project in the top menu bar\nClick on Version Control.\nClick on Git.\nClick on Browse… button.\nUse the folder structure you created in the pre-course work (e.g. ~/Documents/gitrepos/gh-org-gitforsci-cis)\nPaste the HTTPS URL from GitHub into the “Repository URL” field.\nClick on the “Create Project” button.\nFind the Files tab in the bottom right pane of RStudio.\n\n\nPlace the yellow sticky note on your laptop when you have completed the task."
+    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch."
   },
   {
     "objectID": "workshop/slides.html#our-turn",
     "href": "workshop/slides.html#our-turn",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "Our turn",
-    "text": "Our turn\n\n\nWe will continue together with man-washinvestments-USERNAME where USERNAME is your GitHub"
+    "text": "Our turn\n\n\nFirst block to cut. If running behind at 14:05, skip to the fallback slide and hand the time to B8."
   },
   {
     "objectID": "workshop/slides.html#our-turn-1",
@@ -191,16 +191,16 @@
   {
     "objectID": "workshop/slides.html#thanks",
     "href": "workshop/slides.html#thanks",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "Thanks!",
     "text": "Thanks!\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
   },
   {
     "objectID": "workshop/slides.html#references",
     "href": "workshop/slides.html#references",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "References",
-    "text": "References\n\n\n\n\nLowndes, Julia Stewart, Stefanie Butland, and Erin Robinson. 2024. “Openscapes/Series: Openscapes Lesson Series V2024.11.0.” Zenodo. https://doi.org/10.5281/zenodo.14428503."
+    "text": "References"
   },
   {
     "objectID": "pre-work/08-big-picture.html",
@@ -535,5 +535,117 @@
       "Pre-course work",
       "Step 7: Test your setup"
     ]
+  },
+  {
+    "objectID": "workshop/slides.html#slides",
+    "href": "workshop/slides.html#slides",
+    "title": "GitHub for Collaboration",
+    "section": "Slides",
+    "text": "Slides\n\n\nB1 runs 10:00-10:30. Filled by issue #13."
+  },
+  {
+    "objectID": "workshop/slides.html#live-drawing-local-and-remote",
+    "href": "workshop/slides.html#live-drawing-local-and-remote",
+    "title": "GitHub for Collaboration",
+    "section": "Live drawing: local and remote",
+    "text": "Live drawing: local and remote\nProjector goes to sleep. We draw this one by hand.\n\nLive drawing 1 (local and remote): two boxes, clone first, then push and pull. Under 3 minutes. Fallback: the export in the appendix of the handbook, images/drawing-1-local-remote.png."
+  },
+  {
+    "objectID": "workshop/slides.html#my-turn",
+    "href": "workshop/slides.html#my-turn",
+    "title": "GitHub for Collaboration",
+    "section": "My turn",
+    "text": "My turn"
+  },
+  {
+    "objectID": "workshop/slides.html#live-drawing-the-commit-cycle",
+    "href": "workshop/slides.html#live-drawing-the-commit-cycle",
+    "title": "GitHub for Collaboration",
+    "section": "Live drawing: the commit cycle",
+    "text": "Live drawing: the commit cycle\nProjector goes to sleep. We draw this one by hand.\n\nLive drawing 2 (commit cycle): working files, stage, commit as labelled snapshot on the history line, push. Leave room for the history line to grow. Under 3 minutes. Fallback: images/drawing-2-commit-cycle.png."
+  },
+  {
+    "objectID": "workshop/slides.html#my-turn-1",
+    "href": "workshop/slides.html#my-turn-1",
+    "title": "GitHub for Collaboration",
+    "section": "My turn",
+    "text": "My turn"
+  },
+  {
+    "objectID": "workshop/slides.html#slides-1",
+    "href": "workshop/slides.html#slides-1",
+    "title": "GitHub for Collaboration",
+    "section": "Slides",
+    "text": "Slides"
+  },
+  {
+    "objectID": "workshop/slides.html#lunch",
+    "href": "workshop/slides.html#lunch",
+    "title": "GitHub for Collaboration",
+    "section": "Lunch",
+    "text": "Lunch"
+  },
+  {
+    "objectID": "workshop/slides.html#live-drawing-branching",
+    "href": "workshop/slides.html#live-drawing-branching",
+    "title": "GitHub for Collaboration",
+    "section": "Live drawing: branching",
+    "text": "Live drawing: branching\nProjector goes to sleep. We draw this one by hand.\n\nLive drawing 3 (branching): the main line splits, commits land on the branch, the merge point stays empty until drawing 4. Under 3 minutes. Fallback: images/drawing-3-branching.png."
+  },
+  {
+    "objectID": "workshop/slides.html#my-turn-2",
+    "href": "workshop/slides.html#my-turn-2",
+    "title": "GitHub for Collaboration",
+    "section": "My turn",
+    "text": "My turn"
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-4",
+    "href": "workshop/slides.html#your-turn-4",
+    "title": "GitHub for Collaboration",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up."
+  },
+  {
+    "objectID": "workshop/slides.html#live-drawing-the-pull-request",
+    "href": "workshop/slides.html#live-drawing-the-pull-request",
+    "title": "GitHub for Collaboration",
+    "section": "Live drawing: the pull request",
+    "text": "Live drawing: the pull request\nProjector goes to sleep. We draw this one by hand.\n\nLive drawing 4 (pull request): complete the merge point from drawing 3, pause at the join for the human review, then the lines meet. Under 3 minutes. Fallback: images/drawing-4-pull-request.png."
+  },
+  {
+    "objectID": "workshop/slides.html#my-turn-3",
+    "href": "workshop/slides.html#my-turn-3",
+    "title": "GitHub for Collaboration",
+    "section": "My turn",
+    "text": "My turn"
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-5",
+    "href": "workshop/slides.html#your-turn-5",
+    "title": "GitHub for Collaboration",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\n\n\n\n\nThis block is protected. If the day is behind, B7 Publish is cut, never this. Bounded regroup: 2 minutes, then park-and-pair."
+  },
+  {
+    "objectID": "workshop/slides.html#fallback-what-publishing-looks-like",
+    "href": "workshop/slides.html#fallback-what-publishing-looks-like",
+    "title": "GitHub for Collaboration",
+    "section": "Fallback: what publishing looks like",
+    "text": "Fallback: what publishing looks like\n\n\nThis slide stands alone for the cut case."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-6",
+    "href": "workshop/slides.html#your-turn-6",
+    "title": "GitHub for Collaboration",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\n\n\n\n\nHard start at 14:15: whatever block is running stops. B8 is protected and runs even on the worst day."
+  },
+  {
+    "objectID": "workshop/slides.html#wrap-up",
+    "href": "workshop/slides.html#wrap-up",
+    "title": "GitHub for Collaboration",
+    "section": "Wrap-up",
+    "text": "Wrap-up"
   }
 ]

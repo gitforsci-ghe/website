@@ -12,7 +12,7 @@
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Lars Schöbitz">
-  <title>Git for Scientists (Summer 2026) – I have no title, yet.</title>
+  <title>Git for Scientists (Summer 2026) – GitHub for Collaboration</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,27 +30,7 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-f392e6fc5038c3ce1a089f98493819d4.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -153,7 +133,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">I have no title, yet.</h1>
+  <h1 class="title">GitHub for Collaboration</h1>
   <p class="subtitle">Git for Scientists</p>
 
 <div class="quarto-title-authors">
@@ -172,132 +152,59 @@ Lars Schöbitz
   <p class="date">Invalid Date</p>
 </section>
 <section>
-<section id="welcome" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Welcome!</h1>
+<section id="b1-welcome-concept-map-intro-baseline-map" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>B1: Welcome, concept-map intro, baseline map</h1>
 
 </section>
-<section id="meet-the-lecturer" class="slide level2 smaller">
-<h2>Meet the lecturer</h2>
-<p><strong>Lars Schöbitz</strong></p>
-
-<img data-src="images/lars_schoebitz_profile_photo.jpg" class="quarto-figure quarto-figure-left r-stretch" style="width:50.0%" alt="Headshot of Lars Schöbitz"><ul>
-<li>Environmental Engineer <i class="fa-solid fa-hammer" aria-label="hammer"></i></li>
-<li>Retired researcher <i class="fa-solid fa-bed" aria-label="bed"></i></li>
-<li><a href="https://education.rstudio.com/trainers/">RStudio certified instructor</a></li>
-<li><a href="https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html">Data steward at ETHZ</a></li>
-</ul>
-</section>
-<section id="learning-objectives" class="slide level2">
-<h2>Learning objectives</h2>
-<p>By the end of this workshop, participants will be able to:</p>
-<ol type="1">
-<li class="fragment"><p><span class="highlight-yellow">Create</span> and <span class="highlight-yellow">clone</span> repositories, and explain the difference between cloning and forking a repository.</p></li>
-<li class="fragment"><p>Apply the standard Git workflow using RStudio IDE—including <span class="highlight-yellow">pull, stage, commit, and push</span> changes to GitHub.</p></li>
-<li class="fragment"><p>Work with <span class="highlight-yellow">branches</span> and <span class="highlight-yellow">pull requests</span> by creating and managing development branches (using both RStudio and the terminal), submitting <span class="highlight-yellow">pull requests</span>, and <span class="highlight-yellow">reviewing and commenting</span> on others’ pull requests to facilitate code review and collaborative development.</p></li>
-</ol>
-</section>
-<section id="teaching-strategy" class="slide level2">
-<h2>Teaching strategy</h2>
-<ul>
-<li>Teaching Git on a “need to know” basis</li>
-<li>Teaching only a very small subset of Git’s functionality</li>
-<li>Creating a safe space for learning and getting support (use Element)</li>
-<li>Focus on collaboration aspects of GitHub</li>
-</ul>
-</section>
-<section id="schedule" class="slide level2">
-<h2>Schedule</h2>
-<div class="cell" data-tbl-colwidths="[25,75]">
-<div class="cell-output-display">
-<table class="caption-top">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 75%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Time</th>
-<th style="text-align: left;">Module</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">09:30 - 10:00</td>
-<td style="text-align: left;"><a href="workshop/">Arrival</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">10:00 - 10:30</td>
-<td style="text-align: left;"><a href="workshop/">GitHub for Collaboration</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">10:30 - 11:00</td>
-<td style="text-align: left;"><a href="workshop/">Create &amp; Clone</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">11:00 - 11:15</td>
-<td style="text-align: left;">Break</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">11:15 - 12:00</td>
-<td style="text-align: left;"><a href="workshop/">Clone &amp; Branch</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">12:00 - 12:45</td>
-<td style="text-align: left;">Lunch Break</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">12:45 - 13:30</td>
-<td style="text-align: left;"><a href="workshop/">Pull Request &amp; Merge</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">13:30 - 13:45</td>
-<td style="text-align: left;"><a href="workshop/">Publish</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">13:45 - 14:00</td>
-<td style="text-align: left;"><a href="workshop/">Wrap-up</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">14:00 - 14:30</td>
-<td style="text-align: left;">Buffer</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<section id="slides" class="slide level2">
+<h2>Slides</h2>
+<!-- Filled by issue #13: welcome, expectations, motivation, concept-map intro -->
+<aside class="notes">
+<p>B1 runs 10:00-10:30. Filled by issue #13.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="your-turn" class="slide level2">
 <h2>Your turn</h2>
-<div class="task">
-<p>Think about the last time you published a written document:</p>
-<ul>
-<li>Which tasks gave you joy?</li>
-<li>Which tasks were challenging or frustrating?</li>
-</ul>
-<div class="hand">
-<p>Take some written notes.</p>
-</div>
-</div>
+<!-- Filled by issue #13: baseline concept-map exercise -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_5a33fd66" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_446061c5" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
+<aside class="notes">
+<p>Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
-<section id="github-for-collaboration" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>GitHub for Collaboration</h1>
+<section id="b2-create-and-clone-website-repo" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>B2: Create and clone (website repo)</h1>
 
 </section>
-<section id="section" class="slide level2" data-background-image="images/github_friends.png">
-<h2></h2>
-<div class="footer">
-<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
-</div>
+<section id="live-drawing-local-and-remote" class="slide level2">
+<h2>Live drawing: local and remote</h2>
+<p><span class="highlight-yellow">Projector goes to sleep.</span> We draw this one by hand.</p>
 <aside class="notes">
-<p>Why GitHub?</p>
-<p>“Collaboration is the most compelling reason to manage a project with Git and GitHub. My definition of collaboration includes hands-on participation by multiple people, including your past and future self, as well as an asymmetric model, in which some people are active makers and others only read or review.” - Jenny Bryan</p>
-<p>Bryan J. 2017. Excuse me, do you have a moment to talk about version control? PeerJ Preprints 5:e3159v2 https://doi.org/10.7287/peerj.preprints.3159v2</p>
+<p>Live drawing 1 (local and remote): two boxes, clone first, then push and pull. Under 3 minutes. Fallback: the export in the appendix of the handbook, images/drawing-1-local-remote.png.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -310,283 +217,39 @@ Lars Schöbitz
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-1" class="slide level2" data-background-image="images/github_wickham_bryan_git_quote.png">
-<h2></h2>
-<div class="footer">
-<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
-</div>
-<aside class="notes">
-<p>Why GitHub?</p>
-<p>The concepts, mechanics, and vocabulary of GitHub (and underlying software Git) are new and unfamiliar when we get started or learn more about its capabilities.</p>
-<p>Hadley Wickham and Jenny Bryan use the <strong>analogy of climbing</strong> to describe how GitHub can keep us <strong>safe while also showing our journey</strong>.</p>
-<p>Wickham &amp; Bryan, R Packages https://r-pkgs.org/preface.html</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-2" class="slide level2" data-background-image="images/github_compare_text.png">
-<h2></h2>
-<div class="footer">
-<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
-</div>
-<aside class="notes">
-<p>GitHub helps streamline our work</p>
-<p>GitHub helps streamline our work because it takes care of otherwise <strong>time-consuming bookkeeping</strong> and <strong>unrelenting file tracking</strong>.</p>
-<p>Instead of spending our time inspecting and fretting over whether “analysis_final_v2.xls” or “analysis_final_final.xls” is <strong>truly the final version</strong>, with GitHub we can <strong>be confident in our completed analysis</strong> and move to the next step.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-3" class="slide level2" data-background-image="images/github_groundcrew_text.png">
-<h2></h2>
-<div class="footer">
-<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
-</div>
-<aside class="notes">
-<p>GitHub helps us support others and existing work.</p>
-<p>Whether we are organizing, improving documentation, or asking and answering questions, GitHub helps us provide <strong>support to our collaborators on projects</strong>, whether we are writing code or not.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-4" class="slide level2" data-background-image="images/github_reuse.jpg">
-<h2></h2>
-<div class="footer">
-<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
-</div>
-<aside class="notes">
-<p>GitHub helps us reuse existing work</p>
-<p>GitHub helps us reuse existing work, which lets us <strong>learn and build from other people’s shared experience</strong> rather than reinventing on our own.</p>
-<p>Plus, the <strong>existing work gets better each time someone tries it and shares their experience back</strong>. Whether it’s code, documentation, or knowledge through posted conversations, reusing existing things can save time, resources, and frustration. Importantly, <strong>reuse also expands the value of existing work while celebrating the contributions of others.</strong></p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-5" class="slide level2" data-background-image="images/github_clip.png">
-<h2></h2>
-<div class="footer">
-<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
-</div>
-<aside class="notes">
-<p>GitHub helps us contribute</p>
-<p>GitHub helps us contribute <strong>ideas through code, text, and more</strong>, with less worry about file management. This helps us feel more confident to share <strong>work-in-progress</strong> and contribute to existing work, <strong>knowing that we won’t break things</strong>.</p>
-<p>It also helps us share work earlier that might be imperfect, since we can still make changes from there.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-6" class="slide level2" data-background-image="images/github_fall.png">
-<h2></h2>
-<div class="footer">
-<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
-</div>
-<aside class="notes">
-<p>GitHub helps us fail safely</p>
-<p>GitHub helps us fail safely. Because we can <strong>return to previous versions easily</strong>, painful consequences of failing are reduced. We can more bravely try things and start making contributions, knowing that some (many?) will fail - but won’t be catastrophic!</p>
-<p>When we fail, we’ll be able to <strong>start again from where we left off</strong> (instead of from the ground), and <strong>a clear history</strong> can help us <strong>learn from the past</strong>.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-7" class="slide level2" data-background-image="images/github_scoping.jpeg">
-<h2></h2>
-<div class="footer">
-<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
-</div>
-<aside class="notes">
-<p>Harness the power of GitHub.</p>
-<p>Once we are <strong>empowered to work collaboratively with GitHub</strong>, it opens up a whole <strong>new world of projects</strong> that feel more welcoming because we can contribute in many different ways, using familiar approaches, and evolving with new possibilities as they emerge.</p>
-<p>This transferrable ability to collaborate and develop confidence for trying new things might just be the best thing about GitHub.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-8" class="slide level2" data-background-image="images/github_harness.jpeg">
-<h2></h2>
-<div class="footer">
-<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
-</div>
-<aside class="notes">
-<p>GitHub for the win!</p>
-<p>GitHub enables new frontiers for open science as we <strong>collaborate, share, and publish more easily</strong>.</p>
-<p>And, it is critical to continually question who is safe to participate with these tools. <strong>Who is not yet participating, and why?</strong> Barriers to access include <strong>past exclusion, skills, and support</strong>. Let’s all work empathetically and inclusively to <strong>help make more people feel welcome and safe</strong> using these powerful tools so we can all go further, together.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="read-on-github-strategies" class="slide level2">
-<h2>Read on: GitHub strategies</h2>
-<ol type="1">
-<li><p>Openscapes Champions Lesson Series. <span class="citation" data-cites="julia_stewart_lowndes_2024_14428503">Lowndes, Butland, and Robinson (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>: <a href="https://openscapes.github.io/series/core-lessons/github/" class="uri">https://openscapes.github.io/series/core-lessons/github/</a></p></li>
-<li><p>Excuse Me, Do You Have a Moment to Talk About Version Control? <a href="https://peerj.com/preprints/3159/" class="uri">https://peerj.com/preprints/3159/</a></p></li>
-</ol>
-</section></section>
-<section>
-<section id="create-clone" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Create &amp; Clone</h1>
-
+<section id="my-turn" class="slide level2">
+<h2>My turn</h2>
+<!-- Filled by issue #14: create and clone demo script -->
 </section>
 <section id="your-turn-1" class="slide level2">
 <h2>Your turn</h2>
-<div class="task">
-<ul>
-<li>Open github.com</li>
-<li>Navigate to your profile</li>
-<li>When completed, place a yellow sticky note on your laptop</li>
-</ul>
-<div class="hand">
-<p>Now, follow along the screen and instructor.</p>
-</div>
-</div>
+<!-- Filled by issue #14: learners create and clone their website repo -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_29321041" minutes="1" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_30f11fd2" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
-</section>
-<section id="your-turn-2" class="slide level2 smaller">
-<h2>Your turn</h2>
-<div class="task">
-<ol type="1">
-<li>Clone a GitHub repository of a fellow student (browse: github.com/username to fine the repository <code>website</code>)</li>
-<li>Open the repository in RStudio IDE</li>
-<li>Make a change the <code>README.md</code> file</li>
-<li>Save the file</li>
-<li>Stage, Commit &amp; Push the changes</li>
-</ol>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>id</th>
-<th>username1</th>
-<th>username2</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>Madliboom</td>
-<td>fdaguanno</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>TillRoost</td>
-<td>mag-wer</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>pacotvj99</td>
-<td>louma3000</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>ellahenninger</td>
-<td>CamilleFournierDL</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>dheimgartner</td>
-<td>jineichen</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>vgeier</td>
-<td>rjalcock</td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td>Jonathan-Elkobi</td>
-<td>rainbow-train</td>
-</tr>
-</tbody>
-</table>
-<div class="hand">
-<p>What happens?</p>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_e4a32292" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
-</div>
-</div>
-</section>
-<section id="read-on-fork-and-clone" class="slide level2">
-<h2>Read on: Fork and clone</h2>
-<ul>
-<li><a href="https://happygitwithr.com/fork-and-clone">Happy Git and GitHub for the useR</a></li>
-</ul>
+<aside class="notes">
+<p>Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="take-a-break" class="slide level2">
 <h2>Take a break</h2>
-<p><span class="highlight-yellow">Please get up and move!</span> Leave your emails alone.</p>
+<p><span class="highlight-yellow">Please get up and move!</span> Leave your emails alone. We continue at 11:15.</p>
 
-<img data-src="images/pixel-art-tree.png" style="width:50.0%" alt="This is the prompt generated by DALL-E 3 by OpenAI: A pixel art scene representing the concept of taking a break. The scene shows a serene outdoor setting with a clear blue sky. In the center, a small pixelated character is sitting comfortably on a bright green grassy hill, under the shade of a large, leafy tree. The character is depicted in a relaxed pose, perhaps sipping a warm beverage from a small cup. Nearby, a gentle stream flows, and a few fluffy white clouds drift in the sky. The overall mood of the image is peaceful and calming, emphasizing the tranquility of taking a break in nature." class="r-stretch"><div class="cell">
+<img data-src="images/pixel-art-tree.png" style="width:50.0%" alt="Pixel art of a small character resting under a large leafy tree on a green hill, next to a gentle stream under a clear blue sky." class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f3575be0" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_e20c2b57" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -594,120 +257,253 @@ Lars Schöbitz
 </div>
 </section></section>
 <section>
-<section id="clone-branch" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Clone &amp; Branch</h1>
+<section id="b3-the-commit-cycle-website-repo" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>B3: The commit cycle (website repo)</h1>
 
 </section>
-<section id="your-turn-3" class="slide level2 smaller">
+<section id="live-drawing-the-commit-cycle" class="slide level2">
+<h2>Live drawing: the commit cycle</h2>
+<p><span class="highlight-yellow">Projector goes to sleep.</span> We draw this one by hand.</p>
+<aside class="notes">
+<p>Live drawing 2 (commit cycle): working files, stage, commit as labelled snapshot on the history line, push. Leave room for the history line to grow. Under 3 minutes. Fallback: images/drawing-2-commit-cycle.png.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="my-turn-1" class="slide level2">
+<h2>My turn</h2>
+<!-- Filled by issue #15: commit cycle, revert demo, credentials moment -->
+</section>
+<section id="your-turn-2" class="slide level2">
 <h2>Your turn</h2>
-<div class="task">
-<ol type="1">
-<li><p>Open the landing page for the GitHub organization ‘gitforsci-cis’: <a href="https://github.com/gitforsci-cis" class="uri">https://github.com/gitforsci-cis</a> (try to use your bookmark)</p></li>
-<li><p>Navigate down the page to the section “Repositories” and use the search field to find the repository called <code>man-washinvestments-USERNAME</code> where USERNAME is your GitHub username.</p></li>
-<li><p>Click on the repository name to open it.</p></li>
-<li><p>Click on the green “Code” button.</p></li>
-<li><p>Copy the HTTPS URL to your clipboard by clicking on the clipboard sign.</p></li>
-<li><p>Open the RStudio IDE on your laptop.</p></li>
-<li><p>Click on <span class="highlight-yellow">File &gt; New Project</span> in the top menu bar</p></li>
-<li><p>Click on Version Control.</p></li>
-<li><p>Click on Git.</p></li>
-<li><p>Click on <span class="highlight-yellow">Browse…</span> button.</p></li>
-<li><p>Use the folder structure you created in the pre-course work (e.g.&nbsp;<code>~/Documents/gitrepos/gh-org-gitforsci-cis</code>)</p></li>
-<li><p>Paste the HTTPS URL from GitHub into the “Repository URL” field.</p></li>
-<li><p>Click on the “Create Project” button.</p></li>
-<li><p>Find the Files tab in the bottom right pane of RStudio.</p></li>
-</ol>
-<div class="hand">
-<p>Place the yellow sticky note on your laptop when you have completed the task.</p>
-</div>
-</div>
+<!-- Filled by issue #15: learners run the full pull-stage-commit-push cycle -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_cffbe09c" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_e438b841" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
+<aside class="notes">
+<p>Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
-<section id="pull-request-merge" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Pull Request &amp; Merge</h1>
+<section id="b4-collaboration-cliffhanger" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>B4: Collaboration cliffhanger</h1>
 
 </section>
-<section id="our-turn" class="slide level2 smaller">
+<section id="slides-1" class="slide level2">
+<h2>Slides</h2>
+<!-- Filled by issue #16: pairing slide -->
+</section>
+<section id="your-turn-3" class="slide level2">
+<h2>Your turn</h2>
+<!-- Filled by issue #16: clone the partner's repo, hit the push wall -->
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_841d871e" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<aside class="notes">
+<p>Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="lunch" class="slide level2">
+<h2>Lunch</h2>
+<!-- Filled by issue #16: debrief and lunch slide with the hard 12:55 return -->
+</section></section>
+<section>
+<section id="b5-branch-manuscript-repo" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>B5: Branch (manuscript repo)</h1>
+
+</section>
+<section id="live-drawing-branching" class="slide level2">
+<h2>Live drawing: branching</h2>
+<p><span class="highlight-yellow">Projector goes to sleep.</span> We draw this one by hand.</p>
+<aside class="notes">
+<p>Live drawing 3 (branching): the main line splits, commits land on the branch, the merge point stays empty until drawing 4. Under 3 minutes. Fallback: images/drawing-3-branching.png.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="my-turn-2" class="slide level2">
+<h2>My turn</h2>
+<!-- Filled by issue #17: branch demo on the manuscript repo -->
+</section>
+<section id="your-turn-4" class="slide level2">
+<h2>Your turn</h2>
+<!-- Filled by issue #17: learners branch on their own manuscript repo -->
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_ee6561d4" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<aside class="notes">
+<p>Bounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="b6-pull-request-review-merge" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>B6: Pull request, review, merge</h1>
+
+</section>
+<section id="live-drawing-the-pull-request" class="slide level2">
+<h2>Live drawing: the pull request</h2>
+<p><span class="highlight-yellow">Projector goes to sleep.</span> We draw this one by hand.</p>
+<aside class="notes">
+<p>Live drawing 4 (pull request): complete the merge point from drawing 3, pause at the join for the human review, then the lines meet. Under 3 minutes. Fallback: images/drawing-4-pull-request.png.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="my-turn-3" class="slide level2">
+<h2>My turn</h2>
+<!-- Filled by issue #18: PR, review, merge demo -->
+</section>
+<section id="your-turn-5" class="slide level2">
+<h2>Your turn</h2>
+<!-- Filled by issue #18: learners open, review, and merge PRs in pairs -->
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_865c8a8c" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<aside class="notes">
+<p>This block is protected. If the day is behind, B7 Publish is cut, never this. Bounded regroup: 2 minutes, then park-and-pair.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="b7-publish" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>B7: Publish</h1>
+
+</section>
+<section id="our-turn" class="slide level2">
 <h2>Our turn</h2>
-<div class="task">
-<ul>
-<li>We will continue together with <code>man-washinvestments-USERNAME</code> where USERNAME is your GitHub</li>
-</ul>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_103726ec" minutes="1" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
-</div>
-</div>
+<!-- Filled by issue #19: publish via GitHub Pages together -->
+<aside class="notes">
+<p>First block to cut. If running behind at 14:05, skip to the fallback slide and hand the time to B8.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="fallback-what-publishing-looks-like" class="slide level2">
+<h2>Fallback: what publishing looks like</h2>
+<!-- Filled by issue #19: pre-published example, steps in one breath -->
+<aside class="notes">
+<p>This slide stands alone for the cut case.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
-<section id="publish" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Publish</h1>
+<section id="b8-concept-map-revisit-and-wrap-up" class="title-slide slide level1 center" data-background-color="#4C326A">
+<h1>B8: Concept map revisit and wrap-up</h1>
 
 </section>
-<section id="our-turn-1" class="slide level2 smaller">
-<h2>Our turn</h2>
-<div class="task">
-<ul>
-<li>We will continue together with <code>man-washinvestments-USERNAME</code> where USERNAME is your GitHub</li>
-</ul>
-</div>
+<section id="your-turn-6" class="slide level2">
+<h2>Your turn</h2>
+<!-- Filled by issue #20: closing concept map, compare with the morning map -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_d24ab727" minutes="1" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_d261906e" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
+<aside class="notes">
+<p>Hard start at 14:15: whatever block is running stops. B8 is protected and runs even on the worst day.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="github-pages" class="slide level2">
-<h2>GitHub Pages</h2>
-<ul>
-<li><a href="https://pages.github.com/">GitHub Pages</a> is a free service for hosting static websites. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites.</li>
-</ul>
-
-<img data-src="images/screenshot-gh-pages.png" width="1137" class="r-stretch"></section>
-<section id="minimal-example---requirements" class="slide level2">
-<h2>Minimal Example - Requirements</h2>
-<ul>
-<li>Landing site needs to be stored as <code>index.qmd</code></li>
-<li>The <code>index.qmd</code> needs to be stored in <code>docs</code> folder</li>
-<li>Example works well for a report/article as a stand-alone page</li>
-<li>Quarto provides a framework and examples for more complex websites: <a href="https://quarto.org/docs/websites/" class="uri">https://quarto.org/docs/websites/</a></li>
-</ul>
-</section>
-<section id="quarto-websites" class="slide level2">
-<h2>Quarto websites</h2>
-<ul>
-<li>Websites are essentially <code>format: html</code> + a Quarto Project</li>
-<li>But a website is different than <code>format: html</code> in that it has multiple pages</li>
-<li>Websites can be your first exploration into Quarto Projects</li>
-<li>Websites and books are very similar in that they associate multiple pages/resources into a connected resource</li>
-</ul>
-</section>
-<section id="learn-more" class="slide level2">
-<h2>Learn more</h2>
-<div class="learn-more">
-<p><a href="https://quarto.org/docs/websites/">quarto.org/docs/websites</a></p>
-<iframe src="https://quarto.org/docs/websites" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Journal Articles"></iframe>
-</div>
-</section></section>
-<section>
-<section id="wrap-up" class="title-slide slide level1 center" data-background-color="#4C326A">
-<h1>Wrap-up</h1>
-
-</section>
-<section id="wrap-up-1" class="slide level2">
+<section id="wrap-up" class="slide level2">
 <h2>Wrap-up</h2>
-<ul>
-<li>Post your collected questions in the Element channel</li>
-<li>Start your first project using Git &amp; GitHub (already have a project? <a href="https://happygitwithr.com/existing-github-first#existing-github-first">Read here</a>)</li>
-<li>Keep learning by doing (create PRs to yourself)</li>
-<li>Share your knowledge with others (help them get started)</li>
-</ul>
+<!-- Filled by issue #20: recap, side benefits, follow-up, feedback -->
 </section>
 <section id="thanks" class="slide level2">
 <h2>Thanks!</h2>
@@ -715,15 +511,10 @@ Lars Schöbitz
 <p>Access slides as <a href="https://github.com/gitforsci-ghe/website/raw/main/workshop/slides.pdf">PDF on GitHub</a></p>
 <p>All material is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 </section>
-<section id="references" class="slide level2 smaller scrollable">
+<section id="references" class="slide level2">
 <h2>References</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-julia_stewart_lowndes_2024_14428503" class="csl-entry" role="listitem">
-Lowndes, Julia Stewart, Stefanie Butland, and Erin Robinson. 2024. <span>“Openscapes/Series: Openscapes Lesson Series V2024.11.0.”</span> Zenodo. <a href="https://doi.org/10.5281/zenodo.14428503">https://doi.org/10.5281/zenodo.14428503</a>.
-</div>
-</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
