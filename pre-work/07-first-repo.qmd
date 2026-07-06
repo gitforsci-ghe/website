@@ -1,5 +1,5 @@
 ---
-title: "Test your setup"
+title: "{{< fa list-check >}} Test your setup"
 ---
 
 In this task, we will test if your setup is complete and working. You will also already perform the first steps of using Git version control and GitHub.

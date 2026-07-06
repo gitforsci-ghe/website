@@ -1,5 +1,5 @@
 ---
-title: "Why Git? Why GitHub? "
+title: "{{< fa lightbulb >}} Why Git? Why GitHub?"
 format: html
 ---
 

@@ -1,4 +1,4 @@
-# Download and install Git
+# {{< fa code-branch >}} Download and install Git
 
 ::: {.callout-tip}
 

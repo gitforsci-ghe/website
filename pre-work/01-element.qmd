@@ -1,5 +1,5 @@
  ---
-title: "Communication in a chat"
+title: "{{< fa comments >}} Communication in a chat"
 ---
 
 Emails are not a very quick, responsive way of communication. We avoid them by prioritising other channels. At ETH Zurich, we have a chat server that is used by many courses and groups. It is based on the Matrix protocol, which is an open standard for secure, decentralised communication. The chat client is called Element, providing the open source, free-of-charge Slack-like experience. It is available to you as a student and is hosted by ETH Zurich.
