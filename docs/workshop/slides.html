@@ -387,7 +387,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_eb371741" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_a269d705" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -475,7 +475,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_7a86f2b9" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_bd60fa05" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -498,7 +498,7 @@ Lars Schöbitz
 
 <img data-src="images/pixel-art-tree.png" style="width:50.0%" alt="Pixel art of a small character resting under a large leafy tree on a green hill, next to a gentle stream under a clear blue sky." class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_bb2bc000" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_52a0be48" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -575,7 +575,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_adfcab71" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_bf462beb" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -637,7 +637,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f1ce04ed" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_0fa8ac5a" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -682,7 +682,7 @@ Lars Schöbitz
 <p><span class="highlight-yellow">Back at 12:55.</span> The afternoon starts hands-on, and your partner is waiting for you.</p>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_7ffb0d33" minutes="45" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_144d4a14" minutes="45" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -721,20 +721,60 @@ Lars Schöbitz
           display:block!important;
       }</style></aside>
 </section>
-<section id="my-turn-2" class="slide level2">
+<section id="my-turn-2" class="slide level2 smaller">
 <h2>My turn</h2>
-<!-- Filled by issue #17: branch demo on the manuscript repo -->
-</section>
-<section id="your-turn-3" class="slide level2">
-<h2>Your turn</h2>
-<!-- Filled by issue #17: learners branch on their own manuscript repo -->
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_b964bf73" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<div class="task">
+<p>Watch first; your turn comes next. New repo, new superpower.</p>
+<ol type="1">
+<li>In the org, find <code>man-washinvestments-USERNAME</code> and clone it (same moves as this morning).</li>
+<li>Git pane: <span class="highlight-yellow">New Branch</span>, name it <code>dev</code>. Read the message about <code>origin</code> out loud.</li>
+<li>Open <code>index.qmd</code>, edit the author details (name, ORCID, email, institution), <span class="highlight-yellow">Render</span>.</li>
+<li>Switch between <code>main</code> and <code>dev</code> in the Git pane: before the commit nothing differs; after the commit, the change lives <span class="highlight-yellow">only on dev</span>.</li>
+<li>Commit “update author details”, push.</li>
+</ol>
+<div class="hand">
+<p>Follow along on the screen.</p>
 </div>
 </div>
 <aside class="notes">
-<p>Bounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up.</p>
+<p>Packages are already installed from pre-work step 6, so the render takes seconds. Fallback only, if someone’s render fails on a missing package, the commented install chunk sits at the top of index.qmd:</p>
+<pre><code># install.packages("devtools")
+# devtools::install_github("openwashdata/washinvestments")</code></pre>
+<p>Do not run installs for the room; park that learner and pair them.</p>
+<p>The branch created here feeds the B6 pull request in 30 minutes, so keep momentum.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="your-turn-3" class="slide level2 smaller">
+<h2>Your turn</h2>
+<div class="task">
+<ol type="1">
+<li>Find and clone <span class="highlight-yellow">your</span> <code>man-washinvestments-USERNAME</code> repository (org page, search “man-”).</li>
+<li>Git pane: New Branch, name it <code>dev</code>.</li>
+<li>In <code>index.qmd</code>: put in <span class="highlight-yellow">your own</span> author details. Render.</li>
+<li>Commit “update author details”, push.</li>
+</ol>
+<div class="hand">
+<p>Place the yellow sticky note on your laptop when your push has finished.</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_5f5afee3" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<aside class="notes">
+<p>If the roster pivot happened (kill criterion 1), learners without their own repo work in the shared demo repos instead: same steps, repo name from the board. Mark the default before the day.</p>
+<p>Bounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up. Every learner needs a pushed dev branch with one commit by 13:30.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -778,7 +818,7 @@ Lars Schöbitz
 <!-- Filled by issue #18: learners open, review, and merge PRs in pairs -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_ecbad39d" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_5d7fa51f" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -844,7 +884,7 @@ Lars Schöbitz
 <!-- Filled by issue #20: closing concept map, compare with the morning map -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_af455930" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_e6f4a030" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">

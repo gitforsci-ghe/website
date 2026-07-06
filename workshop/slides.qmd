@@ -377,13 +377,47 @@ Hard 12:55 return. B5 starts hands-on as the re-energizer; latecomers can join m
 Live drawing 3 (branching): the main line splits, commits land on the branch, the merge point stays empty until drawing 4. Under 3 minutes. Fallback: images/drawing-3-branching.png.
 :::
 
-## My turn
+## My turn {.smaller}
 
-<!-- Filled by issue #17: branch demo on the manuscript repo -->
+:::: task
+Watch first; your turn comes next. New repo, new superpower.
 
-## Your turn
+1.  In the org, find `man-washinvestments-USERNAME` and clone it (same moves as this morning).
+2.  Git pane: [New Branch]{.highlight-yellow}, name it `dev`. Read the message about `origin` out loud.
+3.  Open `index.qmd`, edit the author details (name, ORCID, email, institution), [Render]{.highlight-yellow}.
+4.  Switch between `main` and `dev` in the Git pane: before the commit nothing differs; after the commit, the change lives [only on dev]{.highlight-yellow}.
+5.  Commit "update author details", push.
 
-<!-- Filled by issue #17: learners branch on their own manuscript repo -->
+::: hand
+Follow along on the screen.
+:::
+::::
+
+::: {.notes}
+Packages are already installed from pre-work step 6, so the render takes seconds. Fallback only, if someone's render fails on a missing package, the commented install chunk sits at the top of index.qmd:
+
+```
+# install.packages("devtools")
+# devtools::install_github("openwashdata/washinvestments")
+```
+
+Do not run installs for the room; park that learner and pair them.
+
+The branch created here feeds the B6 pull request in 30 minutes, so keep momentum.
+:::
+
+## Your turn {.smaller}
+
+:::: task
+1.  Find and clone [your]{.highlight-yellow} `man-washinvestments-USERNAME` repository (org page, search "man-").
+2.  Git pane: New Branch, name it `dev`.
+3.  In `index.qmd`: put in [your own]{.highlight-yellow} author details. Render.
+4.  Commit "update author details", push.
+
+::: hand
+Place the yellow sticky note on your laptop when your push has finished.
+:::
+::::
 
 ```{r}
 #| echo: false
@@ -391,7 +425,9 @@ countdown(minutes = 10)
 ```
 
 ::: {.notes}
-Bounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up.
+If the roster pivot happened (kill criterion 1), learners without their own repo work in the shared demo repos instead: same steps, repo name from the board. Mark the default before the day.
+
+Bounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up. Every learner needs a pushed dev branch with one commit by 13:30.
 :::
 
 # B6: Pull request, review, merge {background-color="#4C326A"}
