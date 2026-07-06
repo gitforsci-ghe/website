@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -199,7 +234,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#step-3-clone-a-repository" id="toc-step-3-clone-a-repository" class="nav-link" data-scroll-target="#step-3-clone-a-repository">Step 3: Clone a repository</a></li>
   <li><a href="#step-4-introduce-yourself-to-git" id="toc-step-4-introduce-yourself-to-git" class="nav-link" data-scroll-target="#step-4-introduce-yourself-to-git">Step 4: Introduce yourself to Git</a></li>
   <li><a href="#step-5-commit-and-push-your-changes" id="toc-step-5-commit-and-push-your-changes" class="nav-link" data-scroll-target="#step-5-commit-and-push-your-changes">Step 5: Commit and push your changes</a></li>
-  <li><a href="#step-6-open-an-issue-on-github" id="toc-step-6-open-an-issue-on-github" class="nav-link" data-scroll-target="#step-6-open-an-issue-on-github">Step 6: Open an issue on GitHub</a></li>
+  <li><a href="#step-6-install-the-workshop-packages" id="toc-step-6-install-the-workshop-packages" class="nav-link" data-scroll-target="#step-6-install-the-workshop-packages">Step 6: Install the workshop packages</a></li>
+  <li><a href="#step-7-open-an-issue-on-github" id="toc-step-7-open-an-issue-on-github" class="nav-link" data-scroll-target="#step-7-open-an-issue-on-github">Step 7: Open an issue on GitHub</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/07-first-repo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -238,12 +274,12 @@ No email from GitHub?
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Confirm that you have <a href="../pre-work/04-survey.html">completed the pre-course survey</a> and let me know on Element that you did not yet receive an email from GitHub to accept the invitation to the <code>gitforsci-cis</code> organization. I will send you an invitation.</p>
+<p>Confirm that you have <a href="../pre-work/04-survey.html">completed the pre-course survey</a> and let me know on Element that you did not yet receive an email from GitHub to accept the invitation to the <code>gitforsci-ghe</code> organization. I will send you an invitation.</p>
 </div>
 </div>
 <ol type="1">
 <li>Open your email that you used to register for your GitHub account.</li>
-<li>Fine the email from GitHub with the subject “[GitHub] <span class="citation" data-cites="larnsce">@larnsce</span> invited you to join the ‘gitforsci-cis’ organization”.</li>
+<li>Find the email from GitHub with the subject “[GitHub] <span class="citation" data-cites="larnsce">@larnsce</span> invited you to join the ‘gitforsci-ghe’ organization”.</li>
 <li>Click on the link in the email to accept the invitation and work through the steps that follow in your browser to accept the invitation.</li>
 </ol>
 <p><img src="images/screenshot-github-invitation.png" class="img-fluid" style="width:100.0%"></p>
@@ -251,7 +287,7 @@ No email from GitHub?
 <section id="step-2-create-a-bookmark" class="level2">
 <h2 class="anchored" data-anchor-id="step-2-create-a-bookmark">Step 2: Create a bookmark</h2>
 <ol type="1">
-<li>Open the landing page for the GitHub organization ‘gitforsci-cis’: <a href="https://github.com/gitforsci-cis" class="uri">https://github.com/gitforsci-cis</a></li>
+<li>Open the landing page for the GitHub organization ‘gitforsci-ghe’: <a href="https://github.com/gitforsci-ghe" class="uri">https://github.com/gitforsci-ghe</a></li>
 </ol>
 <p><img src="images/screenshot-github-landing-page.png" class="img-fluid" style="width:100.0%"></p>
 <ol start="2" type="1">
@@ -259,7 +295,7 @@ No email from GitHub?
 </ol>
 <p><img src="images/screenshot-bookmark-github.png" class="img-fluid" style="width:100.0%"></p>
 <ol start="3" type="1">
-<li>Organize the bookmark into a folder called “gitforsci-cis” or similar.</li>
+<li>Organize the bookmark into a folder called “gitforsci-ghe” or similar.</li>
 </ol>
 <p><img src="images/screenshot-bookmark-folder.png" class="img-fluid" style="width:100.0%"></p>
 <ol start="4" type="1">
@@ -270,8 +306,8 @@ No email from GitHub?
 <section id="step-3-clone-a-repository" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-clone-a-repository">Step 3: Clone a repository</h2>
 <ol type="1">
-<li><p>Open the landing page for the GitHub organization ‘gitforsci-cis’: <a href="https://github.com/gitforsci-cis" class="uri">https://github.com/gitforsci-cis</a> (try to use your bookmark)</p></li>
-<li><p>Navigate down the page to the section “Repositories” and use the search field to find the repository called <code>01-setup--USERNAME</code> where USERNAME is your GitHub username.</p></li>
+<li><p>Open the landing page for the GitHub organization ‘gitforsci-ghe’: <a href="https://github.com/gitforsci-ghe" class="uri">https://github.com/gitforsci-ghe</a> (try to use your bookmark)</p></li>
+<li><p>Navigate down the page to the section “Repositories” and use the search field to find the repository called <code>01-setup-USERNAME</code> where USERNAME is your GitHub username.</p></li>
 </ol>
 <p><img src="images/03-02-01-screenshot-github-repo.png" class="img-fluid" style="width:100.0%"></p>
 <ol start="3" type="1">
@@ -333,7 +369,7 @@ Note
 </ol>
 <p><img src="images/03-10-rstudio-new-project-git-browse.png" class="img-fluid" style="width:100.0%"></p>
 <ol start="11" type="1">
-<li>Create a folder structure for Git repositories (e.g.&nbsp;<code>~/Documents/gitrepos/gh-org-gitforsci-cis</code>)</li>
+<li>Create a folder structure for Git repositories (e.g.&nbsp;<code>~/Documents/gitrepos/gh-org-gitforsci-ghe</code>)</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -347,7 +383,7 @@ Folder structure for Git repositories and naming conventions
 <div class="callout-body-container callout-body">
 <p>I highly recommend storing folders that are Git repositories separate from other folders. This will help you to keep track of your Git repositories and avoid confusion with other folders.</p>
 <p>Create this directory structure locally on your laptop and not in folders that are synced with cloud storage (e.g.&nbsp;Google Drive, Dropbox, OneDrive, etc.).</p>
-<p>In your directory structure, you can create a folder called <code>gitrepos</code>. Inside this folder, you can create subfolders for each GitHub organization you are working with (e.g.&nbsp;<code>gh-org-gitforsci-cis</code>). A subfolder for your personal profile would be <code>gh-rainbow-train</code>. If you also work with GitLab or other Git hosting platforms, use the abbreviation for the platform in the folder name (e.g.&nbsp;<code>gitrepos/gh-rainbow-train</code>, <code>gitrepos/gl-rainbow-train</code>, etc.).</p>
+<p>In your directory structure, you can create a folder called <code>gitrepos</code>. Inside this folder, you can create subfolders for each GitHub organization you are working with (e.g.&nbsp;<code>gh-org-gitforsci-ghe</code>). A subfolder for your personal profile would be <code>gh-rainbow-train</code>. If you also work with GitLab or other Git hosting platforms, use the abbreviation for the platform in the folder name (e.g.&nbsp;<code>gitrepos/gh-rainbow-train</code>, <code>gitrepos/gl-rainbow-train</code>, etc.).</p>
 <p>This strategy will help you to keep track of your Git repositories and the respective platforms and organisations they belong to.</p>
 </div>
 </div>
@@ -466,11 +502,41 @@ Note
 </div>
 <p><img src="images/05-10-rstudio-git-pane-push.png" class="img-fluid" style="width:100.0%"></p>
 </section>
-<section id="step-6-open-an-issue-on-github" class="level2">
-<h2 class="anchored" data-anchor-id="step-6-open-an-issue-on-github">Step 6: Open an issue on GitHub</h2>
+<section id="step-6-install-the-workshop-packages" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-install-the-workshop-packages">Step 6: Install the workshop packages</h2>
+<p>In the workshop, you will work on a small manuscript that uses the <code>washinvestments</code> R data package. Installing the packages now means the manuscript renders in under a minute on the day, and we can spend our time together on Git and GitHub instead of watching progress bars.</p>
 <ol type="1">
-<li><p>Open the landing page for the GitHub organization ‘gitforsci-cis’: <a href="https://github.com/gitforsci-cis" class="uri">https://github.com/gitforsci-cis</a> (try to use your bookmark)</p></li>
-<li><p>Navigate down the page to the section “Repositories” and use the search field to find the repository called <code>01-setup-rainbow-train-USERNAME</code> where USERNAME is your GitHub username.</p></li>
+<li><p>In RStudio, click into the Console (bottom left pane).</p></li>
+<li><p>Copy the following lines into the Console and press Enter:</p></li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"devtools"</span>, <span class="st">"ggplot2"</span>, <span class="st">"ggthemes"</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"countrycode"</span>, <span class="st">"dplyr"</span>, <span class="st">"rmarkdown"</span>))</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"openwashdata/washinvestments"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li><p>Wait for the installation to finish. You may be asked whether to update other packages; answering with an empty line (just press Enter) is fine.</p></li>
+<li><p>Verify the installation by copying this single line into the Console and pressing Enter:</p></li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressPackageStartupMessages</span>(<span class="fu">invisible</span>(<span class="fu">lapply</span>(<span class="fu">c</span>(<span class="st">"washinvestments"</span>, <span class="st">"ggplot2"</span>, <span class="st">"ggthemes"</span>, <span class="st">"countrycode"</span>, <span class="st">"dplyr"</span>), library, <span class="at">character.only =</span> <span class="cn">TRUE</span>))); <span class="st">"All workshop packages installed"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If the Console prints <code>"All workshop packages installed"</code> without an error, you are done with this step.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Error message instead?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Copy the full error message and post it in the Element channel. Getting this resolved before the workshop keeps your afternoon free for the interesting parts.</p>
+</div>
+</div>
+</section>
+<section id="step-7-open-an-issue-on-github" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-open-an-issue-on-github">Step 7: Open an issue on GitHub</h2>
+<ol type="1">
+<li><p>Open the landing page for the GitHub organization ‘gitforsci-ghe’: <a href="https://github.com/gitforsci-ghe" class="uri">https://github.com/gitforsci-ghe</a> (try to use your bookmark)</p></li>
+<li><p>Navigate down the page to the section “Repositories” and use the search field to find the repository called <code>01-setup-USERNAME</code> where USERNAME is your GitHub username.</p></li>
 <li><p>Click on the repository name to open it.</p></li>
 <li><p>Click on the “Issues” tab.</p></li>
 </ol>
@@ -484,7 +550,7 @@ Note
 </ol>
 <p><img src="images/06-06-screenshot-github-new-issue-title.png" class="img-fluid" style="width:100.0%"></p>
 <ol start="7" type="1">
-<li>In the “Add a description” field, leave me a comment and tag the course instructor <span class="citation" data-cites="larnsce">@larnsce</span>.</li>
+<li>In the “Add a description” field, leave me a comment, confirm that the workshop packages installed without an error, and tag the course instructor <span class="citation" data-cites="larnsce">@larnsce</span>.</li>
 </ol>
 <p><img src="images/06-07-screenshot-github-new-issue-title.png" class="img-fluid" style="width:100.0%"></p>
 <ol start="8" type="1">
