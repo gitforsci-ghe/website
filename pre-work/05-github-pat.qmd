@@ -1,4 +1,4 @@
-# Create a GitHub Personal Access Token
+# {{< fa key >}} Create a GitHub Personal Access Token
 
 Here are the step-by-step instructions to set up a GitHub personal access token (PAT):
 

@@ -1,4 +1,4 @@
-## Complete pre-course survey
+## {{< fa clipboard-list >}} Complete pre-course survey
 
 ::: {.callout-note}
 ## Survey still under development
