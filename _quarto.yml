@@ -24,12 +24,12 @@ website:
   repo-actions: [edit, issue]
 
   page-footer:
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    background: "#eceef8"
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    background: "#F5F5F5"
 
   sidebar:
-    background: "#eceef8"
-    logo: "images/ghe-square-logo-vector.svg"
+    background: "#F5F5F5"
+    logo: "images/ghe-square-logo.png"
     pinned: true
     align: center
     tools:
@@ -69,7 +69,12 @@ format:
   html:
     theme:
       light: [litera, theme.scss]
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 250px
     link-external-icon: true
+    link-external-newwindow: true
     code-copy: true
     code-overflow: wrap
     toc: true
