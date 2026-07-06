@@ -38,7 +38,7 @@ Please ensure you have the following available:
 
 ## {{< fa circle-question >}} What do I need to prepare before the workshop?
 
-Prior to the workshop, complete the following seven steps:
+Prior to the workshop, complete the following eight steps:
 
 -   [Step 1](pre-work/01-element.html): Setup Element as a communication channel
 -   [Step 2](pre-work/02-install-r.html): Download and install R and RStudio
@@ -71,11 +71,11 @@ read_csv(here::here("data/tbl-01-gitforsci-ghe-course-schedule.csv")) |>
 
 By the end of this workshop, participants will be able to:
 
-1. Create and clone repositories, and clearly explain the difference between cloning and forking a repository, enabling effective collaboration and local development workflows.
+1. Create and clone a repository, and apply the standard Git workflow from the RStudio IDE: pulling, staging, committing, and pushing changes, including reverting a commit.
 
-2. Apply the standard Git workflow using RStudio IDE—including pulling, staging, committing, and pushing changes—and resolve basic merge conflicts (if time permits) when they arise.
+2. Work with branches and pull requests: create a development branch, open a pull request, review and comment on a colleague's pull request, and merge after review.
 
-3. Work with branches and pull requests by creating and managing development branches (using both RStudio and the terminal), submitting pull requests, and reviewing and commenting on others’ pull requests to facilitate code review and collaborative development
+3. Publish a rendered document via GitHub Pages, and draw a concept map of how Git and GitHub fit together as a foundation for collaboration.
 
 ## Thanks!
 
