@@ -29,7 +29,7 @@ library(tidyverse)
 library(countdown)
 ```
 
-# B1: Welcome, concept-map intro, baseline map {background-color="#4C326A"}
+# B1: Welcome, concept-map intro, baseline map {background-color="#0F4C81"}
 
 ## Meet the lecturer {.smaller}
 
@@ -174,7 +174,7 @@ One single prompt, not a fused double question. Expected content: email attachme
 Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
 :::
 
-# B2: Create and clone (website repo) {background-color="#4C326A"}
+# B2: Create and clone (website repo) {background-color="#0F4C81"}
 
 ## Live drawing: local and remote
 
@@ -244,7 +244,7 @@ countdown(minutes = 15)
 Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-# B3: The commit cycle (website repo) {background-color="#4C326A"}
+# B3: The commit cycle (website repo) {background-color="#0F4C81"}
 
 ## Live drawing: the commit cycle
 
@@ -301,7 +301,7 @@ Goal: every learner has at least 2 commits pushed to their own repo by 11:45. Th
 Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.
 :::
 
-# B4: Collaboration cliffhanger {background-color="#4C326A"}
+# B4: Collaboration cliffhanger {background-color="#0F4C81"}
 
 ## Find your partner
 
@@ -367,7 +367,7 @@ countdown(minutes = 45)
 Hard 12:55 return. B5 starts hands-on as the re-energizer; latecomers can join mid-exercise without missing slides.
 :::
 
-# B5: Branch (manuscript repo) {background-color="#4C326A"}
+# B5: Branch (manuscript repo) {background-color="#0F4C81"}
 
 ## Live drawing: branching
 
@@ -430,7 +430,7 @@ If the roster pivot happened (kill criterion 1), learners without their own repo
 Bounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up. Every learner needs a pushed dev branch with one commit by 13:30.
 :::
 
-# B6: Pull request, review, merge {background-color="#4C326A"}
+# B6: Pull request, review, merge {background-color="#0F4C81"}
 
 ## Live drawing: the pull request
 
@@ -492,7 +492,7 @@ Target: every learner opens a PR, writes at least one line comment, merges, and 
 This block is protected. If the day is behind, B7 Publish is cut, never this. Bounded regroup: 2 minutes, then park-and-pair.
 :::
 
-# B7: Publish {background-color="#4C326A"}
+# B7: Publish {background-color="#0F4C81"}
 
 ## Our turn {.smaller}
 
@@ -520,7 +520,7 @@ First block to cut. If running behind at 14:05, skip to the fallback slide and h
 This slide stands alone for the cut case: show it, say the one breath, hand the time to B8.
 :::
 
-# B8: Concept map revisit and wrap-up {background-color="#4C326A"}
+# B8: Concept map revisit and wrap-up {background-color="#0F4C81"}
 
 ## Your turn: your map, revisited {.smaller}
 
