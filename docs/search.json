@@ -109,7 +109,7 @@
     "href": "workshop/slides.html#your-turn-1",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break."
+    "text": "Your turn\n\n\nEdit your README.md: describe your website in one sentence. Save.\nRun the full cycle: Pull, Stage, Commit, Push, with a commit message that says what changed.\nOpen your repository on github.com and find your commit message and your change.\n\n\nPlace the yellow sticky note on your laptop when you can see your commit on GitHub.\n\n\n\n\n\n\n\n\nGoal: every learner has at least 2 commits pushed to their own repo by 11:45. The revert stays instructor-only in this block; learners do not revert here.\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch."
   },
   {
     "objectID": "workshop/slides.html#your-turn-2",
@@ -569,7 +569,7 @@
     "href": "workshop/slides.html#my-turn-1",
     "title": "GitHub for Collaboration",
     "section": "My turn",
-    "text": "My turn"
+    "text": "My turn\n\nWatch first; your turn comes next.\n\nEdit README.md: add the line “This repo contains a personal website.” Save, and spot the blue M in the Git tab.\nThe cycle, always in this order: Pull, Stage, Commit, Push.\nLook at the history: the commit is a labelled snapshot, on GitHub too.\nNow on purpose: one bad commit, and one revert.\n\n\nFollow along on the screen.\n\n\n\nDemo script:\n\nEdit README, save, point out the blue M next to the file in the Git tab.\nSync in 4 steps, said as a mantra: Pull (nothing to get, but build the habit), Stage (checkbox), Commit (message: “describe the repo content”), Push. Then open the repo on GitHub and show the commit message and the file change there.\nRevert demo, instructor only: make a deliberately bad commit (for example delete half the README), commit it, then revert it via the history; show that the history keeps both the mistake and the undo. Say the safety-net message out loud: almost everything in Git is reversible. This answers the recorded cis question “how do I take a commit back?”\nCredentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 5. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing."
   },
   {
     "objectID": "workshop/slides.html#slides-1",
