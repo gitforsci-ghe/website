@@ -303,13 +303,32 @@ Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.
 
 # B4: Collaboration cliffhanger {background-color="#4C326A"}
 
-## Slides
+## Find your partner
 
-<!-- Filled by issue #16: pairing slide -->
+::: task
+-   Turn to your neighbour: you are now a pair (three is fine if the row runs out).
+-   Write [each other's GitHub username]{.highlight-yellow} on your sticky notes.
+-   Keep that sticky note. Your partner returns after lunch.
+:::
 
-## Your turn
+::: {.notes}
+Pairs are formed on the day from who is present; no pre-baked table. The sticky notes with usernames are the pairing record and carry into B6 as reviewer assignments. If someone has no partner, they pair with the helper or the instructor.
+:::
 
-<!-- Filled by issue #16: clone the partner's repo, hit the push wall -->
+## Your turn {.smaller}
+
+:::: task
+1.  Browse to `github.com/USERNAME`, where USERNAME is [your partner's]{.highlight-yellow} username.
+2.  Clone their `website` repository (Code button, HTTPS URL, File \> New Project \> Version Control \> Git).
+3.  Edit the README: add "This repo contains a personal website for USERNAME."
+4.  Save, stage, commit, and [push]{.highlight-yellow}.
+
+[What happens?]{.highlight-yellow}
+
+::: hand
+Place the yellow sticky note on your laptop when something unexpected happens.
+:::
+::::
 
 ```{r}
 #| echo: false
@@ -317,12 +336,36 @@ countdown(minutes = 10)
 ```
 
 ::: {.notes}
+Everyone hits the push wall: 403, no write access. That is the plan; it is the safe-to-fail moment with the lowest stakes of the day. Nobody's work is harmed, nothing to clean up.
+
 Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.
+:::
+
+## What just happened? {.smaller}
+
+::: incremental
+-   Your push [failed]{.highlight-yellow}: you can read their repository, but you have no write access.
+-   Giving everyone write access ("collaborator") exists, but it does not scale, and it means anyone can change anything at any time.
+-   (Forking, making your own copy under your account, exists too; one sentence, not today's topic.)
+-   So how do teams actually propose and review changes? [That is exactly what we solve after lunch: branches and pull requests.]{.highlight-yellow}
+:::
+
+::: {.notes}
+The cliffhanger, stated explicitly. The morning ends with a question the afternoon answers. Do not resolve it now.
 :::
 
 ## Lunch
 
-<!-- Filled by issue #16: debrief and lunch slide with the hard 12:55 return -->
+[Back at 12:55.]{.highlight-yellow} The afternoon starts hands-on, and your partner is waiting for you.
+
+```{r}
+#| echo: false
+countdown(minutes = 45)
+```
+
+::: {.notes}
+Hard 12:55 return. B5 starts hands-on as the re-energizer; latecomers can join mid-exercise without missing slides.
+:::
 
 # B5: Branch (manuscript repo) {background-color="#4C326A"}
 

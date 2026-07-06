@@ -387,7 +387,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f0f6b50e" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_eb371741" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -475,7 +475,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_24dddde2" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_7a86f2b9" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -498,7 +498,7 @@ Lars Schöbitz
 
 <img data-src="images/pixel-art-tree.png" style="width:50.0%" alt="Pixel art of a small character resting under a large leafy tree on a green hill, next to a gentle stream under a clear blue sky." class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_cdace78d" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_bb2bc000" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -575,7 +575,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_acebd44f" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_adfcab71" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -598,20 +598,73 @@ Lars Schöbitz
 <h1>B4: Collaboration cliffhanger</h1>
 
 </section>
-<section id="slides" class="slide level2">
-<h2>Slides</h2>
-<!-- Filled by issue #16: pairing slide -->
+<section id="find-your-partner" class="slide level2">
+<h2>Find your partner</h2>
+<div class="task">
+<ul>
+<li>Turn to your neighbour: you are now a pair (three is fine if the row runs out).</li>
+<li>Write <span class="highlight-yellow">each other’s GitHub username</span> on your sticky notes.</li>
+<li>Keep that sticky note. Your partner returns after lunch.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Pairs are formed on the day from who is present; no pre-baked table. The sticky notes with usernames are the pairing record and carry into B6 as reviewer assignments. If someone has no partner, they pair with the helper or the instructor.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="your-turn-2" class="slide level2">
+<section id="your-turn-2" class="slide level2 smaller">
 <h2>Your turn</h2>
-<!-- Filled by issue #16: clone the partner's repo, hit the push wall -->
+<div class="task">
+<ol type="1">
+<li>Browse to <code>github.com/USERNAME</code>, where USERNAME is <span class="highlight-yellow">your partner’s</span> username.</li>
+<li>Clone their <code>website</code> repository (Code button, HTTPS URL, File &gt; New Project &gt; Version Control &gt; Git).</li>
+<li>Edit the README: add “This repo contains a personal website for USERNAME.”</li>
+<li>Save, stage, commit, and <span class="highlight-yellow">push</span>.</li>
+</ol>
+<p><span class="highlight-yellow">What happens?</span></p>
+<div class="hand">
+<p>Place the yellow sticky note on your laptop when something unexpected happens.</p>
+</div>
+</div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_30c7dfa5" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_f1ce04ed" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
+<p>Everyone hits the push wall: 403, no write access. That is the plan; it is the safe-to-fail moment with the lowest stakes of the day. Nobody’s work is harmed, nothing to clean up.</p>
 <p>Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-just-happened" class="slide level2 smaller">
+<h2>What just happened?</h2>
+<ul>
+<li class="fragment">Your push <span class="highlight-yellow">failed</span>: you can read their repository, but you have no write access.</li>
+<li class="fragment">Giving everyone write access (“collaborator”) exists, but it does not scale, and it means anyone can change anything at any time.</li>
+<li class="fragment">(Forking, making your own copy under your account, exists too; one sentence, not today’s topic.)</li>
+<li class="fragment">So how do teams actually propose and review changes? <span class="highlight-yellow">That is exactly what we solve after lunch: branches and pull requests.</span></li>
+</ul>
+<aside class="notes">
+<p>The cliffhanger, stated explicitly. The morning ends with a question the afternoon answers. Do not resolve it now.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -626,7 +679,25 @@ Lars Schöbitz
 </section>
 <section id="lunch" class="slide level2">
 <h2>Lunch</h2>
-<!-- Filled by issue #16: debrief and lunch slide with the hard 12:55 return -->
+<p><span class="highlight-yellow">Back at 12:55.</span> The afternoon starts hands-on, and your partner is waiting for you.</p>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_7ffb0d33" minutes="45" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<aside class="notes">
+<p>Hard 12:55 return. B5 starts hands-on as the re-energizer; latecomers can join mid-exercise without missing slides.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
 <section id="b5-branch-manuscript-repo" class="title-slide slide level1 center" data-background-color="#4C326A">
@@ -659,7 +730,7 @@ Lars Schöbitz
 <!-- Filled by issue #17: learners branch on their own manuscript repo -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_71b85710" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_b964bf73" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -707,7 +778,7 @@ Lars Schöbitz
 <!-- Filled by issue #18: learners open, review, and merge PRs in pairs -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_e64cfcff" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_ecbad39d" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -773,7 +844,7 @@ Lars Schöbitz
 <!-- Filled by issue #20: closing concept map, compare with the morning map -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_68602ab4" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_af455930" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
