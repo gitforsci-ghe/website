@@ -335,7 +335,7 @@
     "href": "index.html#schedule",
     "title": "Pre-course work: Git for Scientists",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:30 - 10:00\nArrival\n\n\n10:00 - 10:30\nGitHub for Collaboration\n\n\n10:30 - 11:00\nCreate & Clone\n\n\n11:00 - 11:15\nBreak\n\n\n11:15 - 12:00\nClone & Branch\n\n\n12:00 - 12:45\nLunch Break\n\n\n12:45 - 13:30\nPull Request & Merge\n\n\n13:30 - 13:45\nPublish\n\n\n13:45 - 14:00\nWrap-up\n\n\n14:00 - 14:30\nBuffer",
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:30 - 10:00\nArrival and setup check\n\n\n10:00 - 10:30\nB1: Welcome, concept-map intro, baseline map\n\n\n10:30 - 11:00\nB2: Create and clone (website repo)\n\n\n11:00 - 11:15\nBreak\n\n\n11:15 - 11:45\nB3: The commit cycle (website repo)\n\n\n11:45 - 12:15\nB4: Collaboration cliffhanger (partner clone, push fails)\n\n\n12:15 - 13:00\nLunch\n\n\n13:00 - 13:30\nB5: Branch (manuscript repo)\n\n\n13:30 - 14:05\nB6: Pull request, review, merge\n\n\n14:05 - 14:15\nB7: Publish\n\n\n14:15 - 14:30\nB8: Concept map revisit and wrap-up",
     "crumbs": [
       "Pre-course work"
     ]
