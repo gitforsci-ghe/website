@@ -440,13 +440,44 @@ Bounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your
 Live drawing 4 (pull request): complete the merge point from drawing 3, pause at the join for the human review, then the lines meet. Under 3 minutes. Fallback: images/drawing-4-pull-request.png.
 :::
 
-## My turn
+## My turn {.smaller}
 
-<!-- Filled by issue #18: PR, review, merge demo -->
+:::: task
+Watch first; your turn comes next. This is the moment the day was built for.
 
-## Your turn
+1.  On GitHub: switch to `dev`, click [Compare & pull request]{.highlight-yellow}. Title: "Add author details to manuscript".
+2.  Request a [reviewer]{.highlight-yellow}. Walk the tabs: Commits, Files changed.
+3.  As the reviewer: start a review, leave [line comments]{.highlight-yellow}, submit.
+4.  Open an issue with a task list next to the PR.
+5.  [Merge]{.highlight-yellow}, confirm, tick off the task in the issue.
+6.  Back in RStudio: switch to `main`, read the message, [Pull]{.highlight-yellow}. Then the gotcha: [switch back to dev]{.highlight-yellow}.
 
-<!-- Filled by issue #18: learners open, review, and merge PRs in pairs -->
+::: hand
+Follow along on the screen.
+:::
+::::
+
+::: {.notes}
+Demo script from the cis lesson plan. Review comment examples to reuse verbatim: "That's not a good title for a manuscript. Please suggest 2 alternatives." and "This list is not complete."
+
+Read the "behind origin/main, can be fast-forwarded" message out loud when switching to main. The switch-back-to-dev gotcha is a recorded cis learner stumble; name it as a habit: merged? Then pull main, and go back to your working branch.
+:::
+
+## Your turn {.smaller}
+
+:::: task
+1.  Open a pull request from your `dev` branch. Title it so your reviewer knows what changed.
+2.  Request a review [from your B4 partner]{.highlight-yellow} (the username on your sticky note).
+3.  Review [your partner's]{.highlight-yellow} pull request: at least [one line comment]{.highlight-yellow}, then submit the review.
+4.  After your review arrives: [merge your own PR]{.highlight-yellow}, confirm.
+5.  In RStudio: switch to `main`, Pull, and switch back to `dev`.
+
+[Partner not ready? Review the seed PR in your own repository instead. Nobody waits on anybody.]{.highlight-yellow}
+
+::: hand
+Place the yellow sticky note on your laptop after the switch back to dev.
+:::
+::::
 
 ```{r}
 #| echo: false
@@ -454,6 +485,10 @@ countdown(minutes = 15)
 ```
 
 ::: {.notes}
+Default path: partner-pair review with the B4 sticky-note pairs. Fallback path, on the slide itself: every manuscript repo has a pre-opened seed PR ("Seed: suggestions to review"), so the exercise never blocks on a partner's progress. If no helper was found by 11 July (kill criterion 4), flip the default: everyone reviews their seed PR, pairs become the bonus.
+
+Target: every learner opens a PR, writes at least one line comment, merges, and pulls, inside 35 minutes.
+
 This block is protected. If the day is behind, B7 Publish is cut, never this. Bounded regroup: 2 minutes, then park-and-pair.
 :::
 
