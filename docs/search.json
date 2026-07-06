@@ -116,7 +116,7 @@
     "href": "workshop/slides.html#your-turn-2",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch."
+    "text": "Your turn\n\n\nBrowse to github.com/USERNAME, where USERNAME is your partner’s username.\nClone their website repository (Code button, HTTPS URL, File &gt; New Project &gt; Version Control &gt; Git).\nEdit the README: add “This repo contains a personal website for USERNAME.”\nSave, stage, commit, and push.\n\nWhat happens?\n\nPlace the yellow sticky note on your laptop when something unexpected happens.\n\n\n\n\n\n\n\n\nEveryone hits the push wall: 403, no write access. That is the plan; it is the safe-to-fail moment with the lowest stakes of the day. Nobody’s work is harmed, nothing to clean up.\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch."
   },
   {
     "objectID": "workshop/slides.html#read-on-fork-and-clone",
@@ -583,7 +583,7 @@
     "href": "workshop/slides.html#lunch",
     "title": "GitHub for Collaboration",
     "section": "Lunch",
-    "text": "Lunch"
+    "text": "Lunch\nBack at 12:55. The afternoon starts hands-on, and your partner is waiting for you.\n\n\n\n\n\n\nHard 12:55 return. B5 starts hands-on as the re-energizer; latecomers can join mid-exercise without missing slides."
   },
   {
     "objectID": "workshop/slides.html#live-drawing-branching",
@@ -668,5 +668,19 @@
     "title": "GitHub for Collaboration",
     "section": "Your turn: your baseline map",
     "text": "Your turn: your baseline map\n\nHow does a document you write reach your co-author and come back? Draw it as a concept map.\n\nThings as nodes, arrows with verb labels.\nThere is no wrong map; this one is yours.\nKeep the map. You will need it at 14:15.\n\n\nPlace the yellow sticky note on your laptop when your map is done.\n\n\n\n\n\n\n\n\nOne single prompt, not a fused double question. Expected content: email attachments, Dropbox, Google Docs, file naming (final_v2, final_final). That is the point; the day connects Git to these habits. Do not correct anything here.\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break."
+  },
+  {
+    "objectID": "workshop/slides.html#find-your-partner",
+    "href": "workshop/slides.html#find-your-partner",
+    "title": "GitHub for Collaboration",
+    "section": "Find your partner",
+    "text": "Find your partner\n\n\nTurn to your neighbour: you are now a pair (three is fine if the row runs out).\nWrite each other’s GitHub username on your sticky notes.\nKeep that sticky note. Your partner returns after lunch.\n\n\n\nPairs are formed on the day from who is present; no pre-baked table. The sticky notes with usernames are the pairing record and carry into B6 as reviewer assignments. If someone has no partner, they pair with the helper or the instructor."
+  },
+  {
+    "objectID": "workshop/slides.html#what-just-happened",
+    "href": "workshop/slides.html#what-just-happened",
+    "title": "GitHub for Collaboration",
+    "section": "What just happened?",
+    "text": "What just happened?\n\nYour push failed: you can read their repository, but you have no write access.\nGiving everyone write access (“collaborator”) exists, but it does not scale, and it means anyone can change anything at any time.\n(Forking, making your own copy under your account, exists too; one sentence, not today’s topic.)\nSo how do teams actually propose and review changes? That is exactly what we solve after lunch: branches and pull requests.\n\n\nThe cliffhanger, stated explicitly. The morning ends with a question the afternoon answers. Do not resolve it now."
   }
 ]
