@@ -5,10 +5,10 @@ bibliography: ../references.bib
 
 ## {{< fa display >}} Slides
 
-[View slides in full screen](1-1-website.html) | [Download slides as PDF](https://github.com/gitforsci-cis/website/raw/main/1-1-website/1-1-website.pdf)
+[View slides in full screen](slides.html) | [Download slides as PDF](https://github.com/gitforsci-ghe/website/raw/main/workshop/slides.pdf)
 
 ```{=html}
-<iframe class="slide-deck" src="1-1-website.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
+<iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
 ```
 
 ## {{< fa book >}} Readings

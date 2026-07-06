@@ -414,7 +414,7 @@ knitr::include_graphics("images/screenshot-gh-pages.png")
 
 Slides created via revealjs and Quarto: <https://quarto.org/docs/presentations/revealjs/>
 
-Access slides as [PDF on GitHub](https://github.com/gitforsci-cis/website/raw/main/1-1-website/1-1-website.pdf)
+Access slides as [PDF on GitHub](https://github.com/gitforsci-ghe/website/raw/main/workshop/slides.pdf)
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 

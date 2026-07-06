@@ -1,5 +1,296 @@
 [
   {
+    "objectID": "workshop/slides.html#meet-the-lecturer",
+    "href": "workshop/slides.html#meet-the-lecturer",
+    "title": "I have no title, yet.",
+    "section": "Meet the lecturer",
+    "text": "Meet the lecturer\nLars Schöbitz\n\n\nEnvironmental Engineer \nRetired researcher \nRStudio certified instructor\nData steward at ETHZ"
+  },
+  {
+    "objectID": "workshop/slides.html#learning-objectives",
+    "href": "workshop/slides.html#learning-objectives",
+    "title": "I have no title, yet.",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nBy the end of this workshop, participants will be able to:\n\nCreate and clone repositories, and explain the difference between cloning and forking a repository.\nApply the standard Git workflow using RStudio IDE—including pull, stage, commit, and push changes to GitHub.\nWork with branches and pull requests by creating and managing development branches (using both RStudio and the terminal), submitting pull requests, and reviewing and commenting on others’ pull requests to facilitate code review and collaborative development."
+  },
+  {
+    "objectID": "workshop/slides.html#teaching-strategy",
+    "href": "workshop/slides.html#teaching-strategy",
+    "title": "I have no title, yet.",
+    "section": "Teaching strategy",
+    "text": "Teaching strategy\n\nTeaching Git on a “need to know” basis\nTeaching only a very small subset of Git’s functionality\nCreating a safe space for learning and getting support (use Element)\nFocus on collaboration aspects of GitHub"
+  },
+  {
+    "objectID": "workshop/slides.html#schedule",
+    "href": "workshop/slides.html#schedule",
+    "title": "I have no title, yet.",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:30 - 10:00\nArrival\n\n\n10:00 - 10:30\nGitHub for Collaboration\n\n\n10:30 - 11:00\nCreate & Clone\n\n\n11:00 - 11:15\nBreak\n\n\n11:15 - 12:00\nClone & Branch\n\n\n12:00 - 12:45\nLunch Break\n\n\n12:45 - 13:30\nPull Request & Merge\n\n\n13:30 - 13:45\nPublish\n\n\n13:45 - 14:00\nWrap-up\n\n\n14:00 - 14:30\nBuffer"
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn",
+    "href": "workshop/slides.html#your-turn",
+    "title": "I have no title, yet.",
+    "section": "Your turn",
+    "text": "Your turn\n\nThink about the last time you published a written document:\n\nWhich tasks gave you joy?\nWhich tasks were challenging or frustrating?\n\n\nTake some written notes."
+  },
+  {
+    "objectID": "workshop/slides.html#section",
+    "href": "workshop/slides.html#section",
+    "title": "I have no title, yet.",
+    "section": "",
+    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nWhy GitHub?\n“Collaboration is the most compelling reason to manage a project with Git and GitHub. My definition of collaboration includes hands-on participation by multiple people, including your past and future self, as well as an asymmetric model, in which some people are active makers and others only read or review.” - Jenny Bryan\nBryan J. 2017. Excuse me, do you have a moment to talk about version control? PeerJ Preprints 5:e3159v2 https://doi.org/10.7287/peerj.preprints.3159v2"
+  },
+  {
+    "objectID": "workshop/slides.html#section-1",
+    "href": "workshop/slides.html#section-1",
+    "title": "I have no title, yet.",
+    "section": "",
+    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nWhy GitHub?\nThe concepts, mechanics, and vocabulary of GitHub (and underlying software Git) are new and unfamiliar when we get started or learn more about its capabilities.\nHadley Wickham and Jenny Bryan use the analogy of climbing to describe how GitHub can keep us safe while also showing our journey.\nWickham & Bryan, R Packages https://r-pkgs.org/preface.html"
+  },
+  {
+    "objectID": "workshop/slides.html#section-2",
+    "href": "workshop/slides.html#section-2",
+    "title": "I have no title, yet.",
+    "section": "",
+    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps streamline our work\nGitHub helps streamline our work because it takes care of otherwise time-consuming bookkeeping and unrelenting file tracking.\nInstead of spending our time inspecting and fretting over whether “analysis_final_v2.xls” or “analysis_final_final.xls” is truly the final version, with GitHub we can be confident in our completed analysis and move to the next step."
+  },
+  {
+    "objectID": "workshop/slides.html#section-3",
+    "href": "workshop/slides.html#section-3",
+    "title": "I have no title, yet.",
+    "section": "",
+    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps us support others and existing work.\nWhether we are organizing, improving documentation, or asking and answering questions, GitHub helps us provide support to our collaborators on projects, whether we are writing code or not."
+  },
+  {
+    "objectID": "workshop/slides.html#section-4",
+    "href": "workshop/slides.html#section-4",
+    "title": "I have no title, yet.",
+    "section": "",
+    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps us reuse existing work\nGitHub helps us reuse existing work, which lets us learn and build from other people’s shared experience rather than reinventing on our own.\nPlus, the existing work gets better each time someone tries it and shares their experience back. Whether it’s code, documentation, or knowledge through posted conversations, reusing existing things can save time, resources, and frustration. Importantly, reuse also expands the value of existing work while celebrating the contributions of others."
+  },
+  {
+    "objectID": "workshop/slides.html#section-5",
+    "href": "workshop/slides.html#section-5",
+    "title": "I have no title, yet.",
+    "section": "",
+    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps us contribute\nGitHub helps us contribute ideas through code, text, and more, with less worry about file management. This helps us feel more confident to share work-in-progress and contribute to existing work, knowing that we won’t break things.\nIt also helps us share work earlier that might be imperfect, since we can still make changes from there."
+  },
+  {
+    "objectID": "workshop/slides.html#section-6",
+    "href": "workshop/slides.html#section-6",
+    "title": "I have no title, yet.",
+    "section": "",
+    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps us fail safely\nGitHub helps us fail safely. Because we can return to previous versions easily, painful consequences of failing are reduced. We can more bravely try things and start making contributions, knowing that some (many?) will fail - but won’t be catastrophic!\nWhen we fail, we’ll be able to start again from where we left off (instead of from the ground), and a clear history can help us learn from the past."
+  },
+  {
+    "objectID": "workshop/slides.html#section-7",
+    "href": "workshop/slides.html#section-7",
+    "title": "I have no title, yet.",
+    "section": "",
+    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nHarness the power of GitHub.\nOnce we are empowered to work collaboratively with GitHub, it opens up a whole new world of projects that feel more welcoming because we can contribute in many different ways, using familiar approaches, and evolving with new possibilities as they emerge.\nThis transferrable ability to collaborate and develop confidence for trying new things might just be the best thing about GitHub."
+  },
+  {
+    "objectID": "workshop/slides.html#section-8",
+    "href": "workshop/slides.html#section-8",
+    "title": "I have no title, yet.",
+    "section": "",
+    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub for the win!\nGitHub enables new frontiers for open science as we collaborate, share, and publish more easily.\nAnd, it is critical to continually question who is safe to participate with these tools. Who is not yet participating, and why? Barriers to access include past exclusion, skills, and support. Let’s all work empathetically and inclusively to help make more people feel welcome and safe using these powerful tools so we can all go further, together."
+  },
+  {
+    "objectID": "workshop/slides.html#read-on-github-strategies",
+    "href": "workshop/slides.html#read-on-github-strategies",
+    "title": "I have no title, yet.",
+    "section": "Read on: GitHub strategies",
+    "text": "Read on: GitHub strategies\n\nOpenscapes Champions Lesson Series. Lowndes, Butland, and Robinson (2024): https://openscapes.github.io/series/core-lessons/github/\nExcuse Me, Do You Have a Moment to Talk About Version Control? https://peerj.com/preprints/3159/"
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-1",
+    "href": "workshop/slides.html#your-turn-1",
+    "title": "I have no title, yet.",
+    "section": "Your turn",
+    "text": "Your turn\n\n\nOpen github.com\nNavigate to your profile\nWhen completed, place a yellow sticky note on your laptop\n\n\nNow, follow along the screen and instructor."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-2",
+    "href": "workshop/slides.html#your-turn-2",
+    "title": "I have no title, yet.",
+    "section": "Your turn",
+    "text": "Your turn\n\n\nClone a GitHub repository of a fellow student (browse: github.com/username to fine the repository website)\nOpen the repository in RStudio IDE\nMake a change the README.md file\nSave the file\nStage, Commit & Push the changes\n\n\n\n\nid\nusername1\nusername2\n\n\n\n\n1\nMadliboom\nfdaguanno\n\n\n2\nTillRoost\nmag-wer\n\n\n3\npacotvj99\nlouma3000\n\n\n4\nellahenninger\nCamilleFournierDL\n\n\n5\ndheimgartner\njineichen\n\n\n6\nvgeier\nrjalcock\n\n\n7\nJonathan-Elkobi\nrainbow-train\n\n\n\n\nWhat happens?"
+  },
+  {
+    "objectID": "workshop/slides.html#read-on-fork-and-clone",
+    "href": "workshop/slides.html#read-on-fork-and-clone",
+    "title": "I have no title, yet.",
+    "section": "Read on: Fork and clone",
+    "text": "Read on: Fork and clone\n\nHappy Git and GitHub for the useR"
+  },
+  {
+    "objectID": "workshop/slides.html#take-a-break",
+    "href": "workshop/slides.html#take-a-break",
+    "title": "I have no title, yet.",
+    "section": "Take a break",
+    "text": "Take a break\nPlease get up and move! Leave your emails alone.\n\n\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-3",
+    "href": "workshop/slides.html#your-turn-3",
+    "title": "I have no title, yet.",
+    "section": "Your turn",
+    "text": "Your turn\n\n\nOpen the landing page for the GitHub organization ‘gitforsci-cis’: https://github.com/gitforsci-cis (try to use your bookmark)\nNavigate down the page to the section “Repositories” and use the search field to find the repository called man-washinvestments-USERNAME where USERNAME is your GitHub username.\nClick on the repository name to open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard by clicking on the clipboard sign.\nOpen the RStudio IDE on your laptop.\nClick on File &gt; New Project in the top menu bar\nClick on Version Control.\nClick on Git.\nClick on Browse… button.\nUse the folder structure you created in the pre-course work (e.g. ~/Documents/gitrepos/gh-org-gitforsci-cis)\nPaste the HTTPS URL from GitHub into the “Repository URL” field.\nClick on the “Create Project” button.\nFind the Files tab in the bottom right pane of RStudio.\n\n\nPlace the yellow sticky note on your laptop when you have completed the task."
+  },
+  {
+    "objectID": "workshop/slides.html#our-turn",
+    "href": "workshop/slides.html#our-turn",
+    "title": "I have no title, yet.",
+    "section": "Our turn",
+    "text": "Our turn\n\n\nWe will continue together with man-washinvestments-USERNAME where USERNAME is your GitHub"
+  },
+  {
+    "objectID": "workshop/slides.html#our-turn-1",
+    "href": "workshop/slides.html#our-turn-1",
+    "title": "I have no title, yet.",
+    "section": "Our turn",
+    "text": "Our turn\n\n\nWe will continue together with man-washinvestments-USERNAME where USERNAME is your GitHub"
+  },
+  {
+    "objectID": "workshop/slides.html#github-pages",
+    "href": "workshop/slides.html#github-pages",
+    "title": "I have no title, yet.",
+    "section": "GitHub Pages",
+    "text": "GitHub Pages\n\nGitHub Pages is a free service for hosting static websites. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites."
+  },
+  {
+    "objectID": "workshop/slides.html#minimal-example---requirements",
+    "href": "workshop/slides.html#minimal-example---requirements",
+    "title": "I have no title, yet.",
+    "section": "Minimal Example - Requirements",
+    "text": "Minimal Example - Requirements\n\nLanding site needs to be stored as index.qmd\nThe index.qmd needs to be stored in docs folder\nExample works well for a report/article as a stand-alone page\nQuarto provides a framework and examples for more complex websites: https://quarto.org/docs/websites/"
+  },
+  {
+    "objectID": "workshop/slides.html#quarto-websites",
+    "href": "workshop/slides.html#quarto-websites",
+    "title": "I have no title, yet.",
+    "section": "Quarto websites",
+    "text": "Quarto websites\n\nWebsites are essentially format: html + a Quarto Project\nBut a website is different than format: html in that it has multiple pages\nWebsites can be your first exploration into Quarto Projects\nWebsites and books are very similar in that they associate multiple pages/resources into a connected resource"
+  },
+  {
+    "objectID": "workshop/slides.html#learn-more",
+    "href": "workshop/slides.html#learn-more",
+    "title": "I have no title, yet.",
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/websites"
+  },
+  {
+    "objectID": "workshop/slides.html#wrap-up-1",
+    "href": "workshop/slides.html#wrap-up-1",
+    "title": "I have no title, yet.",
+    "section": "Wrap-up",
+    "text": "Wrap-up\n\nPost your collected questions in the Element channel\nStart your first project using Git & GitHub (already have a project? Read here)\nKeep learning by doing (create PRs to yourself)\nShare your knowledge with others (help them get started)"
+  },
+  {
+    "objectID": "workshop/slides.html#thanks",
+    "href": "workshop/slides.html#thanks",
+    "title": "I have no title, yet.",
+    "section": "Thanks!",
+    "text": "Thanks!\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
+  },
+  {
+    "objectID": "workshop/slides.html#references",
+    "href": "workshop/slides.html#references",
+    "title": "I have no title, yet.",
+    "section": "References",
+    "text": "References\n\n\n\n\nLowndes, Julia Stewart, Stefanie Butland, and Erin Robinson. 2024. “Openscapes/Series: Openscapes Lesson Series V2024.11.0.” Zenodo. https://doi.org/10.5281/zenodo.14428503."
+  },
+  {
+    "objectID": "pre-work/08-big-picture.html",
+    "href": "pre-work/08-big-picture.html",
+    "title": "Why Git? Why GitHub?",
+    "section": "",
+    "text": "The book Happy Git and GitHub for the useR is a great resource for learning about Git and GitHub. Today you have worked through almost all elements of the first 14 chapters of the book. I am taking a lot of resources from the book itself and highly recommend it as a reference for you.\nBefore we start our workshop on Tuesday, it is important to learn about the big picture of Git and GitHub. This will help you understand why we are using these tools and how they fit into the larger context of data science and research.\n\nRead the chapter, “Why Git? Why GitHub?” https://happygitwithr.com/big-picture\nTake notes and write down questions. Ask them on Element.\n\nReading this will allow me to focus on the practical aspects of Git and GitHub during the workshop, rather than spending time on the theory. I will assume you have read this chapter and understand the big picture of why we are using these tools.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 8: Why Git? Why GitHub?"
+    ]
+  },
+  {
+    "objectID": "pre-work/06-install-git.html",
+    "href": "pre-work/06-install-git.html",
+    "title": "Download and install Git",
+    "section": "",
+    "text": "Tip\n\n\n\nBe ready to get in touch on Element for this task.\n\n\n\n\nInstall Git for Windows after download from this direct download link: https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe\nGit for Windows is also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.\nWe like this because Git for Windows leaves the Git executable in a conventional location, which will help you and other programs, e.g. RStudio, find it and use it. This also supports a transition to more expert use, because the “Git Bash” shell will be useful as you venture outside of R/RStudio.\n\nNOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.\nNote that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.\n\n\n\n\nIt’s slightly more complicated. Please get in touch through Element if you have questions.\nOption 1 (highly recommended): Install the Xcode command line tools (not all of Xcode), which includes Git.\n\nOpen the Terminal application on Mac and type xcode-select --install. If you don’t have it installed, you will be prompted to install the Xcode command line tools. Follow the instructions.\n\nOption 2 (recommended): If you anticipate getting heavily into scientific computing, you’re going to be installing and updating lots of software. You should check out Homebrew, “the missing package manager for OS X”. Among many other things, it can install Git for you.\n\nOpen the Terminal application on Mac, copy and run the following line:\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nThis will install Homebrew. You may be prompted for your password. If you are, type it in and hit enter. You won’t see anything appear on the screen as you type, but it is working.\nOnce you have Homebrew installed, type and run this in the terminal.\nbrew install git\nWe will confirm in Test your setup that you have Git installed and working.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 6: Install Git"
+    ]
+  },
+  {
+    "objectID": "pre-work/06-install-git.html#install-git-windows",
+    "href": "pre-work/06-install-git.html#install-git-windows",
+    "title": "Download and install Git",
+    "section": "",
+    "text": "Install Git for Windows after download from this direct download link: https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe\nGit for Windows is also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.\nWe like this because Git for Windows leaves the Git executable in a conventional location, which will help you and other programs, e.g. RStudio, find it and use it. This also supports a transition to more expert use, because the “Git Bash” shell will be useful as you venture outside of R/RStudio.\n\nNOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.\nNote that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 6: Install Git"
+    ]
+  },
+  {
+    "objectID": "pre-work/06-install-git.html#macos",
+    "href": "pre-work/06-install-git.html#macos",
+    "title": "Download and install Git",
+    "section": "",
+    "text": "It’s slightly more complicated. Please get in touch through Element if you have questions.\nOption 1 (highly recommended): Install the Xcode command line tools (not all of Xcode), which includes Git.\n\nOpen the Terminal application on Mac and type xcode-select --install. If you don’t have it installed, you will be prompted to install the Xcode command line tools. Follow the instructions.\n\nOption 2 (recommended): If you anticipate getting heavily into scientific computing, you’re going to be installing and updating lots of software. You should check out Homebrew, “the missing package manager for OS X”. Among many other things, it can install Git for you.\n\nOpen the Terminal application on Mac, copy and run the following line:\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nThis will install Homebrew. You may be prompted for your password. If you are, type it in and hit enter. You won’t see anything appear on the screen as you type, but it is working.\nOnce you have Homebrew installed, type and run this in the terminal.\nbrew install git\nWe will confirm in Test your setup that you have Git installed and working.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 6: Install Git"
+    ]
+  },
+  {
+    "objectID": "pre-work/04-survey.html",
+    "href": "pre-work/04-survey.html",
+    "title": "Git for Scientists (Summer 2026)",
+    "section": "",
+    "text": "Survey still under development\n\n\n\nThis survey is still under development. It will be published on Tuesday, 07 July 2026, once registration is completed. Please check back then.\n\n\nAt this point, we need your GitHub username. We have also developed this survey to get an idea about your prior knowledge. It will help us shape the course to ensure that everyone gets an opportunity to learn at their pace.\n\nComplete the survey by Wednesday, 08 July 2026: link to be added once the survey is published.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 4: Pre-course survey"
+    ]
+  },
+  {
+    "objectID": "pre-work/04-survey.html#complete-pre-course-survey",
+    "href": "pre-work/04-survey.html#complete-pre-course-survey",
+    "title": "Git for Scientists (Summer 2026)",
+    "section": "",
+    "text": "Survey still under development\n\n\n\nThis survey is still under development. It will be published on Tuesday, 07 July 2026, once registration is completed. Please check back then.\n\n\nAt this point, we need your GitHub username. We have also developed this survey to get an idea about your prior knowledge. It will help us shape the course to ensure that everyone gets an opportunity to learn at their pace.\n\nComplete the survey by Wednesday, 08 July 2026: link to be added once the survey is published.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 4: Pre-course survey"
+    ]
+  },
+  {
+    "objectID": "pre-work/02-install-r.html",
+    "href": "pre-work/02-install-r.html",
+    "title": "Git for Scientists (Summer 2026)",
+    "section": "",
+    "text": "Do you already have a R version of R and RStudio?\n\n\n\n\n\nEven if you already have R and RStudio installed, it is strongly recommended to download and install the latest versions to ensure compatibility with Quarto and access to the newest features and updates. Up-to-date installations help avoid unexpected errors and ensure all features work as intended.\n\n\n\n\nR for Windows: https://cran.rstudio.com/bin/windows/\nR for Mac: https://cran.rstudio.com/bin/macosx/ (Note: Two separate downloads for Apple silicon M1, M2, etc. Macs and Intel Macs)\nRStudio: https://posit.co/download/rstudio-desktop/ for your operating system (Windows or Mac)\nFollow your operating system’s installation process",
+    "crumbs": [
+      "Pre-course work",
+      "Step 2: Install R & RStudio"
+    ]
+  },
+  {
+    "objectID": "pre-work/02-install-r.html#download-and-install-r-and-rstudio",
+    "href": "pre-work/02-install-r.html#download-and-install-r-and-rstudio",
+    "title": "Git for Scientists (Summer 2026)",
+    "section": "",
+    "text": "Do you already have a R version of R and RStudio?\n\n\n\n\n\nEven if you already have R and RStudio installed, it is strongly recommended to download and install the latest versions to ensure compatibility with Quarto and access to the newest features and updates. Up-to-date installations help avoid unexpected errors and ensure all features work as intended.\n\n\n\n\nR for Windows: https://cran.rstudio.com/bin/windows/\nR for Mac: https://cran.rstudio.com/bin/macosx/ (Note: Two separate downloads for Apple silicon M1, M2, etc. Macs and Intel Macs)\nRStudio: https://posit.co/download/rstudio-desktop/ for your operating system (Windows or Mac)\nFollow your operating system’s installation process",
+    "crumbs": [
+      "Pre-course work",
+      "Step 2: Install R & RStudio"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Pre-course work: Git for Scientists",
@@ -30,8 +321,8 @@
     ]
   },
   {
-    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop",
-    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop",
+    "objectID": "index.html#what-do-i-need-to-prepare-before-the-workshop",
+    "href": "index.html#what-do-i-need-to-prepare-before-the-workshop",
     "title": "Pre-course work: Git for Scientists",
     "section": " What do I need to prepare before the workshop?",
     "text": "What do I need to prepare before the workshop?\nPrior to the workshop, complete the following seven steps:\n\nStep 1: Setup Element as a communication channel\nStep 2: Download and install R and RStudio\nStep 3: Get an account for GitHub\nStep 4: Complete the pre-course survey by Wednesday, 08 July 2026.\nStep 5: Create a personal access token for GitHub\nStep 6: Install Git\nStep 7: Check your complete setup by Monday, 13 July 2026. (unlocked after pre-course survey is completed)\nStep 8: Read “Why Git? Why GitHub?” from “Happy Git and GitHub for the useR”!",
@@ -70,288 +361,41 @@
     ]
   },
   {
-    "objectID": "1-1-website/1-1-website.html#meet-the-lecturer",
-    "href": "1-1-website/1-1-website.html#meet-the-lecturer",
-    "title": "I have no title, yet.",
-    "section": "Meet the lecturer",
-    "text": "Meet the lecturer\nLars Schöbitz\n\n\nEnvironmental Engineer \nRetired researcher \nRStudio certified instructor\nData steward at ETHZ"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#learning-objectives",
-    "href": "1-1-website/1-1-website.html#learning-objectives",
-    "title": "I have no title, yet.",
-    "section": "Learning objectives",
-    "text": "Learning objectives\nBy the end of this workshop, participants will be able to:\n\nCreate and clone repositories, and explain the difference between cloning and forking a repository.\nApply the standard Git workflow using RStudio IDE—including pull, stage, commit, and push changes to GitHub.\nWork with branches and pull requests by creating and managing development branches (using both RStudio and the terminal), submitting pull requests, and reviewing and commenting on others’ pull requests to facilitate code review and collaborative development."
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#teaching-strategy",
-    "href": "1-1-website/1-1-website.html#teaching-strategy",
-    "title": "I have no title, yet.",
-    "section": "Teaching strategy",
-    "text": "Teaching strategy\n\nTeaching Git on a “need to know” basis\nTeaching only a very small subset of Git’s functionality\nCreating a safe space for learning and getting support (use Element)\nFocus on collaboration aspects of GitHub"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#schedule",
-    "href": "1-1-website/1-1-website.html#schedule",
-    "title": "I have no title, yet.",
-    "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:30 - 10:00\nArrival\n\n\n10:00 - 10:30\nGitHub for Collaboration\n\n\n10:30 - 11:00\nCreate & Clone\n\n\n11:00 - 11:15\nBreak\n\n\n11:15 - 12:00\nClone & Branch\n\n\n12:00 - 12:45\nLunch Break\n\n\n12:45 - 13:30\nPull Request & Merge\n\n\n13:30 - 13:45\nPublish\n\n\n13:45 - 14:00\nWrap-up\n\n\n14:00 - 14:30\nBuffer"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#your-turn",
-    "href": "1-1-website/1-1-website.html#your-turn",
-    "title": "I have no title, yet.",
-    "section": "Your turn",
-    "text": "Your turn\n\nThink about the last time you published a written document:\n\nWhich tasks gave you joy?\nWhich tasks were challenging or frustrating?\n\n\nTake some written notes."
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#section",
-    "href": "1-1-website/1-1-website.html#section",
-    "title": "I have no title, yet.",
+    "objectID": "pre-work/01-element.html",
+    "href": "pre-work/01-element.html",
+    "title": "Communication in a chat",
     "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nWhy GitHub?\n“Collaboration is the most compelling reason to manage a project with Git and GitHub. My definition of collaboration includes hands-on participation by multiple people, including your past and future self, as well as an asymmetric model, in which some people are active makers and others only read or review.” - Jenny Bryan\nBryan J. 2017. Excuse me, do you have a moment to talk about version control? PeerJ Preprints 5:e3159v2 https://doi.org/10.7287/peerj.preprints.3159v2"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#section-1",
-    "href": "1-1-website/1-1-website.html#section-1",
-    "title": "I have no title, yet.",
-    "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nWhy GitHub?\nThe concepts, mechanics, and vocabulary of GitHub (and underlying software Git) are new and unfamiliar when we get started or learn more about its capabilities.\nHadley Wickham and Jenny Bryan use the analogy of climbing to describe how GitHub can keep us safe while also showing our journey.\nWickham & Bryan, R Packages https://r-pkgs.org/preface.html"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#section-2",
-    "href": "1-1-website/1-1-website.html#section-2",
-    "title": "I have no title, yet.",
-    "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps streamline our work\nGitHub helps streamline our work because it takes care of otherwise time-consuming bookkeeping and unrelenting file tracking.\nInstead of spending our time inspecting and fretting over whether “analysis_final_v2.xls” or “analysis_final_final.xls” is truly the final version, with GitHub we can be confident in our completed analysis and move to the next step."
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#section-3",
-    "href": "1-1-website/1-1-website.html#section-3",
-    "title": "I have no title, yet.",
-    "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps us support others and existing work.\nWhether we are organizing, improving documentation, or asking and answering questions, GitHub helps us provide support to our collaborators on projects, whether we are writing code or not."
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#section-4",
-    "href": "1-1-website/1-1-website.html#section-4",
-    "title": "I have no title, yet.",
-    "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps us reuse existing work\nGitHub helps us reuse existing work, which lets us learn and build from other people’s shared experience rather than reinventing on our own.\nPlus, the existing work gets better each time someone tries it and shares their experience back. Whether it’s code, documentation, or knowledge through posted conversations, reusing existing things can save time, resources, and frustration. Importantly, reuse also expands the value of existing work while celebrating the contributions of others."
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#section-5",
-    "href": "1-1-website/1-1-website.html#section-5",
-    "title": "I have no title, yet.",
-    "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps us contribute\nGitHub helps us contribute ideas through code, text, and more, with less worry about file management. This helps us feel more confident to share work-in-progress and contribute to existing work, knowing that we won’t break things.\nIt also helps us share work earlier that might be imperfect, since we can still make changes from there."
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#section-6",
-    "href": "1-1-website/1-1-website.html#section-6",
-    "title": "I have no title, yet.",
-    "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps us fail safely\nGitHub helps us fail safely. Because we can return to previous versions easily, painful consequences of failing are reduced. We can more bravely try things and start making contributions, knowing that some (many?) will fail - but won’t be catastrophic!\nWhen we fail, we’ll be able to start again from where we left off (instead of from the ground), and a clear history can help us learn from the past."
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#section-7",
-    "href": "1-1-website/1-1-website.html#section-7",
-    "title": "I have no title, yet.",
-    "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nHarness the power of GitHub.\nOnce we are empowered to work collaboratively with GitHub, it opens up a whole new world of projects that feel more welcoming because we can contribute in many different ways, using familiar approaches, and evolving with new possibilities as they emerge.\nThis transferrable ability to collaborate and develop confidence for trying new things might just be the best thing about GitHub."
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#section-8",
-    "href": "1-1-website/1-1-website.html#section-8",
-    "title": "I have no title, yet.",
-    "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub for the win!\nGitHub enables new frontiers for open science as we collaborate, share, and publish more easily.\nAnd, it is critical to continually question who is safe to participate with these tools. Who is not yet participating, and why? Barriers to access include past exclusion, skills, and support. Let’s all work empathetically and inclusively to help make more people feel welcome and safe using these powerful tools so we can all go further, together."
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#read-on-github-strategies",
-    "href": "1-1-website/1-1-website.html#read-on-github-strategies",
-    "title": "I have no title, yet.",
-    "section": "Read on: GitHub strategies",
-    "text": "Read on: GitHub strategies\n\nOpenscapes Champions Lesson Series. Lowndes et al. (2024): https://openscapes.github.io/series/core-lessons/github/\nExcuse Me, Do You Have a Moment to Talk About Version Control? https://peerj.com/preprints/3159/"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#your-turn-1",
-    "href": "1-1-website/1-1-website.html#your-turn-1",
-    "title": "I have no title, yet.",
-    "section": "Your turn",
-    "text": "Your turn\n\n\nOpen github.com\nNavigate to your profile\nWhen completed, place a yellow sticky note on your laptop\n\n\nNow, follow along the screen and instructor."
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#your-turn-2",
-    "href": "1-1-website/1-1-website.html#your-turn-2",
-    "title": "I have no title, yet.",
-    "section": "Your turn",
-    "text": "Your turn\n\n\nClone a GitHub repository of a fellow student (browse: github.com/username to fine the repository website)\nOpen the repository in RStudio IDE\nMake a change the README.md file\nSave the file\nStage, Commit & Push the changes\n\n\n\n\nid\nusername1\nusername2\n\n\n\n\n1\nMadliboom\nfdaguanno\n\n\n2\nTillRoost\nmag-wer\n\n\n3\npacotvj99\nlouma3000\n\n\n4\nellahenninger\nCamilleFournierDL\n\n\n5\ndheimgartner\njineichen\n\n\n6\nvgeier\nrjalcock\n\n\n7\nJonathan-Elkobi\nrainbow-train\n\n\n\n\nWhat happens?"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#read-on-fork-and-clone",
-    "href": "1-1-website/1-1-website.html#read-on-fork-and-clone",
-    "title": "I have no title, yet.",
-    "section": "Read on: Fork and clone",
-    "text": "Read on: Fork and clone\n\nHappy Git and GitHub for the useR"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#take-a-break",
-    "href": "1-1-website/1-1-website.html#take-a-break",
-    "title": "I have no title, yet.",
-    "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Leave your emails alone.\n\n\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#your-turn-3",
-    "href": "1-1-website/1-1-website.html#your-turn-3",
-    "title": "I have no title, yet.",
-    "section": "Your turn",
-    "text": "Your turn\n\n\nOpen the landing page for the GitHub organization ‘gitforsci-cis’: https://github.com/gitforsci-cis (try to use your bookmark)\nNavigate down the page to the section “Repositories” and use the search field to find the repository called man-washinvestments-USERNAME where USERNAME is your GitHub username.\nClick on the repository name to open it.\nClick on the green “Code” button.\nCopy the HTTPS URL to your clipboard by clicking on the clipboard sign.\nOpen the RStudio IDE on your laptop.\nClick on File &gt; New Project in the top menu bar\nClick on Version Control.\nClick on Git.\nClick on Browse… button.\nUse the folder structure you created in the pre-course work (e.g. ~/Documents/gitrepos/gh-org-gitforsci-cis)\nPaste the HTTPS URL from GitHub into the “Repository URL” field.\nClick on the “Create Project” button.\nFind the Files tab in the bottom right pane of RStudio.\n\n\nPlace the yellow sticky note on your laptop when you have completed the task."
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#our-turn",
-    "href": "1-1-website/1-1-website.html#our-turn",
-    "title": "I have no title, yet.",
-    "section": "Our turn",
-    "text": "Our turn\n\n\nWe will continue together with man-washinvestments-USERNAME where USERNAME is your GitHub"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#our-turn-1",
-    "href": "1-1-website/1-1-website.html#our-turn-1",
-    "title": "I have no title, yet.",
-    "section": "Our turn",
-    "text": "Our turn\n\n\nWe will continue together with man-washinvestments-USERNAME where USERNAME is your GitHub"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#github-pages",
-    "href": "1-1-website/1-1-website.html#github-pages",
-    "title": "I have no title, yet.",
-    "section": "GitHub Pages",
-    "text": "GitHub Pages\n\nGitHub Pages is a free service for hosting static websites. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites."
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#minimal-example---requirements",
-    "href": "1-1-website/1-1-website.html#minimal-example---requirements",
-    "title": "I have no title, yet.",
-    "section": "Minimal Example - Requirements",
-    "text": "Minimal Example - Requirements\n\nLanding site needs to be stored as index.qmd\nThe index.qmd needs to be stored in docs folder\nExample works well for a report/article as a stand-alone page\nQuarto provides a framework and examples for more complex websites: https://quarto.org/docs/websites/"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#quarto-websites",
-    "href": "1-1-website/1-1-website.html#quarto-websites",
-    "title": "I have no title, yet.",
-    "section": "Quarto websites",
-    "text": "Quarto websites\n\nWebsites are essentially format: html + a Quarto Project\nBut a website is different than format: html in that it has multiple pages\nWebsites can be your first exploration into Quarto Projects\nWebsites and books are very similar in that they associate multiple pages/resources into a connected resource"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#learn-more",
-    "href": "1-1-website/1-1-website.html#learn-more",
-    "title": "I have no title, yet.",
-    "section": "Learn more",
-    "text": "Learn more\n\nquarto.org/docs/websites"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#wrap-up-1",
-    "href": "1-1-website/1-1-website.html#wrap-up-1",
-    "title": "I have no title, yet.",
-    "section": "Wrap-up",
-    "text": "Wrap-up\n\nPost your collected questions in the Element channel\nStart your first project using Git & GitHub (already have a project? Read here)\nKeep learning by doing (create PRs to yourself)\nShare your knowledge with others (help them get started)"
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#thanks",
-    "href": "1-1-website/1-1-website.html#thanks",
-    "title": "I have no title, yet.",
-    "section": "Thanks!",
-    "text": "Thanks!\nSlides created via revealjs and Quarto: https://quarto.org/docs/presentations/revealjs/\nAccess slides as PDF on GitHub\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International."
-  },
-  {
-    "objectID": "1-1-website/1-1-website.html#references",
-    "href": "1-1-website/1-1-website.html#references",
-    "title": "I have no title, yet.",
-    "section": "References",
-    "text": "References\n\n\n\n\nLowndes, Julia Stewart, Stefanie Butland, and Erin Robinson. 2024. Openscapes/Series: Openscapes Lesson Series V2024.11.0. Version v2024.12.0. Zenodo. https://doi.org/10.5281/zenodo.14428503."
-  },
-  {
-    "objectID": "0-1-pre-work/07-first-repo.html",
-    "href": "0-1-pre-work/07-first-repo.html",
-    "title": "Test your setup",
-    "section": "",
-    "text": "In this task, we will test if your setup is complete and working. You will also already perform the first steps of using Git version control and GitHub.",
+    "text": "Emails are not a very quick, responsive way of communication. We avoid them by prioritising other channels. At ETH Zurich, we have a chat server that is used by many courses and groups. It is based on the Matrix protocol, which is an open standard for secure, decentralised communication. The chat client is called Element, providing the open source, free-of-charge Slack-like experience. It is available to you as a student and is hosted by ETH Zurich.\nYou can reach out to the course instructor and other students any time, and we have a way to stay in touch beyond the course itself.\n\n\n\n\n\n\nNot affiliated with ETH Zurich?\n\n\n\nSome of you are not affiliated with ETH Zurich. The steps below will be different for you. Please create an account for Element with your email address and use it to login to the application.\n\n\nTo set it up, please follow the steps below:\n\nDownload and install Element: https://element.io/download. It is available on Linux, Mac OS, and Windows.\nOpen the Element app on your device.\nClick Sign in\nIn the Homeserver section, click Edit\n\n\n\nSelect Other homeserver and type studentchat.ethz.ch\n\n\n\nSign in with your ETH username and ETH password\n\n\n\nVerify your device by creating a security key and store it securely. You will need the security key for adding another devices or logging back in on the same device.\n\n\n\nWelcome! Get in touch with me on Element by searching my ETH username lschoebitz.\n\n 9. Join the space for this workshop using this link: https://matrix.to/#/#gitforsci:staffchat.ethz.ch",
     "crumbs": [
       "Pre-course work",
-      "Step 7: Test your setup"
+      "Step 1: Communication"
     ]
   },
   {
-    "objectID": "0-1-pre-work/07-first-repo.html#step-1-accept-invitation-from-github",
-    "href": "0-1-pre-work/07-first-repo.html#step-1-accept-invitation-from-github",
-    "title": "Test your setup",
-    "section": "Step 1: Accept invitation from GitHub",
-    "text": "Step 1: Accept invitation from GitHub\n\n\n\n\n\n\nImportantNo email from GitHub?\n\n\n\nConfirm that you have completed the pre-course survey and let me know on Element that you did not yet receive an email from GitHub to accept the invitation to the gitforsci-cis organization. I will send you an invitation.\n\n\n\nOpen your email that you used to register for your GitHub account.\nFine the email from GitHub with the subject “[GitHub] @larnsce invited you to join the ‘gitforsci-cis’ organization”.\nClick on the link in the email to accept the invitation and work through the steps that follow in your browser to accept the invitation.",
+    "objectID": "pre-work/03-github-acc.html",
+    "href": "pre-work/03-github-acc.html",
+    "title": "Git for Scientists (Summer 2026)",
+    "section": "",
+    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub Account, please fill out the pre-course survey immediately. We will then invite you to join the GitHub Organisation for the course.",
     "crumbs": [
       "Pre-course work",
-      "Step 7: Test your setup"
+      "Step 3: GitHub account"
     ]
   },
   {
-    "objectID": "0-1-pre-work/07-first-repo.html#step-2-create-a-bookmark",
-    "href": "0-1-pre-work/07-first-repo.html#step-2-create-a-bookmark",
-    "title": "Test your setup",
-    "section": "Step 2: Create a bookmark",
-    "text": "Step 2: Create a bookmark\n\nOpen the landing page for the GitHub organization ‘gitforsci-cis’: https://github.com/gitforsci-cis\n\n\n\nBookmark this page in your browser.\n\n\n\nOrganize the bookmark into a folder called “gitforsci-cis” or similar.\n\n\n\nUse this folder to add other bookmarks that are relevant for this workshop (e.g. the workshop website)",
+    "objectID": "pre-work/03-github-acc.html#get-an-account-for-github",
+    "href": "pre-work/03-github-acc.html#get-an-account-for-github",
+    "title": "Git for Scientists (Summer 2026)",
+    "section": "",
+    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub Account, please fill out the pre-course survey immediately. We will then invite you to join the GitHub Organisation for the course.",
     "crumbs": [
       "Pre-course work",
-      "Step 7: Test your setup"
+      "Step 3: GitHub account"
     ]
   },
   {
-    "objectID": "0-1-pre-work/07-first-repo.html#step-3-clone-a-repository",
-    "href": "0-1-pre-work/07-first-repo.html#step-3-clone-a-repository",
-    "title": "Test your setup",
-    "section": "Step 3: Clone a repository",
-    "text": "Step 3: Clone a repository\n\nOpen the landing page for the GitHub organization ‘gitforsci-cis’: https://github.com/gitforsci-cis (try to use your bookmark)\nNavigate down the page to the section “Repositories” and use the search field to find the repository called 01-setup--USERNAME where USERNAME is your GitHub username.\n\n\n\nClick on the repository name to open it.\n\n\n\n\n\n\n\nImportantNo repository with your username?\n\n\n\nLet me know on Element that your repository is not there. I will create it for you.\n\n\n\n\nClick on the green “Code” button.\n\n\n\nCopy the HTTPS URL to your clipboard by clicking on the clipboard sign.\n\n\n\nOpen the RStudio IDE on your laptop.\n\n\n\n\n\n\n\nNote\n\n\n\nI am working on MacOS, but the steps should be similar on Windows.\n\n\n\n\nClick on File &gt; New Project in the top menu bar\n\n\n\nClick on Version Control.\n\n\n\nClick on Git.\n\n\n\nClick on Browse… button.\n\n\n\nCreate a folder structure for Git repositories (e.g. ~/Documents/gitrepos/gh-org-gitforsci-cis)\n\n\n\n\n\n\n\nNoteFolder structure for Git repositories and naming conventions\n\n\n\nI highly recommend storing folders that are Git repositories separate from other folders. This will help you to keep track of your Git repositories and avoid confusion with other folders.\nCreate this directory structure locally on your laptop and not in folders that are synced with cloud storage (e.g. Google Drive, Dropbox, OneDrive, etc.).\nIn your directory structure, you can create a folder called gitrepos. Inside this folder, you can create subfolders for each GitHub organization you are working with (e.g. gh-org-gitforsci-cis). A subfolder for your personal profile would be gh-rainbow-train. If you also work with GitLab or other Git hosting platforms, use the abbreviation for the platform in the folder name (e.g. gitrepos/gh-rainbow-train, gitrepos/gl-rainbow-train, etc.).\nThis strategy will help you to keep track of your Git repositories and the respective platforms and organisations they belong to.\n\n\n\nPaste the HTTPS URL from GitHub into the “Repository URL” field.\n\n\n\nClick on the “Create Project” button.\n\n\n\nFind the Files tab in the bottom right pane of RStudio.",
-    "crumbs": [
-      "Pre-course work",
-      "Step 7: Test your setup"
-    ]
-  },
-  {
-    "objectID": "0-1-pre-work/07-first-repo.html#step-4-introduce-yourself-to-git",
-    "href": "0-1-pre-work/07-first-repo.html#step-4-introduce-yourself-to-git",
-    "title": "Test your setup",
-    "section": "Step 4: Introduce yourself to Git",
-    "text": "Step 4: Introduce yourself to Git\n\nIn the Files tab, find the file called git-configuration.qmd and click on it to open it in the editor pane (top left window).\nFollow the instructions inside the file to introduce yourself to Git.",
-    "crumbs": [
-      "Pre-course work",
-      "Step 7: Test your setup"
-    ]
-  },
-  {
-    "objectID": "0-1-pre-work/07-first-repo.html#step-5-commit-and-push-your-changes",
-    "href": "0-1-pre-work/07-first-repo.html#step-5-commit-and-push-your-changes",
-    "title": "Test your setup",
-    "section": "Step 5: Commit and push your changes",
-    "text": "Step 5: Commit and push your changes\n\nNavigate to the Git pane in the top-right window of RStudio\n\n\n\nCheck the box next to the git-configuration.qmd and git-configuration.html file to stage them for commit\n\n\n\nClick on the “Commit” button.\n\n\n\n\n\n\n\n\nNote\n\n\n\nA new window will open. In the top left corner, you will see the files that you have staged for commit. In the bottom windows, you can see the changes you made in the file. The top right corner shows the “Commit message” which cannot be blank. Each Commit requires a Commit message.\n\n\n\nEnter commit message in the “Commit message” field. For example: “complete git configuration”\n\n\n\nClick on the “Commit” button\n\n\n\nClose the window that pops up.\n\n\n\nClick on the “Push” button\n\n\n\n\n\n\n\nNote\n\n\n\nAbove the top left window, you will now see the sentence “Your branch is ahead of ‘origin/main’ by 1 commit”. This means that you have made changes to your local repository that are not yet pushed to GitHub. It also means that your Commit was successful.\n\n\n\n\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields.\n\n\n\n\n\n\n\nImportantUse your GitHub Personal Access Token (PAT) for the Password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) as a password. You created it in step 5 of the pre-course work to authenticate your GitHub account and push your changes to GitHub.\n\n\n\nDoes the pop window say HEAD -&gt; main as the final statement? Close it. If not, copy what it says and get in touch on Element now.\n\n\n\nVerify that the changes have been pushed to GitHub by refreshing the page in your browser.\n\n\n\n\n\n\n\nNote\n\n\n\nIs the window in the top left empty? This means that you have no changes to commit.\nHas the sentence “Your branch is ahead of ‘origin/main’ by 1 commit” disappeared? This means that your changes have been pushed to GitHub successfully.",
-    "crumbs": [
-      "Pre-course work",
-      "Step 7: Test your setup"
-    ]
-  },
-  {
-    "objectID": "0-1-pre-work/07-first-repo.html#step-6-open-an-issue-on-github",
-    "href": "0-1-pre-work/07-first-repo.html#step-6-open-an-issue-on-github",
-    "title": "Test your setup",
-    "section": "Step 6: Open an issue on GitHub",
-    "text": "Step 6: Open an issue on GitHub\n\nOpen the landing page for the GitHub organization ‘gitforsci-cis’: https://github.com/gitforsci-cis (try to use your bookmark)\nNavigate down the page to the section “Repositories” and use the search field to find the repository called 01-setup-rainbow-train-USERNAME where USERNAME is your GitHub username.\nClick on the repository name to open it.\nClick on the “Issues” tab.\n\n\n\nClick on the green “New issue” button.\n\n\n\nIn the “Add a title” field write: “Completed test setup tasks”.\n\n\n\nIn the “Add a description” field, leave me a comment and tag the course instructor @larnsce.\n\n\n\nIn the “Assignees” field, assign yourself by selecting your GitHub username.\n\n\nCongratulations! Your setup is complete and you have mastered the key steps of using Git and GitHub. Now onto some important reading and I will see you in class.",
-    "crumbs": [
-      "Pre-course work",
-      "Step 7: Test your setup"
-    ]
-  },
-  {
-    "objectID": "0-1-pre-work/05-github-pat.html",
-    "href": "0-1-pre-work/05-github-pat.html",
+    "objectID": "pre-work/05-github-pat.html",
+    "href": "pre-work/05-github-pat.html",
     "title": "Create a GitHub Personal Access Token",
     "section": "",
     "text": "Create a GitHub Personal Access Token\nHere are the step-by-step instructions to set up a GitHub personal access token (PAT):\n\n\n\n\n\n\nImportant\n\n\n\nTreat your access tokens like passwords and keep them secure (e.g. a password managing software).\n\n\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\n\n\n\n\n\n\nTip\n\n\n\nYou will need this token in your pre-course work and throughout the workshop.",
@@ -361,129 +405,85 @@
     ]
   },
   {
-    "objectID": "0-1-pre-work/03-github-acc.html",
-    "href": "0-1-pre-work/03-github-acc.html",
-    "title": "Git for Scientists (Summer 2026)",
+    "objectID": "pre-work/07-first-repo.html",
+    "href": "pre-work/07-first-repo.html",
+    "title": "Test your setup",
     "section": "",
-    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nTipUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub Account, please fill out the pre-course survey immediately. We will then invite you to join the GitHub Organisation for the course.",
+    "text": "In this task, we will test if your setup is complete and working. You will also already perform the first steps of using Git version control and GitHub.",
     "crumbs": [
       "Pre-course work",
-      "Step 3: GitHub account"
+      "Step 7: Test your setup"
     ]
   },
   {
-    "objectID": "0-1-pre-work/03-github-acc.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-get-an-account-for-github",
-    "href": "0-1-pre-work/03-github-acc.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-get-an-account-for-github",
-    "title": "Git for Scientists (Summer 2026)",
-    "section": "",
-    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nTipUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub Account, please fill out the pre-course survey immediately. We will then invite you to join the GitHub Organisation for the course.",
+    "objectID": "pre-work/07-first-repo.html#step-1-accept-invitation-from-github",
+    "href": "pre-work/07-first-repo.html#step-1-accept-invitation-from-github",
+    "title": "Test your setup",
+    "section": "Step 1: Accept invitation from GitHub",
+    "text": "Step 1: Accept invitation from GitHub\n\n\n\n\n\n\nNo email from GitHub?\n\n\n\nConfirm that you have completed the pre-course survey and let me know on Element that you did not yet receive an email from GitHub to accept the invitation to the gitforsci-cis organization. I will send you an invitation.\n\n\n\nOpen your email that you used to register for your GitHub account.\nFine the email from GitHub with the subject “[GitHub] @larnsce invited you to join the ‘gitforsci-cis’ organization”.\nClick on the link in the email to accept the invitation and work through the steps that follow in your browser to accept the invitation.",
     "crumbs": [
       "Pre-course work",
-      "Step 3: GitHub account"
+      "Step 7: Test your setup"
     ]
   },
   {
-    "objectID": "0-1-pre-work/01-element.html",
-    "href": "0-1-pre-work/01-element.html",
-    "title": "Communication in a chat",
-    "section": "",
-    "text": "Emails are not a very quick, responsive way of communication. We avoid them by prioritising other channels. At ETH Zurich, we have a chat server that is used by many courses and groups. It is based on the Matrix protocol, which is an open standard for secure, decentralised communication. The chat client is called Element, providing the open source, free-of-charge Slack-like experience. It is available to you as a student and is hosted by ETH Zurich.\nYou can reach out to the course instructor and other students any time, and we have a way to stay in touch beyond the course itself.\n\n\n\n\n\n\nWarningNot affiliated with ETH Zurich?\n\n\n\nSome of you are not affiliated with ETH Zurich. The steps below will be different for you. Please create an account for Element with your email address and use it to login to the application.\n\n\nTo set it up, please follow the steps below:\n\nDownload and install Element: https://element.io/download. It is available on Linux, Mac OS, and Windows.\nOpen the Element app on your device.\nClick Sign in\nIn the Homeserver section, click Edit\n\n\n\nSelect Other homeserver and type studentchat.ethz.ch\n\n\n\nSign in with your ETH username and ETH password\n\n\n\nVerify your device by creating a security key and store it securely. You will need the security key for adding another devices or logging back in on the same device.\n\n\n\nWelcome! Get in touch with me on Element by searching my ETH username lschoebitz.\n\n 9. Join the space for this workshop using this link: https://matrix.to/#/#gitforsci:staffchat.ethz.ch",
+    "objectID": "pre-work/07-first-repo.html#step-2-create-a-bookmark",
+    "href": "pre-work/07-first-repo.html#step-2-create-a-bookmark",
+    "title": "Test your setup",
+    "section": "Step 2: Create a bookmark",
+    "text": "Step 2: Create a bookmark\n\nOpen the landing page for the GitHub organization ‘gitforsci-cis’: https://github.com/gitforsci-cis\n\n\n\nBookmark this page in your browser.\n\n\n\nOrganize the bookmark into a folder called “gitforsci-cis” or similar.\n\n\n\nUse this folder to add other bookmarks that are relevant for this workshop (e.g. the workshop website)",
     "crumbs": [
       "Pre-course work",
-      "Step 1: Communication"
+      "Step 7: Test your setup"
     ]
   },
   {
-    "objectID": "0-1-pre-work/02-install-r.html",
-    "href": "0-1-pre-work/02-install-r.html",
-    "title": "Git for Scientists (Summer 2026)",
-    "section": "",
-    "text": "ImportantDo you already have a R version of R and RStudio?\n\n\n\n\n\nEven if you already have R and RStudio installed, it is strongly recommended to download and install the latest versions to ensure compatibility with Quarto and access to the newest features and updates. Up-to-date installations help avoid unexpected errors and ensure all features work as intended.\n\n\n\n\nR for Windows: https://cran.rstudio.com/bin/windows/\nR for Mac: https://cran.rstudio.com/bin/macosx/ (Note: Two separate downloads for Apple silicon M1, M2, etc. Macs and Intel Macs)\nRStudio: https://posit.co/download/rstudio-desktop/ for your operating system (Windows or Mac)\nFollow your operating system’s installation process",
+    "objectID": "pre-work/07-first-repo.html#step-3-clone-a-repository",
+    "href": "pre-work/07-first-repo.html#step-3-clone-a-repository",
+    "title": "Test your setup",
+    "section": "Step 3: Clone a repository",
+    "text": "Step 3: Clone a repository\n\nOpen the landing page for the GitHub organization ‘gitforsci-cis’: https://github.com/gitforsci-cis (try to use your bookmark)\nNavigate down the page to the section “Repositories” and use the search field to find the repository called 01-setup--USERNAME where USERNAME is your GitHub username.\n\n\n\nClick on the repository name to open it.\n\n\n\n\n\n\n\nNo repository with your username?\n\n\n\nLet me know on Element that your repository is not there. I will create it for you.\n\n\n\n\nClick on the green “Code” button.\n\n\n\nCopy the HTTPS URL to your clipboard by clicking on the clipboard sign.\n\n\n\nOpen the RStudio IDE on your laptop.\n\n\n\n\n\n\n\nNote\n\n\n\nI am working on MacOS, but the steps should be similar on Windows.\n\n\n\n\nClick on File &gt; New Project in the top menu bar\n\n\n\nClick on Version Control.\n\n\n\nClick on Git.\n\n\n\nClick on Browse… button.\n\n\n\nCreate a folder structure for Git repositories (e.g. ~/Documents/gitrepos/gh-org-gitforsci-cis)\n\n\n\n\n\n\n\nFolder structure for Git repositories and naming conventions\n\n\n\nI highly recommend storing folders that are Git repositories separate from other folders. This will help you to keep track of your Git repositories and avoid confusion with other folders.\nCreate this directory structure locally on your laptop and not in folders that are synced with cloud storage (e.g. Google Drive, Dropbox, OneDrive, etc.).\nIn your directory structure, you can create a folder called gitrepos. Inside this folder, you can create subfolders for each GitHub organization you are working with (e.g. gh-org-gitforsci-cis). A subfolder for your personal profile would be gh-rainbow-train. If you also work with GitLab or other Git hosting platforms, use the abbreviation for the platform in the folder name (e.g. gitrepos/gh-rainbow-train, gitrepos/gl-rainbow-train, etc.).\nThis strategy will help you to keep track of your Git repositories and the respective platforms and organisations they belong to.\n\n\n\nPaste the HTTPS URL from GitHub into the “Repository URL” field.\n\n\n\nClick on the “Create Project” button.\n\n\n\nFind the Files tab in the bottom right pane of RStudio.",
     "crumbs": [
       "Pre-course work",
-      "Step 2: Install R & RStudio"
+      "Step 7: Test your setup"
     ]
   },
   {
-    "objectID": "0-1-pre-work/02-install-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6465203e7d7d-download-and-install-r-and-rstudio",
-    "href": "0-1-pre-work/02-install-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6465203e7d7d-download-and-install-r-and-rstudio",
-    "title": "Git for Scientists (Summer 2026)",
-    "section": "",
-    "text": "ImportantDo you already have a R version of R and RStudio?\n\n\n\n\n\nEven if you already have R and RStudio installed, it is strongly recommended to download and install the latest versions to ensure compatibility with Quarto and access to the newest features and updates. Up-to-date installations help avoid unexpected errors and ensure all features work as intended.\n\n\n\n\nR for Windows: https://cran.rstudio.com/bin/windows/\nR for Mac: https://cran.rstudio.com/bin/macosx/ (Note: Two separate downloads for Apple silicon M1, M2, etc. Macs and Intel Macs)\nRStudio: https://posit.co/download/rstudio-desktop/ for your operating system (Windows or Mac)\nFollow your operating system’s installation process",
+    "objectID": "pre-work/07-first-repo.html#step-4-introduce-yourself-to-git",
+    "href": "pre-work/07-first-repo.html#step-4-introduce-yourself-to-git",
+    "title": "Test your setup",
+    "section": "Step 4: Introduce yourself to Git",
+    "text": "Step 4: Introduce yourself to Git\n\nIn the Files tab, find the file called git-configuration.qmd and click on it to open it in the editor pane (top left window).\nFollow the instructions inside the file to introduce yourself to Git.",
     "crumbs": [
       "Pre-course work",
-      "Step 2: Install R & RStudio"
+      "Step 7: Test your setup"
     ]
   },
   {
-    "objectID": "0-1-pre-work/04-survey.html",
-    "href": "0-1-pre-work/04-survey.html",
-    "title": "Git for Scientists (Summer 2026)",
-    "section": "",
-    "text": "NoteSurvey still under development\n\n\n\nThis survey is still under development. It will be published on Tuesday, 07 July 2026, once registration is completed. Please check back then.\n\n\nAt this point, we need your GitHub username. We have also developed this survey to get an idea about your prior knowledge. It will help us shape the course to ensure that everyone gets an opportunity to learn at their pace.\n\nComplete the survey by Wednesday, 08 July 2026: link to be added once the survey is published.",
+    "objectID": "pre-work/07-first-repo.html#step-5-commit-and-push-your-changes",
+    "href": "pre-work/07-first-repo.html#step-5-commit-and-push-your-changes",
+    "title": "Test your setup",
+    "section": "Step 5: Commit and push your changes",
+    "text": "Step 5: Commit and push your changes\n\nNavigate to the Git pane in the top-right window of RStudio\n\n\n\nCheck the box next to the git-configuration.qmd and git-configuration.html file to stage them for commit\n\n\n\nClick on the “Commit” button.\n\n\n\n\n\n\n\n\nNote\n\n\n\nA new window will open. In the top left corner, you will see the files that you have staged for commit. In the bottom windows, you can see the changes you made in the file. The top right corner shows the “Commit message” which cannot be blank. Each Commit requires a Commit message.\n\n\n\nEnter commit message in the “Commit message” field. For example: “complete git configuration”\n\n\n\nClick on the “Commit” button\n\n\n\nClose the window that pops up.\n\n\n\nClick on the “Push” button\n\n\n\n\n\n\n\nNote\n\n\n\nAbove the top left window, you will now see the sentence “Your branch is ahead of ‘origin/main’ by 1 commit”. This means that you have made changes to your local repository that are not yet pushed to GitHub. It also means that your Commit was successful.\n\n\n\n\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields.\n\n\n\n\n\n\n\nUse your GitHub Personal Access Token (PAT) for the Password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) as a password. You created it in step 5 of the pre-course work to authenticate your GitHub account and push your changes to GitHub.\n\n\n\nDoes the pop window say HEAD -&gt; main as the final statement? Close it. If not, copy what it says and get in touch on Element now.\n\n\n\nVerify that the changes have been pushed to GitHub by refreshing the page in your browser.\n\n\n\n\n\n\n\nNote\n\n\n\nIs the window in the top left empty? This means that you have no changes to commit.\nHas the sentence “Your branch is ahead of ‘origin/main’ by 1 commit” disappeared? This means that your changes have been pushed to GitHub successfully.",
     "crumbs": [
       "Pre-course work",
-      "Step 4: Pre-course survey"
+      "Step 7: Test your setup"
     ]
   },
   {
-    "objectID": "0-1-pre-work/04-survey.html#complete-pre-course-survey",
-    "href": "0-1-pre-work/04-survey.html#complete-pre-course-survey",
-    "title": "Git for Scientists (Summer 2026)",
-    "section": "",
-    "text": "NoteSurvey still under development\n\n\n\nThis survey is still under development. It will be published on Tuesday, 07 July 2026, once registration is completed. Please check back then.\n\n\nAt this point, we need your GitHub username. We have also developed this survey to get an idea about your prior knowledge. It will help us shape the course to ensure that everyone gets an opportunity to learn at their pace.\n\nComplete the survey by Wednesday, 08 July 2026: link to be added once the survey is published.",
+    "objectID": "pre-work/07-first-repo.html#step-6-open-an-issue-on-github",
+    "href": "pre-work/07-first-repo.html#step-6-open-an-issue-on-github",
+    "title": "Test your setup",
+    "section": "Step 6: Open an issue on GitHub",
+    "text": "Step 6: Open an issue on GitHub\n\nOpen the landing page for the GitHub organization ‘gitforsci-cis’: https://github.com/gitforsci-cis (try to use your bookmark)\nNavigate down the page to the section “Repositories” and use the search field to find the repository called 01-setup-rainbow-train-USERNAME where USERNAME is your GitHub username.\nClick on the repository name to open it.\nClick on the “Issues” tab.\n\n\n\nClick on the green “New issue” button.\n\n\n\nIn the “Add a title” field write: “Completed test setup tasks”.\n\n\n\nIn the “Add a description” field, leave me a comment and tag the course instructor @larnsce.\n\n\n\nIn the “Assignees” field, assign yourself by selecting your GitHub username.\n\n\nCongratulations! Your setup is complete and you have mastered the key steps of using Git and GitHub. Now onto some important reading and I will see you in class.",
     "crumbs": [
       "Pre-course work",
-      "Step 4: Pre-course survey"
+      "Step 7: Test your setup"
     ]
   },
   {
-    "objectID": "0-1-pre-work/06-install-git.html",
-    "href": "0-1-pre-work/06-install-git.html",
-    "title": "Download and install Git",
-    "section": "",
-    "text": "Tip\n\n\n\nBe ready to get in touch on Element for this task.\n\n\n\n\nInstall Git for Windows after download from this direct download link: https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe\nGit for Windows is also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.\nWe like this because Git for Windows leaves the Git executable in a conventional location, which will help you and other programs, e.g. RStudio, find it and use it. This also supports a transition to more expert use, because the “Git Bash” shell will be useful as you venture outside of R/RStudio.\n\nNOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.\nNote that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.\n\n\n\n\nIt’s slightly more complicated. Please get in touch through Element if you have questions.\nOption 1 (highly recommended): Install the Xcode command line tools (not all of Xcode), which includes Git.\n\nOpen the Terminal application on Mac and type xcode-select --install. If you don’t have it installed, you will be prompted to install the Xcode command line tools. Follow the instructions.\n\nOption 2 (recommended): If you anticipate getting heavily into scientific computing, you’re going to be installing and updating lots of software. You should check out Homebrew, “the missing package manager for OS X”. Among many other things, it can install Git for you.\n\nOpen the Terminal application on Mac, copy and run the following line:\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nThis will install Homebrew. You may be prompted for your password. If you are, type it in and hit enter. You won’t see anything appear on the screen as you type, but it is working.\nOnce you have Homebrew installed, type and run this in the terminal.\nbrew install git\nWe will confirm in Test your setup that you have Git installed and working.",
-    "crumbs": [
-      "Pre-course work",
-      "Step 6: Install Git"
-    ]
-  },
-  {
-    "objectID": "0-1-pre-work/06-install-git.html#install-git-windows",
-    "href": "0-1-pre-work/06-install-git.html#install-git-windows",
-    "title": "Download and install Git",
-    "section": "",
-    "text": "Install Git for Windows after download from this direct download link: https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe\nGit for Windows is also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.\nWe like this because Git for Windows leaves the Git executable in a conventional location, which will help you and other programs, e.g. RStudio, find it and use it. This also supports a transition to more expert use, because the “Git Bash” shell will be useful as you venture outside of R/RStudio.\n\nNOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.\nNote that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.",
-    "crumbs": [
-      "Pre-course work",
-      "Step 6: Install Git"
-    ]
-  },
-  {
-    "objectID": "0-1-pre-work/06-install-git.html#macos",
-    "href": "0-1-pre-work/06-install-git.html#macos",
-    "title": "Download and install Git",
-    "section": "",
-    "text": "It’s slightly more complicated. Please get in touch through Element if you have questions.\nOption 1 (highly recommended): Install the Xcode command line tools (not all of Xcode), which includes Git.\n\nOpen the Terminal application on Mac and type xcode-select --install. If you don’t have it installed, you will be prompted to install the Xcode command line tools. Follow the instructions.\n\nOption 2 (recommended): If you anticipate getting heavily into scientific computing, you’re going to be installing and updating lots of software. You should check out Homebrew, “the missing package manager for OS X”. Among many other things, it can install Git for you.\n\nOpen the Terminal application on Mac, copy and run the following line:\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nThis will install Homebrew. You may be prompted for your password. If you are, type it in and hit enter. You won’t see anything appear on the screen as you type, but it is working.\nOnce you have Homebrew installed, type and run this in the terminal.\nbrew install git\nWe will confirm in Test your setup that you have Git installed and working.",
-    "crumbs": [
-      "Pre-course work",
-      "Step 6: Install Git"
-    ]
-  },
-  {
-    "objectID": "0-1-pre-work/08-big-picture.html",
-    "href": "0-1-pre-work/08-big-picture.html",
-    "title": "Why Git? Why GitHub?",
-    "section": "",
-    "text": "The book Happy Git and GitHub for the useR is a great resource for learning about Git and GitHub. Today you have worked through almost all elements of the first 14 chapters of the book. I am taking a lot of resources from the book itself and highly recommend it as a reference for you.\nBefore we start our workshop on Tuesday, it is important to learn about the big picture of Git and GitHub. This will help you understand why we are using these tools and how they fit into the larger context of data science and research.\n\nRead the chapter, “Why Git? Why GitHub?” https://happygitwithr.com/big-picture\nTake notes and write down questions. Ask them on Element.\n\nReading this will allow me to focus on the practical aspects of Git and GitHub during the workshop, rather than spending time on the theory. I will assume you have read this chapter and understand the big picture of why we are using these tools.",
-    "crumbs": [
-      "Pre-course work",
-      "Step 8: Why Git? Why GitHub?"
-    ]
-  },
-  {
-    "objectID": "1-1-website/index.html",
-    "href": "1-1-website/index.html",
+    "objectID": "workshop/index.html",
+    "href": "workshop/index.html",
     "title": "Git for Scientists",
     "section": "",
     "text": "View slides in full screen | Download slides as PDF",
@@ -493,8 +493,8 @@
     ]
   },
   {
-    "objectID": "1-1-website/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646973706c6179203e7d7d-slides",
-    "href": "1-1-website/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646973706c6179203e7d7d-slides",
+    "objectID": "workshop/index.html#slides",
+    "href": "workshop/index.html#slides",
     "title": "Git for Scientists",
     "section": "",
     "text": "View slides in full screen | Download slides as PDF",
@@ -504,11 +504,11 @@
     ]
   },
   {
-    "objectID": "1-1-website/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-readings",
-    "href": "1-1-website/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-readings",
+    "objectID": "workshop/index.html#readings",
+    "href": "workshop/index.html#readings",
     "title": "Git for Scientists",
     "section": " Readings",
-    "text": "Readings\n\nOpenscapes Champions Lesson Series. Lowndes et al. (2024): https://openscapes.github.io/series/core-lessons/github/\nExcuse Me, Do You Have a Moment to Talk About Version Control? https://peerj.com/preprints/3159/",
+    "text": "Readings\n\nOpenscapes Champions Lesson Series. Lowndes, Butland, and Robinson (2024): https://openscapes.github.io/series/core-lessons/github/\nExcuse Me, Do You Have a Moment to Talk About Version Control? https://peerj.com/preprints/3159/",
     "crumbs": [
       "Workshop",
       "Git for Scientists"
