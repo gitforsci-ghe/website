@@ -387,7 +387,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_e6c77e14" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_f0f6b50e" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -475,7 +475,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_59366ee1" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_24dddde2" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -498,7 +498,7 @@ Lars Schöbitz
 
 <img data-src="images/pixel-art-tree.png" style="width:50.0%" alt="Pixel art of a small character resting under a large leafy tree on a green hill, next to a gentle stream under a clear blue sky." class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_c5913688" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_cdace78d" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -527,20 +527,60 @@ Lars Schöbitz
           display:block!important;
       }</style></aside>
 </section>
-<section id="my-turn-1" class="slide level2">
+<section id="my-turn-1" class="slide level2 smaller">
 <h2>My turn</h2>
-<!-- Filled by issue #15: commit cycle, revert demo, credentials moment -->
-</section>
-<section id="your-turn-1" class="slide level2">
-<h2>Your turn</h2>
-<!-- Filled by issue #15: learners run the full pull-stage-commit-push cycle -->
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_63416304" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<div class="task">
+<p>Watch first; your turn comes next.</p>
+<ol type="1">
+<li>Edit <code>README.md</code>: add the line “This repo contains a personal website.” Save, and spot the blue M in the Git tab.</li>
+<li>The cycle, always in this order: <span class="highlight-yellow">Pull, Stage, Commit, Push</span>.</li>
+<li>Look at the history: the commit is a labelled snapshot, on GitHub too.</li>
+<li>Now on purpose: one bad commit, and <span class="highlight-yellow">one revert</span>.</li>
+</ol>
+<div class="hand">
+<p>Follow along on the screen.</p>
 </div>
 </div>
 <aside class="notes">
-<p>Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.</p>
+<p>Demo script:</p>
+<ul>
+<li>Edit README, save, point out the blue M next to the file in the Git tab.</li>
+<li>Sync in 4 steps, said as a mantra: Pull (nothing to get, but build the habit), Stage (checkbox), Commit (message: “describe the repo content”), Push. Then open the repo on GitHub and show the commit message and the file change there.</li>
+<li>Revert demo, instructor only: make a deliberately bad commit (for example delete half the README), commit it, then revert it via the history; show that the history keeps both the mistake and the undo. Say the safety-net message out loud: almost everything in Git is reversible. This answers the recorded cis question “how do I take a commit back?”</li>
+<li>Credentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 5. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="your-turn-1" class="slide level2 smaller">
+<h2>Your turn</h2>
+<div class="task">
+<ol type="1">
+<li>Edit your <code>README.md</code>: describe your website in one sentence. Save.</li>
+<li>Run the full cycle: <span class="highlight-yellow">Pull, Stage, Commit, Push</span>, with a commit message that says what changed.</li>
+<li>Open your repository on github.com and find your commit message and your change.</li>
+</ol>
+<div class="hand">
+<p>Place the yellow sticky note on your laptop when you can see your commit on GitHub.</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_acebd44f" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<aside class="notes">
+<p>Goal: every learner has at least 2 commits pushed to their own repo by 11:45. The revert stays instructor-only in this block; learners do not revert here.</p>
+<p>Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -567,7 +607,7 @@ Lars Schöbitz
 <!-- Filled by issue #16: clone the partner's repo, hit the push wall -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_0941e5c8" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_30c7dfa5" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -619,7 +659,7 @@ Lars Schöbitz
 <!-- Filled by issue #17: learners branch on their own manuscript repo -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_345e0e45" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_71b85710" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -667,7 +707,7 @@ Lars Schöbitz
 <!-- Filled by issue #18: learners open, review, and merge PRs in pairs -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_8a4a1c00" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_e64cfcff" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -733,7 +773,7 @@ Lars Schöbitz
 <!-- Filled by issue #20: closing concept map, compare with the morning map -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_d8457bcf" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_68602ab4" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
