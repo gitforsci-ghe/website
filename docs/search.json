@@ -32,7 +32,7 @@
     "href": "workshop/slides.html#your-turn",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break."
+    "text": "Your turn\n\n\nOn github.com: create a repository called website, public, with a README.\nIn RStudio: File &gt; New Project &gt; Version Control &gt; Git, paste the HTTPS URL, create the project inside your gitrepos folder.\nFind .gitignore and website.Rproj in the Git tab with their yellow ? icons.\n\n\nPlace the yellow sticky note on your laptop when you see the two yellow ? icons.\n\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break."
   },
   {
     "objectID": "workshop/slides.html#section",
@@ -555,7 +555,7 @@
     "href": "workshop/slides.html#my-turn",
     "title": "GitHub for Collaboration",
     "section": "My turn",
-    "text": "My turn"
+    "text": "My turn\n\nWatch first; your turn comes next. Hands off the keyboards.\n\nOn github.com: create a new repository called website, public, with a README.\nIn RStudio: two settings that save future pain (Tools &gt; Global Options): never save .RData on exit, and use the native pipe |&gt;.\nClone: green “Code” button, copy the HTTPS URL, then File &gt; New Project &gt; Version Control &gt; Git.\nInspect what arrived: the Files tab, the Git tab, and two new files with yellow ? icons: .gitignore and website.Rproj.\n\n\nFollow along on the screen.\n\n\n\nDemo script, letter by letter as rehearsed:\n\nCreate the repo on GitHub with README so the clone is never empty.\nRStudio settings: Tools &gt; Global Options &gt; General: Save workspace to .RData on exit: Never. Tools &gt; Global Options &gt; Code: check use native pipe operator.\nClone into the pre-work folder structure (~/Documents/gitrepos/gh-org-gitforsci-ghe is the example from the setup test; for their own repos, gh-USERNAME).\nThe .Rproj and .gitignore explanation lives here in the notes, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees them but nobody has told it what to do with them yet. This answers the cis learner question “why do .Rproj session files show up?”. Mention hidden files exist (files starting with a dot are hidden by the operating system)."
   },
   {
     "objectID": "workshop/slides.html#live-drawing-the-commit-cycle",
