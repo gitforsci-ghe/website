@@ -604,7 +604,7 @@
     "href": "workshop/slides.html#your-turn-4",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\n\n\n\n\nThis block is protected. If the day is behind, B7 Publish is cut, never this. Bounded regroup: 2 minutes, then park-and-pair."
+    "text": "Your turn\n\n\nOpen a pull request from your dev branch. Title it so your reviewer knows what changed.\nRequest a review from your B4 partner (the username on your sticky note).\nReview your partner’s pull request: at least one line comment, then submit the review.\nAfter your review arrives: merge your own PR, confirm.\nIn RStudio: switch to main, Pull, and switch back to dev.\n\nPartner not ready? Review the seed PR in your own repository instead. Nobody waits on anybody.\n\nPlace the yellow sticky note on your laptop after the switch back to dev.\n\n\n\n\n\n\n\n\nDefault path: partner-pair review with the B4 sticky-note pairs. Fallback path, on the slide itself: every manuscript repo has a pre-opened seed PR (“Seed: suggestions to review”), so the exercise never blocks on a partner’s progress. If no helper was found by 11 July (kill criterion 4), flip the default: everyone reviews their seed PR, pairs become the bonus.\nTarget: every learner opens a PR, writes at least one line comment, merges, and pulls, inside 35 minutes.\nThis block is protected. If the day is behind, B7 Publish is cut, never this. Bounded regroup: 2 minutes, then park-and-pair."
   },
   {
     "objectID": "workshop/slides.html#live-drawing-the-pull-request",
@@ -618,7 +618,7 @@
     "href": "workshop/slides.html#my-turn-3",
     "title": "GitHub for Collaboration",
     "section": "My turn",
-    "text": "My turn"
+    "text": "My turn\n\nWatch first; your turn comes next. This is the moment the day was built for.\n\nOn GitHub: switch to dev, click Compare & pull request. Title: “Add author details to manuscript”.\nRequest a reviewer. Walk the tabs: Commits, Files changed.\nAs the reviewer: start a review, leave line comments, submit.\nOpen an issue with a task list next to the PR.\nMerge, confirm, tick off the task in the issue.\nBack in RStudio: switch to main, read the message, Pull. Then the gotcha: switch back to dev.\n\n\nFollow along on the screen.\n\n\n\nDemo script from the cis lesson plan. Review comment examples to reuse verbatim: “That’s not a good title for a manuscript. Please suggest 2 alternatives.” and “This list is not complete.”\nRead the “behind origin/main, can be fast-forwarded” message out loud when switching to main. The switch-back-to-dev gotcha is a recorded cis learner stumble; name it as a habit: merged? Then pull main, and go back to your working branch."
   },
   {
     "objectID": "workshop/slides.html#your-turn-5",
