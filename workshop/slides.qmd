@@ -184,13 +184,41 @@ Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
 Live drawing 1 (local and remote): two boxes, clone first, then push and pull. Under 3 minutes. Fallback: the export in the appendix of the handbook, images/drawing-1-local-remote.png.
 :::
 
-## My turn
+## My turn {.smaller}
 
-<!-- Filled by issue #14: create and clone demo script -->
+:::: task
+Watch first; your turn comes next. Hands off the keyboards.
 
-## Your turn
+1.  On github.com: create a new repository called `website`, public, with a README.
+2.  In RStudio: two settings that save future pain (Tools \> Global Options): never save `.RData` on exit, and use the native pipe `|>`.
+3.  Clone: green "Code" button, copy the HTTPS URL, then File \> New Project \> Version Control \> Git.
+4.  Inspect what arrived: the Files tab, the Git tab, and two new files with yellow ? icons: `.gitignore` and `website.Rproj`.
 
-<!-- Filled by issue #14: learners create and clone their website repo -->
+::: hand
+Follow along on the screen.
+:::
+::::
+
+::: {.notes}
+Demo script, letter by letter as rehearsed:
+
+- Create the repo on GitHub with README so the clone is never empty.
+- RStudio settings: Tools > Global Options > General: Save workspace to .RData on exit: Never. Tools > Global Options > Code: check use native pipe operator.
+- Clone into the pre-work folder structure (~/Documents/gitrepos/gh-org-gitforsci-ghe is the example from the setup test; for their own repos, gh-USERNAME).
+- The .Rproj and .gitignore explanation lives here in the notes, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees them but nobody has told it what to do with them yet. This answers the cis learner question "why do .Rproj session files show up?". Mention hidden files exist (files starting with a dot are hidden by the operating system).
+:::
+
+## Your turn {.smaller}
+
+:::: task
+1.  On github.com: create a repository called `website`, public, with a README.
+2.  In RStudio: File \> New Project \> Version Control \> Git, paste the HTTPS URL, create the project inside your `gitrepos` folder.
+3.  Find `.gitignore` and `website.Rproj` in the Git tab with their yellow ? icons.
+
+::: hand
+Place the yellow sticky note on your laptop when you see the two yellow ? icons.
+:::
+::::
 
 ```{r}
 #| echo: false

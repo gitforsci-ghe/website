@@ -387,7 +387,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_81a4fbdf" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_e6c77e14" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -427,16 +427,55 @@ Lars Schöbitz
           display:block!important;
       }</style></aside>
 </section>
-<section id="my-turn" class="slide level2">
+<section id="my-turn" class="slide level2 smaller">
 <h2>My turn</h2>
-<!-- Filled by issue #14: create and clone demo script -->
+<div class="task">
+<p>Watch first; your turn comes next. Hands off the keyboards.</p>
+<ol type="1">
+<li>On github.com: create a new repository called <code>website</code>, public, with a README.</li>
+<li>In RStudio: two settings that save future pain (Tools &gt; Global Options): never save <code>.RData</code> on exit, and use the native pipe <code>|&gt;</code>.</li>
+<li>Clone: green “Code” button, copy the HTTPS URL, then File &gt; New Project &gt; Version Control &gt; Git.</li>
+<li>Inspect what arrived: the Files tab, the Git tab, and two new files with yellow ? icons: <code>.gitignore</code> and <code>website.Rproj</code>.</li>
+</ol>
+<div class="hand">
+<p>Follow along on the screen.</p>
+</div>
+</div>
+<aside class="notes">
+<p>Demo script, letter by letter as rehearsed:</p>
+<ul>
+<li>Create the repo on GitHub with README so the clone is never empty.</li>
+<li>RStudio settings: Tools &gt; Global Options &gt; General: Save workspace to .RData on exit: Never. Tools &gt; Global Options &gt; Code: check use native pipe operator.</li>
+<li>Clone into the pre-work folder structure (~/Documents/gitrepos/gh-org-gitforsci-ghe is the example from the setup test; for their own repos, gh-USERNAME).</li>
+<li>The .Rproj and .gitignore explanation lives here in the notes, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees them but nobody has told it what to do with them yet. This answers the cis learner question “why do .Rproj session files show up?”. Mention hidden files exist (files starting with a dot are hidden by the operating system).</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="your-turn" class="slide level2">
+<section id="your-turn" class="slide level2 smaller">
 <h2>Your turn</h2>
-<!-- Filled by issue #14: learners create and clone their website repo -->
+<div class="task">
+<ol type="1">
+<li>On github.com: create a repository called <code>website</code>, public, with a README.</li>
+<li>In RStudio: File &gt; New Project &gt; Version Control &gt; Git, paste the HTTPS URL, create the project inside your <code>gitrepos</code> folder.</li>
+<li>Find <code>.gitignore</code> and <code>website.Rproj</code> in the Git tab with their yellow ? icons.</li>
+</ol>
+<div class="hand">
+<p>Place the yellow sticky note on your laptop when you see the two yellow ? icons.</p>
+</div>
+</div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_12fd4c4e" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_59366ee1" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -459,7 +498,7 @@ Lars Schöbitz
 
 <img data-src="images/pixel-art-tree.png" style="width:50.0%" alt="Pixel art of a small character resting under a large leafy tree on a green hill, next to a gentle stream under a clear blue sky." class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_6969aa82" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_c5913688" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -497,7 +536,7 @@ Lars Schöbitz
 <!-- Filled by issue #15: learners run the full pull-stage-commit-push cycle -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_33d256c8" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_63416304" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -528,7 +567,7 @@ Lars Schöbitz
 <!-- Filled by issue #16: clone the partner's repo, hit the push wall -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_469dcfe6" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_0941e5c8" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -580,7 +619,7 @@ Lars Schöbitz
 <!-- Filled by issue #17: learners branch on their own manuscript repo -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_6a93a3dd" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_345e0e45" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -628,7 +667,7 @@ Lars Schöbitz
 <!-- Filled by issue #18: learners open, review, and merge PRs in pairs -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_4ff32ae4" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_8a4a1c00" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -694,7 +733,7 @@ Lars Schöbitz
 <!-- Filled by issue #20: closing concept map, compare with the morning map -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_78bd276a" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_d8457bcf" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
