@@ -494,20 +494,30 @@ This block is protected. If the day is behind, B7 Publish is cut, never this. Bo
 
 # B7: Publish {background-color="#4C326A"}
 
-## Our turn
+## Our turn {.smaller}
 
-<!-- Filled by issue #19: publish via GitHub Pages together -->
+::: task
+Together, on your merged manuscript:
 
-::: {.notes}
-First block to cut. If running behind at 14:05, skip to the fallback slide and hand the time to B8.
+1.  Open your `man-washinvestments-USERNAME` repository on GitHub.
+2.  [Settings \> Pages]{.highlight-yellow}: Deploy from a branch, branch `main`, folder `/docs`, Save.
+3.  Wait for the address to appear, then paste it into the repository [description]{.highlight-yellow} (About, gear icon).
+4.  Open the address: your manuscript is [on the web]{.highlight-yellow}.
 :::
 
-## Fallback: what publishing looks like
+::: {.notes}
+First block to cut. If running behind at 14:05, skip to the fallback slide and hand the time to B8. Pages can take a minute to build; use the wait to point at the docs folder in the repo, which is where the rendered manuscript lives.
+:::
 
-<!-- Filled by issue #19: pre-published example, steps in one breath -->
+## Fallback: what publishing looks like {.smaller}
+
+-   One published example: <https://gitforsci-ghe.github.io/website/>
+-   The steps, in one breath: [Settings, Pages, deploy from branch, docs folder, save]{.highlight-yellow}.
+-   The website index and the slides you used today are published [exactly this way]{.highlight-yellow}.
+-   Your manuscript repo is ready for it whenever you try, tonight included.
 
 ::: {.notes}
-This slide stands alone for the cut case.
+This slide stands alone for the cut case: show it, say the one breath, hand the time to B8.
 :::
 
 # B8: Concept map revisit and wrap-up {background-color="#4C326A"}

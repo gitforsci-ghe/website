@@ -144,7 +144,7 @@
     "href": "workshop/slides.html#our-turn",
     "title": "GitHub for Collaboration",
     "section": "Our turn",
-    "text": "Our turn\n\n\nFirst block to cut. If running behind at 14:05, skip to the fallback slide and hand the time to B8."
+    "text": "Our turn\n\nTogether, on your merged manuscript:\n\nOpen your man-washinvestments-USERNAME repository on GitHub.\nSettings &gt; Pages: Deploy from a branch, branch main, folder /docs, Save.\nWait for the address to appear, then paste it into the repository description (About, gear icon).\nOpen the address: your manuscript is on the web.\n\n\n\nFirst block to cut. If running behind at 14:05, skip to the fallback slide and hand the time to B8. Pages can take a minute to build; use the wait to point at the docs folder in the repo, which is where the rendered manuscript lives."
   },
   {
     "objectID": "workshop/slides.html#our-turn-1",
@@ -632,7 +632,7 @@
     "href": "workshop/slides.html#fallback-what-publishing-looks-like",
     "title": "GitHub for Collaboration",
     "section": "Fallback: what publishing looks like",
-    "text": "Fallback: what publishing looks like\n\n\nThis slide stands alone for the cut case."
+    "text": "Fallback: what publishing looks like\n\nOne published example: https://gitforsci-ghe.github.io/website/\nThe steps, in one breath: Settings, Pages, deploy from branch, docs folder, save.\nThe website index and the slides you used today are published exactly this way.\nYour manuscript repo is ready for it whenever you try, tonight included.\n\n\nThis slide stands alone for the cut case: show it, say the one breath, hand the time to B8."
   },
   {
     "objectID": "workshop/slides.html#your-turn-6",
