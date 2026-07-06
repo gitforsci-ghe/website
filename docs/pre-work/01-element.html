@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>install-git – Git for Scientists (Summer 2026)</title>
+<title>element – Git for Scientists (Summer 2026)</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -23,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -67,18 +29,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../0-1-pre-work/07-first-repo.html" rel="next">
-<link href="../0-1-pre-work/05-github-pat.html" rel="prev">
+<link href="../pre-work/02-install-r.html" rel="next">
+<link href="../index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9e8276b62c651af996c1284318e853b2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9ee3256a3e45378b90f4801445c17176.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -125,7 +87,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../0-1-pre-work/06-install-git.html">Step 6: Install Git</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/01-element.html">Step 1: Communication</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -137,8 +99,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../images/ghe-square-logo-vector.svg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="../images/ghe-square-logo-vector.svg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="../images/ghe-square-logo-vector.svg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://github.com/gitforsci-ghe/website" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
@@ -158,49 +119,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../0-1-pre-work/01-element.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/01-element.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Step 1: Communication</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../0-1-pre-work/02-install-r.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/02-install-r.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 2: Install R &amp; RStudio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../0-1-pre-work/03-github-acc.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/03-github-acc.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 3: GitHub account</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../0-1-pre-work/04-survey.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/04-survey.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 4: Pre-course survey</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../0-1-pre-work/05-github-pat.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/05-github-pat.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 5: GitHub PAT</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../0-1-pre-work/06-install-git.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pre-work/06-install-git.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 6: Install Git</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../0-1-pre-work/07-first-repo.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/07-first-repo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 7: Test your setup</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../0-1-pre-work/08-big-picture.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/08-big-picture.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 8: Why Git? Why GitHub?</span></a>
   </div>
 </li>
@@ -217,7 +178,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../1-1-website/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../workshop/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Git for Scientists</span></a>
   </div>
 </li>
@@ -228,70 +189,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#download-and-install-git" id="toc-download-and-install-git" class="nav-link active" data-scroll-target="#download-and-install-git">Download and install Git</a>
-  <ul class="collapse">
-  <li><a href="#install-git-windows" id="toc-install-git-windows" class="nav-link" data-scroll-target="#install-git-windows">Windows</a></li>
-  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos">macOS</a></li>
-  </ul></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/0-1-pre-work/06-install-git.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../0-1-pre-work/06-install-git.html">Step 6: Install Git</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/01-element.html">Step 1: Communication</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Communication in a chat</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="download-and-install-git" class="level1">
-<h1>Download and install Git</h1>
-<div class="callout callout-style-default callout-tip callout-titled">
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Emails are not a very quick, responsive way of communication. We avoid them by prioritising other channels. At ETH Zurich, we have a chat server that is used by many courses and groups. It is based on the Matrix protocol, which is an open standard for secure, decentralised communication. The chat client is called Element, providing the open source, free-of-charge Slack-like experience. It is available to you as a student and is hosted by ETH Zurich.</p>
+<p>You can reach out to the course instructor and other students any time, and we have a way to stay in touch beyond the course itself.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Not affiliated with ETH Zurich?
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Be ready to get in touch on Element for this task.</p>
+<p>Some of you are not affiliated with ETH Zurich. The steps below will be different for you. Please create an account for Element with your email address and use it to login to the application.</p>
 </div>
 </div>
-<section id="install-git-windows" class="level2">
-<h2 class="anchored" data-anchor-id="install-git-windows">Windows</h2>
-<p>Install <a href="https://git-for-windows.github.io/">Git for Windows</a> after download from this direct download link: <a href="https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe" class="uri">https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe</a></p>
-<p>Git for Windows is also known as <code>msysgit</code> or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.</p>
-<p>We like this because Git for Windows leaves the Git executable in a conventional location, which will help you and other programs, e.g.&nbsp;RStudio, find it and use it. This also supports a transition to more expert use, because the “Git Bash” shell will be useful as you venture outside of R/RStudio.</p>
-<ul>
-<li><strong>NOTE:</strong> When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.</li>
-<li>Note that RStudio for Windows prefers for Git to be installed below <code>C:/Program Files</code> and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at <code>C:/Program Files/Git/bin/git.exe</code>. Unless you have specific reasons to otherwise, follow this convention.</li>
-</ul>
-</section>
-<section id="macos" class="level2">
-<h2 class="anchored" data-anchor-id="macos">macOS</h2>
-<p>It’s slightly more complicated. Please get in touch through Element if you have questions.</p>
-<p><strong>Option 1</strong> (<em>highly recommended</em>): Install the Xcode command line tools (<strong>not all of Xcode</strong>), which includes Git.</p>
-<ul>
-<li>Open the Terminal application on Mac and type <code>xcode-select --install</code>. If you don’t have it installed, you will be prompted to install the Xcode command line tools. Follow the instructions.</li>
-</ul>
-<p><strong>Option 2</strong> (<em>recommended</em>): If you anticipate getting heavily into scientific computing, you’re going to be installing and updating lots of software. You should check out <a href="http://brew.sh">Homebrew</a>, “the missing package manager for OS X”. Among many other things, it can install Git for you.</p>
-<ul>
-<li>Open the Terminal application on Mac, copy and run the following line:</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/bin/bash</span> <span class="at">-c</span> <span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="va">)</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>This will install Homebrew. You may be prompted for your password. If you are, type it in and hit enter. You won’t see anything appear on the screen as you type, but it is working.</p>
-<p>Once you have Homebrew installed, type and run this in the terminal.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>We will confirm in <a href="../0-1-pre-work/07-first-repo.html">Test your setup</a> that you have Git installed and working.</p>
+<p>To set it up, please follow the steps below:</p>
+<ol type="1">
+<li><p>Download and install Element: <a href="https://element.io/download" class="uri">https://element.io/download</a>. It is available on Linux, Mac OS, and Windows.</p></li>
+<li><p>Open the Element app on your device.</p></li>
+<li><p>Click <strong>Sign in</strong></p></li>
+<li><p>In the Homeserver section, click <strong>Edit</strong></p></li>
+</ol>
+<p><img src="images/screenshot-element-server.png" class="img-fluid"></p>
+<ol start="5" type="1">
+<li>Select <strong>Other homeserver</strong> and type <strong>studentchat.ethz.ch</strong></li>
+</ol>
+<p><img src="images/screenshot-element-signin.png" class="img-fluid"></p>
+<ol start="6" type="1">
+<li>Sign in with your <strong>ETH username</strong> and <strong>ETH password</strong></li>
+</ol>
+<p><img src="images/screenshot-element-user-details.png" class="img-fluid"></p>
+<ol start="7" type="1">
+<li>Verify your device by creating a security key and store it securely. You will need the security key for adding another devices or logging back in on the same device.</li>
+</ol>
+<p><img src="images/screenshot-element-verify.png" class="img-fluid"></p>
+<ol start="8" type="1">
+<li>Welcome! Get in touch with me on Element by searching my ETH username <code>lschoebitz</code>.</li>
+</ol>
+<p><img src="images/screenshot-element-lschoebitz.png" class="img-fluid"> 9. Join the space for this workshop using this link: <a href="https://matrix.to/#/#gitforsci:staffchat.ethz.ch" class="uri">https://matrix.to/#/#gitforsci:staffchat.ethz.ch</a></p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -345,14 +308,13 @@ Tip
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -698,13 +660,13 @@ Tip
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../0-1-pre-work/05-github-pat.html" class="pagination-link" aria-label="Step 5: GitHub PAT">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Step 5: GitHub PAT</span>
+      <a href="../index.html" class="pagination-link" aria-label="Pre-course work">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Pre-course work</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../0-1-pre-work/07-first-repo.html" class="pagination-link" aria-label="Step 7: Test your setup">
-        <span class="nav-page-text">Step 7: Test your setup</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pre-work/02-install-r.html" class="pagination-link" aria-label="Step 2: Install R &amp; RStudio">
+        <span class="nav-page-text">Step 2: Install R &amp; RStudio</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -716,7 +678,7 @@ Tip
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/0-1-pre-work/06-install-git.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/01-element.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+  <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Lars Schöbitz">
   <title>Git for Scientists (Summer 2026) – I have no title, yet.</title>
@@ -19,9 +19,6 @@
   <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -37,6 +34,7 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
+      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -53,7 +51,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-a2a51a21ed10e6f388688ebe8319926c.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-f392e6fc5038c3ce1a089f98493819d4.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -225,15 +223,15 @@ Lars Schöbitz
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">09:30 - 10:00</td>
-<td style="text-align: left;"><a href="1-1-website/">Arrival</a></td>
+<td style="text-align: left;"><a href="workshop/">Arrival</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">10:00 - 10:30</td>
-<td style="text-align: left;"><a href="1-1-website/">GitHub for Collaboration</a></td>
+<td style="text-align: left;"><a href="workshop/">GitHub for Collaboration</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">10:30 - 11:00</td>
-<td style="text-align: left;"><a href="1-1-website/">Create &amp; Clone</a></td>
+<td style="text-align: left;"><a href="workshop/">Create &amp; Clone</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">11:00 - 11:15</td>
@@ -241,7 +239,7 @@ Lars Schöbitz
 </tr>
 <tr class="odd">
 <td style="text-align: left;">11:15 - 12:00</td>
-<td style="text-align: left;"><a href="1-1-website/">Clone &amp; Branch</a></td>
+<td style="text-align: left;"><a href="workshop/">Clone &amp; Branch</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">12:00 - 12:45</td>
@@ -249,15 +247,15 @@ Lars Schöbitz
 </tr>
 <tr class="odd">
 <td style="text-align: left;">12:45 - 13:30</td>
-<td style="text-align: left;"><a href="1-1-website/">Pull Request &amp; Merge</a></td>
+<td style="text-align: left;"><a href="workshop/">Pull Request &amp; Merge</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">13:30 - 13:45</td>
-<td style="text-align: left;"><a href="1-1-website/">Publish</a></td>
+<td style="text-align: left;"><a href="workshop/">Publish</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">13:45 - 14:00</td>
-<td style="text-align: left;"><a href="1-1-website/">Wrap-up</a></td>
+<td style="text-align: left;"><a href="workshop/">Wrap-up</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">14:00 - 14:30</td>
@@ -282,7 +280,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_edccd8c9" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_5a33fd66" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -483,7 +481,7 @@ Lars Schöbitz
 <section id="read-on-github-strategies" class="slide level2">
 <h2>Read on: GitHub strategies</h2>
 <ol type="1">
-<li><p>Openscapes Champions Lesson Series. <span class="citation" data-cites="julia_stewart_lowndes_2024_14428503">Lowndes et al. (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>: <a href="https://openscapes.github.io/series/core-lessons/github/" class="uri">https://openscapes.github.io/series/core-lessons/github/</a></p></li>
+<li><p>Openscapes Champions Lesson Series. <span class="citation" data-cites="julia_stewart_lowndes_2024_14428503">Lowndes, Butland, and Robinson (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>: <a href="https://openscapes.github.io/series/core-lessons/github/" class="uri">https://openscapes.github.io/series/core-lessons/github/</a></p></li>
 <li><p>Excuse Me, Do You Have a Moment to Talk About Version Control? <a href="https://peerj.com/preprints/3159/" class="uri">https://peerj.com/preprints/3159/</a></p></li>
 </ol>
 </section></section>
@@ -506,7 +504,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_5b0e0742" minutes="1" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_29321041" minutes="1" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -572,7 +570,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_008cfaed" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_e4a32292" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -588,7 +586,7 @@ Lars Schöbitz
 
 <img data-src="images/pixel-art-tree.png" style="width:50.0%" alt="This is the prompt generated by DALL-E 3 by OpenAI: A pixel art scene representing the concept of taking a break. The scene shows a serene outdoor setting with a clear blue sky. In the center, a small pixelated character is sitting comfortably on a bright green grassy hill, under the shade of a large, leafy tree. The character is depicted in a relaxed pose, perhaps sipping a warm beverage from a small cup. Nearby, a gentle stream flows, and a few fluffy white clouds drift in the sky. The overall mood of the image is peaceful and calming, emphasizing the tranquility of taking a break in nature." class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_43b63b14" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_f3575be0" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -625,7 +623,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_51b8418b" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_cffbe09c" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -643,7 +641,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_771d2353" minutes="1" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_103726ec" minutes="1" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -661,7 +659,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_345363c9" minutes="1" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_d24ab727" minutes="1" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -714,16 +712,16 @@ Lars Schöbitz
 <section id="thanks" class="slide level2">
 <h2>Thanks!</h2>
 <p>Slides created via revealjs and Quarto: <a href="https://quarto.org/docs/presentations/revealjs/" class="uri">https://quarto.org/docs/presentations/revealjs/</a></p>
-<p>Access slides as <a href="https://github.com/gitforsci-cis/website/raw/main/1-1-website/1-1-website.pdf">PDF on GitHub</a></p>
+<p>Access slides as <a href="https://github.com/gitforsci-ghe/website/raw/main/workshop/slides.pdf">PDF on GitHub</a></p>
 <p>All material is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 </section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-julia_stewart_lowndes_2024_14428503" class="csl-entry" role="listitem">
-Lowndes, Julia Stewart, Stefanie Butland, and Erin Robinson. 2024. <em>Openscapes/Series: Openscapes Lesson Series V2024.11.0</em>. Version v2024.12.0. Zenodo. <a href="https://doi.org/10.5281/zenodo.14428503">https://doi.org/10.5281/zenodo.14428503</a>.
+Lowndes, Julia Stewart, Stefanie Butland, and Erin Robinson. 2024. <span>“Openscapes/Series: Openscapes Lesson Series V2024.11.0.”</span> Zenodo. <a href="https://doi.org/10.5281/zenodo.14428503">https://doi.org/10.5281/zenodo.14428503</a>.
 </div>
 </div>
 </section></section>
@@ -918,7 +916,7 @@ Lowndes, Julia Stewart, Stefanie Butland, and Erin Robinson. 2024. <em>Openscape
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -1030,14 +1028,13 @@ Lowndes, Julia Stewart, Stefanie Butland, and Erin Robinson. 2024. <em>Openscape
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
             }
-          }
-          return codeEl.innerText;
+            return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
