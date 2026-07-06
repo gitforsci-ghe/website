@@ -137,7 +137,7 @@
     "href": "workshop/slides.html#your-turn-3",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up."
+    "text": "Your turn\n\n\nFind and clone your man-washinvestments-USERNAME repository (org page, search “man-”).\nGit pane: New Branch, name it dev.\nIn index.qmd: put in your own author details. Render.\nCommit “update author details”, push.\n\n\nPlace the yellow sticky note on your laptop when your push has finished.\n\n\n\n\n\n\n\n\nIf the roster pivot happened (kill criterion 1), learners without their own repo work in the shared demo repos instead: same steps, repo name from the board. Mark the default before the day.\nBounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up. Every learner needs a pushed dev branch with one commit by 13:30."
   },
   {
     "objectID": "workshop/slides.html#our-turn",
@@ -597,7 +597,7 @@
     "href": "workshop/slides.html#my-turn-2",
     "title": "GitHub for Collaboration",
     "section": "My turn",
-    "text": "My turn"
+    "text": "My turn\n\nWatch first; your turn comes next. New repo, new superpower.\n\nIn the org, find man-washinvestments-USERNAME and clone it (same moves as this morning).\nGit pane: New Branch, name it dev. Read the message about origin out loud.\nOpen index.qmd, edit the author details (name, ORCID, email, institution), Render.\nSwitch between main and dev in the Git pane: before the commit nothing differs; after the commit, the change lives only on dev.\nCommit “update author details”, push.\n\n\nFollow along on the screen.\n\n\n\nPackages are already installed from pre-work step 6, so the render takes seconds. Fallback only, if someone’s render fails on a missing package, the commented install chunk sits at the top of index.qmd:\n# install.packages(\"devtools\")\n# devtools::install_github(\"openwashdata/washinvestments\")\nDo not run installs for the room; park that learner and pair them.\nThe branch created here feeds the B6 pull request in 30 minutes, so keep momentum."
   },
   {
     "objectID": "workshop/slides.html#your-turn-4",
