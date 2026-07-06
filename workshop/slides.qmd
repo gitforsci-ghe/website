@@ -31,17 +31,137 @@ library(countdown)
 
 # B1: Welcome, concept-map intro, baseline map {background-color="#4C326A"}
 
-## Slides
+## Meet the lecturer {.smaller}
 
-<!-- Filled by issue #13: welcome, expectations, motivation, concept-map intro -->
+**{{< var author >}}**
 
-::: {.notes}
-B1 runs 10:00-10:30. Filled by issue #13.
+![](images/lars_schoebitz_profile_photo.jpg){fig-alt="Headshot of Lars Schöbitz" fig-align="left" width="50%"}
+
+-   Environmental Engineer {{< fa hammer >}}
+-   Retired researcher {{< fa bed >}}
+-   [RStudio certified instructor](https://education.rstudio.com/trainers/)
+-   [Data steward at ETHZ](https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html)
+
+## What this day is, and is not
+
+::: incremental
+-   Today [is]{.highlight-yellow} the Git and GitHub foundation for collaboration: create, clone, commit, push, branch, pull request, review, merge.
+-   Today is [not]{.highlight-yellow} an AI workshop. Working with AI coding agents builds on exactly these skills; that is the follow-up workshop.
+-   It is [safe to fail]{.highlight-yellow} here. Everything we do today is reversible, and breaking things is part of the plan.
 :::
 
-## Your turn
+::: {.notes}
+Defuse the AI-agent expectation gap now, in minute 5, not in minute 90. Say the safe-to-fail promise out loud; it comes back in B3 with the revert demo.
+:::
 
-<!-- Filled by issue #13: baseline concept-map exercise -->
+## Learning objectives
+
+By the end of this workshop, participants will be able to:
+
+::: incremental
+1.  [Create]{.highlight-yellow} and [clone]{.highlight-yellow} a repository, and run the full [pull, stage, commit, push]{.highlight-yellow} cycle from the RStudio IDE, including reverting a commit.
+
+2.  Work with [branches]{.highlight-yellow} and [pull requests]{.highlight-yellow}: create a branch, open a pull request, [review]{.highlight-yellow} a colleague's pull request, and [merge]{.highlight-yellow} after review.
+
+3.  [Publish]{.highlight-yellow} a rendered document via GitHub Pages, and draw a [concept map]{.highlight-yellow} of how Git and GitHub fit together.
+:::
+
+## Teaching strategy
+
+-   Teaching Git on a "need to know" basis
+-   Teaching only a very small subset of Git's functionality
+-   Creating a safe space for learning and getting support (use Element)
+-   Focus on collaboration aspects of GitHub
+-   Rhythm in every block: short slides, my turn (watch), your turn (do)
+
+## Schedule
+
+```{r}
+#| tbl-colwidths: [25,75]
+#| echo: false
+
+read_csv(here::here("data/tbl-01-gitforsci-ghe-course-schedule.csv")) |>
+  filter(day == 1) |>
+  select(Time = time, Module = title) |>
+  kable()
+
+```
+
+##  {background-image="images/github_friends.png"}
+
+::: footer
+Illustrations from the [Openscapes](https://openscapes.org/) blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes
+:::
+
+::: {.notes}
+Why GitHub?
+
+"Collaboration is the most compelling reason to manage a project with Git and GitHub. My definition of collaboration includes hands-on participation by multiple people, including your past and future self, as well as an asymmetric model, in which some people are active makers and others only read or review." - Jenny Bryan
+
+Bryan J. 2017. Excuse me, do you have a moment to talk about version control? PeerJ Preprints 5:e3159v2 https://doi.org/10.7287/peerj.preprints.3159v2
+:::
+
+##  {background-image="images/github_fall.png"}
+
+::: footer
+Illustrations from the [Openscapes](https://openscapes.org/) blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes
+:::
+
+::: {.notes}
+GitHub helps us fail safely. Because we can return to previous versions easily, painful consequences of failing are reduced. We can bravely try things knowing that some will fail, and that failing is not catastrophic: we start again from where we left off, with a clear history to learn from.
+
+This is the safe-to-fail promise from the expectations slide, now with a picture.
+:::
+
+##  {background-image="images/github_compare_text.png"}
+
+::: footer
+Illustrations from the [Openscapes](https://openscapes.org/) blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes
+:::
+
+::: {.notes}
+GitHub streamlines our work: it takes care of otherwise time-consuming bookkeeping and unrelenting file tracking. Instead of fretting over whether "analysis_final_v2.xls" or "analysis_final_final.xls" is truly the final version, we can be confident in the completed analysis and move on. This connects directly to what learners draw in the baseline map in a few minutes: email attachments and file naming.
+:::
+
+##  {background-image="images/github_harness.jpeg"}
+
+::: footer
+Illustrations from the [Openscapes](https://openscapes.org/) blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes
+:::
+
+::: {.notes}
+Once we are empowered to work collaboratively with GitHub, a whole new world of projects opens up, because we can contribute in many different ways. This transferrable ability to collaborate might just be the best thing about GitHub. Keep this to one breath; the motivation section ends here at about minute 10.
+:::
+
+## Concept maps {.smaller}
+
+A concept map is [things]{.highlight-yellow} (nodes) joined by [labelled arrows]{.highlight-yellow}, where every label is a verb.
+
+![](images/concept-map-exemplar.png){width="70%" fig-alt="A concept map about making tea. Five oval nodes labelled kettle, water, tea leaves, cup, and tea are joined by arrows labelled with capitalised verbs: HEATS, STEEPS, BECOME, MAKES, and HOLDS."}
+
+Read an arrow out loud and it becomes a sentence: "the kettle [HEATS]{.highlight-yellow} the water."
+
+::: {.notes}
+Per Greg Wilson, Teaching Tech Together: concepts as nodes, labelled relationships as edges. Not a flowchart, not a timeline, not a list; no start, no end.
+
+One sentence on why: experts use concept maps to make their mental models visible. Yours today will show how you currently think documents travel, and this evening the second map will show what changed.
+
+8-10 minutes for this intro including the exemplar walk-through.
+:::
+
+## Your turn: your baseline map {.smaller}
+
+:::: task
+[How does a document you write reach your co-author and come back? Draw it as a concept map.]{.highlight-yellow}
+
+-   Things as nodes, arrows with verb labels.
+-   There is no wrong map; this one is yours.
+-   Keep the map. You will need it at 14:15.
+
+::: hand
+Place the yellow sticky note on your laptop when your map is done.
+:::
+::::
 
 ```{r}
 #| echo: false
@@ -49,6 +169,8 @@ countdown(minutes = 8)
 ```
 
 ::: {.notes}
+One single prompt, not a fused double question. Expected content: email attachments, Dropbox, Google Docs, file naming (final_v2, final_final). That is the point; the day connects Git to these habits. Do not correct anything here.
+
 Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
 :::
 

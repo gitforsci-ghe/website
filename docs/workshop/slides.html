@@ -156,11 +156,26 @@ Lars Schöbitz
 <h1>B1: Welcome, concept-map intro, baseline map</h1>
 
 </section>
-<section id="slides" class="slide level2">
-<h2>Slides</h2>
-<!-- Filled by issue #13: welcome, expectations, motivation, concept-map intro -->
+<section id="meet-the-lecturer" class="slide level2 smaller">
+<h2>Meet the lecturer</h2>
+<p><strong>Lars Schöbitz</strong></p>
+
+<img data-src="images/lars_schoebitz_profile_photo.jpg" class="quarto-figure quarto-figure-left r-stretch" style="width:50.0%" alt="Headshot of Lars Schöbitz"><ul>
+<li>Environmental Engineer <i class="fa-solid fa-hammer" aria-label="hammer"></i></li>
+<li>Retired researcher <i class="fa-solid fa-bed" aria-label="bed"></i></li>
+<li><a href="https://education.rstudio.com/trainers/">RStudio certified instructor</a></li>
+<li><a href="https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html">Data steward at ETHZ</a></li>
+</ul>
+</section>
+<section id="what-this-day-is-and-is-not" class="slide level2">
+<h2>What this day is, and is not</h2>
+<ul>
+<li class="fragment">Today <span class="highlight-yellow">is</span> the Git and GitHub foundation for collaboration: create, clone, commit, push, branch, pull request, review, merge.</li>
+<li class="fragment">Today is <span class="highlight-yellow">not</span> an AI workshop. Working with AI coding agents builds on exactly these skills; that is the follow-up workshop.</li>
+<li class="fragment">It is <span class="highlight-yellow">safe to fail</span> here. Everything we do today is reversible, and breaking things is part of the plan.</li>
+</ul>
 <aside class="notes">
-<p>B1 runs 10:00-10:30. Filled by issue #13.</p>
+<p>Defuse the AI-agent expectation gap now, in minute 5, not in minute 90. Say the safe-to-fail promise out loud; it comes back in B3 with the revert demo.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -173,15 +188,210 @@ Lars Schöbitz
           display:block!important;
       }</style></aside>
 </section>
-<section id="your-turn" class="slide level2">
-<h2>Your turn</h2>
-<!-- Filled by issue #13: baseline concept-map exercise -->
+<section id="learning-objectives" class="slide level2">
+<h2>Learning objectives</h2>
+<p>By the end of this workshop, participants will be able to:</p>
+<ol type="1">
+<li class="fragment"><p><span class="highlight-yellow">Create</span> and <span class="highlight-yellow">clone</span> a repository, and run the full <span class="highlight-yellow">pull, stage, commit, push</span> cycle from the RStudio IDE, including reverting a commit.</p></li>
+<li class="fragment"><p>Work with <span class="highlight-yellow">branches</span> and <span class="highlight-yellow">pull requests</span>: create a branch, open a pull request, <span class="highlight-yellow">review</span> a colleague’s pull request, and <span class="highlight-yellow">merge</span> after review.</p></li>
+<li class="fragment"><p><span class="highlight-yellow">Publish</span> a rendered document via GitHub Pages, and draw a <span class="highlight-yellow">concept map</span> of how Git and GitHub fit together.</p></li>
+</ol>
+</section>
+<section id="teaching-strategy" class="slide level2">
+<h2>Teaching strategy</h2>
+<ul>
+<li>Teaching Git on a “need to know” basis</li>
+<li>Teaching only a very small subset of Git’s functionality</li>
+<li>Creating a safe space for learning and getting support (use Element)</li>
+<li>Focus on collaboration aspects of GitHub</li>
+<li>Rhythm in every block: short slides, my turn (watch), your turn (do)</li>
+</ul>
+</section>
+<section id="schedule" class="slide level2">
+<h2>Schedule</h2>
+<div class="cell" data-tbl-colwidths="[25,75]">
+<div class="cell-output-display">
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Time</th>
+<th style="text-align: left;">Module</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">09:30 - 10:00</td>
+<td style="text-align: left;">Arrival and setup check</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">10:00 - 10:30</td>
+<td style="text-align: left;"><a href="workshop/">B1: Welcome, concept-map intro, baseline map</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">10:30 - 11:00</td>
+<td style="text-align: left;"><a href="workshop/">B2: Create and clone (website repo)</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:00 - 11:15</td>
+<td style="text-align: left;">Break</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">11:15 - 11:45</td>
+<td style="text-align: left;"><a href="workshop/">B3: The commit cycle (website repo)</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">11:45 - 12:15</td>
+<td style="text-align: left;"><a href="workshop/">B4: Collaboration cliffhanger (partner clone, push fails)</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">12:15 - 13:00</td>
+<td style="text-align: left;">Lunch</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">13:00 - 13:30</td>
+<td style="text-align: left;"><a href="workshop/">B5: Branch (manuscript repo)</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">13:30 - 14:05</td>
+<td style="text-align: left;"><a href="workshop/">B6: Pull request, review, merge</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">14:05 - 14:15</td>
+<td style="text-align: left;"><a href="workshop/">B7: Publish</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">14:15 - 14:30</td>
+<td style="text-align: left;"><a href="workshop/">B8: Concept map revisit and wrap-up</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="section" class="slide level2" data-background-image="images/github_friends.png">
+<h2></h2>
+<div class="footer">
+<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
+</div>
+<aside class="notes">
+<p>Why GitHub?</p>
+<p>“Collaboration is the most compelling reason to manage a project with Git and GitHub. My definition of collaboration includes hands-on participation by multiple people, including your past and future self, as well as an asymmetric model, in which some people are active makers and others only read or review.” - Jenny Bryan</p>
+<p>Bryan J. 2017. Excuse me, do you have a moment to talk about version control? PeerJ Preprints 5:e3159v2 https://doi.org/10.7287/peerj.preprints.3159v2</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-1" class="slide level2" data-background-image="images/github_fall.png">
+<h2></h2>
+<div class="footer">
+<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
+</div>
+<aside class="notes">
+<p>GitHub helps us fail safely. Because we can return to previous versions easily, painful consequences of failing are reduced. We can bravely try things knowing that some will fail, and that failing is not catastrophic: we start again from where we left off, with a clear history to learn from.</p>
+<p>This is the safe-to-fail promise from the expectations slide, now with a picture.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-2" class="slide level2" data-background-image="images/github_compare_text.png">
+<h2></h2>
+<div class="footer">
+<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
+</div>
+<aside class="notes">
+<p>GitHub streamlines our work: it takes care of otherwise time-consuming bookkeeping and unrelenting file tracking. Instead of fretting over whether “analysis_final_v2.xls” or “analysis_final_final.xls” is truly the final version, we can be confident in the completed analysis and move on. This connects directly to what learners draw in the baseline map in a few minutes: email attachments and file naming.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-3" class="slide level2" data-background-image="images/github_harness.jpeg">
+<h2></h2>
+<div class="footer">
+<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
+</div>
+<aside class="notes">
+<p>Once we are empowered to work collaboratively with GitHub, a whole new world of projects opens up, because we can contribute in many different ways. This transferrable ability to collaborate might just be the best thing about GitHub. Keep this to one breath; the motivation section ends here at about minute 10.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="concept-maps" class="slide level2 smaller">
+<h2>Concept maps</h2>
+<p>A concept map is <span class="highlight-yellow">things</span> (nodes) joined by <span class="highlight-yellow">labelled arrows</span>, where every label is a verb.</p>
+
+<img data-src="images/concept-map-exemplar.png" style="width:70.0%" alt="A concept map about making tea. Five oval nodes labelled kettle, water, tea leaves, cup, and tea are joined by arrows labelled with capitalised verbs: HEATS, STEEPS, BECOME, MAKES, and HOLDS." class="r-stretch"><p>Read an arrow out loud and it becomes a sentence: “the kettle <span class="highlight-yellow">HEATS</span> the water.”</p>
+<aside class="notes">
+<p>Per Greg Wilson, Teaching Tech Together: concepts as nodes, labelled relationships as edges. Not a flowchart, not a timeline, not a list; no start, no end.</p>
+<p>One sentence on why: experts use concept maps to make their mental models visible. Yours today will show how you currently think documents travel, and this evening the second map will show what changed.</p>
+<p>8-10 minutes for this intro including the exemplar walk-through.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="your-turn-your-baseline-map" class="slide level2 smaller">
+<h2>Your turn: your baseline map</h2>
+<div class="task">
+<p><span class="highlight-yellow">How does a document you write reach your co-author and come back? Draw it as a concept map.</span></p>
+<ul>
+<li>Things as nodes, arrows with verb labels.</li>
+<li>There is no wrong map; this one is yours.</li>
+<li>Keep the map. You will need it at 14:15.</li>
+</ul>
+<div class="hand">
+<p>Place the yellow sticky note on your laptop when your map is done.</p>
+</div>
+</div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_446061c5" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_81a4fbdf" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
+<p>One single prompt, not a fused double question. Expected content: email attachments, Dropbox, Google Docs, file naming (final_v2, final_final). That is the point; the day connects Git to these habits. Do not correct anything here.</p>
 <p>Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -221,12 +431,12 @@ Lars Schöbitz
 <h2>My turn</h2>
 <!-- Filled by issue #14: create and clone demo script -->
 </section>
-<section id="your-turn-1" class="slide level2">
+<section id="your-turn" class="slide level2">
 <h2>Your turn</h2>
 <!-- Filled by issue #14: learners create and clone their website repo -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_30f11fd2" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_12fd4c4e" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -249,7 +459,7 @@ Lars Schöbitz
 
 <img data-src="images/pixel-art-tree.png" style="width:50.0%" alt="Pixel art of a small character resting under a large leafy tree on a green hill, next to a gentle stream under a clear blue sky." class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_e20c2b57" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_6969aa82" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -282,12 +492,12 @@ Lars Schöbitz
 <h2>My turn</h2>
 <!-- Filled by issue #15: commit cycle, revert demo, credentials moment -->
 </section>
-<section id="your-turn-2" class="slide level2">
+<section id="your-turn-1" class="slide level2">
 <h2>Your turn</h2>
 <!-- Filled by issue #15: learners run the full pull-stage-commit-push cycle -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_e438b841" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_33d256c8" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -309,16 +519,16 @@ Lars Schöbitz
 <h1>B4: Collaboration cliffhanger</h1>
 
 </section>
-<section id="slides-1" class="slide level2">
+<section id="slides" class="slide level2">
 <h2>Slides</h2>
 <!-- Filled by issue #16: pairing slide -->
 </section>
-<section id="your-turn-3" class="slide level2">
+<section id="your-turn-2" class="slide level2">
 <h2>Your turn</h2>
 <!-- Filled by issue #16: clone the partner's repo, hit the push wall -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_841d871e" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_469dcfe6" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -365,12 +575,12 @@ Lars Schöbitz
 <h2>My turn</h2>
 <!-- Filled by issue #17: branch demo on the manuscript repo -->
 </section>
-<section id="your-turn-4" class="slide level2">
+<section id="your-turn-3" class="slide level2">
 <h2>Your turn</h2>
 <!-- Filled by issue #17: learners branch on their own manuscript repo -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_ee6561d4" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_6a93a3dd" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -413,12 +623,12 @@ Lars Schöbitz
 <h2>My turn</h2>
 <!-- Filled by issue #18: PR, review, merge demo -->
 </section>
-<section id="your-turn-5" class="slide level2">
+<section id="your-turn-4" class="slide level2">
 <h2>Your turn</h2>
 <!-- Filled by issue #18: learners open, review, and merge PRs in pairs -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_865c8a8c" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_4ff32ae4" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -479,12 +689,12 @@ Lars Schöbitz
 <h1>B8: Concept map revisit and wrap-up</h1>
 
 </section>
-<section id="your-turn-6" class="slide level2">
+<section id="your-turn-5" class="slide level2">
 <h2>Your turn</h2>
 <!-- Filled by issue #20: closing concept map, compare with the morning map -->
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_d261906e" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_78bd276a" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">

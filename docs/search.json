@@ -2,30 +2,30 @@
   {
     "objectID": "workshop/slides.html#meet-the-lecturer",
     "href": "workshop/slides.html#meet-the-lecturer",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "Meet the lecturer",
     "text": "Meet the lecturer\nLars Schöbitz\n\n\nEnvironmental Engineer \nRetired researcher \nRStudio certified instructor\nData steward at ETHZ"
   },
   {
     "objectID": "workshop/slides.html#learning-objectives",
     "href": "workshop/slides.html#learning-objectives",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "Learning objectives",
-    "text": "Learning objectives\nBy the end of this workshop, participants will be able to:\n\nCreate and clone repositories, and explain the difference between cloning and forking a repository.\nApply the standard Git workflow using RStudio IDE—including pull, stage, commit, and push changes to GitHub.\nWork with branches and pull requests by creating and managing development branches (using both RStudio and the terminal), submitting pull requests, and reviewing and commenting on others’ pull requests to facilitate code review and collaborative development."
+    "text": "Learning objectives\nBy the end of this workshop, participants will be able to:\n\nCreate and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.\nWork with branches and pull requests: create a branch, open a pull request, review a colleague’s pull request, and merge after review.\nPublish a rendered document via GitHub Pages, and draw a concept map of how Git and GitHub fit together."
   },
   {
     "objectID": "workshop/slides.html#teaching-strategy",
     "href": "workshop/slides.html#teaching-strategy",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "Teaching strategy",
-    "text": "Teaching strategy\n\nTeaching Git on a “need to know” basis\nTeaching only a very small subset of Git’s functionality\nCreating a safe space for learning and getting support (use Element)\nFocus on collaboration aspects of GitHub"
+    "text": "Teaching strategy\n\nTeaching Git on a “need to know” basis\nTeaching only a very small subset of Git’s functionality\nCreating a safe space for learning and getting support (use Element)\nFocus on collaboration aspects of GitHub\nRhythm in every block: short slides, my turn (watch), your turn (do)"
   },
   {
     "objectID": "workshop/slides.html#schedule",
     "href": "workshop/slides.html#schedule",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:30 - 10:00\nArrival\n\n\n10:00 - 10:30\nGitHub for Collaboration\n\n\n10:30 - 11:00\nCreate & Clone\n\n\n11:00 - 11:15\nBreak\n\n\n11:15 - 12:00\nClone & Branch\n\n\n12:00 - 12:45\nLunch Break\n\n\n12:45 - 13:30\nPull Request & Merge\n\n\n13:30 - 13:45\nPublish\n\n\n13:45 - 14:00\nWrap-up\n\n\n14:00 - 14:30\nBuffer"
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:30 - 10:00\nArrival and setup check\n\n\n10:00 - 10:30\nB1: Welcome, concept-map intro, baseline map\n\n\n10:30 - 11:00\nB2: Create and clone (website repo)\n\n\n11:00 - 11:15\nBreak\n\n\n11:15 - 11:45\nB3: The commit cycle (website repo)\n\n\n11:45 - 12:15\nB4: Collaboration cliffhanger (partner clone, push fails)\n\n\n12:15 - 13:00\nLunch\n\n\n13:00 - 13:30\nB5: Branch (manuscript repo)\n\n\n13:30 - 14:05\nB6: Pull request, review, merge\n\n\n14:05 - 14:15\nB7: Publish\n\n\n14:15 - 14:30\nB8: Concept map revisit and wrap-up"
   },
   {
     "objectID": "workshop/slides.html#your-turn",
@@ -37,30 +37,30 @@
   {
     "objectID": "workshop/slides.html#section",
     "href": "workshop/slides.html#section",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "",
     "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nWhy GitHub?\n“Collaboration is the most compelling reason to manage a project with Git and GitHub. My definition of collaboration includes hands-on participation by multiple people, including your past and future self, as well as an asymmetric model, in which some people are active makers and others only read or review.” - Jenny Bryan\nBryan J. 2017. Excuse me, do you have a moment to talk about version control? PeerJ Preprints 5:e3159v2 https://doi.org/10.7287/peerj.preprints.3159v2"
   },
   {
     "objectID": "workshop/slides.html#section-1",
     "href": "workshop/slides.html#section-1",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nWhy GitHub?\nThe concepts, mechanics, and vocabulary of GitHub (and underlying software Git) are new and unfamiliar when we get started or learn more about its capabilities.\nHadley Wickham and Jenny Bryan use the analogy of climbing to describe how GitHub can keep us safe while also showing our journey.\nWickham & Bryan, R Packages https://r-pkgs.org/preface.html"
+    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps us fail safely. Because we can return to previous versions easily, painful consequences of failing are reduced. We can bravely try things knowing that some will fail, and that failing is not catastrophic: we start again from where we left off, with a clear history to learn from.\nThis is the safe-to-fail promise from the expectations slide, now with a picture."
   },
   {
     "objectID": "workshop/slides.html#section-2",
     "href": "workshop/slides.html#section-2",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps streamline our work\nGitHub helps streamline our work because it takes care of otherwise time-consuming bookkeeping and unrelenting file tracking.\nInstead of spending our time inspecting and fretting over whether “analysis_final_v2.xls” or “analysis_final_final.xls” is truly the final version, with GitHub we can be confident in our completed analysis and move to the next step."
+    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub streamlines our work: it takes care of otherwise time-consuming bookkeeping and unrelenting file tracking. Instead of fretting over whether “analysis_final_v2.xls” or “analysis_final_final.xls” is truly the final version, we can be confident in the completed analysis and move on. This connects directly to what learners draw in the baseline map in a few minutes: email attachments and file naming."
   },
   {
     "objectID": "workshop/slides.html#section-3",
     "href": "workshop/slides.html#section-3",
-    "title": "I have no title, yet.",
+    "title": "GitHub for Collaboration",
     "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps us support others and existing work.\nWhether we are organizing, improving documentation, or asking and answering questions, GitHub helps us provide support to our collaborators on projects, whether we are writing code or not."
+    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nOnce we are empowered to work collaboratively with GitHub, a whole new world of projects opens up, because we can contribute in many different ways. This transferrable ability to collaborate might just be the best thing about GitHub. Keep this to one breath; the motivation section ends here at about minute 10."
   },
   {
     "objectID": "workshop/slides.html#section-4",
@@ -116,7 +116,7 @@
     "href": "workshop/slides.html#your-turn-2",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break."
+    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch."
   },
   {
     "objectID": "workshop/slides.html#read-on-fork-and-clone",
@@ -137,7 +137,7 @@
     "href": "workshop/slides.html#your-turn-3",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch."
+    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up."
   },
   {
     "objectID": "workshop/slides.html#our-turn",
@@ -541,7 +541,7 @@
     "href": "workshop/slides.html#slides",
     "title": "GitHub for Collaboration",
     "section": "Slides",
-    "text": "Slides\n\n\nB1 runs 10:00-10:30. Filled by issue #13."
+    "text": "Slides"
   },
   {
     "objectID": "workshop/slides.html#live-drawing-local-and-remote",
@@ -604,7 +604,7 @@
     "href": "workshop/slides.html#your-turn-4",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up."
+    "text": "Your turn\n\n\n\n\n\n\n\nThis block is protected. If the day is behind, B7 Publish is cut, never this. Bounded regroup: 2 minutes, then park-and-pair."
   },
   {
     "objectID": "workshop/slides.html#live-drawing-the-pull-request",
@@ -625,7 +625,7 @@
     "href": "workshop/slides.html#your-turn-5",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\n\n\n\n\nThis block is protected. If the day is behind, B7 Publish is cut, never this. Bounded regroup: 2 minutes, then park-and-pair."
+    "text": "Your turn\n\n\n\n\n\n\n\nHard start at 14:15: whatever block is running stops. B8 is protected and runs even on the worst day."
   },
   {
     "objectID": "workshop/slides.html#fallback-what-publishing-looks-like",
@@ -647,5 +647,26 @@
     "title": "GitHub for Collaboration",
     "section": "Wrap-up",
     "text": "Wrap-up"
+  },
+  {
+    "objectID": "workshop/slides.html#what-this-day-is-and-is-not",
+    "href": "workshop/slides.html#what-this-day-is-and-is-not",
+    "title": "GitHub for Collaboration",
+    "section": "What this day is, and is not",
+    "text": "What this day is, and is not\n\nToday is the Git and GitHub foundation for collaboration: create, clone, commit, push, branch, pull request, review, merge.\nToday is not an AI workshop. Working with AI coding agents builds on exactly these skills; that is the follow-up workshop.\nIt is safe to fail here. Everything we do today is reversible, and breaking things is part of the plan.\n\n\nDefuse the AI-agent expectation gap now, in minute 5, not in minute 90. Say the safe-to-fail promise out loud; it comes back in B3 with the revert demo."
+  },
+  {
+    "objectID": "workshop/slides.html#concept-maps",
+    "href": "workshop/slides.html#concept-maps",
+    "title": "GitHub for Collaboration",
+    "section": "Concept maps",
+    "text": "Concept maps\nA concept map is things (nodes) joined by labelled arrows, where every label is a verb.\n\nRead an arrow out loud and it becomes a sentence: “the kettle HEATS the water.”\n\nPer Greg Wilson, Teaching Tech Together: concepts as nodes, labelled relationships as edges. Not a flowchart, not a timeline, not a list; no start, no end.\nOne sentence on why: experts use concept maps to make their mental models visible. Yours today will show how you currently think documents travel, and this evening the second map will show what changed.\n8-10 minutes for this intro including the exemplar walk-through."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-your-baseline-map",
+    "href": "workshop/slides.html#your-turn-your-baseline-map",
+    "title": "GitHub for Collaboration",
+    "section": "Your turn: your baseline map",
+    "text": "Your turn: your baseline map\n\nHow does a document you write reach your co-author and come back? Draw it as a concept map.\n\nThings as nodes, arrows with verb labels.\nThere is no wrong map; this one is yours.\nKeep the map. You will need it at 14:15.\n\n\nPlace the yellow sticky note on your laptop when your map is done.\n\n\n\n\n\n\n\n\nOne single prompt, not a fused double question. Expected content: email attachments, Dropbox, Google Docs, file naming (final_v2, final_final). That is the point; the day connects Git to these habits. Do not correct anything here.\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break."
   }
 ]
