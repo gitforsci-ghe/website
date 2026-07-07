@@ -30,4 +30,4 @@ You can change your username later, but better to get this right the first time.
 -   <https://help.github.com/articles/what-happens-when-i-change-my-username/>
 :::
 
-Once you have created your GitHub Account, please fill out the [pre-course survey](04-survey.qmd) immediately. We will then invite you to join the GitHub Organisation for the course. 
+Once you have created your GitHub Account, please fill out the [pre-course survey](03-survey.qmd) immediately. We will then invite you to join the GitHub Organisation for the course. 

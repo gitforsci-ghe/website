@@ -4,14 +4,13 @@ title: "{{< fa list-check >}} Test your setup"
 
 In this task, we will test if your setup is complete and working. You will also already perform the first steps of using Git version control and GitHub.
 
+::: {.callout-warning}
+# This step only works after you have received an email from GitHub
+
+You can only complete this step once you have received the invitation email to the `gitforsci-ghe` organization, which I send after you complete the pre-course survey. No email yet? Confirm that you have [completed the pre-course survey](03-survey.qmd), check your spam folder, and then contact me by email: [{{< var email >}}](mailto:{{< var email >}})
+:::
 
 ## Step 1: Accept invitation from GitHub
-
-::: {.callout-important}
-# No email from GitHub?
-
-Confirm that you have [completed the pre-course survey](04-survey.qmd) and let me know on Element that you did not yet receive an email from GitHub to accept the invitation to the `gitforsci-ghe` organization. I will send you an invitation.
-:::
 
 1. Open your email that you used to register for your GitHub account.
 2. Find the email from GitHub with the subject "[GitHub] @larnsce invited you to join the 'gitforsci-ghe' organization".
@@ -50,7 +49,7 @@ Confirm that you have [completed the pre-course survey](04-survey.qmd) and let m
 ::: {.callout-important}
 # No repository with your username?
 
-Let me know on Element that your repository is not there. I will create it for you.
+Contact me by email if your repository is not there. I will create it for you.
 :::
 
 ![](images/03-02-02-screenshot-github-repo){width=100%}
@@ -164,10 +163,10 @@ Above the top left window, you will now see the sentence "Your branch is ahead o
 ::: callout-important
 ## Use your GitHub Personal Access Token (PAT) for the Password
 
-You need to enter the GitHub Personal Access Token (PAT) as a password. You created it in [step 5 of the pre-course work](05-github-pat) to authenticate your GitHub account and push your changes to GitHub.
+You need to enter the GitHub Personal Access Token (PAT) as a password. You created it in [step 4 of the pre-course work](04-github-pat) to authenticate your GitHub account and push your changes to GitHub.
 :::
 
-9. Does the pop window say `HEAD -> main` as the final statement? Close it. [If not, copy what it says and get in touch on Element now.]{.highlight-yellow}
+9. Does the pop window say `HEAD -> main` as the final statement? Close it. [If not, copy what it says and email it to me now.]{.highlight-yellow}
 
 ![](images/05-09-rstudio-git-pane-push.png){width=100%}
 
@@ -208,7 +207,7 @@ If the Console prints `"All workshop packages installed"` without an error, you 
 ::: {.callout-important}
 # Error message instead?
 
-Copy the full error message and post it in the Element channel. Getting this resolved before the workshop keeps your afternoon free for the interesting parts.
+Copy the full error message and email it to me. Getting this resolved before the workshop keeps your afternoon free for the interesting parts.
 :::
 
 ## Step 7: Open an issue on GitHub
@@ -240,4 +239,4 @@ Copy the full error message and post it in the Element channel. Getting this res
 ![](images/06-08-screenshot-github-new-issue-title.png){width=100%}
 
 
-Congratulations! Your setup is complete and you have mastered the key steps of using Git and GitHub. Now onto some [important reading](08-big-picture) and I will see you in class. 
+Congratulations! Your setup is complete and you have mastered the key steps of using Git and GitHub. Now onto some [important reading](07-big-picture) and I will see you in class. 

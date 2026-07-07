@@ -9,7 +9,7 @@ Before we start our workshop on Tuesday, it is important to learn about the big 
 
 1. Read the chapter, "Why Git? Why GitHub?" <https://happygitwithr.com/big-picture>
 
-2. Take notes and write down questions. Ask them on Element.
+2. Take notes and write down questions. Bring them to the workshop.
 
 [Reading this will allow me to focus on the practical aspects of Git and GitHub during the workshop, rather than spending time on the theory. I will assume you have read this chapter and understand the big picture of why we are using these tools.]{.highlight-yellow}
 

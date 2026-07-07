@@ -2,7 +2,7 @@
 
 ::: {.callout-tip}
 
-Be ready to get in touch on Element for this task.
+If you run into problems with this task, contact me by email: [{{< var email >}}](mailto:{{< var email >}})
 
 :::
 
@@ -19,7 +19,7 @@ We like this because Git for Windows leaves the Git executable in a conventional
 
 ## macOS
 
-It's slightly more complicated. Please get in touch through Element if you have questions.
+It's slightly more complicated. Contact me if you have questions.
 
 **Option 1** (*highly recommended*): Install the Xcode command line tools (**not all of Xcode**), which includes Git.
 
@@ -41,4 +41,4 @@ Once you have Homebrew installed, type and run this in the terminal.
 ```bash
 brew install git
 ```
-We will confirm in [Test your setup](07-first-repo.qmd) that you have Git installed and working. 
+We will confirm in [Test your setup](06-first-repo.qmd) that you have Git installed and working. 
