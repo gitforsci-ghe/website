@@ -275,7 +275,7 @@ Demo script:
 - Edit README, save, point out the blue M next to the file in the Git tab.
 - Sync in 4 steps, said as a mantra: Pull (nothing to get, but build the habit), Stage (checkbox), Commit (message: "describe the repo content"), Push. Then open the repo on GitHub and show the commit message and the file change there.
 - Revert demo, instructor only: make a deliberately bad commit (for example delete half the README), commit it, then revert it via the history; show that the history keeps both the mistake and the undo. Say the safety-net message out loud: almost everything in Git is reversible. This answers the recorded cis question "how do I take a commit back?"
-- Credentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 5. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing.
+- Credentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 4. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing.
 :::
 
 ## Your turn {.smaller}
@@ -394,7 +394,7 @@ Follow along on the screen.
 ::::
 
 ::: {.notes}
-Packages are already installed from pre-work step 6, so the render takes seconds. Fallback only, if someone's render fails on a missing package, the commented install chunk sits at the top of index.qmd:
+Packages are already installed from the pre-work setup test (its Step 6), so the render takes seconds. Fallback only, if someone's render fails on a missing package, the commented install chunk sits at the top of index.qmd:
 
 ```
 # install.packages("devtools")

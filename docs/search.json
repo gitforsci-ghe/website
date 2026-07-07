@@ -116,7 +116,7 @@
     "href": "workshop/slides.html#my-turn-1",
     "title": "GitHub for Collaboration",
     "section": "My turn",
-    "text": "My turn\n\nWatch first; your turn comes next.\n\nEdit README.md: add the line “This repo contains a personal website.” Save, and spot the blue M in the Git tab.\nThe cycle, always in this order: Pull, Stage, Commit, Push.\nLook at the history: the commit is a labelled snapshot, on GitHub too.\nNow on purpose: one bad commit, and one revert.\n\n\nFollow along on the screen.\n\n\n\nDemo script:\n\nEdit README, save, point out the blue M next to the file in the Git tab.\nSync in 4 steps, said as a mantra: Pull (nothing to get, but build the habit), Stage (checkbox), Commit (message: “describe the repo content”), Push. Then open the repo on GitHub and show the commit message and the file change there.\nRevert demo, instructor only: make a deliberately bad commit (for example delete half the README), commit it, then revert it via the history; show that the history keeps both the mistake and the undo. Say the safety-net message out loud: almost everything in Git is reversible. This answers the recorded cis question “how do I take a commit back?”\nCredentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 5. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing."
+    "text": "My turn\n\nWatch first; your turn comes next.\n\nEdit README.md: add the line “This repo contains a personal website.” Save, and spot the blue M in the Git tab.\nThe cycle, always in this order: Pull, Stage, Commit, Push.\nLook at the history: the commit is a labelled snapshot, on GitHub too.\nNow on purpose: one bad commit, and one revert.\n\n\nFollow along on the screen.\n\n\n\nDemo script:\n\nEdit README, save, point out the blue M next to the file in the Git tab.\nSync in 4 steps, said as a mantra: Pull (nothing to get, but build the habit), Stage (checkbox), Commit (message: “describe the repo content”), Push. Then open the repo on GitHub and show the commit message and the file change there.\nRevert demo, instructor only: make a deliberately bad commit (for example delete half the README), commit it, then revert it via the history; show that the history keeps both the mistake and the undo. Say the safety-net message out loud: almost everything in Git is reversible. This answers the recorded cis question “how do I take a commit back?”\nCredentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 4. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing."
   },
   {
     "objectID": "workshop/slides.html#your-turn-1",
@@ -165,7 +165,7 @@
     "href": "workshop/slides.html#my-turn-2",
     "title": "GitHub for Collaboration",
     "section": "My turn",
-    "text": "My turn\n\nWatch first; your turn comes next. New repo, new superpower.\n\nIn the org, find man-washinvestments-USERNAME and clone it (same moves as this morning).\nGit pane: New Branch, name it dev. Read the message about origin out loud.\nOpen index.qmd, edit the author details (name, ORCID, email, institution), Render.\nSwitch between main and dev in the Git pane: before the commit nothing differs; after the commit, the change lives only on dev.\nCommit “update author details”, push.\n\n\nFollow along on the screen.\n\n\n\nPackages are already installed from pre-work step 6, so the render takes seconds. Fallback only, if someone’s render fails on a missing package, the commented install chunk sits at the top of index.qmd:\n# install.packages(\"devtools\")\n# devtools::install_github(\"openwashdata/washinvestments\")\nDo not run installs for the room; park that learner and pair them.\nThe branch created here feeds the B6 pull request in 30 minutes, so keep momentum."
+    "text": "My turn\n\nWatch first; your turn comes next. New repo, new superpower.\n\nIn the org, find man-washinvestments-USERNAME and clone it (same moves as this morning).\nGit pane: New Branch, name it dev. Read the message about origin out loud.\nOpen index.qmd, edit the author details (name, ORCID, email, institution), Render.\nSwitch between main and dev in the Git pane: before the commit nothing differs; after the commit, the change lives only on dev.\nCommit “update author details”, push.\n\n\nFollow along on the screen.\n\n\n\nPackages are already installed from the pre-work setup test (its Step 6), so the render takes seconds. Fallback only, if someone’s render fails on a missing package, the commented install chunk sits at the top of index.qmd:\n# install.packages(\"devtools\")\n# devtools::install_github(\"openwashdata/washinvestments\")\nDo not run installs for the room; park that learner and pair them.\nThe branch created here feeds the B6 pull request in 30 minutes, so keep momentum."
   },
   {
     "objectID": "workshop/slides.html#your-turn-3",
@@ -259,91 +259,135 @@
     "text": "References"
   },
   {
-    "objectID": "pre-work/08-big-picture.html",
-    "href": "pre-work/08-big-picture.html",
-    "title": " Why Git? Why GitHub?",
+    "objectID": "pre-work/08-element.html",
+    "href": "pre-work/08-element.html",
+    "title": " Communication in a chat",
     "section": "",
-    "text": "The book Happy Git and GitHub for the useR is a great resource for learning about Git and GitHub. Today you have worked through almost all elements of the first 14 chapters of the book. I am taking a lot of resources from the book itself and highly recommend it as a reference for you.\nBefore we start our workshop on Tuesday, it is important to learn about the big picture of Git and GitHub. This will help you understand why we are using these tools and how they fit into the larger context of data science and research.\n\nRead the chapter, “Why Git? Why GitHub?” https://happygitwithr.com/big-picture\nTake notes and write down questions. Ask them on Element.\n\nReading this will allow me to focus on the practical aspects of Git and GitHub during the workshop, rather than spending time on the theory. I will assume you have read this chapter and understand the big picture of why we are using these tools.",
+    "text": "Emails are not a very quick, responsive way of communication. We avoid them by prioritising other channels. At ETH Zurich, we have a chat server that is used by many courses and groups. It is based on the Matrix protocol, which is an open standard for secure, decentralised communication. The chat client is called Element, providing the open source, free-of-charge Slack-like experience. It is available to you as a student and is hosted by ETH Zurich.\nYou can reach out to the course instructor and other students any time, and we have a way to stay in touch beyond the course itself.\n\n\n\n\n\n\nWarningNot affiliated with ETH Zurich?\n\n\n\nSome of you are not affiliated with ETH Zurich. The steps below will be different for you. Please create an account for Element with your email address and use it to login to the application.\n\n\nTo set it up, please follow the steps below:\n\nDownload and install Element: https://element.io/download. It is available on Linux, Mac OS, and Windows.\nOpen the Element app on your device.\nClick Sign in\nIn the Homeserver section, click Edit\n\n\n\nSelect Other homeserver and type studentchat.ethz.ch\n\n\n\nSign in with your ETH username and ETH password\n\n\n\nVerify your device by creating a security key and store it securely. You will need the security key for adding another devices or logging back in on the same device.\n\n\n\nWelcome! Get in touch with me on Element by searching my ETH username lschoebitz.\n\n 9. Join the space for this workshop using this link: https://matrix.to/#/#gitforsci:staffchat.ethz.ch",
     "crumbs": [
       "Pre-course work",
-      "Step 8: Why Git? Why GitHub?"
+      "Step 8: Communication"
     ]
   },
   {
-    "objectID": "pre-work/06-install-git.html",
-    "href": "pre-work/06-install-git.html",
-    "title": " Download and install Git",
+    "objectID": "pre-work/06-first-repo.html",
+    "href": "pre-work/06-first-repo.html",
+    "title": " Test your setup",
     "section": "",
-    "text": "Tip\n\n\n\nBe ready to get in touch on Element for this task.\n\n\n\n\nInstall Git for Windows after download from this direct download link: https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe\nGit for Windows is also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.\nWe like this because Git for Windows leaves the Git executable in a conventional location, which will help you and other programs, e.g. RStudio, find it and use it. This also supports a transition to more expert use, because the “Git Bash” shell will be useful as you venture outside of R/RStudio.\n\nNOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.\nNote that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.\n\n\n\n\nIt’s slightly more complicated. Please get in touch through Element if you have questions.\nOption 1 (highly recommended): Install the Xcode command line tools (not all of Xcode), which includes Git.\n\nOpen the Terminal application on Mac and type xcode-select --install. If you don’t have it installed, you will be prompted to install the Xcode command line tools. Follow the instructions.\n\nOption 2 (recommended): If you anticipate getting heavily into scientific computing, you’re going to be installing and updating lots of software. You should check out Homebrew, “the missing package manager for OS X”. Among many other things, it can install Git for you.\n\nOpen the Terminal application on Mac, copy and run the following line:\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nThis will install Homebrew. You may be prompted for your password. If you are, type it in and hit enter. You won’t see anything appear on the screen as you type, but it is working.\nOnce you have Homebrew installed, type and run this in the terminal.\nbrew install git\nWe will confirm in Test your setup that you have Git installed and working.",
+    "text": "In this task, we will test if your setup is complete and working. You will also already perform the first steps of using Git version control and GitHub.",
     "crumbs": [
       "Pre-course work",
-      "Step 6: Install Git"
+      "Step 6: Test your setup"
     ]
   },
   {
-    "objectID": "pre-work/06-install-git.html#install-git-windows",
-    "href": "pre-work/06-install-git.html#install-git-windows",
-    "title": " Download and install Git",
-    "section": "",
-    "text": "Install Git for Windows after download from this direct download link: https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe\nGit for Windows is also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.\nWe like this because Git for Windows leaves the Git executable in a conventional location, which will help you and other programs, e.g. RStudio, find it and use it. This also supports a transition to more expert use, because the “Git Bash” shell will be useful as you venture outside of R/RStudio.\n\nNOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.\nNote that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.",
+    "objectID": "pre-work/06-first-repo.html#step-1-accept-invitation-from-github",
+    "href": "pre-work/06-first-repo.html#step-1-accept-invitation-from-github",
+    "title": " Test your setup",
+    "section": "Step 1: Accept invitation from GitHub",
+    "text": "Step 1: Accept invitation from GitHub\n\nOpen your email that you used to register for your GitHub account.\nFind the email from GitHub with the subject “[GitHub] @larnsce invited you to join the ‘gitforsci-ghe’ organization”.\nClick on the link in the email to accept the invitation and work through the steps that follow in your browser to accept the invitation.",
     "crumbs": [
       "Pre-course work",
-      "Step 6: Install Git"
+      "Step 6: Test your setup"
     ]
   },
   {
-    "objectID": "pre-work/06-install-git.html#macos",
-    "href": "pre-work/06-install-git.html#macos",
-    "title": " Download and install Git",
-    "section": "",
-    "text": "It’s slightly more complicated. Please get in touch through Element if you have questions.\nOption 1 (highly recommended): Install the Xcode command line tools (not all of Xcode), which includes Git.\n\nOpen the Terminal application on Mac and type xcode-select --install. If you don’t have it installed, you will be prompted to install the Xcode command line tools. Follow the instructions.\n\nOption 2 (recommended): If you anticipate getting heavily into scientific computing, you’re going to be installing and updating lots of software. You should check out Homebrew, “the missing package manager for OS X”. Among many other things, it can install Git for you.\n\nOpen the Terminal application on Mac, copy and run the following line:\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nThis will install Homebrew. You may be prompted for your password. If you are, type it in and hit enter. You won’t see anything appear on the screen as you type, but it is working.\nOnce you have Homebrew installed, type and run this in the terminal.\nbrew install git\nWe will confirm in Test your setup that you have Git installed and working.",
+    "objectID": "pre-work/06-first-repo.html#step-2-create-a-bookmark",
+    "href": "pre-work/06-first-repo.html#step-2-create-a-bookmark",
+    "title": " Test your setup",
+    "section": "Step 2: Create a bookmark",
+    "text": "Step 2: Create a bookmark\n\nOpen the landing page for the GitHub organization ‘gitforsci-ghe’: https://github.com/gitforsci-ghe\n\n\n\nBookmark this page in your browser.\n\n\n\nOrganize the bookmark into a folder called “gitforsci-ghe” or similar.\n\n\n\nUse this folder to add other bookmarks that are relevant for this workshop (e.g. the workshop website)",
     "crumbs": [
       "Pre-course work",
-      "Step 6: Install Git"
+      "Step 6: Test your setup"
     ]
   },
   {
-    "objectID": "pre-work/04-survey.html",
-    "href": "pre-work/04-survey.html",
+    "objectID": "pre-work/06-first-repo.html#step-3-clone-a-repository",
+    "href": "pre-work/06-first-repo.html#step-3-clone-a-repository",
+    "title": " Test your setup",
+    "section": "Step 3: Clone a repository",
+    "text": "Step 3: Clone a repository\n\nOpen the landing page for the GitHub organization ‘gitforsci-ghe’: https://github.com/gitforsci-ghe (try to use your bookmark)\nNavigate down the page to the section “Repositories” and use the search field to find the repository called 01-setup-USERNAME where USERNAME is your GitHub username.\n\n\n\nClick on the repository name to open it.\n\n\n\n\n\n\n\nImportantNo repository with your username?\n\n\n\nContact me by email if your repository is not there. I will create it for you.\n\n\n\n\nClick on the green “Code” button.\n\n\n\nCopy the HTTPS URL to your clipboard by clicking on the clipboard sign.\n\n\n\nOpen the RStudio IDE on your laptop.\n\n\n\n\n\n\n\nNote\n\n\n\nI am working on MacOS, but the steps should be similar on Windows.\n\n\n\n\nClick on File &gt; New Project in the top menu bar\n\n\n\nClick on Version Control.\n\n\n\nClick on Git.\n\n\n\nClick on Browse… button.\n\n\n\nCreate a folder structure for Git repositories (e.g. ~/Documents/gitrepos/gh-org-gitforsci-ghe)\n\n\n\n\n\n\n\nNoteFolder structure for Git repositories and naming conventions\n\n\n\nI highly recommend storing folders that are Git repositories separate from other folders. This will help you to keep track of your Git repositories and avoid confusion with other folders.\nCreate this directory structure locally on your laptop and not in folders that are synced with cloud storage (e.g. Google Drive, Dropbox, OneDrive, etc.).\nIn your directory structure, you can create a folder called gitrepos. Inside this folder, you can create subfolders for each GitHub organization you are working with (e.g. gh-org-gitforsci-ghe). A subfolder for your personal profile would be gh-rainbow-train. If you also work with GitLab or other Git hosting platforms, use the abbreviation for the platform in the folder name (e.g. gitrepos/gh-rainbow-train, gitrepos/gl-rainbow-train, etc.).\nThis strategy will help you to keep track of your Git repositories and the respective platforms and organisations they belong to.\n\n\n\nPaste the HTTPS URL from GitHub into the “Repository URL” field.\n\n\n\nClick on the “Create Project” button.\n\n\n\nFind the Files tab in the bottom right pane of RStudio.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 6: Test your setup"
+    ]
+  },
+  {
+    "objectID": "pre-work/06-first-repo.html#step-4-introduce-yourself-to-git",
+    "href": "pre-work/06-first-repo.html#step-4-introduce-yourself-to-git",
+    "title": " Test your setup",
+    "section": "Step 4: Introduce yourself to Git",
+    "text": "Step 4: Introduce yourself to Git\n\nIn the Files tab, find the file called git-configuration.qmd and click on it to open it in the editor pane (top left window).\nFollow the instructions inside the file to introduce yourself to Git.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 6: Test your setup"
+    ]
+  },
+  {
+    "objectID": "pre-work/06-first-repo.html#step-5-commit-and-push-your-changes",
+    "href": "pre-work/06-first-repo.html#step-5-commit-and-push-your-changes",
+    "title": " Test your setup",
+    "section": "Step 5: Commit and push your changes",
+    "text": "Step 5: Commit and push your changes\n\nNavigate to the Git pane in the top-right window of RStudio\n\n\n\nCheck the box next to the git-configuration.qmd and git-configuration.html file to stage them for commit\n\n\n\nClick on the “Commit” button.\n\n\n\n\n\n\n\n\nNote\n\n\n\nA new window will open. In the top left corner, you will see the files that you have staged for commit. In the bottom windows, you can see the changes you made in the file. The top right corner shows the “Commit message” which cannot be blank. Each Commit requires a Commit message.\n\n\n\nEnter commit message in the “Commit message” field. For example: “complete git configuration”\n\n\n\nClick on the “Commit” button\n\n\n\nClose the window that pops up.\n\n\n\nClick on the “Push” button\n\n\n\n\n\n\n\nNote\n\n\n\nAbove the top left window, you will now see the sentence “Your branch is ahead of ‘origin/main’ by 1 commit”. This means that you have made changes to your local repository that are not yet pushed to GitHub. It also means that your Commit was successful.\n\n\n\n\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields.\n\n\n\n\n\n\n\nImportantUse your GitHub Personal Access Token (PAT) for the Password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) as a password. You created it in step 4 of the pre-course work to authenticate your GitHub account and push your changes to GitHub.\n\n\n\nDoes the pop window say HEAD -&gt; main as the final statement? Close it. If not, copy what it says and email it to me now.\n\n\n\nVerify that the changes have been pushed to GitHub by refreshing the page in your browser.\n\n\n\n\n\n\n\nNote\n\n\n\nIs the window in the top left empty? This means that you have no changes to commit.\nHas the sentence “Your branch is ahead of ‘origin/main’ by 1 commit” disappeared? This means that your changes have been pushed to GitHub successfully.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 6: Test your setup"
+    ]
+  },
+  {
+    "objectID": "pre-work/06-first-repo.html#step-6-install-the-workshop-packages",
+    "href": "pre-work/06-first-repo.html#step-6-install-the-workshop-packages",
+    "title": " Test your setup",
+    "section": "Step 6: Install the workshop packages",
+    "text": "Step 6: Install the workshop packages\nIn the workshop, you will work on a small manuscript that uses the washinvestments R data package. Installing the packages now means the manuscript renders in under a minute on the day, and we can spend our time together on Git and GitHub instead of watching progress bars.\n\nIn RStudio, click into the Console (bottom left pane).\nCopy the following lines into the Console and press Enter:\n\ninstall.packages(c(\"devtools\", \"ggplot2\", \"ggthemes\",\n                   \"countrycode\", \"dplyr\", \"rmarkdown\"))\ndevtools::install_github(\"openwashdata/washinvestments\")\n\nWait for the installation to finish. You may be asked whether to update other packages; answering with an empty line (just press Enter) is fine.\nVerify the installation by copying this single line into the Console and pressing Enter:\n\nsuppressPackageStartupMessages(invisible(lapply(c(\"washinvestments\", \"ggplot2\", \"ggthemes\", \"countrycode\", \"dplyr\"), library, character.only = TRUE))); \"All workshop packages installed\"\nIf the Console prints \"All workshop packages installed\" without an error, you are done with this step.\n\n\n\n\n\n\nImportantError message instead?\n\n\n\nCopy the full error message and email it to me. Getting this resolved before the workshop keeps your afternoon free for the interesting parts.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 6: Test your setup"
+    ]
+  },
+  {
+    "objectID": "pre-work/06-first-repo.html#step-7-open-an-issue-on-github",
+    "href": "pre-work/06-first-repo.html#step-7-open-an-issue-on-github",
+    "title": " Test your setup",
+    "section": "Step 7: Open an issue on GitHub",
+    "text": "Step 7: Open an issue on GitHub\n\nOpen the landing page for the GitHub organization ‘gitforsci-ghe’: https://github.com/gitforsci-ghe (try to use your bookmark)\nNavigate down the page to the section “Repositories” and use the search field to find the repository called 01-setup-USERNAME where USERNAME is your GitHub username.\nClick on the repository name to open it.\nClick on the “Issues” tab.\n\n\n\nClick on the green “New issue” button.\n\n\n\nIn the “Add a title” field write: “Completed test setup tasks”.\n\n\n\nIn the “Add a description” field, leave me a comment, confirm that the workshop packages installed without an error, and tag the course instructor @larnsce.\n\n\n\nIn the “Assignees” field, assign yourself by selecting your GitHub username.\n\n\nCongratulations! Your setup is complete and you have mastered the key steps of using Git and GitHub. Now onto some important reading and I will see you in class.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 6: Test your setup"
+    ]
+  },
+  {
+    "objectID": "pre-work/04-github-pat.html",
+    "href": "pre-work/04-github-pat.html",
+    "title": " Create a GitHub Personal Access Token",
+    "section": "",
+    "text": "Create a GitHub Personal Access Token\nHere are the step-by-step instructions to set up a GitHub personal access token (PAT):\n\n\n\n\n\n\nImportant\n\n\n\nTreat your access tokens like passwords and keep them secure (e.g. a password managing software).\n\n\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\n\n\n\n\n\n\nTip\n\n\n\nYou will need this token in your pre-course work and throughout the workshop.",
+    "crumbs": [
+      "Pre-course work",
+      "Step 4: GitHub PAT"
+    ]
+  },
+  {
+    "objectID": "pre-work/02-github-acc.html",
+    "href": "pre-work/02-github-acc.html",
     "title": "Git for Scientists (Summer 2026)",
     "section": "",
-    "text": "NoteSurvey still under development\n\n\n\nThis survey is still under development. It will be published on Tuesday, 07 July 2026, once registration is completed. Please check back then.\n\n\nAt this point, we need your GitHub username. We have also developed this survey to get an idea about your prior knowledge. It will help us shape the course to ensure that everyone gets an opportunity to learn at their pace.\n\nComplete the survey by Wednesday, 08 July 2026: link to be added once the survey is published.",
+    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nTipUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub Account, please fill out the pre-course survey immediately. We will then invite you to join the GitHub Organisation for the course.",
     "crumbs": [
       "Pre-course work",
-      "Step 4: Pre-course survey"
+      "Step 2: GitHub account"
     ]
   },
   {
-    "objectID": "pre-work/04-survey.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636c6970626f6172642d6c697374203e7d7d-complete-pre-course-survey",
-    "href": "pre-work/04-survey.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636c6970626f6172642d6c697374203e7d7d-complete-pre-course-survey",
+    "objectID": "pre-work/02-github-acc.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-get-an-account-for-github",
+    "href": "pre-work/02-github-acc.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-get-an-account-for-github",
     "title": "Git for Scientists (Summer 2026)",
     "section": "",
-    "text": "NoteSurvey still under development\n\n\n\nThis survey is still under development. It will be published on Tuesday, 07 July 2026, once registration is completed. Please check back then.\n\n\nAt this point, we need your GitHub username. We have also developed this survey to get an idea about your prior knowledge. It will help us shape the course to ensure that everyone gets an opportunity to learn at their pace.\n\nComplete the survey by Wednesday, 08 July 2026: link to be added once the survey is published.",
+    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nTipUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub Account, please fill out the pre-course survey immediately. We will then invite you to join the GitHub Organisation for the course.",
     "crumbs": [
       "Pre-course work",
-      "Step 4: Pre-course survey"
-    ]
-  },
-  {
-    "objectID": "pre-work/02-install-r.html",
-    "href": "pre-work/02-install-r.html",
-    "title": "Git for Scientists (Summer 2026)",
-    "section": "",
-    "text": "ImportantDo you already have a R version of R and RStudio?\n\n\n\n\n\nEven if you already have R and RStudio installed, it is strongly recommended to download and install the latest versions to ensure compatibility with Quarto and access to the newest features and updates. Up-to-date installations help avoid unexpected errors and ensure all features work as intended.\n\n\n\n\nR for Windows: https://cran.rstudio.com/bin/windows/\nR for Mac: https://cran.rstudio.com/bin/macosx/ (Note: Two separate downloads for Apple silicon M1, M2, etc. Macs and Intel Macs)\nRStudio: https://posit.co/download/rstudio-desktop/ for your operating system (Windows or Mac)\nFollow your operating system’s installation process",
-    "crumbs": [
-      "Pre-course work",
-      "Step 2: Install R & RStudio"
-    ]
-  },
-  {
-    "objectID": "pre-work/02-install-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6465203e7d7d-download-and-install-r-and-rstudio",
-    "href": "pre-work/02-install-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6465203e7d7d-download-and-install-r-and-rstudio",
-    "title": "Git for Scientists (Summer 2026)",
-    "section": "",
-    "text": "ImportantDo you already have a R version of R and RStudio?\n\n\n\n\n\nEven if you already have R and RStudio installed, it is strongly recommended to download and install the latest versions to ensure compatibility with Quarto and access to the newest features and updates. Up-to-date installations help avoid unexpected errors and ensure all features work as intended.\n\n\n\n\nR for Windows: https://cran.rstudio.com/bin/windows/\nR for Mac: https://cran.rstudio.com/bin/macosx/ (Note: Two separate downloads for Apple silicon M1, M2, etc. Macs and Intel Macs)\nRStudio: https://posit.co/download/rstudio-desktop/ for your operating system (Windows or Mac)\nFollow your operating system’s installation process",
-    "crumbs": [
-      "Pre-course work",
-      "Step 2: Install R & RStudio"
+      "Step 2: GitHub account"
     ]
   },
   {
@@ -351,7 +395,17 @@
     "href": "index.html",
     "title": "Pre-course work: Git for Scientists",
     "section": "",
-    "text": "Thank you for your interest in this course. Your course instructor Lars Schöbitz is looking forward to meet you.\nAI coding agents are rapidly entering scientific work, and using them with confidence starts with the same collaboration skills that make any research project reproducible and reviewable. This workshop gives you those foundations. You will learn to use Git and GitHub for collaboration in scientific work, so that later you can treat an AI agent as a collaborator whose every change is versioned, documented, and open to review. It is the first step in getting ready for AI-assisted scientific work.\nWe will meet on Wednesday, 15 July 2026 - 09:30 to 14:30 (Europe/Zurich) at ETH Zurich.\nTo register for the workshop, complete the signup form: https://forms.gle/Zf5fPsPJqUxEoLgKA",
+    "text": "Thank you for your interest in this course. Your course instructor Lars Schöbitz is looking forward to meet you.\nWe will meet on Wednesday, 15 July 2026 - 09:30 to 14:30 (Europe/Zurich) at ETH Zurich.\nRegistration for this workshop is closed. You can still share your interest in a future iteration through this form: https://forms.gle/Zf5fPsPJqUxEoLgKA",
+    "crumbs": [
+      "Pre-course work"
+    ]
+  },
+  {
+    "objectID": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background",
+    "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-background",
+    "title": "Pre-course work: Git for Scientists",
+    "section": " Background",
+    "text": "Background\nAI coding agents are rapidly entering scientific work, and using them with confidence starts with the same collaboration skills that make any research project reproducible and reviewable. This workshop gives you those foundations. You will learn to use Git and GitHub for collaboration in scientific work, so that later you can treat an AI agent as a collaborator whose every change is versioned, documented, and open to review. It is the first step in getting ready for AI-assisted scientific work.",
     "crumbs": [
       "Pre-course work"
     ]
@@ -381,7 +435,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop",
     "title": "Pre-course work: Git for Scientists",
     "section": " What do I need to prepare before the workshop?",
-    "text": "What do I need to prepare before the workshop?\nPrior to the workshop, complete the following eight steps:\n\nStep 1: Setup Element as a communication channel\nStep 2: Download and install R and RStudio\nStep 3: Get an account for GitHub\nStep 4: Complete the pre-course survey by Wednesday, 08 July 2026.\nStep 5: Create a personal access token for GitHub\nStep 6: Install Git\nStep 7: Check your complete setup by Monday, 13 July 2026. (unlocked after pre-course survey is completed)\nStep 8: Read “Why Git? Why GitHub?” from “Happy Git and GitHub for the useR”!",
+    "text": "What do I need to prepare before the workshop?\nPrior to the workshop, complete the following eight steps:\n\nStep 1: Download and install R and RStudio\nStep 2: Get an account for GitHub\nStep 3: Complete the pre-course survey by end of Thursday, 09 July 2026.\nStep 4: Create a personal access token for GitHub\nStep 5: Install Git\nStep 6: Check your complete setup by Monday, 13 July 2026. (unlocked after pre-course survey is completed)\nStep 7: Read “Why Git? Why GitHub?” from “Happy Git and GitHub for the useR”!\nStep 8: Setup Element as a communication channel",
     "crumbs": [
       "Pre-course work"
     ]
@@ -417,135 +471,91 @@
     ]
   },
   {
-    "objectID": "pre-work/01-element.html",
-    "href": "pre-work/01-element.html",
-    "title": " Communication in a chat",
-    "section": "",
-    "text": "Emails are not a very quick, responsive way of communication. We avoid them by prioritising other channels. At ETH Zurich, we have a chat server that is used by many courses and groups. It is based on the Matrix protocol, which is an open standard for secure, decentralised communication. The chat client is called Element, providing the open source, free-of-charge Slack-like experience. It is available to you as a student and is hosted by ETH Zurich.\nYou can reach out to the course instructor and other students any time, and we have a way to stay in touch beyond the course itself.\n\n\n\n\n\n\nWarningNot affiliated with ETH Zurich?\n\n\n\nSome of you are not affiliated with ETH Zurich. The steps below will be different for you. Please create an account for Element with your email address and use it to login to the application.\n\n\nTo set it up, please follow the steps below:\n\nDownload and install Element: https://element.io/download. It is available on Linux, Mac OS, and Windows.\nOpen the Element app on your device.\nClick Sign in\nIn the Homeserver section, click Edit\n\n\n\nSelect Other homeserver and type studentchat.ethz.ch\n\n\n\nSign in with your ETH username and ETH password\n\n\n\nVerify your device by creating a security key and store it securely. You will need the security key for adding another devices or logging back in on the same device.\n\n\n\nWelcome! Get in touch with me on Element by searching my ETH username lschoebitz.\n\n 9. Join the space for this workshop using this link: https://matrix.to/#/#gitforsci:staffchat.ethz.ch",
-    "crumbs": [
-      "Pre-course work",
-      "Step 1: Communication"
-    ]
-  },
-  {
-    "objectID": "pre-work/03-github-acc.html",
-    "href": "pre-work/03-github-acc.html",
+    "objectID": "pre-work/01-install-r.html",
+    "href": "pre-work/01-install-r.html",
     "title": "Git for Scientists (Summer 2026)",
     "section": "",
-    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nTipUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub Account, please fill out the pre-course survey immediately. We will then invite you to join the GitHub Organisation for the course.",
+    "text": "ImportantDo you already have a R version of R and RStudio?\n\n\n\n\n\nEven if you already have R and RStudio installed, it is strongly recommended to download and install the latest versions to ensure compatibility with Quarto and access to the newest features and updates. Up-to-date installations help avoid unexpected errors and ensure all features work as intended.\n\n\n\n\nR for Windows: https://cran.rstudio.com/bin/windows/\nR for Mac: https://cran.rstudio.com/bin/macosx/ (Note: Two separate downloads for Apple silicon M1, M2, etc. Macs and Intel Macs)\nRStudio: https://posit.co/download/rstudio-desktop/ for your operating system (Windows or Mac)\nFollow your operating system’s installation process",
     "crumbs": [
       "Pre-course work",
-      "Step 3: GitHub account"
+      "Step 1: Install R & RStudio"
     ]
   },
   {
-    "objectID": "pre-work/03-github-acc.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-get-an-account-for-github",
-    "href": "pre-work/03-github-acc.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206272616e647320676974687562203e7d7d-get-an-account-for-github",
+    "objectID": "pre-work/01-install-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6465203e7d7d-download-and-install-r-and-rstudio",
+    "href": "pre-work/01-install-r.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f6465203e7d7d-download-and-install-r-and-rstudio",
     "title": "Git for Scientists (Summer 2026)",
     "section": "",
-    "text": "To set up an account on GitHub, follow these general steps:\n\nGo to the GitHub website at https://github.com/.\nClick on the “Sign up” button on the top right corner of the page.\nEnter your preferred username, email address, and password in the provided fields.\nChoose whether you want to receive updates and announcements via email.\nComplete the verification process by solving a puzzle and entering a verification code sent to your email.\n\n\n\n\n\n\n\nTipUsername advice from: Happy Git and GitHub for the useR\n\n\n\n\n\nYou will be able to upgrade to a paid level of service, apply discounts, join organizations, etc. in the future, so don’t fret about any of that now. Except your username. You might want to give that some thought.\nA few tips, which sadly tend to contradict each other:\n\nIncorporate your actual name! People like to know who they’re dealing with. Also makes your username easier for people to guess or remember.\nReuse your username from other contexts, e.g., Twitter or Slack. But, of course, someone with no GitHub activity will probably be squatting on that.\nPick a username you will be comfortable revealing to your future boss.\nShorter is better than longer.\nBe as unique as possible in as few characters as possible. In some settings GitHub auto-completes or suggests usernames.\nMake it timeless. Don’t highlight your current university, employer, or place of residence, e.g. JennyFromTheBlock.\nAvoid words laden with special meaning in programming.\nAvoid the use of upper vs. lower case to separate words. We highly recommend all lowercase. GitHub treats usernames in a case insensitive way, but using all lowercase is kinder to people doing downstream regular expression work with usernames, in various languages. A better strategy for word separation is to use a hyphen -.\n\nYou can change your username later, but better to get this right the first time.\n\nhttps://help.github.com/articles/changing-your-github-username/\nhttps://help.github.com/articles/what-happens-when-i-change-my-username/\n\n\n\n\nOnce you have created your GitHub Account, please fill out the pre-course survey immediately. We will then invite you to join the GitHub Organisation for the course.",
+    "text": "ImportantDo you already have a R version of R and RStudio?\n\n\n\n\n\nEven if you already have R and RStudio installed, it is strongly recommended to download and install the latest versions to ensure compatibility with Quarto and access to the newest features and updates. Up-to-date installations help avoid unexpected errors and ensure all features work as intended.\n\n\n\n\nR for Windows: https://cran.rstudio.com/bin/windows/\nR for Mac: https://cran.rstudio.com/bin/macosx/ (Note: Two separate downloads for Apple silicon M1, M2, etc. Macs and Intel Macs)\nRStudio: https://posit.co/download/rstudio-desktop/ for your operating system (Windows or Mac)\nFollow your operating system’s installation process",
     "crumbs": [
       "Pre-course work",
-      "Step 3: GitHub account"
+      "Step 1: Install R & RStudio"
     ]
   },
   {
-    "objectID": "pre-work/05-github-pat.html",
-    "href": "pre-work/05-github-pat.html",
-    "title": " Create a GitHub Personal Access Token",
+    "objectID": "pre-work/03-survey.html",
+    "href": "pre-work/03-survey.html",
+    "title": "Git for Scientists (Summer 2026)",
     "section": "",
-    "text": "Create a GitHub Personal Access Token\nHere are the step-by-step instructions to set up a GitHub personal access token (PAT):\n\n\n\n\n\n\nImportant\n\n\n\nTreat your access tokens like passwords and keep them secure (e.g. a password managing software).\n\n\n\nLog in to your GitHub account.\nClick on your profile picture in the top-right corner of the page.\nSelect “Settings” from the dropdown menu.\nIn the left sidebar, click on “Developer settings”.\nClick on “Personal access tokens”.\nClick on “Tokens (classic)”.\nClick on “Generate new token” and from the dropdown menu select “Generate new token (classic)”.\nIn the “Note” field, give your token the name: GITHUB_PAT\nUnder Expiration, select “No expiration”\nUnder “Select scopes”, select: repo, workflow, user\nClick on “Generate token”.\nYour personal access token will be displayed on the screen. Copy it and store it in a safe place.\n\n\n\n\n\n\n\nTip\n\n\n\nYou will need this token in your pre-course work and throughout the workshop.",
+    "text": "NoteSurvey still under development\n\n\n\nThis survey is still under development. It will be published on Tuesday, 07 July 2026, once registration is completed. Please check back then.\n\n\nAt this point, we need your GitHub username. We have also developed this survey to get an idea about your prior knowledge. It will help us shape the course to ensure that everyone gets an opportunity to learn at their pace.\n\nComplete the survey by end of Thursday, 09 July 2026: link to be added once the survey is published.",
     "crumbs": [
       "Pre-course work",
-      "Step 5: GitHub PAT"
+      "Step 3: Pre-course survey"
     ]
   },
   {
-    "objectID": "pre-work/07-first-repo.html",
-    "href": "pre-work/07-first-repo.html",
-    "title": " Test your setup",
+    "objectID": "pre-work/03-survey.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636c6970626f6172642d6c697374203e7d7d-complete-pre-course-survey",
+    "href": "pre-work/03-survey.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636c6970626f6172642d6c697374203e7d7d-complete-pre-course-survey",
+    "title": "Git for Scientists (Summer 2026)",
     "section": "",
-    "text": "In this task, we will test if your setup is complete and working. You will also already perform the first steps of using Git version control and GitHub.",
+    "text": "NoteSurvey still under development\n\n\n\nThis survey is still under development. It will be published on Tuesday, 07 July 2026, once registration is completed. Please check back then.\n\n\nAt this point, we need your GitHub username. We have also developed this survey to get an idea about your prior knowledge. It will help us shape the course to ensure that everyone gets an opportunity to learn at their pace.\n\nComplete the survey by end of Thursday, 09 July 2026: link to be added once the survey is published.",
     "crumbs": [
       "Pre-course work",
-      "Step 7: Test your setup"
+      "Step 3: Pre-course survey"
     ]
   },
   {
-    "objectID": "pre-work/07-first-repo.html#step-1-accept-invitation-from-github",
-    "href": "pre-work/07-first-repo.html#step-1-accept-invitation-from-github",
-    "title": " Test your setup",
-    "section": "Step 1: Accept invitation from GitHub",
-    "text": "Step 1: Accept invitation from GitHub\n\n\n\n\n\n\nImportantNo email from GitHub?\n\n\n\nConfirm that you have completed the pre-course survey and let me know on Element that you did not yet receive an email from GitHub to accept the invitation to the gitforsci-ghe organization. I will send you an invitation.\n\n\n\nOpen your email that you used to register for your GitHub account.\nFind the email from GitHub with the subject “[GitHub] @larnsce invited you to join the ‘gitforsci-ghe’ organization”.\nClick on the link in the email to accept the invitation and work through the steps that follow in your browser to accept the invitation.",
+    "objectID": "pre-work/05-install-git.html",
+    "href": "pre-work/05-install-git.html",
+    "title": " Download and install Git",
+    "section": "",
+    "text": "Tip\n\n\n\nIf you run into problems with this task, contact me by email: lschoebitz@ethz.ch\n\n\n\n\nInstall Git for Windows after download from this direct download link: https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe\nGit for Windows is also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.\nWe like this because Git for Windows leaves the Git executable in a conventional location, which will help you and other programs, e.g. RStudio, find it and use it. This also supports a transition to more expert use, because the “Git Bash” shell will be useful as you venture outside of R/RStudio.\n\nNOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.\nNote that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.\n\n\n\n\nIt’s slightly more complicated. Contact me if you have questions.\nOption 1 (highly recommended): Install the Xcode command line tools (not all of Xcode), which includes Git.\n\nOpen the Terminal application on Mac and type xcode-select --install. If you don’t have it installed, you will be prompted to install the Xcode command line tools. Follow the instructions.\n\nOption 2 (recommended): If you anticipate getting heavily into scientific computing, you’re going to be installing and updating lots of software. You should check out Homebrew, “the missing package manager for OS X”. Among many other things, it can install Git for you.\n\nOpen the Terminal application on Mac, copy and run the following line:\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nThis will install Homebrew. You may be prompted for your password. If you are, type it in and hit enter. You won’t see anything appear on the screen as you type, but it is working.\nOnce you have Homebrew installed, type and run this in the terminal.\nbrew install git\nWe will confirm in Test your setup that you have Git installed and working.",
     "crumbs": [
       "Pre-course work",
-      "Step 7: Test your setup"
+      "Step 5: Install Git"
     ]
   },
   {
-    "objectID": "pre-work/07-first-repo.html#step-2-create-a-bookmark",
-    "href": "pre-work/07-first-repo.html#step-2-create-a-bookmark",
-    "title": " Test your setup",
-    "section": "Step 2: Create a bookmark",
-    "text": "Step 2: Create a bookmark\n\nOpen the landing page for the GitHub organization ‘gitforsci-ghe’: https://github.com/gitforsci-ghe\n\n\n\nBookmark this page in your browser.\n\n\n\nOrganize the bookmark into a folder called “gitforsci-ghe” or similar.\n\n\n\nUse this folder to add other bookmarks that are relevant for this workshop (e.g. the workshop website)",
+    "objectID": "pre-work/05-install-git.html#install-git-windows",
+    "href": "pre-work/05-install-git.html#install-git-windows",
+    "title": " Download and install Git",
+    "section": "",
+    "text": "Install Git for Windows after download from this direct download link: https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe\nGit for Windows is also known as msysgit or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.\nWe like this because Git for Windows leaves the Git executable in a conventional location, which will help you and other programs, e.g. RStudio, find it and use it. This also supports a transition to more expert use, because the “Git Bash” shell will be useful as you venture outside of R/RStudio.\n\nNOTE: When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.\nNote that RStudio for Windows prefers for Git to be installed below C:/Program Files and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at C:/Program Files/Git/bin/git.exe. Unless you have specific reasons to otherwise, follow this convention.",
     "crumbs": [
       "Pre-course work",
-      "Step 7: Test your setup"
+      "Step 5: Install Git"
     ]
   },
   {
-    "objectID": "pre-work/07-first-repo.html#step-3-clone-a-repository",
-    "href": "pre-work/07-first-repo.html#step-3-clone-a-repository",
-    "title": " Test your setup",
-    "section": "Step 3: Clone a repository",
-    "text": "Step 3: Clone a repository\n\nOpen the landing page for the GitHub organization ‘gitforsci-ghe’: https://github.com/gitforsci-ghe (try to use your bookmark)\nNavigate down the page to the section “Repositories” and use the search field to find the repository called 01-setup-USERNAME where USERNAME is your GitHub username.\n\n\n\nClick on the repository name to open it.\n\n\n\n\n\n\n\nImportantNo repository with your username?\n\n\n\nLet me know on Element that your repository is not there. I will create it for you.\n\n\n\n\nClick on the green “Code” button.\n\n\n\nCopy the HTTPS URL to your clipboard by clicking on the clipboard sign.\n\n\n\nOpen the RStudio IDE on your laptop.\n\n\n\n\n\n\n\nNote\n\n\n\nI am working on MacOS, but the steps should be similar on Windows.\n\n\n\n\nClick on File &gt; New Project in the top menu bar\n\n\n\nClick on Version Control.\n\n\n\nClick on Git.\n\n\n\nClick on Browse… button.\n\n\n\nCreate a folder structure for Git repositories (e.g. ~/Documents/gitrepos/gh-org-gitforsci-ghe)\n\n\n\n\n\n\n\nNoteFolder structure for Git repositories and naming conventions\n\n\n\nI highly recommend storing folders that are Git repositories separate from other folders. This will help you to keep track of your Git repositories and avoid confusion with other folders.\nCreate this directory structure locally on your laptop and not in folders that are synced with cloud storage (e.g. Google Drive, Dropbox, OneDrive, etc.).\nIn your directory structure, you can create a folder called gitrepos. Inside this folder, you can create subfolders for each GitHub organization you are working with (e.g. gh-org-gitforsci-ghe). A subfolder for your personal profile would be gh-rainbow-train. If you also work with GitLab or other Git hosting platforms, use the abbreviation for the platform in the folder name (e.g. gitrepos/gh-rainbow-train, gitrepos/gl-rainbow-train, etc.).\nThis strategy will help you to keep track of your Git repositories and the respective platforms and organisations they belong to.\n\n\n\nPaste the HTTPS URL from GitHub into the “Repository URL” field.\n\n\n\nClick on the “Create Project” button.\n\n\n\nFind the Files tab in the bottom right pane of RStudio.",
+    "objectID": "pre-work/05-install-git.html#macos",
+    "href": "pre-work/05-install-git.html#macos",
+    "title": " Download and install Git",
+    "section": "",
+    "text": "It’s slightly more complicated. Contact me if you have questions.\nOption 1 (highly recommended): Install the Xcode command line tools (not all of Xcode), which includes Git.\n\nOpen the Terminal application on Mac and type xcode-select --install. If you don’t have it installed, you will be prompted to install the Xcode command line tools. Follow the instructions.\n\nOption 2 (recommended): If you anticipate getting heavily into scientific computing, you’re going to be installing and updating lots of software. You should check out Homebrew, “the missing package manager for OS X”. Among many other things, it can install Git for you.\n\nOpen the Terminal application on Mac, copy and run the following line:\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nThis will install Homebrew. You may be prompted for your password. If you are, type it in and hit enter. You won’t see anything appear on the screen as you type, but it is working.\nOnce you have Homebrew installed, type and run this in the terminal.\nbrew install git\nWe will confirm in Test your setup that you have Git installed and working.",
     "crumbs": [
       "Pre-course work",
-      "Step 7: Test your setup"
+      "Step 5: Install Git"
     ]
   },
   {
-    "objectID": "pre-work/07-first-repo.html#step-4-introduce-yourself-to-git",
-    "href": "pre-work/07-first-repo.html#step-4-introduce-yourself-to-git",
-    "title": " Test your setup",
-    "section": "Step 4: Introduce yourself to Git",
-    "text": "Step 4: Introduce yourself to Git\n\nIn the Files tab, find the file called git-configuration.qmd and click on it to open it in the editor pane (top left window).\nFollow the instructions inside the file to introduce yourself to Git.",
+    "objectID": "pre-work/07-big-picture.html",
+    "href": "pre-work/07-big-picture.html",
+    "title": " Why Git? Why GitHub?",
+    "section": "",
+    "text": "The book Happy Git and GitHub for the useR is a great resource for learning about Git and GitHub. Today you have worked through almost all elements of the first 14 chapters of the book. I am taking a lot of resources from the book itself and highly recommend it as a reference for you.\nBefore we start our workshop on Tuesday, it is important to learn about the big picture of Git and GitHub. This will help you understand why we are using these tools and how they fit into the larger context of data science and research.\n\nRead the chapter, “Why Git? Why GitHub?” https://happygitwithr.com/big-picture\nTake notes and write down questions. Bring them to the workshop.\n\nReading this will allow me to focus on the practical aspects of Git and GitHub during the workshop, rather than spending time on the theory. I will assume you have read this chapter and understand the big picture of why we are using these tools.",
     "crumbs": [
       "Pre-course work",
-      "Step 7: Test your setup"
-    ]
-  },
-  {
-    "objectID": "pre-work/07-first-repo.html#step-5-commit-and-push-your-changes",
-    "href": "pre-work/07-first-repo.html#step-5-commit-and-push-your-changes",
-    "title": " Test your setup",
-    "section": "Step 5: Commit and push your changes",
-    "text": "Step 5: Commit and push your changes\n\nNavigate to the Git pane in the top-right window of RStudio\n\n\n\nCheck the box next to the git-configuration.qmd and git-configuration.html file to stage them for commit\n\n\n\nClick on the “Commit” button.\n\n\n\n\n\n\n\n\nNote\n\n\n\nA new window will open. In the top left corner, you will see the files that you have staged for commit. In the bottom windows, you can see the changes you made in the file. The top right corner shows the “Commit message” which cannot be blank. Each Commit requires a Commit message.\n\n\n\nEnter commit message in the “Commit message” field. For example: “complete git configuration”\n\n\n\nClick on the “Commit” button\n\n\n\nClose the window that pops up.\n\n\n\nClick on the “Push” button\n\n\n\n\n\n\n\nNote\n\n\n\nAbove the top left window, you will now see the sentence “Your branch is ahead of ‘origin/main’ by 1 commit”. This means that you have made changes to your local repository that are not yet pushed to GitHub. It also means that your Commit was successful.\n\n\n\n\nEnter your GitHub username and GitHub Personal Access Token (PAT) in the “Username” and “Password” fields.\n\n\n\n\n\n\n\nImportantUse your GitHub Personal Access Token (PAT) for the Password\n\n\n\nYou need to enter the GitHub Personal Access Token (PAT) as a password. You created it in step 5 of the pre-course work to authenticate your GitHub account and push your changes to GitHub.\n\n\n\nDoes the pop window say HEAD -&gt; main as the final statement? Close it. If not, copy what it says and get in touch on Element now.\n\n\n\nVerify that the changes have been pushed to GitHub by refreshing the page in your browser.\n\n\n\n\n\n\n\nNote\n\n\n\nIs the window in the top left empty? This means that you have no changes to commit.\nHas the sentence “Your branch is ahead of ‘origin/main’ by 1 commit” disappeared? This means that your changes have been pushed to GitHub successfully.",
-    "crumbs": [
-      "Pre-course work",
-      "Step 7: Test your setup"
-    ]
-  },
-  {
-    "objectID": "pre-work/07-first-repo.html#step-6-install-the-workshop-packages",
-    "href": "pre-work/07-first-repo.html#step-6-install-the-workshop-packages",
-    "title": " Test your setup",
-    "section": "Step 6: Install the workshop packages",
-    "text": "Step 6: Install the workshop packages\nIn the workshop, you will work on a small manuscript that uses the washinvestments R data package. Installing the packages now means the manuscript renders in under a minute on the day, and we can spend our time together on Git and GitHub instead of watching progress bars.\n\nIn RStudio, click into the Console (bottom left pane).\nCopy the following lines into the Console and press Enter:\n\ninstall.packages(c(\"devtools\", \"ggplot2\", \"ggthemes\",\n                   \"countrycode\", \"dplyr\", \"rmarkdown\"))\ndevtools::install_github(\"openwashdata/washinvestments\")\n\nWait for the installation to finish. You may be asked whether to update other packages; answering with an empty line (just press Enter) is fine.\nVerify the installation by copying this single line into the Console and pressing Enter:\n\nsuppressPackageStartupMessages(invisible(lapply(c(\"washinvestments\", \"ggplot2\", \"ggthemes\", \"countrycode\", \"dplyr\"), library, character.only = TRUE))); \"All workshop packages installed\"\nIf the Console prints \"All workshop packages installed\" without an error, you are done with this step.\n\n\n\n\n\n\nImportantError message instead?\n\n\n\nCopy the full error message and post it in the Element channel. Getting this resolved before the workshop keeps your afternoon free for the interesting parts.",
-    "crumbs": [
-      "Pre-course work",
-      "Step 7: Test your setup"
-    ]
-  },
-  {
-    "objectID": "pre-work/07-first-repo.html#step-7-open-an-issue-on-github",
-    "href": "pre-work/07-first-repo.html#step-7-open-an-issue-on-github",
-    "title": " Test your setup",
-    "section": "Step 7: Open an issue on GitHub",
-    "text": "Step 7: Open an issue on GitHub\n\nOpen the landing page for the GitHub organization ‘gitforsci-ghe’: https://github.com/gitforsci-ghe (try to use your bookmark)\nNavigate down the page to the section “Repositories” and use the search field to find the repository called 01-setup-USERNAME where USERNAME is your GitHub username.\nClick on the repository name to open it.\nClick on the “Issues” tab.\n\n\n\nClick on the green “New issue” button.\n\n\n\nIn the “Add a title” field write: “Completed test setup tasks”.\n\n\n\nIn the “Add a description” field, leave me a comment, confirm that the workshop packages installed without an error, and tag the course instructor @larnsce.\n\n\n\nIn the “Assignees” field, assign yourself by selecting your GitHub username.\n\n\nCongratulations! Your setup is complete and you have mastered the key steps of using Git and GitHub. Now onto some important reading and I will see you in class.",
-    "crumbs": [
-      "Pre-course work",
-      "Step 7: Test your setup"
+      "Step 7: Why Git? Why GitHub?"
     ]
   },
   {
