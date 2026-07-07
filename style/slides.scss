@@ -8,9 +8,12 @@
 
 $font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
 $font-family-monospace: "Source Code Pro", monospace;
-$presentation-heading-color: #461a52;
-$link-color: #FF6100;
+$presentation-heading-color: #5c5751;
+$link-color: #0F4C81;
 $hover-color: lighten($link-color, 10%);
+$code-color: #ED6D37;
+$code-bg: #F5F5F5;
+$code-block-bg: #F5F5F5;
 $code-block-font-size: 0.8em;
 $presentation-h2-font-size: 1.4em !default;
 $presentation-font-size-root: 36px !default;
@@ -34,8 +37,8 @@ $presentation-font-size-root: 36px !default;
   padding-bottom: 3px;
   margin-bottom: 6px;
   margin-top: 6px;
-  border-left: solid 5px #461a52;
-  background-color: #ECEEF8;
+  border-left: solid 5px #0F4C81;
+  background-color: #F5F5F5;
 }
 
 .small {
@@ -65,13 +68,13 @@ $presentation-font-size-root: 36px !default;
 
 .reveal .hand-purple {
   font-family: 'Gochi Hand', cursive;
-  color: #461a52;
+  color: #0F4C81;
   font-size: 1.2em
 }
 
 .reveal .hand-purple-large {
   font-family: 'Gochi Hand', cursive;
-  color: #461a52;
+  color: #0F4C81;
   font-size: 3em
 }
 
@@ -97,6 +100,16 @@ $presentation-font-size-root: 36px !default;
 
 .highlight-yellow {
   background-color: #FAE3B4;
+  padding: 0.0em 0.1em;
+}
+
+.highlight-peach {
+  background-color: #FEBC94;
+  padding: 0.0em 0.1em;
+}
+
+.highlight-pink {
+  background-color: lighten(#ED6D37, 30%);
   padding: 0.0em 0.1em;
 }
 

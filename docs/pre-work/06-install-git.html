@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Pre-course work: Git for Scientists – Git for Scientists (Summer 2026)</title>
+<title>install-git – Git for Scientists (Summer 2026)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,33 +23,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./pre-work/01-element.html" rel="next">
-<link href="./images/ghe-square-logo.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a9c94084e156453ce75ecc8ff7b2041c.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-97436e1ffffeef4364cd3da8de43bea7.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a9c94084e156453ce75ecc8ff7b2041c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1bead18ecc946e2c64262c0b2cb3a18c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1bead18ecc946e2c64262c0b2cb3a18c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-1bead18ecc946e2c64262c0b2cb3a18c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../pre-work/07-first-repo.html" rel="next">
+<link href="../pre-work/05-github-pat.html" rel="prev">
+<link href="../images/ghe-square-logo.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-a9c94084e156453ce75ecc8ff7b2041c.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-97436e1ffffeef4364cd3da8de43bea7.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-a9c94084e156453ce75ecc8ff7b2041c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1bead18ecc946e2c64262c0b2cb3a18c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-1bead18ecc946e2c64262c0b2cb3a18c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1bead18ecc946e2c64262c0b2cb3a18c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -96,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Pre-course work</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/06-install-git.html">Step 6: Install Git</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -107,9 +143,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/ghe-square-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="./images/ghe-square-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/ghe-square-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../images/ghe-square-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://github.com/gitforsci-ghe/website" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
@@ -120,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Pre-course work</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -129,49 +165,49 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pre-work/01-element.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/01-element.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 1: Communication</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pre-work/02-install-r.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/02-install-r.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 2: Install R &amp; RStudio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pre-work/03-github-acc.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/03-github-acc.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 3: GitHub account</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pre-work/04-survey.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/04-survey.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 4: Pre-course survey</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pre-work/05-github-pat.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/05-github-pat.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 5: GitHub PAT</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pre-work/06-install-git.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/06-install-git.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Step 6: Install Git</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pre-work/07-first-repo.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/07-first-repo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 7: Test your setup</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./pre-work/08-big-picture.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/08-big-picture.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 8: Why Git? Why GitHub?</span></a>
   </div>
 </li>
@@ -188,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./workshop/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../workshop/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Git for Scientists</span></a>
   </div>
 </li>
@@ -204,155 +240,64 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> Prior knowledge</a></li>
-  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring-to-the-workshop" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring-to-the-workshop" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring-to-the-workshop"><i class="fa-solid fa-suitcase" aria-label="suitcase"></i> What do I need to bring to the workshop?</a></li>
-  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> What do I need to prepare before the workshop?</a></li>
-  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule"><i class="fa-solid fa-calendar" aria-label="calendar"></i> Schedule</a></li>
-  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning objectives</a></li>
-  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks"><i class="fa-solid fa-sun" aria-label="sun"></i> Thanks!</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6272616e6368203e7d7d-download-and-install-git" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6272616e6368203e7d7d-download-and-install-git" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6272616e6368203e7d7d-download-and-install-git"><i class="fa-solid fa-code-branch" aria-label="code-branch"></i> Download and install Git</a>
+  <ul class="collapse">
+  <li><a href="#install-git-windows" id="toc-install-git-windows" class="nav-link" data-scroll-target="#install-git-windows">Windows</a></li>
+  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos">macOS</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/06-install-git.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/06-install-git.html">Step 6: Install Git</a></li></ol></nav></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Pre-course work: Git for Scientists</h1>
+
+
+
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636f64652d6272616e6368203e7d7d-download-and-install-git" class="level1">
+<h1><i class="fa-solid fa-code-branch" aria-label="code-branch"></i> Download and install Git</h1>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Thank you for your interest in this course. Your course instructor <a href="https://www.linkedin.com/in/larsschoebitz/">Lars Schöbitz</a> is looking forward to meet you.</p>
-<p>AI coding agents are rapidly entering scientific work, and using them with confidence starts with the same collaboration skills that make any research project reproducible and reviewable. This workshop gives you those foundations. You will learn to use Git and GitHub for collaboration in scientific work, so that later you can treat an AI agent as a collaborator whose every change is versioned, documented, and open to review. It is the first step in getting ready for AI-assisted scientific work.</p>
-<p>We will meet on Wednesday, 15 July 2026 - 09:30 to 14:30 (Europe/Zurich) at ETH Zurich.</p>
-<p>To register for the workshop, complete the signup form: <a href="https://forms.gle/Zf5fPsPJqUxEoLgKA" class="uri">https://forms.gle/Zf5fPsPJqUxEoLgKA</a></p>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge" class="level2">
-<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> Prior knowledge</h2>
-<p>For this course, we assume that you have some prior knowledge of R and RStudio. You should be able to:</p>
-<ul>
-<li>install and load R packages</li>
-<li>read and run short R scripts</li>
-<li>edit and run R Markdown / Quarto documents</li>
-<li>navigate the RStudio IDE</li>
-<li>identify the four panes of the RStudio IDE (Script, Environment, Files, Console)</li>
-</ul>
-</section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring-to-the-workshop" class="level2">
-<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring-to-the-workshop"><i class="fa-solid fa-suitcase" aria-label="suitcase"></i> What do I need to bring to the workshop?</h2>
-<p>Please ensure you have the following available:</p>
-<ul>
-<li>a laptop, connected to wifi</li>
-<li>a web browser (preferably Chrome or Firefox)</li>
-<li>a completed list of pre-work tasks with intermediate due dates</li>
-</ul>
-<p><span class="highlight-yellow">Prior to the workshop, there is some pre-work for you to do</span>. This pre-work will ensure that we can focus our time together on building collaboration skills instead of setting up infrastructure.</p>
-</section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop" class="level2">
-<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> What do I need to prepare before the workshop?</h2>
-<p>Prior to the workshop, complete the following eight steps:</p>
-<ul>
-<li><a href="pre-work/01-element.html">Step 1</a>: Setup Element as a communication channel</li>
-<li><a href="pre-work/02-install-r.html">Step 2</a>: Download and install R and RStudio</li>
-<li><a href="pre-work/03-github-acc.html">Step 3</a>: Get an account for GitHub</li>
-<li><a href="pre-work/04-survey.html">Step 4</a>: Complete the pre-course survey by <span class="highlight-yellow"><strong>Wednesday, 08 July 2026</strong></span>.</li>
-<li><a href="pre-work/05-github-pat.html">Step 5</a>: Create a personal access token for GitHub</li>
-<li><a href="pre-work/06-install-git.html">Step 6</a>: Install Git</li>
-<li><a href="pre-work/07-first-repo.html">Step 7</a>: Check your complete setup by <span class="highlight-yellow"><strong>Monday, 13 July 2026</strong></span>. (unlocked after pre-course survey is completed)</li>
-<li><a href="pre-work/08-big-picture.html">Step 8</a>: Read “Why Git? Why GitHub?” from “Happy Git and GitHub for the useR”!</li>
-</ul>
-</section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule" class="level2">
-<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule"><i class="fa-solid fa-calendar" aria-label="calendar"></i> Schedule</h2>
-<div class="cell" data-tbl-colwidths="[25,75]">
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 75%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Time</th>
-<th style="text-align: left;">Module</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">09:30 - 10:00</td>
-<td style="text-align: left;">Arrival and setup check</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">10:00 - 10:30</td>
-<td style="text-align: left;"><a href="workshop/">B1: Welcome, concept-map intro, baseline map</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">10:30 - 11:00</td>
-<td style="text-align: left;"><a href="workshop/">B2: Create and clone (website repo)</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">11:00 - 11:15</td>
-<td style="text-align: left;">Break</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">11:15 - 11:45</td>
-<td style="text-align: left;"><a href="workshop/">B3: The commit cycle (website repo)</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">11:45 - 12:15</td>
-<td style="text-align: left;"><a href="workshop/">B4: Collaboration cliffhanger (partner clone, push fails)</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">12:15 - 13:00</td>
-<td style="text-align: left;">Lunch</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">13:00 - 13:30</td>
-<td style="text-align: left;"><a href="workshop/">B5: Branch (manuscript repo)</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">13:30 - 14:05</td>
-<td style="text-align: left;"><a href="workshop/">B6: Pull request, review, merge</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">14:05 - 14:15</td>
-<td style="text-align: left;"><a href="workshop/">B7: Publish</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">14:15 - 14:30</td>
-<td style="text-align: left;"><a href="workshop/">B8: Concept map revisit and wrap-up</a></td>
-</tr>
-</tbody>
-</table>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>Be ready to get in touch on Element for this task.</p>
+</div>
+</div>
+<section id="install-git-windows" class="level2">
+<h2 class="anchored" data-anchor-id="install-git-windows">Windows</h2>
+<p>Install <a href="https://git-for-windows.github.io/">Git for Windows</a> after download from this direct download link: <a href="https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe" class="uri">https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe</a></p>
+<p>Git for Windows is also known as <code>msysgit</code> or “Git Bash”, to get Git in addition to some other useful tools, such as the Bash shell. Yes, all those names are totally confusing, but you might encounter them elsewhere and I want you to be well-informed.</p>
+<p>We like this because Git for Windows leaves the Git executable in a conventional location, which will help you and other programs, e.g.&nbsp;RStudio, find it and use it. This also supports a transition to more expert use, because the “Git Bash” shell will be useful as you venture outside of R/RStudio.</p>
+<ul>
+<li><strong>NOTE:</strong> When asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”. Otherwise, we believe it is good to accept the defaults.</li>
+<li>Note that RStudio for Windows prefers for Git to be installed below <code>C:/Program Files</code> and this appears to be the default. This implies, for example, that the Git executable on my Windows system is found at <code>C:/Program Files/Git/bin/git.exe</code>. Unless you have specific reasons to otherwise, follow this convention.</li>
+</ul>
 </section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning objectives</h2>
-<p>By the end of this workshop, participants will be able to:</p>
-<ol type="1">
-<li><p>Create and clone a repository, and apply the standard Git workflow from the RStudio IDE: pulling, staging, committing, and pushing changes, including reverting a commit.</p></li>
-<li><p>Work with branches and pull requests: create a development branch, open a pull request, review and comment on a colleague’s pull request, and merge after review.</p></li>
-<li><p>Publish a rendered document via GitHub Pages, and draw a concept map of how Git and GitHub fit together as a foundation for collaboration.</p></li>
-</ol>
-</section>
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks" class="level2">
-<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks"><i class="fa-solid fa-sun" aria-label="sun"></i> Thanks!</h2>
-<p>Thank you for working through these steps. We are looking forward to meeting you at the workshop.</p>
+<section id="macos" class="level2">
+<h2 class="anchored" data-anchor-id="macos">macOS</h2>
+<p>It’s slightly more complicated. Please get in touch through Element if you have questions.</p>
+<p><strong>Option 1</strong> (<em>highly recommended</em>): Install the Xcode command line tools (<strong>not all of Xcode</strong>), which includes Git.</p>
+<ul>
+<li>Open the Terminal application on Mac and type <code>xcode-select --install</code>. If you don’t have it installed, you will be prompted to install the Xcode command line tools. Follow the instructions.</li>
+</ul>
+<p><strong>Option 2</strong> (<em>recommended</em>): If you anticipate getting heavily into scientific computing, you’re going to be installing and updating lots of software. You should check out <a href="http://brew.sh">Homebrew</a>, “the missing package manager for OS X”. Among many other things, it can install Git for you.</p>
+<ul>
+<li>Open the Terminal application on Mac, copy and run the following line:</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/bin/bash</span> <span class="at">-c</span> <span class="st">"</span><span class="va">$(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="va">)</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This will install Homebrew. You may be prompted for your password. If you are, type it in and hit enter. You won’t see anything appear on the screen as you type, but it is working.</p>
+<p>Once you have Homebrew installed, type and run this in the terminal.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>We will confirm in <a href="../pre-work/07-first-repo.html">Test your setup</a> that you have Git installed and working.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -765,10 +710,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../pre-work/05-github-pat.html" class="pagination-link" aria-label="Step 5: GitHub PAT">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Step 5: GitHub PAT</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./pre-work/01-element.html" class="pagination-link" aria-label="Step 1: Communication">
-        <span class="nav-page-text">Step 1: Communication</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pre-work/07-first-repo.html" class="pagination-link" aria-label="Step 7: Test your setup">
+        <span class="nav-page-text">Step 7: Test your setup</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -780,7 +728,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/06-install-git.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
