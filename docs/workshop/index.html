@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Git for Scientists – Git for Scientists (Summer 2026)</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -24,7 +27,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -57,10 +59,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2575636bf12bba71c1c5b79222bd7450.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-a9c94084e156453ce75ecc8ff7b2041c.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-97436e1ffffeef4364cd3da8de43bea7.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-a9c94084e156453ce75ecc8ff7b2041c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d10db3585f419cddfc8d5e78b10ac783.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1bead18ecc946e2c64262c0b2cb3a18c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-1bead18ecc946e2c64262c0b2cb3a18c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-1bead18ecc946e2c64262c0b2cb3a18c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -121,7 +127,8 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../images/ghe-square-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../images/ghe-square-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../images/ghe-square-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://github.com/gitforsci-ghe/website" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
@@ -216,8 +223,8 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides"><i class="fa-solid fa-display" aria-label="display"></i> Slides</a></li>
-  <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings"><i class="fa-solid fa-book" aria-label="book"></i> Readings</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646973706c6179203e7d7d-slides" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646973706c6179203e7d7d-slides" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646973706c6179203e7d7d-slides"><i class="fa-solid fa-display" aria-label="display"></i> Slides</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-readings" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-readings" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-readings"><i class="fa-solid fa-book" aria-label="book"></i> Readings</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/workshop/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -243,15 +250,15 @@ div.csl-indent {
 </header>
 
 
-<section id="slides" class="level2">
-<h2 class="anchored" data-anchor-id="slides"><i class="fa-solid fa-display" aria-label="display"></i> Slides</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646973706c6179203e7d7d-slides" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120646973706c6179203e7d7d-slides"><i class="fa-solid fa-display" aria-label="display"></i> Slides</h2>
 <p><a href="slides.html">View slides in full screen</a> | <a href="https://github.com/gitforsci-ghe/website/raw/main/workshop/slides.pdf">Download slides as PDF</a></p>
 <iframe class="slide-deck" src="slides.html" height="420" width="747" style="border: 1px solid #123233;"></iframe>
 </section>
-<section id="readings" class="level2">
-<h2 class="anchored" data-anchor-id="readings"><i class="fa-solid fa-book" aria-label="book"></i> Readings</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-readings" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120626f6f6b203e7d7d-readings"><i class="fa-solid fa-book" aria-label="book"></i> Readings</h2>
 <ol type="1">
-<li><p>Openscapes Champions Lesson Series. <span class="citation" data-cites="julia_stewart_lowndes_2024_14428503">Lowndes, Butland, and Robinson (<a href="#ref-julia_stewart_lowndes_2024_14428503" role="doc-biblioref">2024</a>)</span>: <a href="https://openscapes.github.io/series/core-lessons/github/" class="uri">https://openscapes.github.io/series/core-lessons/github/</a></p></li>
+<li><p>Openscapes Champions Lesson Series. <span class="citation" data-cites="julia_stewart_lowndes_2024_14428503">Lowndes et al. (<a href="#ref-julia_stewart_lowndes_2024_14428503" role="doc-biblioref">2024</a>)</span>: <a href="https://openscapes.github.io/series/core-lessons/github/" class="uri">https://openscapes.github.io/series/core-lessons/github/</a></p></li>
 <li><p>Excuse Me, Do You Have a Moment to Talk About Version Control? <a href="https://peerj.com/preprints/3159/" class="uri">https://peerj.com/preprints/3159/</a></p></li>
 </ol>
 
@@ -259,9 +266,9 @@ div.csl-indent {
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-julia_stewart_lowndes_2024_14428503" class="csl-entry" role="listitem">
-Lowndes, Julia Stewart, Stefanie Butland, and Erin Robinson. 2024. <span>“Openscapes/Series: Openscapes Lesson Series V2024.11.0.”</span> Zenodo. <a href="https://doi.org/10.5281/zenodo.14428503">https://doi.org/10.5281/zenodo.14428503</a>.
+Lowndes, Julia Stewart, Stefanie Butland, and Erin Robinson. 2024. <em>Openscapes/Series: Openscapes Lesson Series V2024.11.0</em>. Version v2024.12.0. Zenodo. <a href="https://doi.org/10.5281/zenodo.14428503">https://doi.org/10.5281/zenodo.14428503</a>.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -315,13 +322,14 @@ Lowndes, Julia Stewart, Stefanie Butland, and Erin Robinson. 2024. <span>“Open
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

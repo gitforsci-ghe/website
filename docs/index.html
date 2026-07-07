@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Pre-course work: Git for Scientists – Git for Scientists (Summer 2026)</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -37,10 +40,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2575636bf12bba71c1c5b79222bd7450.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-a9c94084e156453ce75ecc8ff7b2041c.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-97436e1ffffeef4364cd3da8de43bea7.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-a9c94084e156453ce75ecc8ff7b2041c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d10db3585f419cddfc8d5e78b10ac783.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-1bead18ecc946e2c64262c0b2cb3a18c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-1bead18ecc946e2c64262c0b2cb3a18c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-1bead18ecc946e2c64262c0b2cb3a18c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -101,7 +108,8 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/ghe-square-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./images/ghe-square-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./images/ghe-square-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://github.com/gitforsci-ghe/website" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
@@ -196,12 +204,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#prior-knowledge" id="toc-prior-knowledge" class="nav-link active" data-scroll-target="#prior-knowledge"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> Prior knowledge</a></li>
-  <li><a href="#what-do-i-need-to-bring-to-the-workshop" id="toc-what-do-i-need-to-bring-to-the-workshop" class="nav-link" data-scroll-target="#what-do-i-need-to-bring-to-the-workshop"><i class="fa-solid fa-suitcase" aria-label="suitcase"></i> What do I need to bring to the workshop?</a></li>
-  <li><a href="#what-do-i-need-to-prepare-before-the-workshop" id="toc-what-do-i-need-to-prepare-before-the-workshop" class="nav-link" data-scroll-target="#what-do-i-need-to-prepare-before-the-workshop"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> What do I need to prepare before the workshop?</a></li>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule"><i class="fa-solid fa-calendar" aria-label="calendar"></i> Schedule</a></li>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning objectives</a></li>
-  <li><a href="#thanks" id="toc-thanks" class="nav-link" data-scroll-target="#thanks"><i class="fa-solid fa-sun" aria-label="sun"></i> Thanks!</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> Prior knowledge</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring-to-the-workshop" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring-to-the-workshop" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring-to-the-workshop"><i class="fa-solid fa-suitcase" aria-label="suitcase"></i> What do I need to bring to the workshop?</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> What do I need to prepare before the workshop?</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule"><i class="fa-solid fa-calendar" aria-label="calendar"></i> Schedule</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning objectives</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks"><i class="fa-solid fa-sun" aria-label="sun"></i> Thanks!</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -231,8 +239,8 @@ ul.task-list li input[type="checkbox"] {
 <p>AI coding agents are rapidly entering scientific work, and using them with confidence starts with the same collaboration skills that make any research project reproducible and reviewable. This workshop gives you those foundations. You will learn to use Git and GitHub for collaboration in scientific work, so that later you can treat an AI agent as a collaborator whose every change is versioned, documented, and open to review. It is the first step in getting ready for AI-assisted scientific work.</p>
 <p>We will meet on Wednesday, 15 July 2026 - 09:30 to 14:30 (Europe/Zurich) at ETH Zurich.</p>
 <p>To register for the workshop, complete the signup form: <a href="https://forms.gle/Zf5fPsPJqUxEoLgKA" class="uri">https://forms.gle/Zf5fPsPJqUxEoLgKA</a></p>
-<section id="prior-knowledge" class="level2">
-<h2 class="anchored" data-anchor-id="prior-knowledge"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> Prior knowledge</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612067726164756174696f6e2d636170203e7d7d-prior-knowledge"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> Prior knowledge</h2>
 <p>For this course, we assume that you have some prior knowledge of R and RStudio. You should be able to:</p>
 <ul>
 <li>install and load R packages</li>
@@ -242,8 +250,8 @@ ul.task-list li input[type="checkbox"] {
 <li>identify the four panes of the RStudio IDE (Script, Environment, Files, Console)</li>
 </ul>
 </section>
-<section id="what-do-i-need-to-bring-to-the-workshop" class="level2">
-<h2 class="anchored" data-anchor-id="what-do-i-need-to-bring-to-the-workshop"><i class="fa-solid fa-suitcase" aria-label="suitcase"></i> What do I need to bring to the workshop?</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring-to-the-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661207375697463617365203e7d7d-what-do-i-need-to-bring-to-the-workshop"><i class="fa-solid fa-suitcase" aria-label="suitcase"></i> What do I need to bring to the workshop?</h2>
 <p>Please ensure you have the following available:</p>
 <ul>
 <li>a laptop, connected to wifi</li>
@@ -252,8 +260,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><span class="highlight-yellow">Prior to the workshop, there is some pre-work for you to do</span>. This pre-work will ensure that we can focus our time together on building collaboration skills instead of setting up infrastructure.</p>
 </section>
-<section id="what-do-i-need-to-prepare-before-the-workshop" class="level2">
-<h2 class="anchored" data-anchor-id="what-do-i-need-to-prepare-before-the-workshop"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> What do I need to prepare before the workshop?</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d7175657374696f6e203e7d7d-what-do-i-need-to-prepare-before-the-workshop"><i class="fa-solid fa-circle-question" aria-label="circle-question"></i> What do I need to prepare before the workshop?</h2>
 <p>Prior to the workshop, complete the following eight steps:</p>
 <ul>
 <li><a href="pre-work/01-element.html">Step 1</a>: Setup Element as a communication channel</li>
@@ -266,8 +274,8 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="pre-work/08-big-picture.html">Step 8</a>: Read “Why Git? Why GitHub?” from “Happy Git and GitHub for the useR”!</li>
 </ul>
 </section>
-<section id="schedule" class="level2">
-<h2 class="anchored" data-anchor-id="schedule"><i class="fa-solid fa-calendar" aria-label="calendar"></i> Schedule</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule"><i class="fa-solid fa-calendar" aria-label="calendar"></i> Schedule</h2>
 <div class="cell" data-tbl-colwidths="[25,75]">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -331,8 +339,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning objectives</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives"><i class="fa-solid fa-bullseye" aria-label="bullseye"></i> Learning objectives</h2>
 <p>By the end of this workshop, participants will be able to:</p>
 <ol type="1">
 <li><p>Create and clone a repository, and apply the standard Git workflow from the RStudio IDE: pulling, staging, committing, and pushing changes, including reverting a commit.</p></li>
@@ -340,8 +348,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Publish a rendered document via GitHub Pages, and draw a concept map of how Git and GitHub fit together as a foundation for collaboration.</p></li>
 </ol>
 </section>
-<section id="thanks" class="level2">
-<h2 class="anchored" data-anchor-id="thanks"><i class="fa-solid fa-sun" aria-label="sun"></i> Thanks!</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612073756e203e7d7d-thanks"><i class="fa-solid fa-sun" aria-label="sun"></i> Thanks!</h2>
 <p>Thank you for working through these steps. We are looking forward to meeting you at the workshop.</p>
 
 
@@ -399,13 +407,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
