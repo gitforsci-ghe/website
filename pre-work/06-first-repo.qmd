@@ -10,6 +10,12 @@ In this task, we will test if your setup is complete and working. You will also 
 You can only complete this step once you have received the invitation email to the `gitforsci-ghe` organization, which I send after you complete the pre-course survey. No email yet? Confirm that you have [completed the pre-course survey](03-survey.qmd), check your spam folder, and then contact me by email: [{{< var email >}}](mailto:{{< var email >}})
 :::
 
+::: {.callout-note}
+# Screenshots show the name of a previous workshop
+
+The screenshots on this page were taken during a previous workshop and show the organization name `gitforsci-cis`. For this workshop, read `gitforsci-ghe` wherever a screenshot says `gitforsci-cis`. The steps are identical.
+:::
+
 ## Step 1: Accept invitation from GitHub
 
 1. Open your email that you used to register for your GitHub account.

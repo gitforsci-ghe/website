@@ -10,7 +10,7 @@ editor_options:
 
 Thank you for your interest in this course. Your course instructor [Lars Schöbitz](https://www.linkedin.com/in/larsschoebitz/) is looking forward to meet you.
 
-We will meet on Wednesday, 15 July 2026 - 09:30 to 14:30 (Europe/Zurich) at ETH Zurich.
+We will meet on Wednesday, 15 July 2026 - 09:30 to 14:30 (Europe/Zurich) at ETH Zurich, in the CLD Building, Raum A1. Instructions to find us: <https://ghe.ethz.ch/about/how-to-find-us.html>
 
 Registration for this workshop is closed. You can still share your interest in a future iteration through this form: <https://forms.gle/Zf5fPsPJqUxEoLgKA>
 
@@ -34,6 +34,7 @@ Please ensure you have the following available:
 
 -   a laptop, connected to wifi
 -   a web browser (preferably Chrome or Firefox)
+-   a pen and paper (we will be doing some drawings)
 -   a completed list of pre-work tasks with intermediate due dates
 
 [Prior to the workshop, there is some pre-work for you to do]{.highlight-yellow}. This pre-work will ensure that we can focus our time together on building collaboration skills instead of setting up infrastructure.
