@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>github-pat – Git for Scientists (Summer 2026)</title>
+<title> Test your setup (1 of 3): Clone the setup repository – Git for Scientists (Summer 2026)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../pre-work/05-install-git.html" rel="next">
-<link href="../pre-work/03-survey.html" rel="prev">
+<link href="../pre-work/06b-configure-git.html" rel="next">
+<link href="../pre-work/05-install-git.html" rel="prev">
 <link href="../images/ghe-square-logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/04-github-pat.html">Step 4: GitHub PAT</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/06a-clone-repo.html">Step 6a: Test setup - clone repository</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/04-github-pat.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pre-work/04-github-pat.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 4: GitHub PAT</span></a>
   </div>
 </li>
@@ -160,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/06a-clone-repo.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/06a-clone-repo.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Step 6a: Test setup - clone repository</span></a>
   </div>
 </li>
@@ -211,59 +211,190 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-create-a-github-personal-access-token" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-create-a-github-personal-access-token" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-create-a-github-personal-access-token"><i class="fa-solid fa-key" aria-label="key"></i> Create a GitHub Personal Access Token</a></li>
+  <li><a href="#step-1-accept-invitation-from-github" id="toc-step-1-accept-invitation-from-github" class="nav-link active" data-scroll-target="#step-1-accept-invitation-from-github">Step 1: Accept invitation from GitHub</a></li>
+  <li><a href="#step-2-create-a-bookmark" id="toc-step-2-create-a-bookmark" class="nav-link" data-scroll-target="#step-2-create-a-bookmark">Step 2: Create a bookmark</a></li>
+  <li><a href="#step-3-clone-the-setup-repository" id="toc-step-3-clone-the-setup-repository" class="nav-link" data-scroll-target="#step-3-clone-the-setup-repository">Step 3: Clone the setup repository</a></li>
+  <li><a href="#next-step" id="toc-next-step" class="nav-link" data-scroll-target="#next-step">Next step</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/04-github-pat.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/06a-clone-repo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/04-github-pat.html">Step 4: GitHub PAT</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/06a-clone-repo.html">Step 6a: Test setup - clone repository</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><i class="fa-solid fa-list-check" aria-label="list-check"></i> Test your setup (1 of 3): Clone the setup repository</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-create-a-github-personal-access-token" class="level1">
-<h1><i class="fa-solid fa-key" aria-label="key"></i> Create a GitHub Personal Access Token</h1>
-<p>Here are the step-by-step instructions to set up a GitHub personal access token (PAT):</p>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This is the first of three short steps that test whether your setup is complete and working. In this step, you accept your invitation to the GitHub organization and clone your personal setup repository into RStudio.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>This step only works after you have received an email from GitHub
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can only complete this step once you have received the invitation email to the <code>gitforsci-ghe</code> organization, which I send after you complete the pre-course survey. No email yet? Confirm that you have <a href="../pre-work/03-survey.html">completed the pre-course survey</a>, check your spam folder, and then contact me by email: <a href="mailto:lschoebitz@ethz.ch">lschoebitz@ethz.ch</a></p>
+</div>
+</div>
+<section id="step-1-accept-invitation-from-github" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-accept-invitation-from-github">Step 1: Accept invitation from GitHub</h2>
+<ol type="1">
+<li>Open your email that you used to register for your GitHub account.</li>
+<li>Find the email from GitHub with the subject “[GitHub] <span class="citation" data-cites="larnsce">@larnsce</span> invited you to join the ‘gitforsci-ghe’ organization”.</li>
+<li>Click on “Join <span class="citation" data-cites="gitforsci-ghe">@gitforsci-ghe</span>” link in the email to accept the invitation and work through the steps that follow in your browser to accept the invitation.</li>
+</ol>
+<p><img src="images/06a-clone/01-github-invitation.png" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="step-2-create-a-bookmark" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-create-a-bookmark">Step 2: Create a bookmark</h2>
+<ol type="1">
+<li>Open the landing page for the GitHub organization ‘gitforsci-ghe’: <a href="https://github.com/gitforsci-ghe" class="uri">https://github.com/gitforsci-ghe</a></li>
+</ol>
+<p><img src="images/06a-clone/02-github-landing-page.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="2" type="1">
+<li>Bookmark this page in your browser.</li>
+</ol>
+<p><img src="images/06a-clone/03-bookmark-added.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="3" type="1">
+<li>Organize the bookmark into a folder called “gitforsci-ghe” or similar.</li>
+</ol>
+<p><img src="images/06a-clone/04-bookmark-folder.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="4" type="1">
+<li>Use this folder to add other bookmarks that are relevant for this workshop (e.g.&nbsp;the workshop website)</li>
+</ol>
+<p><img src="images/06a-clone/05-bookmark-folder-bar.png" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="step-3-clone-the-setup-repository" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-clone-the-setup-repository">Step 3: Clone the setup repository</h2>
+<ol type="1">
+<li><p>Open the landing page for the GitHub organization ‘gitforsci-ghe’: <a href="https://github.com/gitforsci-ghe" class="uri">https://github.com/gitforsci-ghe</a> (try to use your bookmark)</p></li>
+<li><p>Navigate down the page to the section “Repositories” and use the search field to find the repository called <code>01-setup-USERNAME</code> where USERNAME is your GitHub username.</p></li>
+</ol>
+<p><img src="images/06a-clone/06-github-repo-find.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="3" type="1">
+<li>Click on the repository name to open it.</li>
+</ol>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+<span class="screen-reader-only">Important</span>No repository with your username?
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Treat your access tokens like passwords and keep them secure (e.g.&nbsp;a password managing software).</p>
+<p>Contact me by email if your repository is not there. I will create it for you.</p>
 </div>
 </div>
-<ol type="1">
-<li><p>Log in to your GitHub account.</p></li>
-<li><p>Click on your profile picture in the top-right corner of the page.</p></li>
-<li><p>Select “Settings” from the dropdown menu.</p></li>
-<li><p>In the left sidebar, click on “Developer settings”.</p></li>
-<li><p>Click on “Personal access tokens”.</p></li>
-<li><p>Click on <strong>“Tokens (classic)”</strong>.</p></li>
-<li><p>Click on “Generate new token” and from the dropdown menu select <strong>“Generate new token (classic)”.</strong></p></li>
-<li><p>In the “Note” field, give your token the name: GITHUB_PAT</p></li>
-<li><p>Under Expiration, select “No expiration”</p></li>
-<li><p>Under “Select scopes”, select: <strong>repo, workflow, user</strong></p></li>
-<li><p>Click on “Generate token”.</p></li>
-<li><p>Your personal access token will be displayed on the screen. Copy it and store it in a safe place.</p></li>
+<p><img src="images/06a-clone/07-github-repo-open.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="4" type="1">
+<li>Click on the green “Code” button.</li>
 </ol>
-<div class="callout callout-style-default callout-tip callout-titled">
+<p><img src="images/06a-clone/08-github-code-button.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="5" type="1">
+<li>Copy the HTTPS URL to your clipboard by clicking on the clipboard sign.</li>
+</ol>
+<p><img src="images/06a-clone/09-github-code-copy.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="6" type="1">
+<li>Open the RStudio IDE on your laptop.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You will need this token in your pre-course work and throughout the workshop.</p>
+<p>I am working on MacOS, but the steps should be similar on Windows.</p>
 </div>
 </div>
+<p><img src="images/06a-clone/10-rstudio.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="7" type="1">
+<li>Click on <span class="highlight-yellow">File &gt; New Project</span> in the top menu bar</li>
+</ol>
+<p><img src="images/06a-clone/11-rstudio-new-project.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="8" type="1">
+<li>Click on Version Control.</li>
+</ol>
+<p><img src="images/06a-clone/12-rstudio-version-control.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="9" type="1">
+<li>Click on Git.</li>
+</ol>
+<p><img src="images/06a-clone/13-rstudio-git.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="10" type="1">
+<li>Click on <span class="highlight-yellow">Browse…</span> button.</li>
+</ol>
+<p><img src="images/06a-clone/14-rstudio-git-browse.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="11" type="1">
+<li>Create a folder structure for Git repositories (e.g.&nbsp;<code>~/Documents/gitrepos/gh-org-gitforsci-ghe</code>)</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Folder structure for Git repositories and naming conventions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I highly recommend storing folders that are Git repositories separate from other folders. This will help you to keep track of your Git repositories and avoid confusion with other folders.</p>
+<p>Create this directory structure locally on your laptop and not in folders that are synced with cloud storage (e.g.&nbsp;Google Drive, Dropbox, OneDrive, etc.).</p>
+<p>In your directory structure, you can create a folder called <code>gitrepos</code>. Inside this folder, you can create subfolders for each GitHub organization you are working with (e.g.&nbsp;<code>gh-org-gitforsci-ghe</code>). A subfolder for your personal profile would be <code>gh-rainbow-train</code>. If you also work with GitLab or other Git hosting platforms, use the abbreviation for the platform in the folder name (e.g.&nbsp;<code>gitrepos/gh-rainbow-train</code>, <code>gitrepos/gl-rainbow-train</code>, etc.).</p>
+<p>This strategy will help you to keep track of your Git repositories and the respective platforms and organisations they belong to.</p>
+</div>
+</div>
+<ol start="12" type="1">
+<li>Paste the HTTPS URL from GitHub into the “Repository URL” field.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>The “Project directory name” field
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>After you paste the URL, RStudio usually fills in the “Project directory name” field for you. If it stays empty, leave it empty and do not type anything. Creating the project works with an empty field.</p>
+</div>
+</div>
+<p><img src="images/06a-clone/15-rstudio-git-url.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="13" type="1">
+<li>Click on the “Create Project” button.</li>
+</ol>
+<p><img src="images/06a-clone/16-rstudio-git-create.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="14" type="1">
+<li>Find the Files tab in the bottom right pane of RStudio. You will see three numbered R scripts: <code>01-github-token.R</code>, <code>02-git-configuration.R</code>, and <code>03-workshop-packages.R</code>. You will work through them in the next two steps.</li>
+</ol>
+<p><img src="images/06a-clone/17-rstudio-files-tab.png" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="next-step" class="level2">
+<h2 class="anchored" data-anchor-id="next-step">Next step</h2>
+<p>Your repository is cloned and open in RStudio. Continue with <a href="../pre-work/06b-configure-git.html">Step 6b: Configure Git and push your first change</a>.</p>
 
 
 </section>
@@ -678,13 +809,13 @@ Tip
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../pre-work/03-survey.html" class="pagination-link" aria-label="Step 3: Pre-course survey">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Step 3: Pre-course survey</span>
+      <a href="../pre-work/05-install-git.html" class="pagination-link" aria-label="Step 5: Install Git">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Step 5: Install Git</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pre-work/05-install-git.html" class="pagination-link" aria-label="Step 5: Install Git">
-        <span class="nav-page-text">Step 5: Install Git</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pre-work/06b-configure-git.html" class="pagination-link" aria-label="Step 6b: Test setup - configure Git">
+        <span class="nav-page-text">Step 6b: Test setup - configure Git</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -696,7 +827,7 @@ Tip
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/04-github-pat.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/06a-clone-repo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

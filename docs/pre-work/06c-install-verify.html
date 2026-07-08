@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>github-pat – Git for Scientists (Summer 2026)</title>
+<title> Test your setup (3 of 3): Install packages and report done – Git for Scientists (Summer 2026)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../pre-work/05-install-git.html" rel="next">
-<link href="../pre-work/03-survey.html" rel="prev">
+<link href="../pre-work/07-big-picture.html" rel="next">
+<link href="../pre-work/06b-configure-git.html" rel="prev">
 <link href="../images/ghe-square-logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/04-github-pat.html">Step 4: GitHub PAT</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/06c-install-verify.html">Step 6c: Test setup - install &amp; report</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/04-github-pat.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pre-work/04-github-pat.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 4: GitHub PAT</span></a>
   </div>
 </li>
@@ -172,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/06c-install-verify.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/06c-install-verify.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Step 6c: Test setup - install &amp; report</span></a>
   </div>
 </li>
@@ -211,59 +211,87 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-create-a-github-personal-access-token" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-create-a-github-personal-access-token" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-create-a-github-personal-access-token"><i class="fa-solid fa-key" aria-label="key"></i> Create a GitHub Personal Access Token</a></li>
+  <li><a href="#step-1-install-the-workshop-packages" id="toc-step-1-install-the-workshop-packages" class="nav-link active" data-scroll-target="#step-1-install-the-workshop-packages">Step 1: Install the workshop packages</a></li>
+  <li><a href="#step-2-open-an-issue-on-github" id="toc-step-2-open-an-issue-on-github" class="nav-link" data-scroll-target="#step-2-open-an-issue-on-github">Step 2: Open an issue on GitHub</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/04-github-pat.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/06c-install-verify.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/04-github-pat.html">Step 4: GitHub PAT</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/06c-install-verify.html">Step 6c: Test setup - install &amp; report</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><i class="fa-solid fa-list-check" aria-label="list-check"></i> Test your setup (3 of 3): Install packages and report done</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-create-a-github-personal-access-token" class="level1">
-<h1><i class="fa-solid fa-key" aria-label="key"></i> Create a GitHub Personal Access Token</h1>
-<p>Here are the step-by-step instructions to set up a GitHub personal access token (PAT):</p>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This is the last of three short steps. Your setup repository is open in RStudio and Git is configured (from <a href="../pre-work/06b-configure-git.html">Step 6b</a>). Here you install the workshop packages and open an issue so I can verify your setup.</p>
+<section id="step-1-install-the-workshop-packages" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-install-the-workshop-packages">Step 1: Install the workshop packages</h2>
+<p>In the workshop, you will work on a small manuscript that uses the <code>washinvestments</code> R data package. Installing the packages now means the manuscript renders in under a minute on the day, and we can spend our time together on Git and GitHub instead of watching progress bars.</p>
+<ol type="1">
+<li><p>In the Files tab (bottom-right pane), click on <code>03-workshop-packages.R</code> to open it in the editor. There is nothing to edit in this script.</p></li>
+<li><p>Click the <strong>Source</strong> button in the top-right corner of the script window. Installing takes a few minutes.</p></li>
+<li><p>Wait for the installation to finish. If the Console asks a question about updating packages, press Enter.</p></li>
+<li><p>Check the Console for the line <code>All workshop packages installed</code>.</p></li>
+</ol>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+<span class="screen-reader-only">Important</span>Error message instead?
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Treat your access tokens like passwords and keep them secure (e.g.&nbsp;a password managing software).</p>
+<p>Copy the full error message and email it to me. Getting this resolved before the workshop keeps your afternoon free for the interesting parts.</p>
 </div>
 </div>
+</section>
+<section id="step-2-open-an-issue-on-github" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-open-an-issue-on-github">Step 2: Open an issue on GitHub</h2>
 <ol type="1">
-<li><p>Log in to your GitHub account.</p></li>
-<li><p>Click on your profile picture in the top-right corner of the page.</p></li>
-<li><p>Select “Settings” from the dropdown menu.</p></li>
-<li><p>In the left sidebar, click on “Developer settings”.</p></li>
-<li><p>Click on “Personal access tokens”.</p></li>
-<li><p>Click on <strong>“Tokens (classic)”</strong>.</p></li>
-<li><p>Click on “Generate new token” and from the dropdown menu select <strong>“Generate new token (classic)”.</strong></p></li>
-<li><p>In the “Note” field, give your token the name: GITHUB_PAT</p></li>
-<li><p>Under Expiration, select “No expiration”</p></li>
-<li><p>Under “Select scopes”, select: <strong>repo, workflow, user</strong></p></li>
-<li><p>Click on “Generate token”.</p></li>
-<li><p>Your personal access token will be displayed on the screen. Copy it and store it in a safe place.</p></li>
+<li><p>Open the landing page for the GitHub organization ‘gitforsci-ghe’: <a href="https://github.com/gitforsci-ghe" class="uri">https://github.com/gitforsci-ghe</a> (try to use your bookmark)</p></li>
+<li><p>Navigate down the page to the section “Repositories” and use the search field to find the repository called <code>01-setup-USERNAME</code> where USERNAME is your GitHub username.</p></li>
+<li><p>Click on the repository name to open it.</p></li>
+<li><p>Click on the “Issues” tab.</p></li>
 </ol>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You will need this token in your pre-course work and throughout the workshop.</p>
-</div>
-</div>
+<p><img src="images/06c-verify/01-issues-tab.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="5" type="1">
+<li>Click on the green “New issue” button.</li>
+</ol>
+<p><img src="images/06c-verify/02-new-issue.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="6" type="1">
+<li>In the “Add a title” field, write: “Completed setup tasks”. You can add a short description too, for example a question you would like me to look at.</li>
+</ol>
+<p><img src="images/06c-verify/03-issue-title.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="7" type="1">
+<li>On the right, click the gear next to “Assignees” and select the course instructor <code>larnsce</code>.</li>
+</ol>
+<p><img src="images/06c-verify/04-assignees-open.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="8" type="1">
+<li>Confirm that <code>larnsce</code> now appears in the Assignees field, then click the green “Create” button. Assigning me the issue notifies me the same way a mention does; treat an assigned issue as a task you hand to me.</li>
+</ol>
+<p><img src="images/06c-verify/05-assignee-create.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="9" type="1">
+<li>Your issue is created. It is now open and assigned to <code>larnsce</code>.</li>
+</ol>
+<p><img src="images/06c-verify/06-issue-created.png" class="img-fluid" style="width:100.0%"></p>
+<p>Congratulations! Your setup is complete and you have mastered the key steps of using Git and GitHub. Now onto some <a href="../pre-work/07-big-picture.html">important reading</a> and I will see you in class.</p>
 
 
 </section>
@@ -678,13 +706,13 @@ Tip
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../pre-work/03-survey.html" class="pagination-link" aria-label="Step 3: Pre-course survey">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Step 3: Pre-course survey</span>
+      <a href="../pre-work/06b-configure-git.html" class="pagination-link" aria-label="Step 6b: Test setup - configure Git">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Step 6b: Test setup - configure Git</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pre-work/05-install-git.html" class="pagination-link" aria-label="Step 5: Install Git">
-        <span class="nav-page-text">Step 5: Install Git</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pre-work/07-big-picture.html" class="pagination-link" aria-label="Step 7: Why Git? Why GitHub?">
+        <span class="nav-page-text">Step 7: Why Git? Why GitHub?</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -696,7 +724,7 @@ Tip
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/04-github-pat.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/06c-install-verify.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

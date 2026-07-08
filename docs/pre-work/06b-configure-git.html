@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>github-pat – Git for Scientists (Summer 2026)</title>
+<title> Test your setup (2 of 3): Configure Git and push – Git for Scientists (Summer 2026)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../pre-work/05-install-git.html" rel="next">
-<link href="../pre-work/03-survey.html" rel="prev">
+<link href="../pre-work/06c-install-verify.html" rel="next">
+<link href="../pre-work/06a-clone-repo.html" rel="prev">
 <link href="../images/ghe-square-logo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/04-github-pat.html">Step 4: GitHub PAT</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/06b-configure-git.html">Step 6b: Test setup - configure Git</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/04-github-pat.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pre-work/04-github-pat.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Step 4: GitHub PAT</span></a>
   </div>
 </li>
@@ -166,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-work/06b-configure-git.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-work/06b-configure-git.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Step 6b: Test setup - configure Git</span></a>
   </div>
 </li>
@@ -211,59 +211,156 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-create-a-github-personal-access-token" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-create-a-github-personal-access-token" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-create-a-github-personal-access-token"><i class="fa-solid fa-key" aria-label="key"></i> Create a GitHub Personal Access Token</a></li>
+  <li><a href="#step-1-store-your-github-token" id="toc-step-1-store-your-github-token" class="nav-link active" data-scroll-target="#step-1-store-your-github-token">Step 1: Store your GitHub token</a></li>
+  <li><a href="#step-2-introduce-yourself-to-git" id="toc-step-2-introduce-yourself-to-git" class="nav-link" data-scroll-target="#step-2-introduce-yourself-to-git">Step 2: Introduce yourself to Git</a></li>
+  <li><a href="#step-3-commit-and-push-your-changes" id="toc-step-3-commit-and-push-your-changes" class="nav-link" data-scroll-target="#step-3-commit-and-push-your-changes">Step 3: Commit and push your changes</a></li>
+  <li><a href="#next-step" id="toc-next-step" class="nav-link" data-scroll-target="#next-step">Next step</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/04-github-pat.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/06b-configure-git.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/04-github-pat.html">Step 4: GitHub PAT</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Pre-course work</a></li><li class="breadcrumb-item"><a href="../pre-work/06b-configure-git.html">Step 6b: Test setup - configure Git</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><i class="fa-solid fa-list-check" aria-label="list-check"></i> Test your setup (2 of 3): Configure Git and push</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206b6579203e7d7d-create-a-github-personal-access-token" class="level1">
-<h1><i class="fa-solid fa-key" aria-label="key"></i> Create a GitHub Personal Access Token</h1>
-<p>Here are the step-by-step instructions to set up a GitHub personal access token (PAT):</p>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This is the second of three short steps. Your setup repository is now open in RStudio (from <a href="../pre-work/06a-clone-repo.html">Step 6a</a>). Here you store your GitHub token, introduce yourself to Git, and push your first change to GitHub.</p>
+<p>The repository contains three numbered R scripts. You run them in order by opening a script and clicking the <strong>Source</strong> button in the top-right corner of the script window. This step covers <code>01-github-token.R</code> and <code>02-git-configuration.R</code>; the next step covers <code>03-workshop-packages.R</code>.</p>
+<section id="step-1-store-your-github-token" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-store-your-github-token">Step 1: Store your GitHub token</h2>
+<ol type="1">
+<li><p>In the Files tab (bottom-right pane), click on <code>01-github-token.R</code> to open it in the editor.</p></li>
+<li><p>Have the <span class="highlight-yellow">GitHub Personal Access Token (PAT)</span> ready that you created in <a href="../pre-work/04-github-pat.html">Step 4 of the pre-course work</a>. If you no longer have it, create a new token on GitHub first.</p></li>
+<li><p>Click the <strong>Source</strong> button in the top-right corner of the script window.</p></li>
+</ol>
+<p><img src="images/06b-configuration/01-token-source.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="4" type="1">
+<li>When the Console asks for the token, paste it and press Enter.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>You may have stored a token already
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you already stored a token on this laptop earlier, the Console does not ask you to paste a new one. Instead it shows a numbered menu, as in the screenshot below. Updating the token is up to you: choose “Replace these credentials” to store a new one, or “Abort update” to keep the existing token.</p>
+</div>
+</div>
+<p><img src="images/06b-configuration/02-token-console.png" class="img-fluid" style="width:100.0%"></p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+<span class="screen-reader-only">Important</span>Paste the token into the Console, never into the file
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Treat your access tokens like passwords and keep them secure (e.g.&nbsp;a password managing software).</p>
+<p>Do not type or paste your token into the script file. Paste it only into the Console when asked. This keeps your token out of the repository.</p>
 </div>
 </div>
+</section>
+<section id="step-2-introduce-yourself-to-git" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-introduce-yourself-to-git">Step 2: Introduce yourself to Git</h2>
 <ol type="1">
-<li><p>Log in to your GitHub account.</p></li>
-<li><p>Click on your profile picture in the top-right corner of the page.</p></li>
-<li><p>Select “Settings” from the dropdown menu.</p></li>
-<li><p>In the left sidebar, click on “Developer settings”.</p></li>
-<li><p>Click on “Personal access tokens”.</p></li>
-<li><p>Click on <strong>“Tokens (classic)”</strong>.</p></li>
-<li><p>Click on “Generate new token” and from the dropdown menu select <strong>“Generate new token (classic)”.</strong></p></li>
-<li><p>In the “Note” field, give your token the name: GITHUB_PAT</p></li>
-<li><p>Under Expiration, select “No expiration”</p></li>
-<li><p>Under “Select scopes”, select: <strong>repo, workflow, user</strong></p></li>
-<li><p>Click on “Generate token”.</p></li>
-<li><p>Your personal access token will be displayed on the screen. Copy it and store it in a safe place.</p></li>
+<li><p>In the Files tab, click on <code>02-git-configuration.R</code> to open it in the editor.</p></li>
+<li><p>In Step 1 of the script, replace the two placeholders. Keep the quotation marks.</p>
+<ul>
+<li><code>your_name</code> is your full name, for example <code>"Ada Lovelace"</code> (not your GitHub username)</li>
+<li><code>your_email</code> is the email address you use for your GitHub account</li>
+</ul></li>
+<li><p>Click the <strong>Source</strong> button in the top-right corner of the script window. It runs the whole script.</p></li>
 </ol>
-<div class="callout callout-style-default callout-tip callout-titled">
+</section>
+<section id="step-3-commit-and-push-your-changes" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-commit-and-push-your-changes">Step 3: Commit and push your changes</h2>
+<ol type="1">
+<li>Navigate to the Git pane in the top-right window of RStudio.</li>
+</ol>
+<p><img src="images/06b-configuration/03-git-pane.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="2" type="1">
+<li>Check the box next to <code>02-git-configuration.R</code> to <strong>stage</strong> it for <strong>commit</strong>.</li>
+</ol>
+<p><img src="images/06b-configuration/04-git-stage.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="3" type="1">
+<li>Click on the “Commit” button.</li>
+</ol>
+<p><img src="images/06b-configuration/05-git-commit.png" class="img-fluid" style="width:100.0%"></p>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You will need this token in your pre-course work and throughout the workshop.</p>
+<p>A new window will open. In the top left corner, you will see the files that you have staged for commit. In the bottom windows, you can see the changes you made in the file. The top right corner shows the “Commit message” which cannot be blank. Each Commit requires a Commit message.</p>
 </div>
 </div>
+<ol start="4" type="1">
+<li>Enter a commit message in the “Commit message” field. For example: “complete git configuration”</li>
+</ol>
+<p><img src="images/06b-configuration/06-commit-message.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="5" type="1">
+<li>Click on the “Commit” button.</li>
+</ol>
+<p><img src="images/06b-configuration/07-commit-click.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="6" type="1">
+<li>Close the window that pops up.</li>
+</ol>
+<p><img src="images/06b-configuration/08-commit-close.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="7" type="1">
+<li>Click on the “Push” button.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Above the top left window, you will now see the sentence “Your branch is ahead of ‘origin/main’ by 1 commit”. This means that you have made changes to your local repository that are not yet pushed to GitHub. It also means that your Commit was successful.</p>
+</div>
+</div>
+<p><img src="images/06b-configuration/09-git-push.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="8" type="1">
+<li>Does the pop window say <code>HEAD -&gt; main</code> as the final statement? Close it. <span class="highlight-yellow">If not, copy what it says and email it to me now.</span></li>
+</ol>
+<p><img src="images/06b-configuration/10-push-result.png" class="img-fluid" style="width:100.0%"></p>
+<ol start="9" type="1">
+<li>Verify that the changes have been pushed to GitHub by refreshing the page for your repository <code>01-setup-USERNAME</code> in your browser (for example, <code>01-setup-rainbow-train</code>). You should see the commit message you just wrote next to <code>02-git-configuration.R</code>.</li>
+</ol>
+<p>TODO: screenshot of the GitHub repository page after push (to be added).</p>
+</section>
+<section id="next-step" class="level2">
+<h2 class="anchored" data-anchor-id="next-step">Next step</h2>
+<p>You have configured Git and pushed your first change. Continue with <a href="../pre-work/06c-install-verify.html">Step 6c: Install the workshop packages and report done</a>.</p>
 
 
 </section>
@@ -678,13 +775,13 @@ Tip
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../pre-work/03-survey.html" class="pagination-link" aria-label="Step 3: Pre-course survey">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Step 3: Pre-course survey</span>
+      <a href="../pre-work/06a-clone-repo.html" class="pagination-link" aria-label="Step 6a: Test setup - clone repository">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Step 6a: Test setup - clone repository</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pre-work/05-install-git.html" class="pagination-link" aria-label="Step 5: Install Git">
-        <span class="nav-page-text">Step 5: Install Git</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pre-work/06c-install-verify.html" class="pagination-link" aria-label="Step 6c: Test setup - install &amp; report">
+        <span class="nav-page-text">Step 6c: Test setup - install &amp; report</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -696,7 +793,7 @@ Tip
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/04-github-pat.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gitforsci-ghe/website/edit/main/pre-work/06b-configure-git.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gitforsci-ghe/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

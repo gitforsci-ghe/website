@@ -2,43 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gitforsci-ghe.github.io/website/workshop/slides.html</loc>
-    <lastmod>2026-07-07T13:33:07.337Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gitforsci-ghe.github.io/website/pre-work/08-element.html</loc>
-    <lastmod>2026-07-07T13:15:41.291Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gitforsci-ghe.github.io/website/pre-work/06-first-repo.html</loc>
-    <lastmod>2026-07-07T13:53:30.218Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gitforsci-ghe.github.io/website/pre-work/04-github-pat.html</loc>
-    <lastmod>2026-07-07T13:15:41.292Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gitforsci-ghe.github.io/website/pre-work/02-github-acc.html</loc>
-    <lastmod>2026-07-07T13:31:30.178Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gitforsci-ghe.github.io/website/index.html</loc>
-    <lastmod>2026-07-07T13:53:15.281Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gitforsci-ghe.github.io/website/pre-work/01-install-r.html</loc>
-    <lastmod>2026-07-07T13:15:41.291Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gitforsci-ghe.github.io/website/pre-work/03-survey.html</loc>
-    <lastmod>2026-07-07T13:45:16.094Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gitforsci-ghe.github.io/website/pre-work/05-install-git.html</loc>
-    <lastmod>2026-07-07T13:32:07.365Z</lastmod>
+    <lastmod>2026-07-08T14:17:11.498Z</lastmod>
   </url>
   <url>
     <loc>https://gitforsci-ghe.github.io/website/pre-work/07-big-picture.html</loc>
-    <lastmod>2026-07-07T13:32:32.105Z</lastmod>
+    <lastmod>2026-07-08T14:15:22.012Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-ghe.github.io/website/pre-work/06b-configure-git.html</loc>
+    <lastmod>2026-07-08T14:00:30.689Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-ghe.github.io/website/pre-work/05-install-git.html</loc>
+    <lastmod>2026-07-08T12:41:13.363Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-ghe.github.io/website/pre-work/03-survey.html</loc>
+    <lastmod>2026-07-07T13:49:34.160Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-ghe.github.io/website/pre-work/01-install-r.html</loc>
+    <lastmod>2026-07-07T13:49:34.159Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-ghe.github.io/website/index.html</loc>
+    <lastmod>2026-07-08T14:16:09.289Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-ghe.github.io/website/pre-work/02-github-acc.html</loc>
+    <lastmod>2026-07-07T13:49:34.160Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-ghe.github.io/website/pre-work/04-github-pat.html</loc>
+    <lastmod>2026-07-07T13:49:34.160Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-ghe.github.io/website/pre-work/06a-clone-repo.html</loc>
+    <lastmod>2026-07-08T14:21:08.311Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-ghe.github.io/website/pre-work/06c-install-verify.html</loc>
+    <lastmod>2026-07-08T14:12:45.579Z</lastmod>
   </url>
   <url>
     <loc>https://gitforsci-ghe.github.io/website/workshop/index.html</loc>
