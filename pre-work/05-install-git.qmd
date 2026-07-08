@@ -41,4 +41,4 @@ Once you have Homebrew installed, type and run this in the terminal.
 ```bash
 brew install git
 ```
-We will confirm in [Test your setup](06-first-repo.qmd) that you have Git installed and working. 
+We will confirm in [Test your setup](06a-clone-repo.qmd) that you have Git installed and working.

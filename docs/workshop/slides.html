@@ -7,10 +7,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+  <meta name="generator" content="quarto-1.9.38">
 
   <meta name="author" content="Lars Schöbitz">
   <title>Git for Scientists (Summer 2026) – GitHub for Collaboration</title>
@@ -206,7 +206,7 @@ Lars Schöbitz
 <ul>
 <li>Teaching Git on a “need to know” basis</li>
 <li>Teaching only a very small subset of Git’s functionality</li>
-<li>Creating a safe space for learning and getting support (use Element)</li>
+<li>Creating a safe space for learning and getting support</li>
 <li>Focus on collaboration aspects of GitHub</li>
 <li>Rhythm in every block: short slides, my turn (watch), your turn (do)</li>
 </ul>
@@ -391,7 +391,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_7d97d6f9" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_37425b13" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -479,7 +479,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_90e32389" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_26f66dce" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -502,7 +502,7 @@ Lars Schöbitz
 
 <img data-src="images/pixel-art-tree.png" style="width:50.0%" alt="Pixel art of a small character resting under a large leafy tree on a green hill, next to a gentle stream under a clear blue sky." class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_b7898e28" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_36f7d586" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -579,7 +579,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_dddd55e8" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_8fd302ed" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -641,7 +641,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_dfe7a078" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_04d8db93" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -686,7 +686,7 @@ Lars Schöbitz
 <p><span class="highlight-yellow">Back at 12:55.</span> The afternoon starts hands-on, and your partner is waiting for you.</p>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_bf524a8e" minutes="45" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_cbd7faa7" minutes="45" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -742,7 +742,8 @@ Lars Schöbitz
 </div>
 <aside class="notes">
 <p>Packages are already installed from the pre-work setup test (its Step 6), so the render takes seconds. Fallback only, if someone’s render fails on a missing package, the commented install chunk sits at the top of index.qmd:</p>
-<pre><code># install.packages("devtools")
+<pre><code># install.packages(c("devtools", "ggplot2", "ggthemes",
+#                    "countrycode", "dplyr", "rmarkdown"))
 # devtools::install_github("openwashdata/washinvestments")</code></pre>
 <p>Do not run installs for the room; park that learner and pair them.</p>
 <p>The branch created here feeds the B6 pull request in 30 minutes, so keep momentum.</p>
@@ -773,10 +774,11 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_a4ef1fad" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_9472c58d" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
+<p>The render updates <code>docs/index.html</code>, so the commit stages two files together: <code>index.qmd</code> and <code>docs/index.html</code>.</p>
 <p>If the roster pivot happened (kill criterion 1), learners without their own repo work in the shared demo repos instead: same steps, repo name from the board. Mark the default before the day.</p>
 <p>Bounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up. Every learner needs a pushed dev branch with one commit by 13:30.</p>
 <style type="text/css">
@@ -861,7 +863,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_86e3d42c" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_73d38d10" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -951,7 +953,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_823bbb3e" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_69dedf5a" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -999,7 +1001,7 @@ Lars Schöbitz
 <h2>What comes next</h2>
 <ul>
 <li class="fragment"><span class="highlight-yellow">Working with AI coding agents</span> is the follow-up workshop, and it builds on exactly what you did today: branches, pull requests, review.</li>
-<li class="fragment">Interested? Post “interested” in the Element channel thread pinned today; you will hear from me when dates are set.</li>
+<li class="fragment">Interested? Email me and you will hear from me when dates are set.</li>
 <li class="fragment">Start your first own project with Git and GitHub this week (already have a project? <a href="https://happygitwithr.com/existing-github-first#existing-github-first">Read here</a>).</li>
 <li class="fragment">Keep learning by doing: open pull requests to yourself, review your own diffs.</li>
 </ul>
@@ -1007,12 +1009,12 @@ Lars Schöbitz
 <section id="feedback-and-thanks" class="slide level2">
 <h2>Feedback, and thanks!</h2>
 <ul>
-<li>Please fill in the post-course survey (link in the Element channel, 5 minutes, anonymous).</li>
-<li>Post your open questions in the Element channel; I answer all of them this week.</li>
+<li>Please fill in the post-course survey (link shared by email, 5 minutes, anonymous).</li>
+<li>Email me your open questions; I answer all of them this week.</li>
 </ul>
 <p>All material is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 <aside class="notes">
-<p>Survey link goes into the Element channel right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks, done by 14:30.</p>
+<p>Survey link goes out by email right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks, done by 14:30.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

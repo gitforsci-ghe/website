@@ -54,12 +54,14 @@ website:
             text: "Step 4: GitHub PAT"
           - href: pre-work/05-install-git.qmd
             text: "Step 5: Install Git"
-          - href: pre-work/06-first-repo.qmd
-            text: "Step 6: Test your setup"
+          - href: pre-work/06a-clone-repo.qmd
+            text: "Step 6a: Test setup - clone repository"
+          - href: pre-work/06b-configure-git.qmd
+            text: "Step 6b: Test setup - configure Git"
+          - href: pre-work/06c-install-verify.qmd
+            text: "Step 6c: Test setup - install & report"
           - href: pre-work/07-big-picture.qmd
             text: "Step 7: Why Git? Why GitHub?"
-          - href: pre-work/08-element.qmd
-            text: "Step 8: Communication"
       - section: "Workshop"
         contents:
           - href: workshop/index.qmd

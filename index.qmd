@@ -41,16 +41,18 @@ Please ensure you have the following available:
 
 ## {{< fa circle-question >}} What do I need to prepare before the workshop?
 
-Prior to the workshop, complete the following eight steps:
+Prior to the workshop, complete the following seven steps:
 
 -   [Step 1](pre-work/01-install-r.html): Download and install R and RStudio
 -   [Step 2](pre-work/02-github-acc.html): Get an account for GitHub
 -   [Step 3](pre-work/03-survey.html): Complete the pre-course survey by [**end of Thursday, 09 July 2026**]{.highlight-yellow}.
 -   [Step 4](pre-work/04-github-pat.html): Create a personal access token for GitHub
 -   [Step 5](pre-work/05-install-git.html): Install Git
--   [Step 6](pre-work/06-first-repo.html): Check your complete setup by [**Monday, 13 July 2026**]{.highlight-yellow}. (unlocked after pre-course survey is completed)
+-   Step 6: Check your complete setup by [**Monday, 13 July 2026**]{.highlight-yellow}, in three short parts (unlocked after the pre-course survey is completed):
+    -   [Step 6a](pre-work/06a-clone-repo.html): Clone the setup repository
+    -   [Step 6b](pre-work/06b-configure-git.html): Configure Git and push
+    -   [Step 6c](pre-work/06c-install-verify.html): Install packages and report done
 -   [Step 7](pre-work/07-big-picture.html): Read "Why Git? Why GitHub?" from "Happy Git and GitHub for the useR"!
--   [Step 8](pre-work/08-element.html): Setup Element as a communication channel
 
 ```{r}
 library(dplyr)
