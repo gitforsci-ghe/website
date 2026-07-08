@@ -1,0 +1,65 @@
+---
+title: "{{< fa list-check >}} Test your setup (3 of 3): Install packages and report done"
+---
+
+This is the last of three short steps. Your setup repository is open in RStudio and Git is configured (from [Step 6b](06b-configure-git.qmd)). Here you install the workshop packages and open an issue so I can verify your setup.
+
+::: {.callout-note}
+# Screenshots show the name of a previous workshop
+
+Where a screenshot says `gitforsci-cis`, read `gitforsci-ghe`. The steps are identical.
+:::
+
+## Step 1: Install the workshop packages
+
+In the workshop, you will work on a small manuscript that uses the `washinvestments` R data package. Installing the packages now means the manuscript renders in under a minute on the day, and we can spend our time together on Git and GitHub instead of watching progress bars.
+
+1. In the Files tab (bottom-right pane), click on `03-workshop-packages.R` to open it in the editor. There is nothing to edit in this script.
+
+2. Click the **Source** button in the top-right corner of the script window. Installing takes a few minutes.
+
+3. Wait for the installation to finish. If the Console asks a question about updating packages, press Enter.
+
+4. Check the Console for the line `All workshop packages installed`.
+
+::: {.callout-important}
+# Error message instead?
+
+Copy the full error message and email it to me. Getting this resolved before the workshop keeps your afternoon free for the interesting parts.
+:::
+
+## Step 2: Open an issue on GitHub
+
+1. Open the landing page for the GitHub organization 'gitforsci-ghe': <https://github.com/gitforsci-ghe> (try to use your bookmark)
+
+2. Navigate down the page to the section "Repositories" and use the search field to find the repository called `01-setup-USERNAME` where USERNAME is your GitHub username.
+
+3. Click on the repository name to open it.
+
+4. Click on the "Issues" tab.
+
+![](images/06-04-screenshot-github-issues.png){width=100%}
+
+5. Click on the green "New issue" button.
+
+![](images/06-05-screenshot-github-new-issue.png){width=100%}
+
+6. In the "Add a title" field write: "Completed test setup tasks". 7 is now part of 6. 
+
+![](images/06-06-screenshot-github-new-issue-title.png){width=100%}
+
+
+
+8. In the "Assignees" field, assign the course instructor larnsce.
+
+![](images/06-08-screenshot-github-new-issue-title.png){width=100%}
+9. You can now see larnsce listed in the assignee field. I will get a notification both for mentions in text and assigned issues. see assigned issues like a task that you assign to me. 
+
+[screenshot]
+
+9. TODO: add step to click Create.
+
+[screeenshot]
+
+
+Congratulations! Your setup is complete and you have mastered the key steps of using Git and GitHub. Now onto some [important reading](07-big-picture.qmd) and I will see you in class.
