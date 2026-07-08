@@ -70,7 +70,7 @@ By the end of this workshop, participants will be able to:
 
 -   Teaching Git on a "need to know" basis
 -   Teaching only a very small subset of Git's functionality
--   Creating a safe space for learning and getting support (use Element)
+-   Creating a safe space for learning and getting support
 -   Focus on collaboration aspects of GitHub
 -   Rhythm in every block: short slides, my turn (watch), your turn (do)
 
@@ -569,20 +569,20 @@ Recap as verbs, spoken while pointing at the drawings on the board. What you als
 
 ::: incremental
 -   [Working with AI coding agents]{.highlight-yellow} is the follow-up workshop, and it builds on exactly what you did today: branches, pull requests, review.
--   Interested? Post "interested" in the Element channel thread pinned today; you will hear from me when dates are set.
+-   Interested? Email me and you will hear from me when dates are set.
 -   Start your first own project with Git and GitHub this week (already have a project? [Read here](https://happygitwithr.com/existing-github-first#existing-github-first)).
 -   Keep learning by doing: open pull requests to yourself, review your own diffs.
 :::
 
 ## Feedback, and thanks!
 
--   Please fill in the post-course survey (link in the Element channel, 5 minutes, anonymous).
--   Post your open questions in the Element channel; I answer all of them this week.
+-   Please fill in the post-course survey (link shared by email, 5 minutes, anonymous).
+-   Email me your open questions; I answer all of them this week.
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ::: {.notes}
-Survey link goes into the Element channel right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks, done by 14:30.
+Survey link goes out by email right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks, done by 14:30.
 :::
 
 ## Thanks!

@@ -41,7 +41,7 @@ Please ensure you have the following available:
 
 ## {{< fa circle-question >}} What do I need to prepare before the workshop?
 
-Prior to the workshop, complete the following eight steps:
+Prior to the workshop, complete the following seven steps:
 
 -   [Step 1](pre-work/01-install-r.html): Download and install R and RStudio
 -   [Step 2](pre-work/02-github-acc.html): Get an account for GitHub
@@ -53,7 +53,6 @@ Prior to the workshop, complete the following eight steps:
     -   [Step 6b](pre-work/06b-configure-git.html): Configure Git and push
     -   [Step 6c](pre-work/06c-install-verify.html): Install packages and report done
 -   [Step 7](pre-work/07-big-picture.html): Read "Why Git? Why GitHub?" from "Happy Git and GitHub for the useR"!
--   [Step 8](pre-work/08-element.html): Setup Element as a communication channel
 
 ```{r}
 library(dplyr)

@@ -62,8 +62,6 @@ website:
             text: "Step 6c: Test setup - install & report"
           - href: pre-work/07-big-picture.qmd
             text: "Step 7: Why Git? Why GitHub?"
-          - href: pre-work/08-element.qmd
-            text: "Step 8: Communication"
       - section: "Workshop"
         contents:
           - href: workshop/index.qmd
