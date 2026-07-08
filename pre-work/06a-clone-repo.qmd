@@ -102,7 +102,11 @@ This strategy will help you to keep track of your Git repositories and the respe
 
 12. Paste the HTTPS URL from GitHub into the "Repository URL" field.
 
-TODO: Add small note. The project directory name field often stay empty. do not write anythere if it doesn not show automatically. this will work an empty fiueld.
+::: {.callout-note}
+# The "Project directory name" field
+
+After you paste the URL, RStudio usually fills in the "Project directory name" field for you. If it stays empty, leave it empty and do not type anything. Creating the project works with an empty field.
+:::
 
 ![](images/06a-clone/15-rstudio-git-url.png){width=100%}
 
