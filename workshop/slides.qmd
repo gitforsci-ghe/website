@@ -46,7 +46,7 @@ library(countdown)
 
 ::: incremental
 -   Today [is]{.highlight-yellow} the Git and GitHub foundation for collaboration: create, clone, commit, push, branch, pull request, review, merge.
--   Today is [not]{.highlight-yellow} an AI workshop. Working with AI coding agents builds on exactly these skills; that is the follow-up workshop.
+-   Today is [not]{.highlight-yellow} an AI workshop. Working with AI coding agents builds on exactly these skills; the follow-up workshop ({{< var md-02.title >}}) covers it.
 -   It is [safe to fail]{.highlight-yellow} here. Everything we do today is reversible, and breaking things is part of the plan.
 :::
 
@@ -565,10 +565,50 @@ Recap as verbs, spoken while pointing at the drawings on the board. What you als
 -   Quarto: one document, rendered to the web
 -   Reversibility as a habit: commit early, revert without fear
 
+## A glimpse of the follow-up: the project board {.smaller}
+
+Every card on this board is an [issue]{.highlight-yellow}, like the one you opened in B6. The board is where a team, and its AI agents, see what is next.
+
+```{=html}
+<div style="display:flex; gap:0.6em; font-size:0.55em; text-align:left;">
+  <div style="flex:1; background:#F5F5F5; border:1px solid #d0d0d0; border-radius:6px; padding:0.6em;">
+    <strong>Todo (2)</strong>
+    <div style="background:#fff; border:1px solid #d0d0d0; border-radius:5px; padding:0.5em; margin-top:0.5em;">
+      <span style="color:#1a7f37;">&#9675;</span> Fix figure caption in manuscript<br>
+      <span style="color:#656d76;">#12 &middot; assigned: @claude</span>
+    </div>
+    <div style="background:#fff; border:1px solid #d0d0d0; border-radius:5px; padding:0.5em; margin-top:0.5em;">
+      <span style="color:#1a7f37;">&#9675;</span> Draft data availability statement<br>
+      <span style="color:#656d76;">#14 &middot; milestone: Submission</span>
+    </div>
+  </div>
+  <div style="flex:1; background:#F5F5F5; border:1px solid #d0d0d0; border-radius:6px; padding:0.6em;">
+    <strong>In progress (1)</strong>
+    <div style="background:#fff; border:1px solid #d0d0d0; border-radius:5px; padding:0.5em; margin-top:0.5em;">
+      <span style="color:#bf8700;">&#9679;</span> Add author details to manuscript<br>
+      <span style="color:#656d76;">#8 &middot; PR open, review requested</span>
+    </div>
+  </div>
+  <div style="flex:1; background:#F5F5F5; border:1px solid #d0d0d0; border-radius:6px; padding:0.6em;">
+    <strong>Done (1)</strong>
+    <div style="background:#fff; border:1px solid #d0d0d0; border-radius:5px; padding:0.5em; margin-top:0.5em;">
+      <span style="color:#8250df;">&#10004;</span> Publish manuscript via GitHub Pages<br>
+      <span style="color:#656d76;">#5 &middot; closed by PR</span>
+    </div>
+  </div>
+</div>
+```
+
+::: {.notes}
+Two minutes, no exercise. Preferred path: show a real board live on the gitforsci-ghe org with these same cards prepared; this mock is the fallback if wifi or the projector fails. Script: point at the In-progress card ("that is the PR you merged an hour ago"), then at the @claude assignee on Todo ("in the follow-up, this is how you hand a task to an AI agent, and your review skills from B6 are how you check its work"). Then advance to the offer slide.
+:::
+
 ## What comes next {.smaller}
 
 ::: incremental
--   [Working with AI coding agents]{.highlight-yellow} is the follow-up workshop, and it builds on exactly what you did today: branches, pull requests, review.
+-   [{{< var md-02.title >}}]{.highlight-yellow} is the follow-up workshop: writing issues a colleague or an AI coding agent can act on, the project board you just saw, and milestones for deadlines like a submission.
+-   It builds on exactly what you did today: branches, pull requests, review.
+-   Outline is on the course website: [Follow-up workshop]({{< var course.site >}}workshop/project-management.html)
 -   Interested? Email me and you will hear from me when dates are set.
 -   Start your first own project with Git and GitHub this week (already have a project? [Read here](https://happygitwithr.com/existing-github-first#existing-github-first)).
 -   Keep learning by doing: open pull requests to yourself, review your own diffs.
