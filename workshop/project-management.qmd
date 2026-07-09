@@ -1,0 +1,86 @@
+---
+title: "Follow-up workshop: {{< var md-02.title >}}"
+editor: source
+---
+
+::: {.callout-note}
+## This is an offer, not yet a date
+
+This page sketches the follow-up workshop to [Git for Scientists](index.qmd).
+Dates are not set. If you want to take part, email
+[{{< var email >}}](mailto:{{< var email >}}) and you will hear from me as
+soon as a date is fixed.
+:::
+
+## {{< fa circle-info >}} Background
+
+In the workshop you learned the collaboration loop: branch, pull request,
+review, merge. This follow-up adds the layer above it: how a research team
+decides *what* to work on, keeps that work visible, and tracks it toward a
+deadline, using three GitHub tools that live right next to your code:
+
+- **Issues**: one task, written down with enough context that someone else
+  could pick it up
+- **Project boards**: all open tasks of a team on one board, moving from
+  "Todo" to "Done"
+- **Milestones**: issues grouped toward a deadline, such as a manuscript
+  submission or a grant deliverable
+
+The same skills are now the entry point for working with AI coding agents.
+On GitHub, an issue can be assigned to an agent such as Claude, which then
+does the work and opens a pull request for your review, and project boards
+show the live status of agent sessions alongside human work. A well-written
+issue has quietly become the highest-leverage AI skill for a research team:
+a vague issue now produces a bad pull request, not just confusion in a
+teammate.
+
+## {{< fa bullseye >}} Learning objectives
+
+By the end of this workshop, participants will be able to:
+
+1. Write an issue that a colleague, or an AI coding agent, can act on
+   without asking follow-up questions: background, goal, and acceptance
+   criteria.
+
+2. Set up a project board for a research project, add issues and pull
+   requests to it, and keep its status columns honest during daily work.
+
+3. Group issues into a milestone with a due date, read the progress bar,
+   and decide when a milestone (deadline-shaped) or a board
+   (workflow-shaped) is the right tool.
+
+4. Hand a well-scoped issue to an AI coding agent and review the resulting
+   pull request with the same review skills used for a colleague's work.
+
+## {{< fa clock >}} Format
+
+A half-day session (about 3 hours including a break), in the same rhythm as
+the first workshop: short slides, my turn (watch), your turn (do). Every
+exercise runs on the repositories you created in Git for Scientists.
+
+| Block | Working title | You will |
+|-------|---------------|----------|
+| P1 | From to-do list to issues | Turn a shared research to-do list into well-written issues on your manuscript repository |
+| P2 | The project board | Build a team board, add your issues, and work the board while you work the tasks |
+| P3 | Milestones | Create a "Submission" milestone, attach issues, and watch the progress bar do its job |
+| P4 | Hand-off to an agent | Watch a well-scoped issue be assigned to Claude Code, then review the pull request it opens |
+
+## {{< fa graduation-cap >}} Prerequisites
+
+Participation in Git for Scientists, or equivalent: you can clone a
+repository, commit and push from RStudio, open a pull request, and review
+one.
+
+## {{< fa book >}} Materials this builds on
+
+The teaching material adapts openly licensed lessons from the scientific
+computing community:
+
+1. LTER / NCEAS Scientific Computing workshop
+   ["Collaborative Coding with GitHub"](https://lter.github.io/workshop-github/),
+   in particular the [milestones lesson](https://lter.github.io/workshop-github/milestones.html)
+   and the project boards chapter
+2. NCEAS Learning Hub module
+   [Using GitHub for Project Management](https://nceas.github.io/learning-hub-modules/git-and-github/github-for-project-mgmt/)
+3. Openscapes Champions lesson
+   [GitHub for project management](https://openscapes.github.io/series/core-lessons/github/github-issues.html)

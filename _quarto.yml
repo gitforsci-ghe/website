@@ -66,6 +66,8 @@ website:
         contents:
           - href: workshop/index.qmd
             text: "Git for Scientists"
+          - href: workshop/project-management.qmd
+            text: "Follow-up offer: Project management"
 
 format:
   html:
