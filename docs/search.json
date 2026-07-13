@@ -84,6 +84,13 @@
     "text": "Live drawing: local and remote\nProjector goes to sleep. We draw this one by hand.\n\nLive drawing 1 (local and remote): two boxes, clone first, then push and pull. Under 3 minutes. Fallback: the export in the appendix of the handbook, images/drawing-1-local-remote.png."
   },
   {
+    "objectID": "workshop/slides.html#local-and-remote",
+    "href": "workshop/slides.html#local-and-remote",
+    "title": "GitHub for Collaboration",
+    "section": "Local and remote",
+    "text": "Local and remote\n\n\nProjector wakes up. Walk the room through the digital version of what we just drew by hand: clone first, then push and pull between local and remote."
+  },
+  {
     "objectID": "workshop/slides.html#my-turn",
     "href": "workshop/slides.html#my-turn",
     "title": "GitHub for Collaboration",
@@ -110,6 +117,13 @@
     "title": "GitHub for Collaboration",
     "section": "Live drawing: the commit cycle",
     "text": "Live drawing: the commit cycle\nProjector goes to sleep. We draw this one by hand.\n\nLive drawing 2 (commit cycle): working files, stage, commit as labelled snapshot on the history line, push. Leave room for the history line to grow. Under 3 minutes. Fallback: images/drawing-2-commit-cycle.png."
+  },
+  {
+    "objectID": "workshop/slides.html#the-commit-cycle",
+    "href": "workshop/slides.html#the-commit-cycle",
+    "title": "GitHub for Collaboration",
+    "section": "The commit cycle",
+    "text": "The commit cycle\n\n\nProjector wakes up. Run through the digital version: working files, stage, commit as a labelled snapshot on the history line, push."
   },
   {
     "objectID": "workshop/slides.html#my-turn-1",
@@ -161,6 +175,13 @@
     "text": "Live drawing: branching\nProjector goes to sleep. We draw this one by hand.\n\nLive drawing 3 (branching): the main line splits, commits land on the branch, the merge point stays empty until drawing 4. Under 3 minutes. Fallback: images/drawing-3-branching.png."
   },
   {
+    "objectID": "workshop/slides.html#branching",
+    "href": "workshop/slides.html#branching",
+    "title": "GitHub for Collaboration",
+    "section": "Branching",
+    "text": "Branching\n\n\nProjector wakes up. Run through the digital version: the main line splits, commits land on the dev branch, and the merge point stays empty until the pull request in B6."
+  },
+  {
     "objectID": "workshop/slides.html#my-turn-2",
     "href": "workshop/slides.html#my-turn-2",
     "title": "GitHub for Collaboration",
@@ -180,6 +201,13 @@
     "title": "GitHub for Collaboration",
     "section": "Live drawing: the pull request",
     "text": "Live drawing: the pull request\nProjector goes to sleep. We draw this one by hand.\n\nLive drawing 4 (pull request): complete the merge point from drawing 3, pause at the join for the human review, then the lines meet. Under 3 minutes. Fallback: images/drawing-4-pull-request.png."
+  },
+  {
+    "objectID": "workshop/slides.html#the-pull-request",
+    "href": "workshop/slides.html#the-pull-request",
+    "title": "GitHub for Collaboration",
+    "section": "The pull request",
+    "text": "The pull request\n\n\nProjector wakes up. Run through the digital version: the merge point from the branching drawing is completed, with the human review sitting at the join before the lines meet."
   },
   {
     "objectID": "workshop/slides.html#my-turn-3",

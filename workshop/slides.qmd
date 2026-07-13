@@ -184,6 +184,14 @@ Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
 Live drawing 1 (local and remote): two boxes, clone first, then push and pull. Under 3 minutes. Fallback: the export in the appendix of the handbook, images/drawing-1-local-remote.png.
 :::
 
+## Local and remote {.smaller}
+
+![](images/drawing-1-local-remote.png){fig-align="center" width="70%" fig-alt="Digital version of the local and remote drawing: a local repository and a remote repository, with clone, push, and pull connecting them."}
+
+::: {.notes}
+Projector wakes up. Walk the room through the digital version of what we just drew by hand: clone first, then push and pull between local and remote.
+:::
+
 ## My turn {.smaller}
 
 :::: task
@@ -252,6 +260,14 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 ::: {.notes}
 Live drawing 2 (commit cycle): working files, stage, commit as labelled snapshot on the history line, push. Leave room for the history line to grow. Under 3 minutes. Fallback: images/drawing-2-commit-cycle.png.
+:::
+
+## The commit cycle {.smaller}
+
+![](images/drawing-2-commit-cycle.png){fig-align="center" width="70%" fig-alt="Digital version of the commit cycle drawing: working files move through stage and commit as a labelled snapshot on the history line, then push."}
+
+::: {.notes}
+Projector wakes up. Run through the digital version: working files, stage, commit as a labelled snapshot on the history line, push.
 :::
 
 ## My turn {.smaller}
@@ -377,6 +393,14 @@ Hard 12:55 return. B5 starts hands-on as the re-energizer; latecomers can join m
 Live drawing 3 (branching): the main line splits, commits land on the branch, the merge point stays empty until drawing 4. Under 3 minutes. Fallback: images/drawing-3-branching.png.
 :::
 
+## Branching {.smaller}
+
+![](images/drawing-3-branching.png){fig-align="center" width="70%" fig-alt="Digital version of the branching drawing: the main line splits into a branch, commits land on the branch, and the merge point is left empty for now."}
+
+::: {.notes}
+Projector wakes up. Run through the digital version: the main line splits, commits land on the dev branch, and the merge point stays empty until the pull request in B6.
+:::
+
 ## My turn {.smaller}
 
 :::: task
@@ -441,6 +465,14 @@ Bounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your
 
 ::: {.notes}
 Live drawing 4 (pull request): complete the merge point from drawing 3, pause at the join for the human review, then the lines meet. Under 3 minutes. Fallback: images/drawing-4-pull-request.png.
+:::
+
+## The pull request {.smaller}
+
+![](images/drawing-4-pull-request.png){fig-align="center" width="70%" fig-alt="Digital version of the pull request drawing: the branch and main lines meet at the merge point, with a pause at the join for the human review before the lines meet."}
+
+::: {.notes}
+Projector wakes up. Run through the digital version: the merge point from the branching drawing is completed, with the human review sitting at the join before the lines meet.
 :::
 
 ## My turn {.smaller}
