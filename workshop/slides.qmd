@@ -30,7 +30,7 @@ library(countdown)
 library(ggthemes)
 ```
 
-# Welcome! TODO: hand-wave fa icon {background-color="#0F4C81"}
+# Welcome! {{< fa hand >}} {background-color="#0F4C81"}
 
 ## Meet the lecturer {.smaller}
 
@@ -77,12 +77,10 @@ Defuse the AI-agent expectation gap now, in minute 5, not in minute 90. Say the 
 
 ## {{< fa toolbox >}} {.center-align auto-animate="true"}
 
-::: {style="margin-top: 50px; font-size: 1.5em"}
-Git -> core
-GitHub -> core 
-Quarto -> only see, not learn
-R -> onle see, not learn
-RStudio IDE -> our interface, could also be VS Code, Positron IDE, GitHub Desktop, etc.
+::: {style="margin-top: 50px; font-size: 1.3em"}
+-   **Git** and **GitHub** -> what we learn today
+-   **Quarto** and **R** -> you will see them, not learn them
+-   **RStudio IDE** -> our interface, could also be VS Code, Positron IDE, GitHub Desktop, and others
 :::
 
 ## Meeting you where you are {.smaller}
@@ -175,14 +173,27 @@ From your pre-course survey (n = 20), three groups:
 Counts are editorial; refresh them if the roster changes. The three buckets map onto the three personas in learner-persona.md: Arti wants to stop being afraid of Git, Bianca wants confident collaboration and pull-request review, Cem wants control and provenance of AI-assisted work. Roughly half the cohort asked for agentic-coding topics; name that and tie it back to the "not an AI workshop today" framing from the opening.
 :::
 
-## Learner persona
+## Meet Arti {.smaller}
 
-TODO: Write up "Meet Arti" page
+:::: columns
 
-image on the right, text on the left. Provide one-liners for each of the four learner personas categories. see also notes of this slide. 
+::: {.column width="60%"}
+This room is diverse, and the pre-course survey shows it. For some of you the interface is entirely new; some of you are very experienced. I designed for three personas (Arti, Bianca, Cem). My [focus learner is Arti]{.highlight-yellow}.
+
+-   **Background**: environmental-science post-doc, works in English, in a group of mixed Git fluency.
+-   **Knows**: short R scripts; lives in Google Docs, Word, and email; versions files by hand; reaches for Excel over CSV. Tried Git once, an error stopped them cold.
+-   **Wants**: to collaborate confidently, and to see that clicking push [is]{.highlight-yellow} `git push`.
+-   **Needs**: a safe-to-fail room. Almost everything in Git is reversible.
+:::
+
+::: {.column width="40%"}
+![](images/arti-persona.png){fig-align="center" fig-alt="Illustration of Arti, the focus learner persona."}
+:::
+
+::::
 
 ::: {.notes}
-TODO: here is my description for above: we have a room full of people with diverse backgrounds and prior experience, the pre-course survey shows that clearly. For some of you, the interface is entirely new, some of you are very experienced. I have learner personas that describe most of you, but my focus learner is Arti. 
+Learner personas in the Greg Wilson / Teaching Tech Together sense, synthesised from this cohort's survey (see learner-persona.md). Say the focus-learner idea out loud: I teach to Arti, which also serves Bianca (early finisher, curious about the command behind each click) and Cem (wants AI provenance; today is the foundation, agentic coding is the follow-up).
 :::
 
 ## Course structure
@@ -192,32 +203,38 @@ TODO: here is my description for above: we have a room full of people with diver
 
 ## Course icons
 
-TODO: I need two icons for learners to idenfiy what happens on RStudio IDE and when they are expected to work on GitHub. Can be fontawesome icons. Or suggest alternatives. 
+Two icons tell you [where]{.highlight-yellow} a step happens:
+
+-   {{< fa laptop-code >}} &nbsp; in the **RStudio IDE**, on your own machine
+-   {{< fa brands github >}} &nbsp; on **GitHub**, in the browser
+
+Watch for these on every "Your turn" slide.
 
 ## Learning objectives
 
-By the end of this workshop, participants will be able to:
-
-TODO: Are these learning objectives fitting Bloom's Taxonomy? I have decided to remove Publish (I will offer a follow-up collaboration on the website repository to create a basic 1-page website with profile links and bio)
+By the end of this workshop, you will be able to:
 
 ::: incremental
-1.  [Create]{.highlight-yellow} and [clone]{.highlight-yellow} a repository, and run the full [pull, stage, commit, push]{.highlight-yellow} cycle from the RStudio IDE, including reverting a commit.
+1.  [Create]{.highlight-yellow} and [clone]{.highlight-yellow} a repository, and [run]{.highlight-yellow} the full pull, stage, commit, push cycle from the RStudio IDE, including [reverting]{.highlight-yellow} a commit.
 
-2.  Work with [branches]{.highlight-yellow} and [pull requests]{.highlight-yellow}: create a branch, open a pull request, [review]{.highlight-yellow} a colleague's pull request, and [merge]{.highlight-yellow} after review.
+2.  [Create]{.highlight-yellow} a branch and [open]{.highlight-yellow} a pull request, [review]{.highlight-yellow} a colleague's pull request, and [merge]{.highlight-yellow} it after review.
 
-3.  [Publish]{.highlight-yellow} a rendered document via GitHub Pages, and draw a [concept map]{.highlight-yellow} of how Git and GitHub fit together.
+3.  [Draw]{.highlight-yellow} a concept map of how Git and GitHub fit together.
+:::
+
+::: {.notes}
+Bloom check: objective 1 is Apply (create, clone, run, revert are observable procedures you can check in the room); objective 2 is Apply plus Evaluate (reviewing a pull request is a judgement); objective 3 is Understand/Create (drawing the concept map externalises the mental model, and it is the measurement bookend for the day). Publish was removed as a core objective; publishing and a one-page personal website are offered as a follow-up on the website repository (profile links and bio), not dropped silently.
 :::
 
 
-## Schedule
-
-TODO: make slide scrollable
+## Schedule {.smaller .scrollable}
 
 ```{r}
 #| tbl-colwidths: [25,75]
 #| echo: false
 
-read_csv(here::here("data/tbl-01-gitforsci-ghe-course-schedule.csv")) |>
+read_csv(here::here("data/tbl-01-gitforsci-ghe-course-schedule.csv"),
+         show_col_types = FALSE) |>
   filter(day == 1) |>
   select(Time = time, Module = title) |>
   kable()
@@ -250,8 +267,9 @@ One sentence on why: experts use concept maps to make their mental models visibl
 -   Keep the map. You will need it at 14:15.
 
 ::: hand
-TODO: room-fa-icon: Place the yellow sticky note on your laptop when your map is done. 
-TODO: zoom-fa-icon: Write "done" in Zoom Chat.
+{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop when your map is done.
+
+{{< fa comment >}} &nbsp; On Zoom: write "done" in the chat.
 :::
 ::::
 
