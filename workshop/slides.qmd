@@ -1,12 +1,11 @@
 ---
-title: "{{< var md-01.title >}}"
-subtitle: "{{< var course.long-title >}}"
+title:  "{{< var course.long-title >}}"
 author:
   - name: "{{< var author >}}"
     affiliations:
         - name: Global Health Engineering - ETH Zurich
           url: https://ghe.ethz.ch/
-date: "{{< var course.start-date >}}"
+date: 2026-07-15
 date-format: long
 footer: "[{{< fa link >}} {{< var course.site-short >}}]({{< var course.site >}})"
 format:
@@ -30,7 +29,7 @@ library(countdown)
 library(ggthemes)
 ```
 
-# Welcome! {{< fa hand >}} {background-color="{{< var brand.section-bg >}}"}
+# Part 1: Welcome {{< fa hand >}} {background-color="{{< var brand.section-bg >}}"}
 
 ## Meet the lecturer {.smaller}
 
@@ -43,7 +42,7 @@ library(ggthemes)
 -   [RStudio certified instructor](https://education.rstudio.com/trainers/)
 -   [Data steward at ETHZ](https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html)
 
-## Your turn
+## Your turn {.smaller}
 
 ::: task
 Think about the last time you published a written document:
@@ -284,6 +283,8 @@ read_csv(here::here("data/tbl-01-gitforsci-ghe-course-schedule.csv"),
          show_col_types = FALSE) |>
   filter(day == 1) |>
   select(Time = time, Module = title) |>
+  # strip any [text](link) markdown so the schedule shows plain module names
+  mutate(Module = str_replace_all(Module, "\\[([^]]+)\\]\\([^)]*\\)", "\\1")) |>
   kable()
 
 ```
@@ -331,7 +332,7 @@ One single prompt, not a fused double question. Expected content: email attachme
 Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
 :::
 
-# Create and clone {background-color="{{< var brand.section-bg >}}"}
+# Part 2: Create and clone {background-color="{{< var brand.section-bg >}}"}
 
 ## Create and clone: Arti's project {.smaller}
 
@@ -388,9 +389,9 @@ Demo script:
 - The .Rproj and .gitignore explanation lives here, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees the files but nobody has told it what to do with them yet. This answers the recorded learner question "why do .Rproj session files show up?". Mention that hidden files (starting with a dot) are hidden by the operating system.
 :::
 
-## Your turn
+## Your turn {.smaller}
 
-:::: {.task .task-lg}
+:::: task
 {{< fa brands github >}} &nbsp; On **github.com**
 
 1.  Create a repository called `website`, public, [with a README]{.highlight-yellow} (so the clone is never empty).
@@ -428,6 +429,8 @@ We move on together.
 :::
 
 ## Local and remote {.smaller}
+
+TODO: Increase font size. Use more legible font. 
 
 ::: {.r-stack}
 ![](images/drawing-1-local-remote-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A local repository on your laptop."}
@@ -469,7 +472,7 @@ countdown(minutes = 15)
 Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-# Changes to files: the commit cycle {background-color="{{< var brand.section-bg >}}"}
+# Part 3: The commit cycle {background-color="{{< var brand.section-bg >}}"}
 
 ## A button is a command {.smaller}
 
@@ -531,9 +534,9 @@ Demo script:
 - Credentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 4. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing.
 :::
 
-## Your turn
+## Your turn {.smaller}
 
-:::: {.task .task-lg}
+:::: task
 The cycle, always in this order: [Pull, Stage, Commit, Push]{.highlight-yellow} (PSCP).
 
 {{< fa laptop-code >}} &nbsp; In **RStudio**
@@ -592,6 +595,8 @@ This closes the loop: a commit can start on GitHub, not just in RStudio, and Pul
 
 ## The commit cycle {.smaller}
 
+TODO: As above. increase font size, overall size and use more leigble font.
+
 ::: {.r-stack}
 ![](images/drawing-2-commit-cycle-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="Working files in your project."}
 
@@ -611,7 +616,7 @@ The summary of what we just did. Advance one element per press: working files, s
 ## {.unlisted}
 
 ::: {.hand-purple style="text-align: center;"}
-Anything from the commit cycle you'd like clarified before we move on?
+Anything from the [commit cycle]highlight-yellow you'd like clarified before we move on?
 :::
 
 ```{r}
@@ -619,7 +624,7 @@ Anything from the commit cycle you'd like clarified before we move on?
 countdown(minutes = 2)
 ```
 
-# Team work {background-color="{{< var brand.section-bg >}}"}
+# Part 4: Team work {background-color="{{< var brand.section-bg >}}"}
 
 ## Team work {.smaller}
 
@@ -651,9 +656,9 @@ countdown(minutes = 2)
 This slide sets up the cliffhanger. Arti does everything right and still cannot push to a teammate's repository. That is the safe-to-fail moment: nothing is broken, and the afternoon answers why.
 :::
 
-## Find your partner
+## Find your partner {.smaller}
 
-::: {.task .task-lg}
+::: task
 -   You are in a pair with the partner you were told about before today.
 -   Write [each other's GitHub username]{.highlight-yellow} on your sticky notes.
 -   Keep that sticky note. Your partner returns after lunch.
@@ -663,9 +668,9 @@ This slide sets up the cliffhanger. Arti does everything right and still cannot 
 The sticky notes with usernames are the pairing record and carry into the pull-request block as reviewer assignments. If someone has no partner, they pair with the helper or the instructor.
 :::
 
-## Your turn
+## Your turn {.smaller}
 
-:::: {.task .task-lg}
+:::: task
 {{< fa brands github >}} &nbsp; On **github.com**
 
 1.  Browse to `github.com/USERNAME`, where USERNAME is [your partner's]{.highlight-yellow} username.
@@ -743,7 +748,7 @@ countdown(minutes = 45)
 Return time is set on the day (timing to be finalised with a fresh schedule). The afternoon starts hands-on as the re-energizer; anyone who arrives late can join mid-exercise without missing slides.
 :::
 
-# Work on a branch {background-color="{{< var brand.section-bg >}}"}
+# Part 5: Work on a branch {background-color="{{< var brand.section-bg >}}"}
 
 ## Work on a branch: Arti's branch {.smaller}
 
@@ -830,6 +835,8 @@ Team repos are `washinvestments-<team>`, created from the reworked manuscript te
 
 ## Branching {.smaller}
 
+TODO: as above for the other two drawings
+
 ::: {.r-stack}
 ![](images/drawing-3-branching-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="The main line with a couple of commits."}
 
@@ -844,7 +851,7 @@ Team repos are `washinvestments-<team>`, created from the reworked manuscript te
 The summary of what we just did. Advance one element per press: the main line, the dev branch splitting off, commits landing on the branch, and the merge point left empty until the pull request in the next block.
 :::
 
-# Pull request, review, merge {background-color="{{< var brand.section-bg >}}"}
+# Part 6: Pull request, review, merge {background-color="{{< var brand.section-bg >}}"}
 
 ## Review {.smaller}
 
@@ -902,12 +909,12 @@ Demo script:
 
 ## Your turn {.smaller}
 
-You each take a role, then swap. [Author]{.highlight-yellow} owns the pull request; [Reviewer]{.highlight-yellow} reviews it.
+You each take a role: [Author]{.highlight-yellow} owns the pull request; [Reviewer]{.highlight-yellow} reviews it.
 
 :::: columns
 
 ::: {.column width="50%"}
-### Author
+### Author (goes first)
 
 {{< fa brands github >}} &nbsp; On **github.com**
 
@@ -920,8 +927,9 @@ You each take a role, then swap. [Author]{.highlight-yellow} owns the pull reque
 4.  Switch to `main`, [Pull]{.highlight-yellow}, and [switch back to `dev`]{.highlight-yellow}.
 :::
 
+TODO: add 5% column width between the two 47.5%
 ::: {.column width="50%"}
-### Reviewer
+### Reviewer (goes second)
 
 {{< fa brands github >}} &nbsp; On **github.com**
 
@@ -953,6 +961,7 @@ Target: every learner opens a PR, writes at least one line comment, merges, and 
 
 ## The pull request {.smaller}
 
+TODO: improve as above
 ::: {.r-stack}
 ![](images/drawing-4-pull-request-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="The dev branch and main line with an open merge point."}
 
@@ -967,7 +976,7 @@ Target: every learner opens a PR, writes at least one line comment, merges, and 
 The summary of what we just did. Advance one element per press: the open merge point from the branching drawing, the pull request, the human review at the join, then the merge.
 :::
 
-# Merge conflict {background-color="{{< var brand.section-bg >}}"}
+# Part 7: Merge conflict {background-color="{{< var brand.section-bg >}}"}
 
 ## When two edits meet: Arti's conflict {.smaller}
 
@@ -1049,7 +1058,7 @@ Delete the markers, keep the text you want, then [Stage, Commit, Push]{.highligh
 The reference slide learners can look back at. Keep it plain: a conflict is a normal part of collaboration, resolved by choosing.
 :::
 
-# Concept map revisit and wrap-up {background-color="{{< var brand.section-bg >}}"}
+# Part 8: Concept map revisit and wrap-up {background-color="{{< var brand.section-bg >}}"}
 
 ## Your turn: your map, revisited {.smaller}
 
@@ -1080,28 +1089,48 @@ Fallback if the morning baseline went badly: draw the Git concept map yourself o
 
 # Wrap-up
 
+## What you learned today
+
+Matched to the three objectives from this morning:
+
+::: incremental
+-   **Commit cycle**: you created and cloned a repository and ran the full pull, stage, commit, push cycle.
+-   **Collaboration**: you opened a pull request, reviewed a partner's, and merged after review.
+-   **Concept map**: you drew how Git and GitHub fit together, twice, and saw what changed.
+:::
+
+## Why this matters {.smaller}
+
+::: incremental
+-   Issues, commit messages, and pull-request reviews are [visible to other people]{.highlight-yellow}. They show how you work and communicate.
+-   That signal only grows as more content is AI-generated: a clear issue with a [good task description]{.highlight-yellow} guides your collaborators, and guides any AI agent you run on the repository.
+-   The issue tracker is a TODO list [attached to the work]{.highlight-yellow}. Tasks live on the repository, and once closed they stay there, next to the commits and messages that resolved them.
+:::
+
 ## What you also learned today
 
--   RStudio, now with muscle memory
--   Quarto: one document you can render
+-   RStudio IDE, now with muscle memory
+-   Quarto: one document; reproducibility; many use cases
 -   Reversibility as a habit: commit early, revert when needed
 
 ## What comes next {.smaller}
 
 ::: incremental
--   [Working with AI coding agents]{.highlight-yellow} is the follow-up workshop, and it builds on exactly what you did today: branches, pull requests, review.
--   Want a [personal website]{.highlight-yellow}? I offer a follow-up to build a one-page site with your profile links and bio.
+-   [GitHub Project and Task Management]{.highlight-yellow} is the next workshop (tentatively 26 August, 09:30–14:30). It builds on exactly what you did today: branches, pull requests, review.
+-   Want to keep practising? [Work with me on a small, free personal website]{.highlight-yellow} to rehearse branching, pull requests, and reviews on something that is yours.
 -   Interested in either? Email me and you will hear from me when dates are set.
 -   Start your first own project with Git and GitHub this week (already have a project? [Read here](https://happygitwithr.com/existing-github-first#existing-github-first)).
 -   Keep learning by doing: open pull requests to yourself, review your own diffs.
 :::
 
+::: {.notes}
+The next workshop date (26 August) is tentative; confirm before the slide goes live. The AI-agent workshop framing from the opening still holds as the longer horizon; this slide names the concrete, dated next steps.
+:::
+
 ## Feedback, and thanks!
 
--   Please fill in the post-course survey (link shared by email, 5 minutes, anonymous).
--   Email me your open questions; I answer all of them this week.
-
-All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+-   Please fill in the post-course survey (link shared by email, 5 (max 10 minutes), anonymous).
+-   Share your open questions: Google Doc or Issue tracker; I will answer all of them nexr week
 
 ::: {.notes}
 Survey link goes out by email right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks.

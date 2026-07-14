@@ -25,6 +25,16 @@ $presentation-font-size-root: 36px !default;
 
 /*-- scss:rules --*/
 
+// section-divider slides carry a dark (#5c5751) background, the same colour as
+// the ## headings. Render the # section title (and its icons) in the light
+// paper colour so it stays readable against that background.
+.reveal .slide.has-dark-background h1,
+.reveal .slide.has-dark-background h1 i,
+.reveal section.has-dark-background h1,
+.reveal section.has-dark-background h1 i {
+  color: #f4f4f4;
+}
+
 .center-align {
   text-align: center;
 }
@@ -39,11 +49,6 @@ $presentation-font-size-root: 36px !default;
   margin-top: 6px;
   border-left: solid 5px #0F4C81;
   background-color: #F5F5F5;
-}
-
-// larger variant for "Your turn" exercise slides that need bigger, readable text
-.reveal .slide .task.task-lg {
-  font-size: 1.0em;
 }
 
 .small {

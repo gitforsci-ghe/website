@@ -22,5 +22,8 @@ md-01:
 
 # Brand colours, mirrored from _brand.yml so slide section headers stay in
 # sync with the course website palette. Update both if the brand changes.
+# section-bg matches the slide heading colour ($presentation-heading-color
+# in style/slides.scss, ghe-gray) so section dividers read as the same colour
+# as the ## headings.
 brand:
-  section-bg: "#0F4C81"
+  section-bg: "#5c5751"

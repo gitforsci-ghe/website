@@ -1,12 +1,13 @@
 day,start_time,end_time,duration,module,title,page_link,real_start_time,real_end_time,comments,time
-1,09:30,10:00,1899-12-30T00:30:00Z,NA,Arrival and setup check,NA,NA,NA,NA,09:30 - 10:00
-1,10:00,10:30,1899-12-30T00:30:00Z,B1,"[B1: Welcome, concept-map intro, baseline map](workshop/)",workshop,NA,NA,NA,10:00 - 10:30
-1,10:30,11:00,1899-12-30T00:30:00Z,B2,[B2: Create and clone (website repo)](workshop/),workshop,NA,NA,NA,10:30 - 11:00
-1,11:00,11:15,1899-12-30T00:15:00Z,NA,Break,NA,NA,NA,NA,11:00 - 11:15
-1,11:15,11:45,1899-12-30T00:30:00Z,B3,[B3: The commit cycle (website repo)](workshop/),workshop,NA,NA,NA,11:15 - 11:45
-1,11:45,12:15,1899-12-30T00:30:00Z,B4,"[B4: Collaboration cliffhanger (partner clone, push fails)](workshop/)",workshop,NA,NA,NA,11:45 - 12:15
-1,12:15,13:00,1899-12-30T00:45:00Z,NA,Lunch,NA,NA,NA,NA,12:15 - 13:00
-1,13:00,13:30,1899-12-30T00:30:00Z,B5,[B5: Branch (manuscript repo)](workshop/),workshop,NA,NA,NA,13:00 - 13:30
-1,13:30,14:05,1899-12-30T00:35:00Z,B6,"[B6: Pull request, review, merge](workshop/)",workshop,NA,NA,NA,13:30 - 14:05
-1,14:05,14:15,1899-12-30T00:10:00Z,B7,[B7: Publish](workshop/),workshop,NA,NA,NA,14:05 - 14:15
-1,14:15,14:30,1899-12-30T00:15:00Z,B8,[B8: Concept map revisit and wrap-up](workshop/),workshop,NA,NA,NA,14:15 - 14:30
+1,09:30,10:00,1899-12-30T00:30:00Z,NA,[Arrival](1-1-website/),1-1-website,NA,NA,NA,09:30 - 10:00
+1,10:00,10:30,1899-12-30T00:30:00Z,NA,"[Part 1: Welcome, concept-map intro, baseline map](1-1-website/)",1-1-website,NA,NA,NA,10:00 - 10:30
+1,10:30,10:50,1899-12-30T00:20:00Z,NA,[Part 2: Create & Clone](1-1-website/),1-1-website,NA,NA,NA,10:30 - 10:50
+1,10:50,11:00,1899-12-30T00:10:00Z,NA,Break,NA,NA,NA,NA,10:50 - 11:00
+1,11:00,11:30,1899-12-30T00:30:00Z,NA,[Part 3: The commit cycle](1-1-website/),1-1-website,NA,NA,NA,11:00 - 11:30
+1,11:30,11:50,1899-12-30T00:20:00Z,NA,[Part 4: Team work](1-1-website/),1-1-website,NA,NA,NA,11:30 - 11:50
+1,11:50,12:45,1899-12-30T00:55:00Z,NA,[Lunch Break](1-1-website/),1-1-website,NA,NA,NA,11:50 - 12:45
+1,12:45,13:05,1899-12-30T00:20:00Z,NA,[Part 5: Work on a branch](1-1-website/),1-1-website,NA,NA,NA,12:45 - 13:05
+1,13:05,13:45,1899-12-30T00:40:00Z,NA,"[Part 6: Pull Request, Review, Merge](1-1-website/)",1-1-website,NA,NA,NA,13:05 - 13:45
+1,13:45,13:50,1899-12-30T00:05:00Z,NA,Movement Break,NA,NA,NA,NA,13:45 - 13:50
+1,13:50,14:00,1899-12-30T00:10:00Z,NA,[Part 7: Merge conflict](1-1-website/),1-1-website,NA,NA,NA,13:50 - 14:00
+1,14:00,14:30,1899-12-30T00:30:00Z,NA,[Part 8: Concept map revisit and wrap-up](1-1-website/),1-1-website,NA,NA,NA,14:00 - 14:30
