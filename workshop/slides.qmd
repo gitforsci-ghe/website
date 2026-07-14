@@ -428,16 +428,16 @@ Screenshots of the Code button, the New Project dialog, and the Git tab go here 
 We move on together.
 :::
 
-## Local and remote {.smaller}
+## Local and remote
 
 ::: {.r-stack}
-![](images/drawing-1-local-remote-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A local repository on your laptop."}
+![](images/drawing-1-local-remote-00.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A local repository on your laptop."}
 
-![](images/drawing-1-local-remote-01.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A local repository and a remote repository on GitHub, side by side."}
+![](images/drawing-1-local-remote-01.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A local repository and a remote repository on GitHub, side by side."}
 
-![](images/drawing-1-local-remote-02.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A clone arrow copying the remote repository down to the local one."}
+![](images/drawing-1-local-remote-02.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A clone arrow copying the remote repository down to the local one."}
 
-![](images/drawing-1-local-remote-03.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="Local and remote repositories connected by clone, push, and pull."}
+![](images/drawing-1-local-remote-03.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="Local and remote repositories connected by clone, push, and pull."}
 :::
 
 ::: {.notes}
@@ -592,18 +592,18 @@ countdown(minutes = 5)
 This closes the loop: a commit can start on GitHub, not just in RStudio, and Pull is how it reaches the laptop. It sets up why Pull leads the PSCP mantra.
 :::
 
-## The commit cycle {.smaller}
+## The commit cycle
 
 ::: {.r-stack}
-![](images/drawing-2-commit-cycle-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="Working files in your project."}
+![](images/drawing-2-commit-cycle-00.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="Working files in your project."}
 
-![](images/drawing-2-commit-cycle-01.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="Working files moved to the staging area."}
+![](images/drawing-2-commit-cycle-01.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="Working files moved to the staging area."}
 
-![](images/drawing-2-commit-cycle-02.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A commit as a labelled snapshot on the history line."}
+![](images/drawing-2-commit-cycle-02.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A commit as a labelled snapshot on the history line."}
 
-![](images/drawing-2-commit-cycle-03.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A second commit growing the history line."}
+![](images/drawing-2-commit-cycle-03.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A second commit growing the history line."}
 
-![](images/drawing-2-commit-cycle-04.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="The commits pushed from the local history line to the remote."}
+![](images/drawing-2-commit-cycle-04.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="The commits pushed from the local history line to the remote."}
 :::
 
 ::: {.notes}
@@ -830,16 +830,16 @@ countdown(minutes = 10)
 Team repos are `washinvestments-<team>`, created from the reworked manuscript template (two author slots, no publishing). Team names are set on the day; use the placeholder until then. Screenshots of the New Branch, Render, and Git-tab buttons go here once available. One person drives so the branch and commit are shared; the partner reviews in the next block.
 :::
 
-## Branching {.smaller}
+## Branching
 
 ::: {.r-stack}
-![](images/drawing-3-branching-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="The main line with a couple of commits."}
+![](images/drawing-3-branching-00.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="The main line with a couple of commits."}
 
-![](images/drawing-3-branching-01.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A dev branch splitting off from main."}
+![](images/drawing-3-branching-01.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A dev branch splitting off from main."}
 
-![](images/drawing-3-branching-02.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="Commits landing on the dev branch."}
+![](images/drawing-3-branching-02.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="Commits landing on the dev branch."}
 
-![](images/drawing-3-branching-03.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="The branch and main lines with the merge point left empty for now."}
+![](images/drawing-3-branching-03.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="The branch and main lines with the merge point left empty for now."}
 :::
 
 ::: {.notes}
@@ -954,16 +954,16 @@ Two roles, then swap, so everyone both opens a PR and reviews one. Everyone has 
 Target: every learner opens a PR, writes at least one line comment, merges, and pulls. This block is protected: if the day is behind, cut elsewhere, never this. Bounded regroup: 2 minutes, then park-and-pair.
 :::
 
-## The pull request {.smaller}
+## The pull request
 
 ::: {.r-stack}
-![](images/drawing-4-pull-request-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="The dev branch and main line with an open merge point."}
+![](images/drawing-4-pull-request-00.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="The dev branch and main line with an open merge point."}
 
-![](images/drawing-4-pull-request-01.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A pull request opened at the join between the branch and main."}
+![](images/drawing-4-pull-request-01.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A pull request opened at the join between the branch and main."}
 
-![](images/drawing-4-pull-request-02.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A human review pausing at the join before the lines meet."}
+![](images/drawing-4-pull-request-02.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="A human review pausing at the join before the lines meet."}
 
-![](images/drawing-4-pull-request-03.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="The branch merged into main, the lines meeting."}
+![](images/drawing-4-pull-request-03.png){.fragment .fade-in width="100%" fig-align="center" fig-alt="The branch merged into main, the lines meeting."}
 :::
 
 ::: {.notes}
