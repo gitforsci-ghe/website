@@ -27,6 +27,7 @@ bibliography: ../references.bib
 library(knitr)
 library(tidyverse)
 library(countdown)
+library(ggthemes)
 ```
 
 # Welcome! TODO: hand-wave fa icon {background-color="#0F4C81"}
@@ -84,14 +85,95 @@ R -> onle see, not learn
 RStudio IDE -> our interface, could also be VS Code, Positron IDE, GitHub Desktop, etc.
 :::
 
-## Meeting you where you are
+## Meeting you where you are {.smaller}
 
-TODO: use data from data/private to recreate these plots for this slide deck
-https://github.com/quarto-rdmss-26/website/blob/6fb9bcdc5278995c1512cd52441434da0f49a5fb/1-1-hello-quarto/1-1-hello-quarto.qmd#L174
+```{r}
+#| echo: false
+#| fig-cap: "Self-reported experience across the cohort (pre-course survey, n = 20)."
+#| fig-width: 9
+#| fig-height: 5.5
+
+survey <- read_csv(here::here("data/private/participants-raw.csv"),
+                   show_col_types = FALSE)
+
+exp_levels_prog <- c(
+  "I have none."                                                              = "None",
+  "I have written a few lines now and again."                                 = "A few lines",
+  "I have written programs for my own use that are a couple of pages long."   = "Own programs",
+  "I have written and maintained larger pieces of software."                  = "Larger software"
+)
+
+exp_levels_git <- c(
+  "I have never used Git."                                                                      = "Never",
+  "I have used Git occasionally for basic tasks (e.g., cloning a repository, making commits)."  = "Occasionally",
+  "I have used Git regularly for my own projects, including branching and resolving conflicts." = "Regularly",
+  "I have used Git extensively for collaborative development, including advanced workflows (e.g., pull requests, rebasing, resolving complex merge conflicts)." = "Extensively"
+)
+
+# each experience column is ordered novice -> expert; rank captures that
+# order so one shared colour scale reads the same across all three domains
+prog_long <- survey |>
+  select(
+    `Programming (general)` = experience_programming_general,
+    `Programming (R)`       = experience_programming_r
+  ) |>
+  pivot_longer(everything(), names_to = "domain", values_to = "raw") |>
+  mutate(
+    label = recode(raw, !!!exp_levels_prog),
+    rank  = match(label, unname(exp_levels_prog))
+  )
+
+git_long <- survey |>
+  select(`Git` = experience_git) |>
+  pivot_longer(everything(), names_to = "domain", values_to = "raw") |>
+  mutate(
+    label = recode(raw, !!!exp_levels_git),
+    rank  = match(label, unname(exp_levels_git))
+  )
+
+exp_counts <- bind_rows(git_long, prog_long) |>
+  mutate(domain = factor(domain,
+                         levels = c("Git", "Programming (general)", "Programming (R)"))) |>
+  count(domain, rank, label, name = "n")
+
+ggplot(exp_counts, aes(x = domain, y = n, fill = factor(rank),
+                       group = rank)) +
+  geom_col(position = position_stack(reverse = TRUE)) +
+  geom_text(aes(label = ifelse(n > 0, paste0(label, " (", n, ")"), "")),
+            position = position_stack(vjust = 0.5, reverse = TRUE),
+            size = 3.2, colour = "white") +
+  facet_wrap(~ domain, ncol = 1, scales = "free_y", strip.position = "left") +
+  scale_fill_viridis_d(
+    name   = NULL,
+    option = "cividis",
+    labels = c("least experienced", "", "", "most experienced")
+  ) +
+  coord_flip() +
+  labs(x = NULL, y = "Participants") +
+  theme_minimal(base_size = 15) +
+  theme(
+    axis.text.y  = element_blank(),
+    axis.ticks.y = element_blank(),
+    strip.placement = "outside",
+    strip.text.y.left = element_text(angle = 0, hjust = 1, face = "bold"),
+    legend.position = "bottom",
+    panel.grid.major.y = element_blank()
+  )
+```
 
 ## What you want to learn {.smaller}
 
-TODO: Recreate similar example using learning_goals column: https://github.com/quarto-rdmss-26/website/blob/6fb9bcdc5278995c1512cd52441434da0f49a5fb/1-1-hello-quarto/1-1-hello-quarto.qmd#L234-L245
+From your pre-course survey (n = 20), three groups:
+
+::: incremental
+-   [Covered directly today]{.highlight-yellow}: use Git without fear, the full commit cycle, branching, and collaborating and reviewing through pull requests.
+-   [Partially covered]{.highlight-yellow}: resolving merge conflicts, rebasing, staging in a systematic way. We build the foundation; the advanced moves are a natural next step.
+-   [The follow-up workshop]{.highlight-yellow}: Git together with AI coding agents. Roughly half of you asked for this. Today is the Git foundation that makes it possible.
+:::
+
+::: {.notes}
+Counts are editorial; refresh them if the roster changes. The three buckets map onto the three personas in learner-persona.md: Arti wants to stop being afraid of Git, Bianca wants confident collaboration and pull-request review, Cem wants control and provenance of AI-assisted work. Roughly half the cohort asked for agentic-coding topics; name that and tie it back to the "not an AI workshop today" framing from the opening.
+:::
 
 ## Learner persona
 
