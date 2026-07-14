@@ -81,7 +81,7 @@
     "href": "workshop/slides.html#schedule",
     "title": "Git for Scientists",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:30 - 10:00\nArrival\n\n\n10:00 - 10:30\nPart 1: Welcome, concept-map intro, baseline map\n\n\n10:30 - 10:50\nPart 2: Create & Clone\n\n\n10:50 - 11:00\nBreak\n\n\n11:00 - 11:20\nPart 3: The commit cycle\n\n\n11:20 - 11:50\nPart 4: Team work\n\n\n11:50 - 12:45\nLunch Break\n\n\n12:45 - 13:05\nPart 5: Work on a branch\n\n\n13:05 - 13:45\nPart 6: Pull Request, Review, Merge\n\n\n13:45 - 13:50\nMovement Break\n\n\n13:50 - 14:00\nPart 7: Merge conflict\n\n\n14:00 - 14:30\nPart 8: Concept map revisit and wrap-up"
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:30 - 10:00\nArrival\n\n\n10:00 - 10:30\nPart 1: Welcome, concept-map intro, baseline map\n\n\n10:30 - 10:50\nPart 2: Create & Clone\n\n\n10:50 - 11:00\nBreak\n\n\n11:00 - 11:30\nPart 3: The commit cycle\n\n\n11:30 - 11:50\nPart 4: Team work\n\n\n11:50 - 12:45\nLunch Break\n\n\n12:45 - 13:05\nPart 5: Work on a branch\n\n\n13:05 - 13:45\nPart 6: Pull Request, Review, Merge\n\n\n13:45 - 13:50\nMovement Break\n\n\n13:50 - 14:00\nPart 7: Merge conflict\n\n\n14:00 - 14:30\nPart 8: Concept map revisit and wrap-up"
   },
   {
     "objectID": "workshop/slides.html#concept-maps-1",
@@ -130,7 +130,7 @@
     "href": "workshop/slides.html#local-and-remote",
     "title": "Git for Scientists",
     "section": "Local and remote",
-    "text": "Local and remote\nTODO: Increase font size. Use more legible font.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe summary of what we just did. Advance one element per press: the remote on GitHub (a cloud), then your local repository, then clone down, then push up and pull down."
+    "text": "Local and remote\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe summary of what we just did. Advance one element per press: the remote on GitHub (a cloud), then your local repository, then clone down, then push up and pull down."
   },
   {
     "objectID": "workshop/slides.html#section-1",
@@ -158,7 +158,7 @@
     "href": "workshop/slides.html#the-commit-cycle-artis-commit",
     "title": "Git for Scientists",
     "section": "The commit cycle: Arti’s commit",
-    "text": "The commit cycle: Arti’s commit\n\n\nArti (before)\n\nopens a .docx\nedits the text, it autosaves\nautomated version history\n\n\nArti (after)\n\nopens a Quarto file\nedits the text, it autosaves\nafter meaningful changes: pull, stage, commit, push\nthe commit message says what changed and why"
+    "text": "The commit cycle: Arti’s commit\n\n\nArti (before)\n\nopens a .docx\nedits the text, it autosaves\nautomated version history\nsends an email to say what changed and why\n\n\nArti (after)\n\nopens a Quarto file\nedits the text, it autosaves\nafter meaningful changes: pull, stage, commit, push\nthe commit message says what changed and why"
   },
   {
     "objectID": "workshop/slides.html#my-turn-1",
@@ -186,7 +186,7 @@
     "href": "workshop/slides.html#the-commit-cycle",
     "title": "Git for Scientists",
     "section": "The commit cycle",
-    "text": "The commit cycle\nTODO: As above. increase font size, overall size and use more leigble font.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe summary of what we just did. Advance one element per press: working files, stage, commit as a labelled snapshot, the history line growing, then push."
+    "text": "The commit cycle\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe summary of what we just did. Advance one element per press: working files, stage, commit as a labelled snapshot, the history line growing, then push."
   },
   {
     "objectID": "workshop/slides.html#section-2",
@@ -249,21 +249,21 @@
     "href": "workshop/slides.html#my-turn-2",
     "title": "Git for Scientists",
     "section": "My turn",
-    "text": "My turn\n\n\n\n\n\n\n\n\n\nSit back and watch.\nNote down any questions as they come up. We pick them up right after.\n\n\n\nDemo script:\n\nNew repo, new move. Clone the team manuscript repo (same moves as this morning).\nGit pane: New Branch, name it dev. Read the message about origin out loud.\nOpen index.qmd, edit the author details, Render.\nSwitch between main and dev in the Git pane: before the commit nothing differs; after the commit, the change lives only on dev.\nCommit “update author details”, push.\n\nPackages are already installed from the pre-work setup test, so the render takes seconds. If a render fails on a missing package, the commented install chunk sits at the top of index.qmd; do not run installs for the room, park that learner and pair them. The branch created here feeds the pull request in the next block, so keep momentum."
+    "text": "My turn\n\n\n\n\n\n\n\n\n\nSit back and watch.\nNote down any questions as they come up. We pick them up right after.\n\n\n\nDemo script:\n\nNew repo, new move. Clone the team manuscript repo (same moves as this morning).\nGit pane: New Branch, name it dev. Read the message about origin out loud.\nOpen manuscript.qmd, edit the author details, Render.\nSwitch between main and dev in the Git pane: before the commit nothing differs; after the commit, the change lives only on dev.\nCommit “update author details”, push.\n\nPackages are already installed from the pre-work setup test, so the render takes seconds. If a render fails on a missing package, the commented install chunk sits at the top of manuscript.qmd; do not run installs for the room, park that learner and pair them. The branch created here feeds the pull request in the next block, so keep momentum."
   },
   {
     "objectID": "workshop/slides.html#your-turn-4",
     "href": "workshop/slides.html#your-turn-4",
     "title": "Git for Scientists",
     "section": "Your turn",
-    "text": "Your turn\n\nYour team shares one manuscript repository, washinvestments-&lt;team&gt; (for example washinvestments-red).\n   On github.com\n\nFind and clone your team’s washinvestments-&lt;team&gt; repository (org page, search your team name).\n\n   In RStudio (one person drives)\n\nGit pane: New Branch, name it dev.\nIn index.qmd: put in your own author details in one of the two author slots. Render.\nRun the mantra: Pull, Stage, Commit, Push with the message “update author details”.\n\n\n   In the room: place the yellow sticky note on your laptop when your push has finished.\n   On Zoom: write “done” in the chat.\n\n\n\n\n\n\n\n\nTeam repos are washinvestments-&lt;team&gt;, created from the reworked manuscript template (two author slots, no publishing). Team names are set on the day; use the placeholder until then. Screenshots of the New Branch, Render, and Git-tab buttons go here once available. One person drives so the branch and commit are shared; the partner reviews in the next block."
+    "text": "Your turn\n\nYour team shares one manuscript repository, washinvestments-&lt;team&gt; (for example washinvestments-red).\n   On github.com\n\nFind and clone your team’s washinvestments-&lt;team&gt; repository (org page, search your team name).\n\n   In RStudio (one person drives)\n\nGit pane: New Branch, name it dev.\nIn manuscript.qmd: put in your own author details in one of the two author slots. Render.\nRun the mantra: Pull, Stage, Commit, Push with the message “update author details”.\n\n\n   In the room: place the yellow sticky note on your laptop when your push has finished.\n   On Zoom: write “done” in the chat.\n\n\n\n\n\n\n\n\nTeam repos are washinvestments-&lt;team&gt;, created from the reworked manuscript template (two author slots, no publishing). Team names are set on the day; use the placeholder until then. Screenshots of the New Branch, Render, and Git-tab buttons go here once available. One person drives so the branch and commit are shared; the partner reviews in the next block."
   },
   {
     "objectID": "workshop/slides.html#branching",
     "href": "workshop/slides.html#branching",
     "title": "Git for Scientists",
     "section": "Branching",
-    "text": "Branching\nTODO: as above for the other two drawings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe summary of what we just did. Advance one element per press: the main line, the dev branch splitting off, commits landing on the branch, and the merge point left empty until the pull request in the next block."
+    "text": "Branching\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe summary of what we just did. Advance one element per press: the main line, the dev branch splitting off, commits landing on the branch, and the merge point left empty until the pull request in the next block."
   },
   {
     "objectID": "workshop/slides.html#review",
@@ -284,14 +284,14 @@
     "href": "workshop/slides.html#your-turn-5",
     "title": "Git for Scientists",
     "section": "Your turn",
-    "text": "Your turn\nYou each take a role: Author owns the pull request; Reviewer reviews it.\n\n\nAuthor (goes first)\n   On github.com\n\nOpen a pull request from your dev branch. Title it so your reviewer knows what changed.\nRequest a review from your partner.\nRead the review. Then either make the proposed changes and push again, or merge as is. Confirm the merge.\n\n   In RStudio\n\nSwitch to main, Pull, and switch back to dev.\n\nTODO: add 5% column width between the two 47.5% ::: {.column width=“50%”} ### Reviewer (goes second)   On github.com\nOpen your partner’s pull request.\nStart a review: leave at least one line comment.\nAdd an overall comment, then submit the review.\n\n\n::::\n\n\n   In the room: place the yellow sticky note on your laptop after the switch back to dev. Then swap roles.\n   On Zoom: write “done” in the chat.\n\n\n\n\n\n\n\nTwo roles, then swap, so everyone both opens a PR and reviews one. Everyone has read access to their partner’s repo, so no seed PR is needed. Screenshots go in the placeholder above once captured.\nTarget: every learner opens a PR, writes at least one line comment, merges, and pulls. This block is protected: if the day is behind, cut elsewhere, never this. Bounded regroup: 2 minutes, then park-and-pair."
+    "text": "Your turn\nYou each take a role: Author owns the pull request; Reviewer reviews it.\n\n\nAuthor (goes first)\n   On github.com\n\nOpen a pull request from your dev branch. Title it so your reviewer knows what changed.\nRequest a review from your partner.\nRead the review. Then either make the proposed changes and push again, or merge as is. Confirm the merge.\n\n   In RStudio\n\nSwitch to main, Pull, and switch back to dev.\n\n\n\n\nReviewer (goes second)\n   On github.com\n\nOpen your partner’s pull request.\nStart a review: leave at least one line comment.\nAdd an overall comment, then submit the review.\n\n\n\n   In the room: place the yellow sticky note on your laptop after the switch back to dev. Then swap roles.\n   On Zoom: write “done” in the chat.\n\n\n\n\n\n\n\nTwo roles, then swap, so everyone both opens a PR and reviews one. Everyone has read access to their partner’s repo, so no seed PR is needed. Screenshots go in the placeholder above once captured.\nTarget: every learner opens a PR, writes at least one line comment, merges, and pulls. This block is protected: if the day is behind, cut elsewhere, never this. Bounded regroup: 2 minutes, then park-and-pair."
   },
   {
     "objectID": "workshop/slides.html#the-pull-request",
     "href": "workshop/slides.html#the-pull-request",
     "title": "Git for Scientists",
     "section": "The pull request",
-    "text": "The pull request\nTODO: improve as above ::: {.r-stack} \n\n\n\n\n\n\n\n\n\n\n :::\n\nThe summary of what we just did. Advance one element per press: the open merge point from the branching drawing, the pull request, the human review at the join, then the merge."
+    "text": "The pull request\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe summary of what we just did. Advance one element per press: the open merge point from the branching drawing, the pull request, the human review at the join, then the merge."
   },
   {
     "objectID": "workshop/slides.html#when-two-edits-meet-artis-conflict",
@@ -305,7 +305,7 @@
     "href": "workshop/slides.html#my-turn-4",
     "title": "Git for Scientists",
     "section": "My turn",
-    "text": "My turn\n\n\n\n\n\n\n\n\n\nSit back and watch.\nA conflict is coming. Watch how Git asks me to choose.\n\n\n\nDemo script (instructor only, no learner exercise in this block):\n\nSet up the clash on purpose. On GitHub, edit one line of index.qmd on main directly (for example the manuscript title) and commit.\nIn RStudio, on dev, edit the same line differently. Commit.\nPull. Git stops and reports a conflict in index.qmd.\nOpen the file. Walk the conflict markers out loud: &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD is your version, ======= is the divider, &gt;&gt;&gt;&gt;&gt;&gt;&gt; is the incoming version.\nChoose: delete the markers and keep the line you want (or combine both). Save.\nStage, Commit (“resolve conflict in title”), Push.\nSay the safety message: Git never threw away either edit; it handed you both and waited. Almost everything in Git is reversible, and a conflict is Git protecting your work, not breaking it.\n\nKeep this instructor-only; a learner conflict exercise is a natural follow-up but risks eating the protected pull-request time."
+    "text": "My turn\n\n\n\n\n\n\n\n\n\nSit back and watch.\nA conflict is coming. Watch how Git asks me to choose.\n\n\n\nDemo script (instructor only, no learner exercise in this block):\n\nSet up the clash on purpose. On GitHub, edit one line of manuscript.qmd on main directly (for example the manuscript title) and commit.\nIn RStudio, on dev, edit the same line differently. Commit.\nPull. Git stops and reports a conflict in manuscript.qmd.\nOpen the file. Walk the conflict markers out loud: &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD is your version, ======= is the divider, &gt;&gt;&gt;&gt;&gt;&gt;&gt; is the incoming version.\nChoose: delete the markers and keep the line you want (or combine both). Save.\nStage, Commit (“resolve conflict in title”), Push.\nSay the safety message: Git never threw away either edit; it handed you both and waited. Almost everything in Git is reversible, and a conflict is Git protecting your work, not breaking it.\n\nKeep this instructor-only; a learner conflict exercise is a natural follow-up but risks eating the protected pull-request time."
   },
   {
     "objectID": "workshop/slides.html#resolving-a-conflict",
