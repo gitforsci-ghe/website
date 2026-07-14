@@ -76,11 +76,11 @@ read_csv(here::here("data/tbl-01-gitforsci-ghe-course-schedule.csv")) |>
 
 By the end of this workshop, participants will be able to:
 
-1. Create and clone a repository, and apply the standard Git workflow from the RStudio IDE: pulling, staging, committing, and pushing changes, including reverting a commit.
+1. **Commit cycle**: create and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.
 
-2. Work with branches and pull requests: create a development branch, open a pull request, review and comment on a colleague's pull request, and merge after review.
+2. **Collaboration**: create a branch and open a pull request, review a colleague's pull request, and merge it after review.
 
-3. Publish a rendered document via GitHub Pages, and draw a concept map of how Git and GitHub fit together as a foundation for collaboration.
+3. **Concept map**: draw how Git and GitHub fit together.
 
 ## {{< fa sun >}} Thanks!
 
