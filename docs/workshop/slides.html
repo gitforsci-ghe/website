@@ -156,8 +156,8 @@ Lars Schöbitz
   <p class="date">Invalid Date</p>
 </section>
 <section>
-<section id="b1-welcome-concept-map-intro-baseline-map" class="title-slide slide level1 center" data-background-color="#0F4C81">
-<h1>B1: Welcome, concept-map intro, baseline map</h1>
+<section id="welcome-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612068616e64203e7d7d" class="title-slide slide level1 center" data-background-color="#0F4C81">
+<h1>Welcome! <i class="fa-solid fa-hand" aria-label="hand"></i></h1>
 
 </section>
 <section id="meet-the-lecturer" class="slide level2 smaller">
@@ -170,6 +170,24 @@ Lars Schöbitz
 <li><a href="https://education.rstudio.com/trainers/">RStudio certified instructor</a></li>
 <li><a href="https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html">Data steward at ETHZ</a></li>
 </ul>
+</section>
+<section id="your-turn" class="slide level2">
+<h2>Your turn</h2>
+<div class="task">
+<p>Think about the last time you published a written document:</p>
+<ul>
+<li>Which tasks gave you joy?</li>
+<li>Which tasks were challenging or frustrating?</li>
+</ul>
+<div class="hand">
+<p>Take some written notes.</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_04b46552" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
 </section>
 <section id="what-this-day-is-and-is-not" class="slide level2">
 <h2>What this day is, and is not</h2>
@@ -192,26 +210,133 @@ Lars Schöbitz
           display:block!important;
       }</style></aside>
 </section>
-<section id="learning-objectives" class="slide level2">
-<h2>Learning objectives</h2>
-<p>By the end of this workshop, participants will be able to:</p>
-<ol type="1">
-<li class="fragment"><p><span class="highlight-yellow">Create</span> and <span class="highlight-yellow">clone</span> a repository, and run the full <span class="highlight-yellow">pull, stage, commit, push</span> cycle from the RStudio IDE, including reverting a commit.</p></li>
-<li class="fragment"><p>Work with <span class="highlight-yellow">branches</span> and <span class="highlight-yellow">pull requests</span>: create a branch, open a pull request, <span class="highlight-yellow">review</span> a colleague’s pull request, and <span class="highlight-yellow">merge</span> after review.</p></li>
-<li class="fragment"><p><span class="highlight-yellow">Publish</span> a rendered document via GitHub Pages, and draw a <span class="highlight-yellow">concept map</span> of how Git and GitHub fit together.</p></li>
-</ol>
-</section>
-<section id="teaching-strategy" class="slide level2">
-<h2>Teaching strategy</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120746f6f6c626f78203e7d7d" class="slide level2 center-align" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><i class="fa-solid fa-toolbox" aria-label="toolbox"></i></h2>
+<div style="margin-top: 50px; font-size: 1.3em">
 <ul>
-<li>Teaching Git on a “need to know” basis</li>
-<li>Teaching only a very small subset of Git’s functionality</li>
-<li>Creating a safe space for learning and getting support</li>
-<li>Focus on collaboration aspects of GitHub</li>
-<li>Rhythm in every block: short slides, my turn (watch), your turn (do)</li>
+<li><strong>Git</strong> and <strong>GitHub</strong> -&gt; what we learn today</li>
+<li><strong>Quarto</strong> and <strong>R</strong> -&gt; you will see them, not learn them</li>
+<li><strong>RStudio IDE</strong> -&gt; our interface, could also be VS Code, Positron IDE, GitHub Desktop, and others</li>
+</ul>
+</div>
+</section>
+<section id="meeting-you-where-you-are" class="slide level2">
+<h2>Meeting you where you are</h2>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section id="how-you-store-your-data-today" class="slide level2">
+<h2>How you store your data today</h2>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><aside class="notes">
+<p>Most of you already store data in machine-readable formats, which is exactly what Git and Quarto reward. The spreadsheet users are Arti’s group; the day nudges toward CSV without making a fuss about it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-you-want-to-learn" class="slide level2 smaller">
+<h2>What you want to learn</h2>
+<p>From your pre-course survey (n = 18), three groups:</p>
+<ul>
+<li class="fragment"><span class="highlight-yellow">Covered directly today (10)</span>: use Git without fear, the full commit cycle, branching, documenting a reproducible workflow, and collaborating and reviewing through pull requests.</li>
+<li class="fragment"><span class="highlight-yellow">Partially covered (1)</span>: rebasing and staging in a systematic way. We build the foundation; the advanced moves are a natural next step.</li>
+<li class="fragment"><span class="highlight-yellow">The follow-up workshop (7)</span>: Git together with AI coding agents. Today is the Git foundation that makes it possible.</li>
+</ul>
+<aside class="notes">
+<p>Counts are editorial (n = 18); refresh them if the roster changes. The three buckets map onto the three personas in learner-persona.md: Arti wants to stop being afraid of Git, Bianca wants confident collaboration and pull-request review, Cem wants control and provenance of AI-assisted work. Around seven of you asked for agentic-coding topics; name that and tie it back to the “not an AI workshop today” framing from the opening. One off-topic answer (analysing data) folds into the R-you-will-see-not-learn framing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="meet-arti" class="slide level2 smaller">
+<h2>Meet Arti</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>Three personas describe this room (Arti, Bianca, Cem). My <span class="highlight-yellow">focus learner is Arti</span>.</p>
+<ul>
+<li><strong>Background</strong>: post-doc, in a group of mixed Git fluency.</li>
+<li><strong>Knows</strong>: some R; lives in Word, Docs, and email; versions files by hand. Tried Git once, an error stopped them cold.</li>
+<li><strong>Wants</strong>: to collaborate without fear.</li>
+<li><strong>Needs</strong>: a safe-to-fail room.</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<!-- Image spec for Arti: wears a hat with a rainbow on it and a shirt
+     with a train on it. Generate via the Hugging Face MCP once connected;
+     images/arti-persona.png is a placeholder until then. -->
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/arti-persona.png" class="quarto-figure quarto-figure-center" alt="Illustration of Arti, the focus learner persona."></p>
+</figure>
+</div>
+</div></div>
+<aside class="notes">
+<p>Learner personas in the Greg Wilson / Teaching Tech Together sense, synthesised from this cohort’s survey (see learner-persona.md). Say the focus-learner idea out loud: I teach to Arti, which also serves Bianca (early finisher, curious about the command behind each click) and Cem (wants AI provenance; today is the foundation, agentic coding is the follow-up).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="course-structure" class="slide level2">
+<h2>Course structure</h2>
+<ul>
+<li><span class="highlight-yellow">My turn</span>: Lecture segments + live coding</li>
+<li><span class="highlight-yellow">Your turn</span>: Individual or 2-people team exercises (in break-out rooms on Zoom)</li>
 </ul>
 </section>
-<section id="schedule" class="slide level2">
+<section id="course-icons" class="slide level2">
+<h2>Course icons</h2>
+<p>Two icons tell you <span class="highlight-yellow">where</span> a step happens:</p>
+<ul>
+<li><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; in the <strong>RStudio IDE</strong>, on your own machine</li>
+<li><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; on <strong>GitHub</strong>, in the browser</li>
+</ul>
+<p>Watch for these on every “Your turn” slide.</p>
+</section>
+<section id="learning-objectives" class="slide level2">
+<h2>Learning objectives</h2>
+<p>By the end of this workshop, you will be able to:</p>
+<ol type="1">
+<li class="fragment"><p><strong>Commit cycle</strong>: create and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.</p></li>
+<li class="fragment"><p><strong>Collaboration</strong>: create a branch and open a pull request, review a colleague’s pull request, and merge it after review.</p></li>
+<li class="fragment"><p><strong>Concept map</strong>: draw how Git and GitHub fit together.</p></li>
+</ol>
+<aside class="notes">
+<p>Bloom check: objective 1 is Apply (create, clone, run, revert are observable procedures you can check in the room); objective 2 is Apply plus Evaluate (reviewing a pull request is a judgement); objective 3 is Understand/Create (drawing the concept map externalises the mental model, and it is the measurement bookend for the day). Publish was removed as a core objective; publishing and a one-page personal website are offered as a follow-up on the website repository (profile links and bio), not dropped silently.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="schedule" class="slide level2 smaller scrollable">
 <h2>Schedule</h2>
 <div class="cell" data-tbl-colwidths="[25,75]">
 <div class="cell-output-display">
@@ -275,92 +400,17 @@ Lars Schöbitz
 </table>
 </div>
 </div>
+</section></section>
+<section>
+<section id="concept-maps" class="title-slide slide level1 center">
+<h1>Concept maps</h1>
+
 </section>
-<section id="section" class="slide level2" data-background-image="images/github_friends.png">
-<h2></h2>
-<div class="footer">
-<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
-</div>
-<aside class="notes">
-<p>Why GitHub?</p>
-<p>“Collaboration is the most compelling reason to manage a project with Git and GitHub. My definition of collaboration includes hands-on participation by multiple people, including your past and future self, as well as an asymmetric model, in which some people are active makers and others only read or review.” - Jenny Bryan</p>
-<p>Bryan J. 2017. Excuse me, do you have a moment to talk about version control? PeerJ Preprints 5:e3159v2 https://doi.org/10.7287/peerj.preprints.3159v2</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-1" class="slide level2" data-background-image="images/github_fall.png">
-<h2></h2>
-<div class="footer">
-<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
-</div>
-<aside class="notes">
-<p>GitHub helps us fail safely. Because we can return to previous versions easily, painful consequences of failing are reduced. We can bravely try things knowing that some will fail, and that failing is not catastrophic: we start again from where we left off, with a clear history to learn from.</p>
-<p>This is the safe-to-fail promise from the expectations slide, now with a picture.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-2" class="slide level2" data-background-image="images/github_compare_text.png">
-<h2></h2>
-<div class="footer">
-<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
-</div>
-<aside class="notes">
-<p>GitHub streamlines our work: it takes care of otherwise time-consuming bookkeeping and unrelenting file tracking. Instead of fretting over whether “analysis_final_v2.xls” or “analysis_final_final.xls” is truly the final version, we can be confident in the completed analysis and move on. This connects directly to what learners draw in the baseline map in a few minutes: email attachments and file naming.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-3" class="slide level2" data-background-image="images/github_harness.jpeg">
-<h2></h2>
-<div class="footer">
-<p>Illustrations from the <a href="https://openscapes.org/">Openscapes</a> blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes</p>
-</div>
-<aside class="notes">
-<p>Once we are empowered to work collaboratively with GitHub, a whole new world of projects opens up, because we can contribute in many different ways. This transferrable ability to collaborate might just be the best thing about GitHub. Keep this to one breath; the motivation section ends here at about minute 10.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="concept-maps" class="slide level2 smaller">
+<section id="concept-maps-1" class="slide level2 smaller">
 <h2>Concept maps</h2>
 <p>A concept map is <span class="highlight-yellow">things</span> (nodes) joined by <span class="highlight-yellow">labelled arrows</span>, where every label is a verb.</p>
 
-<img data-src="images/concept-map-exemplar.png" style="width:70.0%" alt="A concept map about making tea. Five oval nodes labelled kettle, water, tea leaves, cup, and tea are joined by arrows labelled with capitalised verbs: HEATS, STEEPS, BECOME, MAKES, and HOLDS." class="r-stretch"><p>Read an arrow out loud and it becomes a sentence: “the kettle <span class="highlight-yellow">HEATS</span> the water.”</p>
-<aside class="notes">
+<img data-src="images/concept-map-exemplar.png" style="width:70.0%" alt="A concept map about making tea. Five oval nodes labelled kettle, water, tea leaves, cup, and tea are joined by arrows labelled with capitalised verbs: HEATS, STEEPS, BECOME, MAKES, and HOLDS." class="r-stretch"><aside class="notes">
 <p>Per Greg Wilson, Teaching Tech Together: concepts as nodes, labelled relationships as edges. Not a flowchart, not a timeline, not a list; no start, no end.</p>
 <p>One sentence on why: experts use concept maps to make their mental models visible. Yours today will show how you currently think documents travel, and this evening the second map will show what changed.</p>
 <p>8-10 minutes for this intro including the exemplar walk-through.</p>
@@ -383,15 +433,16 @@ Lars Schöbitz
 <ul>
 <li>Things as nodes, arrows with verb labels.</li>
 <li>There is no wrong map; this one is yours.</li>
-<li>Keep the map. You will need it at 14:15.</li>
+<li>Keep the map. You will need it again at the end of the day.</li>
 </ul>
 <div class="hand">
-<p>Place the yellow sticky note on your laptop when your map is done.</p>
+<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; In the room: place the yellow sticky note on your laptop when your map is done.</p>
+<p><i class="fa-solid fa-comment" aria-label="comment"></i> &nbsp; On Zoom: write “done” in the chat.</p>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_e724e306" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_ccb5c4cc" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -410,32 +461,32 @@ Lars Schöbitz
       }</style></aside>
 </section></section>
 <section>
-<section id="b2-create-and-clone-website-repo" class="title-slide slide level1 center" data-background-color="#0F4C81">
-<h1>B2: Create and clone (website repo)</h1>
+<section id="create-and-clone" class="title-slide slide level1 center" data-background-color="#0F4C81">
+<h1>Create and clone</h1>
 
 </section>
-<section id="live-drawing-local-and-remote" class="slide level2">
-<h2>Live drawing: local and remote</h2>
-<p><span class="highlight-yellow">Projector goes to sleep.</span> We draw this one by hand.</p>
+<section id="artis-project" class="slide level2 smaller">
+<h2>Arti’s project</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="arti-before">Arti (before)</h3>
+<ul>
+<li>starts a new folder on her laptop</li>
+<li>adds data as <code>.xlsx</code></li>
+<li>adds a <code>.docx</code> report</li>
+<li>adds an R script</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="arti-after">Arti (after)</h3>
+<ul>
+<li><span class="highlight-yellow">creates a repository on GitHub</span></li>
+<li><span class="highlight-yellow">clones it</span> and opens an RStudio project</li>
+<li>adds data as <code>.csv</code></li>
+<li>adds a Quarto document and an R script</li>
+</ul>
+</div></div>
 <aside class="notes">
-<p>Live drawing 1 (local and remote): two boxes, clone first, then push and pull. Under 3 minutes. Fallback: the export in the appendix of the handbook, images/drawing-1-local-remote.png.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="local-and-remote" class="slide level2 smaller">
-<h2>Local and remote</h2>
-
-<img data-src="images/drawing-1-local-remote.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%" alt="Digital version of the local and remote drawing: a local repository and a remote repository, with clone, push, and pull connecting them."><aside class="notes">
-<p>Projector wakes up. Walk the room through the digital version of what we just drew by hand: clone first, then push and pull between local and remote.</p>
+<p>Same project, two ways. Read the columns as pairs: each line on the left has a Git/GitHub answer on the right. This is the whole block in one slide; the highlighted lines are what we do together next.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -450,142 +501,26 @@ Lars Schöbitz
 </section>
 <section id="my-turn" class="slide level2 smaller">
 <h2>My turn</h2>
-<div class="task">
-<p>Watch first; your turn comes next. Hands off the keyboards.</p>
-<ol type="1">
-<li>On github.com: create a new repository called <code>website</code>, public, with a README.</li>
-<li>In RStudio: two settings that save future pain (Tools &gt; Global Options): never save <code>.RData</code> on exit, and use the native pipe <code>|&gt;</code>.</li>
-<li>Clone: green “Code” button, copy the HTTPS URL, then File &gt; New Project &gt; Version Control &gt; Git.</li>
-<li>Inspect what arrived: the Files tab, the Git tab, and two new files with yellow ? icons: <code>.gitignore</code> and <code>website.Rproj</code>.</li>
-</ol>
-<div class="hand">
-<p>Follow along on the screen.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/lars-sit-back.png" class="quarto-figure quarto-figure-center" style="width:90.0%" alt="Photo of the instructor at the keyboard."></p>
+</figure>
 </div>
+</div><div class="column" style="width:50%;">
+<div class="hand-purple" style="margin-top: 1em;">
+<p>Sit back and watch.</p>
+<p>Note down any questions as they come up. We pick them up right after.</p>
 </div>
-<aside class="notes">
-<p>Demo script, letter by letter as rehearsed:</p>
-<ul>
-<li>Create the repo on GitHub with README so the clone is never empty.</li>
-<li>RStudio settings: Tools &gt; Global Options &gt; General: Save workspace to .RData on exit: Never. Tools &gt; Global Options &gt; Code: check use native pipe operator.</li>
-<li>Clone into the pre-work folder structure (~/Documents/gitrepos/gh-org-gitforsci-ghe is the example from the setup test; for their own repos, gh-USERNAME).</li>
-<li>The .Rproj and .gitignore explanation lives here in the notes, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees them but nobody has told it what to do with them yet. This answers the cis learner question “why do .Rproj session files show up?”. Mention hidden files exist (files starting with a dot are hidden by the operating system).</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="your-turn" class="slide level2 smaller">
-<h2>Your turn</h2>
-<div class="task">
-<ol type="1">
-<li>On github.com: create a repository called <code>website</code>, public, with a README.</li>
-<li>In RStudio: File &gt; New Project &gt; Version Control &gt; Git, paste the HTTPS URL, create the project inside your <code>gitrepos</code> folder.</li>
-<li>Find <code>.gitignore</code> and <code>website.Rproj</code> in the Git tab with their yellow ? icons.</li>
-</ol>
-<div class="hand">
-<p>Place the yellow sticky note on your laptop when you see the two yellow ? icons.</p>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_de6dc297" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
-</div>
-</div>
-<aside class="notes">
-<p>Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="take-a-break" class="slide level2">
-<h2>Take a break</h2>
-<p><span class="highlight-yellow">Please get up and move!</span> Leave your emails alone. We continue at 11:15.</p>
-
-<img data-src="images/pixel-art-tree.png" style="width:50.0%" alt="Pixel art of a small character resting under a large leafy tree on a green hill, next to a gentle stream under a clear blue sky." class="r-stretch"><div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_fefc1fb8" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
-</div>
-</div>
-<div class="footer">
-<p>Image generated with <a href="https://openai.com/blog/dall-e/">DALL-E 3 by OpenAI</a></p>
-</div>
-</section></section>
-<section>
-<section id="b3-the-commit-cycle-website-repo" class="title-slide slide level1 center" data-background-color="#0F4C81">
-<h1>B3: The commit cycle (website repo)</h1>
-
-</section>
-<section id="live-drawing-the-commit-cycle" class="slide level2">
-<h2>Live drawing: the commit cycle</h2>
-<p><span class="highlight-yellow">Projector goes to sleep.</span> We draw this one by hand.</p>
-<aside class="notes">
-<p>Live drawing 2 (commit cycle): working files, stage, commit as labelled snapshot on the history line, push. Leave room for the history line to grow. Under 3 minutes. Fallback: images/drawing-2-commit-cycle.png.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="the-commit-cycle" class="slide level2 smaller">
-<h2>The commit cycle</h2>
-
-<img data-src="images/drawing-2-commit-cycle.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%" alt="Digital version of the commit cycle drawing: working files move through stage and commit as a labelled snapshot on the history line, then push."><aside class="notes">
-<p>Projector wakes up. Run through the digital version: working files, stage, commit as a labelled snapshot on the history line, push.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="my-turn-1" class="slide level2 smaller">
-<h2>My turn</h2>
-<div class="task">
-<p>Watch first; your turn comes next.</p>
-<ol type="1">
-<li>Edit <code>README.md</code>: add the line “This repo contains a personal website.” Save, and spot the blue M in the Git tab.</li>
-<li>The cycle, always in this order: <span class="highlight-yellow">Pull, Stage, Commit, Push</span>.</li>
-<li>Look at the history: the commit is a labelled snapshot, on GitHub too.</li>
-<li>Now on purpose: one bad commit, and <span class="highlight-yellow">one revert</span>.</li>
-</ol>
-<div class="hand">
-<p>Follow along on the screen.</p>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p>Demo script:</p>
 <ul>
-<li>Edit README, save, point out the blue M next to the file in the Git tab.</li>
-<li>Sync in 4 steps, said as a mantra: Pull (nothing to get, but build the habit), Stage (checkbox), Commit (message: “describe the repo content”), Push. Then open the repo on GitHub and show the commit message and the file change there.</li>
-<li>Revert demo, instructor only: make a deliberately bad commit (for example delete half the README), commit it, then revert it via the history; show that the history keeps both the mistake and the undo. Say the safety-net message out loud: almost everything in Git is reversible. This answers the recorded cis question “how do I take a commit back?”</li>
-<li>Credentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 4. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing.</li>
+<li>Create the repo on GitHub with a README so the clone is never empty.</li>
+<li>RStudio settings: Tools &gt; Global Options &gt; General: Save workspace to .RData on exit: Never. Tools &gt; Global Options &gt; Code: check use native pipe operator.</li>
+<li>Clone into the pre-work folder structure (~/Documents/gitrepos/gh-org-gitforsci-ghe is the example from the setup test; for their own repos, gh-USERNAME).</li>
+<li>The .Rproj and .gitignore explanation lives here, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees the files but nobody has told it what to do with them yet. This answers the recorded learner question “why do .Rproj session files show up?”. Mention that hidden files (starting with a dot) are hidden by the operating system.</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -602,23 +537,28 @@ Lars Schöbitz
 <section id="your-turn-1" class="slide level2 smaller">
 <h2>Your turn</h2>
 <div class="task">
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; On <strong>github.com</strong></p>
 <ol type="1">
-<li>Edit your <code>README.md</code>: describe your website in one sentence. Save.</li>
-<li>Run the full cycle: <span class="highlight-yellow">Pull, Stage, Commit, Push</span>, with a commit message that says what changed.</li>
-<li>Open your repository on github.com and find your commit message and your change.</li>
+<li>Create a repository called <code>website</code>, public, <span class="highlight-yellow">with a README</span> (so the clone is never empty).</li>
+</ol>
+<p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; In <strong>RStudio</strong></p>
+<ol start="2" type="1">
+<li>Set two options once (Tools &gt; Global Options): General &gt; never save <code>.RData</code> on exit; Code &gt; use the native pipe <code>|&gt;</code>.</li>
+<li>Clone: File &gt; New Project &gt; Version Control &gt; Git, paste the HTTPS URL, create the project inside your <code>gitrepos</code> folder.</li>
+<li>Find <code>.gitignore</code> and <code>website.Rproj</code> in the Git tab with their yellow ? icons.</li>
 </ol>
 <div class="hand">
-<p>Place the yellow sticky note on your laptop when you can see your commit on GitHub.</p>
+<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; In the room: place the yellow sticky note on your laptop when you see the two yellow ? icons.</p>
+<p><i class="fa-solid fa-comment" aria-label="comment"></i> &nbsp; On Zoom: write “done” in the chat.</p>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_be67d992" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_b3e795ce" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>Goal: every learner has at least 2 commits pushed to their own repo by 11:45. The revert stays instructor-only in this block; learners do not revert here.</p>
-<p>Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.</p>
+<p>Screenshots of the Code button, the New Project dialog, and the Git tab go here once available. <code>.Rproj</code> holds RStudio project settings; <code>.gitignore</code> lists what Git should not track; the yellow ? icons mean Git sees the files but has no instruction for them yet. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -630,23 +570,157 @@ Lars Schöbitz
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section></section>
-<section>
-<section id="b4-collaboration-cliffhanger" class="title-slide slide level1 center" data-background-color="#0F4C81">
-<h1>B4: Collaboration cliffhanger</h1>
-
 </section>
-<section id="find-your-partner" class="slide level2">
-<h2>Find your partner</h2>
+<section id="our-turn" class="slide level2 smaller">
+<h2>Our turn</h2>
 <div class="task">
-<ul>
-<li>Turn to your neighbour: you are now a pair (three is fine if the row runs out).</li>
-<li>Write <span class="highlight-yellow">each other’s GitHub username</span> on your sticky notes.</li>
-<li>Keep that sticky note. Your partner returns after lunch.</li>
-</ul>
+<p>Together, in your new <code>website</code> repository:</p>
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; On <strong>github.com</strong></p>
+<ol type="1">
+<li>Edit <code>README.md</code> and commit the change (the pencil icon, then “Commit changes”).</li>
+<li>Add a file inside a new folder (Add file &gt; Create new file, type <code>data/notes.md</code>).</li>
+</ol>
+<div class="hand">
+<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; Place the yellow sticky note on your laptop when your commit shows in the repository.</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_b047b9a5" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+</section>
+<section id="local-and-remote" class="slide level2 smaller">
+<h2>Local and remote</h2>
+<div class="r-stack">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-1-local-remote-00.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:60.0%" alt="A remote repository, drawn as a cloud labelled GitHub, at the top."></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-1-local-remote-01.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:60.0%" alt="The remote cloud on top and a local repository box on your laptop below."></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-1-local-remote-02.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:60.0%" alt="A clone arrow pointing down from the remote cloud to the local box."></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-1-local-remote-03.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:60.0%" alt="Remote cloud on top, local box below, joined by clone and pull arrows pointing down and a push arrow pointing up."></p>
+</figure>
+</div>
 </div>
 <aside class="notes">
-<p>Pairs are formed on the day from who is present; no pre-baked table. The sticky notes with usernames are the pairing record and carry into B6 as reviewer assignments. If someone has no partner, they pair with the helper or the instructor.</p>
+<p>The summary of what we just did. Advance one element per press: the remote on GitHub (a cloud), then your local repository, then clone down, then push up and pull down.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section" class="slide level2 unlisted">
+<h2></h2>
+<div class="hand-purple" style="text-align: center;">
+<p>Anything from creating and cloning you’d like clarified before the break?</p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_bd7e3741" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+</section>
+<section id="take-a-break" class="slide level2">
+<h2>Take a break</h2>
+<p><span class="highlight-yellow">Please get up and move!</span></p>
+
+<img data-src="images/pixel-art-tree.png" style="width:50.0%" alt="Pixel art of a small character resting under a large leafy tree on a green hill, next to a gentle stream under a clear blue sky." class="r-stretch"><div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_e6c7132a" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<div class="footer">
+<p>Image generated with <a href="https://openai.com/blog/dall-e/">DALL-E 3 by OpenAI</a></p>
+</div>
+</section></section>
+<section>
+<section id="the-commit-cycle" class="title-slide slide level1 center" data-background-color="#0F4C81">
+<h1>The commit cycle</h1>
+
+</section>
+<section id="a-button-is-a-command" class="slide level2 smaller">
+<h2>A button is a command</h2>
+<ul>
+<li>RStudio is a <span class="highlight-yellow">GUI</span>, a graphical user interface.</li>
+<li>When you click <strong>Pull</strong> in the Git tab, RStudio runs <code>git pull</code> for you.</li>
+<li>Every button we use today <span class="highlight-yellow">is</span> a Git command underneath. Clicking it is not a lesser path.</li>
+</ul>
+<aside class="notes">
+<p>This is the slide for Arti: the point-and-click interface is not cheating. The push button runs git push. Say it plainly and come back to it whenever someone worries they are “not really doing Git”.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="artis-commit" class="slide level2 smaller">
+<h2>Arti’s commit</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="arti-before-1">Arti (before)</h3>
+<ul>
+<li>opens a <code>.docx</code></li>
+<li>edits the text</li>
+<li>the file autosaves</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="arti-after-1">Arti (after)</h3>
+<ul>
+<li>opens a Quarto file</li>
+<li>edits the text, it autosaves</li>
+<li>after meaningful changes: <span class="highlight-yellow">pull, stage, commit, push</span></li>
+<li>the commit message says what changed <span class="highlight-yellow">and why</span></li>
+</ul>
+</div></div>
+</section>
+<section id="my-turn-1" class="slide level2 smaller">
+<h2>My turn</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/lars-sit-back.png" class="quarto-figure quarto-figure-center" style="width:90.0%" alt="Photo of the instructor at the keyboard."></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="hand-purple" style="margin-top: 1em;">
+<p>Sit back and watch.</p>
+<p>Note down any questions as they come up. We pick them up right after.</p>
+</div>
+</div></div>
+<aside class="notes">
+<p>Demo script:</p>
+<ul>
+<li>Edit README, save, point out the blue M next to the file in the Git tab.</li>
+<li>Sync in 4 steps, said as a mantra: Pull (nothing to get, but build the habit), Stage (checkbox), Commit (message: “describe the repo content”), Push. Then open the repo on GitHub and show the commit message and the file change there.</li>
+<li>Revert demo, instructor only: make a deliberately bad commit (for example delete half the README), commit it, then revert it via the history; show that the history keeps both the mistake and the undo. Say the safety-net message out loud: almost everything in Git is reversible. This answers the recorded learner question “how do I take a commit back?”.</li>
+<li>Credentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 4. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing.</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -662,25 +736,182 @@ Lars Schöbitz
 <section id="your-turn-2" class="slide level2 smaller">
 <h2>Your turn</h2>
 <div class="task">
+<p>The cycle, always in this order: <span class="highlight-yellow">Pull, Stage, Commit, Push</span> (PSCP).</p>
+<p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; In <strong>RStudio</strong></p>
 <ol type="1">
-<li>Browse to <code>github.com/USERNAME</code>, where USERNAME is <span class="highlight-yellow">your partner’s</span> username.</li>
-<li>Clone their <code>website</code> repository (Code button, HTTPS URL, File &gt; New Project &gt; Version Control &gt; Git).</li>
-<li>Edit the README: add “This repo contains a personal website for USERNAME.”</li>
-<li>Save, stage, commit, and <span class="highlight-yellow">push</span>.</li>
+<li>Edit your <code>README.md</code>: describe your website in one sentence. Save, and spot the blue M in the Git tab.</li>
+<li>Run the full cycle: <span class="highlight-yellow">P</span>ull, <span class="highlight-yellow">S</span>tage, <span class="highlight-yellow">C</span>ommit (a message that says what changed), <span class="highlight-yellow">P</span>ush.</li>
 </ol>
-<p><span class="highlight-yellow">What happens?</span></p>
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; On <strong>github.com</strong></p>
+<ol start="3" type="1">
+<li>Open your repository and find your commit message and your change.</li>
+</ol>
 <div class="hand">
-<p>Place the yellow sticky note on your laptop when something unexpected happens.</p>
+<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; In the room: place the yellow sticky note on your laptop when you can see your commit on GitHub.</p>
+<p><i class="fa-solid fa-comment" aria-label="comment"></i> &nbsp; On Zoom: write “done” in the chat.</p>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_4b3740fa" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_20e2dd7c" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>Everyone hits the push wall: 403, no write access. That is the plan; it is the safe-to-fail moment with the lowest stakes of the day. Nobody’s work is harmed, nothing to clean up.</p>
-<p>Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.</p>
+<p>Goal: every learner has at least 2 commits pushed to their own repo by the break. The revert stays instructor-only in this block; learners do not revert here. PSCP is the mantra; say it every time. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-commit-cycle-1" class="slide level2 smaller">
+<h2>The commit cycle</h2>
+<div class="r-stack">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-2-commit-cycle-00.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="Working files in your project."></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-2-commit-cycle-01.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="Working files moved to the staging area."></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-2-commit-cycle-02.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="A commit as a labelled snapshot on the history line."></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-2-commit-cycle-03.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="A second commit growing the history line."></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-2-commit-cycle-04.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="The commits pushed from the local history line to the remote."></p>
+</figure>
+</div>
+</div>
+<aside class="notes">
+<p>The summary of what we just did. Advance one element per press: working files, stage, commit as a labelled snapshot, the history line growing, then push.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-1" class="slide level2 unlisted">
+<h2></h2>
+<div class="hand-purple" style="text-align: center;">
+<p>Anything from the commit cycle you’d like clarified before we move on?</p>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_5018e571" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+</section></section>
+<section>
+<section id="team-work" class="title-slide slide level1 center" data-background-color="#0F4C81">
+<h1>Team work</h1>
+
+</section>
+<section id="arti-joins-a-team" class="slide level2 smaller">
+<h2>Arti joins a team</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="arti-before-2">Arti (before)</h3>
+<ul>
+<li>opens SharePoint</li>
+<li>finds Cem’s file</li>
+<li>edits it in track changes</li>
+<li>emails Cem to say it is done</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="arti-after-2">Arti (after)</h3>
+<ul>
+<li>opens the project in RStudio</li>
+<li>opens the Quarto file, edits</li>
+<li>runs the <span class="highlight-yellow">PSCP mantra</span></li>
+<li>and gets <span class="highlight-yellow">blocked</span></li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>This slide sets up the cliffhanger. Arti does everything right and still cannot push to a teammate’s repository. That is the safe-to-fail moment: nothing is broken, and the afternoon answers why.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="find-your-partner" class="slide level2 smaller">
+<h2>Find your partner</h2>
+<div class="task">
+<ul>
+<li>You are in a pair with the partner you were told about before today.</li>
+<li>Write <span class="highlight-yellow">each other’s GitHub username</span> on your sticky notes.</li>
+<li>Keep that sticky note. Your partner returns after lunch.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>The sticky notes with usernames are the pairing record and carry into the pull-request block as reviewer assignments. If someone has no partner, they pair with the helper or the instructor.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="your-turn-3" class="slide level2 smaller">
+<h2>Your turn</h2>
+<div class="task">
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; On <strong>github.com</strong></p>
+<ol type="1">
+<li>Browse to <code>github.com/USERNAME</code>, where USERNAME is <span class="highlight-yellow">your partner’s</span> username.</li>
+</ol>
+<p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; In <strong>RStudio</strong></p>
+<ol start="2" type="1">
+<li>Clone their <code>website</code> repository (Code button, HTTPS URL, File &gt; New Project &gt; Version Control &gt; Git).</li>
+<li>Edit the README: add “This repo contains a personal website for USERNAME.”</li>
+<li>Run the mantra: <span class="highlight-yellow">Pull, Stage, Commit, Push</span>.</li>
+</ol>
+<p><span class="highlight-yellow">What happens?</span></p>
+<div class="hand">
+<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; In the room: place the yellow sticky note on your laptop when something unexpected happens.</p>
+<p><i class="fa-solid fa-comment" aria-label="comment"></i> &nbsp; On Zoom: write “blocked” in the chat.</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_f18104c1" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<aside class="notes">
+<p>Everyone hits the push wall: 403, no write access. That is the plan; it is the safe-to-fail moment with the lowest stakes of the day. Nobody’s work is harmed, nothing to clean up. Screenshot of the 403 error goes here once available. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -698,11 +929,34 @@ Lars Schöbitz
 <ul>
 <li class="fragment">Your push <span class="highlight-yellow">failed</span>: you can read their repository, but you have no write access.</li>
 <li class="fragment">Giving everyone write access (“collaborator”) exists, but it does not scale, and it means anyone can change anything at any time.</li>
-<li class="fragment">(Forking, making your own copy under your account, exists too; one sentence, not today’s topic.)</li>
 <li class="fragment">So how do teams actually propose and review changes? <span class="highlight-yellow">That is exactly what we solve after lunch: branches and pull requests.</span></li>
 </ul>
 <aside class="notes">
-<p>The cliffhanger, stated explicitly. The morning ends with a question the afternoon answers. Do not resolve it now.</p>
+<p>The cliffhanger, stated explicitly. The morning ends with a question the afternoon answers. Do not resolve it now. The fork route (contributing to someone else’s repo without write access) is the follow-up offer for building a personal website; mention it exists, do not teach it here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="match-the-git-command-to-the-button" class="slide level2 smaller">
+<h2>Match the Git command to the button</h2>
+<div class="task">
+<p>A one-page handout: draw a line from each Git command to the button that runs it in RStudio or on GitHub.</p>
+<ul>
+<li><span class="highlight-yellow">3 minutes</span> on your own.</li>
+<li><span class="highlight-yellow">5 minutes</span> comparing with your partner.</li>
+<li>The point: clicking a button runs the same command a terminal user types.</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Handout from gitforsci-dev/exercises (command-gui-matching). Print one learner sheet per person; remote participants receive it by email. Review as a group with the answer key afterwards. This is the “a button is a command” idea from B3, made concrete.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -717,14 +971,16 @@ Lars Schöbitz
 </section>
 <section id="lunch" class="slide level2">
 <h2>Lunch</h2>
-<p><span class="highlight-yellow">Back at 12:55.</span> The afternoon starts hands-on, and your partner is waiting for you.</p>
+<div class="hand-purple" style="text-align: center;">
+<p>The afternoon starts hands-on, and your partner is waiting for you.</p>
+</div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_186875a0" minutes="45" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_8be918d5" minutes="45" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>Hard 12:55 return. B5 starts hands-on as the re-energizer; latecomers can join mid-exercise without missing slides.</p>
+<p>Return time is set on the day (timing to be finalised with a fresh schedule). The afternoon starts hands-on as the re-energizer; anyone who arrives late can join mid-exercise without missing slides.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -738,170 +994,54 @@ Lars Schöbitz
       }</style></aside>
 </section></section>
 <section>
-<section id="b5-branch-manuscript-repo" class="title-slide slide level1 center" data-background-color="#0F4C81">
-<h1>B5: Branch (manuscript repo)</h1>
+<section id="branch" class="title-slide slide level1 center" data-background-color="#0F4C81">
+<h1>Branch</h1>
 
 </section>
-<section id="live-drawing-branching" class="slide level2">
-<h2>Live drawing: branching</h2>
-<p><span class="highlight-yellow">Projector goes to sleep.</span> We draw this one by hand.</p>
-<aside class="notes">
-<p>Live drawing 3 (branching): the main line splits, commits land on the branch, the merge point stays empty until drawing 4. Under 3 minutes. Fallback: images/drawing-3-branching.png.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="branching" class="slide level2 smaller">
-<h2>Branching</h2>
-
-<img data-src="images/drawing-3-branching.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%" alt="Digital version of the branching drawing: the main line splits into a branch, commits land on the branch, and the merge point is left empty for now."><aside class="notes">
-<p>Projector wakes up. Run through the digital version: the main line splits, commits land on the dev branch, and the merge point stays empty until the pull request in B6.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<section id="artis-branch" class="slide level2 smaller">
+<h2>Arti’s branch</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="arti-before-3">Arti (before)</h3>
+<ul>
+<li>one shared file</li>
+<li>everyone edits the same copy</li>
+<li>changes collide</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="arti-after-3">Arti (after)</h3>
+<ul>
+<li><span class="highlight-yellow">creates a branch</span> for her work</li>
+<li>edits safely, away from <code>main</code></li>
+<li>her changes wait until the team is ready to bring them in</li>
+</ul>
+</div></div>
 </section>
 <section id="my-turn-2" class="slide level2 smaller">
 <h2>My turn</h2>
-<div class="task">
-<p>Watch first; your turn comes next. New repo, new superpower.</p>
-<ol type="1">
-<li>In the org, find <code>man-washinvestments-USERNAME</code> and clone it (same moves as this morning).</li>
-<li>Git pane: <span class="highlight-yellow">New Branch</span>, name it <code>dev</code>. Read the message about <code>origin</code> out loud.</li>
-<li>Open <code>index.qmd</code>, edit the author details (name, ORCID, email, institution), <span class="highlight-yellow">Render</span>.</li>
-<li>Switch between <code>main</code> and <code>dev</code> in the Git pane: before the commit nothing differs; after the commit, the change lives <span class="highlight-yellow">only on dev</span>.</li>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/lars-sit-back.png" class="quarto-figure quarto-figure-center" style="width:90.0%" alt="Photo of the instructor at the keyboard."></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="hand-purple" style="margin-top: 1em;">
+<p>Sit back and watch.</p>
+<p>Note down any questions as they come up. We pick them up right after.</p>
+</div>
+</div></div>
+<aside class="notes">
+<p>Demo script:</p>
+<ul>
+<li>New repo, new move. Clone the team manuscript repo (same moves as this morning).</li>
+<li>Git pane: New Branch, name it dev. Read the message about origin out loud.</li>
+<li>Open index.qmd, edit the author details, Render.</li>
+<li>Switch between main and dev in the Git pane: before the commit nothing differs; after the commit, the change lives only on dev.</li>
 <li>Commit “update author details”, push.</li>
-</ol>
-<div class="hand">
-<p>Follow along on the screen.</p>
-</div>
-</div>
-<aside class="notes">
-<p>Packages are already installed from the pre-work setup test (its Step 6), so the render takes seconds. Fallback only, if someone’s render fails on a missing package, the commented install chunk sits at the top of index.qmd:</p>
-<pre><code># install.packages(c("devtools", "ggplot2", "ggthemes",
-#                    "countrycode", "dplyr", "rmarkdown"))
-# devtools::install_github("openwashdata/washinvestments")</code></pre>
-<p>Do not run installs for the room; park that learner and pair them.</p>
-<p>The branch created here feeds the B6 pull request in 30 minutes, so keep momentum.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="your-turn-3" class="slide level2 smaller">
-<h2>Your turn</h2>
-<div class="task">
-<ol type="1">
-<li>Find and clone <span class="highlight-yellow">your</span> <code>man-washinvestments-USERNAME</code> repository (org page, search “man-”).</li>
-<li>Git pane: New Branch, name it <code>dev</code>.</li>
-<li>In <code>index.qmd</code>: put in <span class="highlight-yellow">your own</span> author details. Render.</li>
-<li>Commit “update author details”, push.</li>
-</ol>
-<div class="hand">
-<p>Place the yellow sticky note on your laptop when your push has finished.</p>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_cca63ff8" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
-</div>
-</div>
-<aside class="notes">
-<p>The render updates <code>docs/index.html</code>, so the commit stages two files together: <code>index.qmd</code> and <code>docs/index.html</code>.</p>
-<p>If the roster pivot happened (kill criterion 1), learners without their own repo work in the shared demo repos instead: same steps, repo name from the board. Mark the default before the day.</p>
-<p>Bounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up. Every learner needs a pushed dev branch with one commit by 13:30.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section></section>
-<section>
-<section id="b6-pull-request-review-merge" class="title-slide slide level1 center" data-background-color="#0F4C81">
-<h1>B6: Pull request, review, merge</h1>
-
-</section>
-<section id="live-drawing-the-pull-request" class="slide level2">
-<h2>Live drawing: the pull request</h2>
-<p><span class="highlight-yellow">Projector goes to sleep.</span> We draw this one by hand.</p>
-<aside class="notes">
-<p>Live drawing 4 (pull request): complete the merge point from drawing 3, pause at the join for the human review, then the lines meet. Under 3 minutes. Fallback: images/drawing-4-pull-request.png.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="the-pull-request" class="slide level2 smaller">
-<h2>The pull request</h2>
-
-<img data-src="images/drawing-4-pull-request.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%" alt="Digital version of the pull request drawing: the branch and main lines meet at the merge point, with a pause at the join for the human review before the lines meet."><aside class="notes">
-<p>Projector wakes up. Run through the digital version: the merge point from the branching drawing is completed, with the human review sitting at the join before the lines meet.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="my-turn-3" class="slide level2 smaller">
-<h2>My turn</h2>
-<div class="task">
-<p>Watch first; your turn comes next. This is the moment the day was built for.</p>
-<ol type="1">
-<li>On GitHub: switch to <code>dev</code>, click <span class="highlight-yellow">Compare &amp; pull request</span>. Title: “Add author details to manuscript”.</li>
-<li>Request a <span class="highlight-yellow">reviewer</span>. Walk the tabs: Commits, Files changed.</li>
-<li>As the reviewer: start a review, leave <span class="highlight-yellow">line comments</span>, submit.</li>
-<li>Open an issue with a task list next to the PR.</li>
-<li><span class="highlight-yellow">Merge</span>, confirm, tick off the task in the issue.</li>
-<li>Back in RStudio: switch to <code>main</code>, read the message, <span class="highlight-yellow">Pull</span>. Then the gotcha: <span class="highlight-yellow">switch back to dev</span>.</li>
-</ol>
-<div class="hand">
-<p>Follow along on the screen.</p>
-</div>
-</div>
-<aside class="notes">
-<p>Demo script from the cis lesson plan. Review comment examples to reuse verbatim: “That’s not a good title for a manuscript. Please suggest 2 alternatives.” and “This list is not complete.”</p>
-<p>Read the “behind origin/main, can be fast-forwarded” message out loud when switching to main. The switch-back-to-dev gotcha is a recorded cis learner stumble; name it as a habit: merged? Then pull main, and go back to your working branch.</p>
+</ul>
+<p>Packages are already installed from the pre-work setup test, so the render takes seconds. If a render fails on a missing package, the commented install chunk sits at the top of index.qmd; do not run installs for the room, park that learner and pair them. The branch created here feeds the pull request in the next block, so keep momentum.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -917,27 +1057,67 @@ Lars Schöbitz
 <section id="your-turn-4" class="slide level2 smaller">
 <h2>Your turn</h2>
 <div class="task">
+<p>Your team shares one manuscript repository, <code>washinvestments-&lt;team&gt;</code> (for example <code>washinvestments-red</code>).</p>
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; On <strong>github.com</strong></p>
 <ol type="1">
-<li>Open a pull request from your <code>dev</code> branch. Title it so your reviewer knows what changed.</li>
-<li>Request a review <span class="highlight-yellow">from your B4 partner</span> (the username on your sticky note).</li>
-<li>Review <span class="highlight-yellow">your partner’s</span> pull request: at least <span class="highlight-yellow">one line comment</span>, then submit the review.</li>
-<li>After your review arrives: <span class="highlight-yellow">merge your own PR</span>, confirm.</li>
-<li>In RStudio: switch to <code>main</code>, Pull, and switch back to <code>dev</code>.</li>
+<li>Find and clone <span class="highlight-yellow">your team’s</span> <code>washinvestments-&lt;team&gt;</code> repository (org page, search your team name).</li>
 </ol>
-<p><span class="highlight-yellow">Partner not ready? Review the seed PR in your own repository instead. Nobody waits on anybody.</span></p>
+<p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; In <strong>RStudio</strong> (one person drives)</p>
+<ol start="2" type="1">
+<li>Git pane: New Branch, name it <code>dev</code>.</li>
+<li>In <code>index.qmd</code>: put in <span class="highlight-yellow">your own</span> author details in one of the two author slots. Render.</li>
+<li>Run the mantra: <span class="highlight-yellow">Pull, Stage, Commit, Push</span> with the message “update author details”.</li>
+</ol>
 <div class="hand">
-<p>Place the yellow sticky note on your laptop after the switch back to dev.</p>
+<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; In the room: place the yellow sticky note on your laptop when your push has finished.</p>
+<p><i class="fa-solid fa-comment" aria-label="comment"></i> &nbsp; On Zoom: write “done” in the chat.</p>
 </div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_e65f5d74" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_0b6bff9c" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>Default path: partner-pair review with the B4 sticky-note pairs. Fallback path, on the slide itself: every manuscript repo has a pre-opened seed PR (“Seed: suggestions to review”), so the exercise never blocks on a partner’s progress. If no helper was found by 11 July (kill criterion 4), flip the default: everyone reviews their seed PR, pairs become the bonus.</p>
-<p>Target: every learner opens a PR, writes at least one line comment, merges, and pulls, inside 35 minutes.</p>
-<p>This block is protected. If the day is behind, B7 Publish is cut, never this. Bounded regroup: 2 minutes, then park-and-pair.</p>
+<p>Team repos are <code>washinvestments-&lt;team&gt;</code>, created from the reworked manuscript template (two author slots, no publishing). Team names are set on the day; use the placeholder until then. Screenshots of the New Branch, Render, and Git-tab buttons go here once available. One person drives so the branch and commit are shared; the partner reviews in the next block.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="branching" class="slide level2 smaller">
+<h2>Branching</h2>
+<div class="r-stack">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-3-branching-00.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="The main line with a couple of commits."></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-3-branching-01.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="A dev branch splitting off from main."></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-3-branching-02.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="Commits landing on the dev branch."></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-3-branching-03.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="The branch and main lines with the merge point left empty for now."></p>
+</figure>
+</div>
+</div>
+<aside class="notes">
+<p>The summary of what we just did. Advance one element per press: the main line, the dev branch splitting off, commits landing on the branch, and the merge point left empty until the pull request in the next block.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -951,23 +1131,30 @@ Lars Schöbitz
       }</style></aside>
 </section></section>
 <section>
-<section id="b7-publish" class="title-slide slide level1 center" data-background-color="#0F4C81">
-<h1>B7: Publish</h1>
+<section id="pull-request-review-merge" class="title-slide slide level1 center" data-background-color="#0F4C81">
+<h1>Pull request, review, merge</h1>
 
 </section>
-<section id="our-turn" class="slide level2 smaller">
-<h2>Our turn</h2>
-<div class="task">
-<p>Together, on your merged manuscript:</p>
-<ol type="1">
-<li>Open your <code>man-washinvestments-USERNAME</code> repository on GitHub.</li>
-<li><span class="highlight-yellow">Settings &gt; Pages</span>: Deploy from a branch, branch <code>main</code>, folder <code>/docs</code>, Save.</li>
-<li>Wait for the address to appear, then paste it into the repository <span class="highlight-yellow">description</span> (About, gear icon).</li>
-<li>Open the address: your manuscript is <span class="highlight-yellow">on the web</span>.</li>
-</ol>
-</div>
+<section id="artis-review" class="slide level2 smaller">
+<h2>Arti’s review</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="arti-before-4">Arti (before)</h3>
+<ul>
+<li>emails the file back and forth</li>
+<li>comments live in track changes</li>
+<li>no record of who changed what, when</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="arti-after-4">Arti (after)</h3>
+<ul>
+<li>opens a <span class="highlight-yellow">pull request</span></li>
+<li>her partner leaves <span class="highlight-yellow">line comments</span></li>
+<li>the change is <span class="highlight-yellow">merged</span> after review, with a full record</li>
+</ul>
+</div></div>
 <aside class="notes">
-<p>First block to cut. If running behind at 14:05, skip to the fallback slide and hand the time to B8. Pages can take a minute to build; use the wait to point at the docs folder in the repo, which is where the rendered manuscript lives.</p>
+<p>Same review habit Arti already has (comments in tracked changes), now on GitHub with a record. This is the moment the day was built for.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -980,16 +1167,108 @@ Lars Schöbitz
           display:block!important;
       }</style></aside>
 </section>
-<section id="fallback-what-publishing-looks-like" class="slide level2 smaller">
-<h2>Fallback: what publishing looks like</h2>
-<ul>
-<li>One published example: <a href="https://gitforsci-ghe.github.io/website/" class="uri">https://gitforsci-ghe.github.io/website/</a></li>
-<li>The steps, in one breath: <span class="highlight-yellow">Settings, Pages, deploy from branch, docs folder, save</span>.</li>
-<li>The website index and the slides you used today are published <span class="highlight-yellow">exactly this way</span>.</li>
-<li>Your manuscript repo is ready for it whenever you try, tonight included.</li>
-</ul>
+<section id="my-turn-3" class="slide level2 smaller">
+<h2>My turn</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/lars-sit-back.png" class="quarto-figure quarto-figure-center" style="width:90.0%" alt="Photo of the instructor at the keyboard."></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="hand-purple" style="margin-top: 1em;">
+<p>Sit back and watch.</p>
+<p>Note down any questions as they come up. We pick them up right after.</p>
+</div>
+</div></div>
 <aside class="notes">
-<p>This slide stands alone for the cut case: show it, say the one breath, hand the time to B8.</p>
+<p>Demo script:</p>
+<ul>
+<li>On GitHub: switch to dev, click Compare &amp; pull request. Title: “Add author details to manuscript”.</li>
+<li>Request a reviewer. Walk the tabs: Commits, Files changed.</li>
+<li>As the reviewer: start a review, leave line comments, submit. Review comment examples to reuse verbatim: “That’s not a good title for a manuscript. Please suggest 2 alternatives.” and “This list is not complete.”</li>
+<li>Open an issue with a task list next to the PR. Merge, confirm, tick off the task.</li>
+<li>Back in RStudio: switch to main, read the “behind origin/main, can be fast-forwarded” message out loud, Pull. Then the gotcha: switch back to dev. Name it as a habit: merged? Then pull main, and go back to your working branch.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="your-turn-5" class="slide level2 smaller">
+<h2>Your turn</h2>
+<div class="task">
+<p><i class="fa-brands fa-github" aria-label="github"></i> &nbsp; On <strong>github.com</strong></p>
+<ol type="1">
+<li>Open a pull request from your <code>dev</code> branch. Title it so your reviewer knows what changed.</li>
+<li>Request a review <span class="highlight-yellow">from your partner</span> (the username on your sticky note).</li>
+<li>Review <span class="highlight-yellow">your partner’s</span> pull request: at least <span class="highlight-yellow">one line comment</span>, then submit the review.</li>
+<li>After your review arrives: <span class="highlight-yellow">merge the PR</span>, confirm.</li>
+</ol>
+<p><i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> &nbsp; In <strong>RStudio</strong></p>
+<ol start="5" type="1">
+<li>Switch to <code>main</code>, <span class="highlight-yellow">Pull</span>, and <span class="highlight-yellow">switch back to <code>dev</code></span>.</li>
+</ol>
+<p><span class="highlight-yellow">Partner not ready? Review the seed PR in your team repository instead. Nobody waits on anybody.</span></p>
+<div class="hand">
+<p><i class="fa-solid fa-note-sticky" aria-label="note-sticky"></i> &nbsp; In the room: place the yellow sticky note on your laptop after the switch back to dev.</p>
+<p><i class="fa-solid fa-comment" aria-label="comment"></i> &nbsp; On Zoom: write “done” in the chat.</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<countdown-timer class="countdown" id="timer_123977eb" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+</div>
+</div>
+<aside class="notes">
+<p>Default path: partner-pair review with the sticky-note pairs. Fallback path, on the slide itself: every team repo has a pre-opened seed PR (“Seed: suggestions to review”), so the exercise never blocks on a partner’s progress.</p>
+<p>Target: every learner opens a PR, writes at least one line comment, merges, and pulls. This block is protected: if the day is behind, cut elsewhere, never this. Bounded regroup: 2 minutes, then park-and-pair.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-pull-request" class="slide level2 smaller">
+<h2>The pull request</h2>
+<div class="r-stack">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-4-pull-request-00.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="The dev branch and main line with an open merge point."></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-4-pull-request-01.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="A pull request opened at the join between the branch and main."></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-4-pull-request-02.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="A human review pausing at the join before the lines meet."></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/drawing-4-pull-request-03.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="The branch merged into main, the lines meeting."></p>
+</figure>
+</div>
+</div>
+<aside class="notes">
+<p>The summary of what we just did. Advance one element per press: the open merge point from the branching drawing, the pull request, the human review at the join, then the merge.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1003,8 +1282,8 @@ Lars Schöbitz
       }</style></aside>
 </section></section>
 <section>
-<section id="b8-concept-map-revisit-and-wrap-up" class="title-slide slide level1 center" data-background-color="#0F4C81">
-<h1>B8: Concept map revisit and wrap-up</h1>
+<section id="concept-map-revisit-and-wrap-up" class="title-slide slide level1 center" data-background-color="#0F4C81">
+<h1>Concept map revisit and wrap-up</h1>
 
 </section>
 <section id="your-turn-your-map-revisited" class="slide level2 smaller">
@@ -1021,11 +1300,11 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_fb5de25b" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_dd3a9bcf" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
-<p>Hard start at 14:15: whatever block is running stops. B8 is protected and runs even on the worst day.</p>
+<p>This block is protected and runs even on the worst day.</p>
 <p>The comparison is the measurement instrument for the whole redesign. Consent is asked on the slide; photograph only the maps of learners who agree, no names on the photos.</p>
 <p>Fallback if the morning baseline went badly: draw the Git concept map yourself on the board as the closing recap and have the room call out the verb for each arrow (see the handbook, concept maps as bookends).</p>
 <style type="text/css">
@@ -1042,7 +1321,7 @@ Lars Schöbitz
 </section>
 <section id="the-day-in-one-line" class="slide level2">
 <h2>The day in one line</h2>
-<p><span class="highlight-yellow">create</span> , <span class="highlight-yellow">clone</span> , <span class="highlight-yellow">commit</span> , <span class="highlight-yellow">push</span> , <span class="highlight-yellow">branch</span> , <span class="highlight-yellow">pull request</span> , <span class="highlight-yellow">review</span> , <span class="highlight-yellow">merge</span> , <span class="highlight-yellow">publish</span></p>
+<p><span class="highlight-yellow">create</span> , <span class="highlight-yellow">clone</span> , <span class="highlight-yellow">commit</span> , <span class="highlight-yellow">push</span> , <span class="highlight-yellow">pull</span> , <span class="highlight-yellow">branch</span> , <span class="highlight-yellow">pull request</span> , <span class="highlight-yellow">review</span> , <span class="highlight-yellow">merge</span></p>
 <aside class="notes">
 <p>Recap as verbs, spoken while pointing at the drawings on the board. What you also picked up on the side: RStudio fluency, a first taste of Quarto, and reversibility as a habit.</p>
 <style type="text/css">
@@ -1061,7 +1340,7 @@ Lars Schöbitz
 <h2>What you also learned today</h2>
 <ul>
 <li>RStudio, now with muscle memory</li>
-<li>Quarto: one document, rendered to the web</li>
+<li>Quarto: one document you can render</li>
 <li>Reversibility as a habit: commit early, revert without fear</li>
 </ul>
 </section>
@@ -1069,7 +1348,8 @@ Lars Schöbitz
 <h2>What comes next</h2>
 <ul>
 <li class="fragment"><span class="highlight-yellow">Working with AI coding agents</span> is the follow-up workshop, and it builds on exactly what you did today: branches, pull requests, review.</li>
-<li class="fragment">Interested? Email me and you will hear from me when dates are set.</li>
+<li class="fragment">Want a <span class="highlight-yellow">personal website</span>? I offer a follow-up to build a one-page site with your profile links and bio.</li>
+<li class="fragment">Interested in either? Email me and you will hear from me when dates are set.</li>
 <li class="fragment">Start your first own project with Git and GitHub this week (already have a project? <a href="https://happygitwithr.com/existing-github-first#existing-github-first">Read here</a>).</li>
 <li class="fragment">Keep learning by doing: open pull requests to yourself, review your own diffs.</li>
 </ul>
@@ -1082,7 +1362,7 @@ Lars Schöbitz
 </ul>
 <p>All material is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike 4.0 International</a>.</p>
 <aside class="notes">
-<p>Survey link goes out by email right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks, done by 14:30.</p>
+<p>Survey link goes out by email right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

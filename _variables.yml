@@ -19,3 +19,8 @@ course:
 
 md-01:
   title: "GitHub for Collaboration"
+
+# Brand colours, mirrored from _brand.yml so slide section headers stay in
+# sync with the course website palette. Update both if the brand changes.
+brand:
+  section-bg: "#0F4C81"

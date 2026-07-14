@@ -18,7 +18,7 @@
     "href": "workshop/slides.html#learning-objectives",
     "title": "GitHub for Collaboration",
     "section": "Learning objectives",
-    "text": "Learning objectives\nBy the end of this workshop, participants will be able to:\n\nCreate and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.\nWork with branches and pull requests: create a branch, open a pull request, review a colleague’s pull request, and merge after review.\nPublish a rendered document via GitHub Pages, and draw a concept map of how Git and GitHub fit together."
+    "text": "Learning objectives\nBy the end of this workshop, you will be able to:\n\nCommit cycle: create and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.\nCollaboration: create a branch and open a pull request, review a colleague’s pull request, and merge it after review.\nConcept map: draw how Git and GitHub fit together.\n\n\nBloom check: objective 1 is Apply (create, clone, run, revert are observable procedures you can check in the room); objective 2 is Apply plus Evaluate (reviewing a pull request is a judgement); objective 3 is Understand/Create (drawing the concept map externalises the mental model, and it is the measurement bookend for the day). Publish was removed as a core objective; publishing and a one-page personal website are offered as a follow-up on the website repository (profile links and bio), not dropped silently."
   },
   {
     "objectID": "workshop/slides.html#teaching-strategy",
@@ -39,14 +39,14 @@
     "href": "workshop/slides.html#section",
     "title": "GitHub for Collaboration",
     "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nWhy GitHub?\n“Collaboration is the most compelling reason to manage a project with Git and GitHub. My definition of collaboration includes hands-on participation by multiple people, including your past and future self, as well as an asymmetric model, in which some people are active makers and others only read or review.” - Jenny Bryan\nBryan J. 2017. Excuse me, do you have a moment to talk about version control? PeerJ Preprints 5:e3159v2 https://doi.org/10.7287/peerj.preprints.3159v2"
+    "text": "Anything from creating and cloning you’d like clarified before the break?"
   },
   {
     "objectID": "workshop/slides.html#section-1",
     "href": "workshop/slides.html#section-1",
     "title": "GitHub for Collaboration",
     "section": "",
-    "text": "Illustrations from the Openscapes blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes\n\n\nGitHub helps us fail safely. Because we can return to previous versions easily, painful consequences of failing are reduced. We can bravely try things knowing that some will fail, and that failing is not catastrophic: we start again from where we left off, with a clear history to learn from.\nThis is the safe-to-fail promise from the expectations slide, now with a picture."
+    "text": "Anything from the commit cycle you’d like clarified before we move on?"
   },
   {
     "objectID": "workshop/slides.html#section-2",
@@ -74,7 +74,7 @@
     "href": "workshop/slides.html#your-turn-your-baseline-map",
     "title": "GitHub for Collaboration",
     "section": "Your turn: your baseline map",
-    "text": "Your turn: your baseline map\n\nHow does a document you write reach your co-author and come back? Draw it as a concept map.\n\nThings as nodes, arrows with verb labels.\nThere is no wrong map; this one is yours.\nKeep the map. You will need it at 14:15.\n\n\nPlace the yellow sticky note on your laptop when your map is done.\n\n\n\n\n\n\n\n\nOne single prompt, not a fused double question. Expected content: email attachments, Dropbox, Google Docs, file naming (final_v2, final_final). That is the point; the day connects Git to these habits. Do not correct anything here.\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break."
+    "text": "Your turn: your baseline map\n\nHow does a document you write reach your co-author and come back? Draw it as a concept map.\n\nThings as nodes, arrows with verb labels.\nThere is no wrong map; this one is yours.\nKeep the map. You will need it again at the end of the day.\n\n\n   In the room: place the yellow sticky note on your laptop when your map is done.\n   On Zoom: write “done” in the chat.\n\n\n\n\n\n\n\n\nOne single prompt, not a fused double question. Expected content: email attachments, Dropbox, Google Docs, file naming (final_v2, final_final). That is the point; the day connects Git to these habits. Do not correct anything here.\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break."
   },
   {
     "objectID": "workshop/slides.html#live-drawing-local-and-remote",
@@ -88,28 +88,28 @@
     "href": "workshop/slides.html#local-and-remote",
     "title": "GitHub for Collaboration",
     "section": "Local and remote",
-    "text": "Local and remote\n\n\nProjector wakes up. Walk the room through the digital version of what we just drew by hand: clone first, then push and pull between local and remote."
+    "text": "Local and remote\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe summary of what we just did. Advance one element per press: the remote on GitHub (a cloud), then your local repository, then clone down, then push up and pull down."
   },
   {
     "objectID": "workshop/slides.html#my-turn",
     "href": "workshop/slides.html#my-turn",
     "title": "GitHub for Collaboration",
     "section": "My turn",
-    "text": "My turn\n\nWatch first; your turn comes next. Hands off the keyboards.\n\nOn github.com: create a new repository called website, public, with a README.\nIn RStudio: two settings that save future pain (Tools &gt; Global Options): never save .RData on exit, and use the native pipe |&gt;.\nClone: green “Code” button, copy the HTTPS URL, then File &gt; New Project &gt; Version Control &gt; Git.\nInspect what arrived: the Files tab, the Git tab, and two new files with yellow ? icons: .gitignore and website.Rproj.\n\n\nFollow along on the screen.\n\n\n\nDemo script, letter by letter as rehearsed:\n\nCreate the repo on GitHub with README so the clone is never empty.\nRStudio settings: Tools &gt; Global Options &gt; General: Save workspace to .RData on exit: Never. Tools &gt; Global Options &gt; Code: check use native pipe operator.\nClone into the pre-work folder structure (~/Documents/gitrepos/gh-org-gitforsci-ghe is the example from the setup test; for their own repos, gh-USERNAME).\nThe .Rproj and .gitignore explanation lives here in the notes, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees them but nobody has told it what to do with them yet. This answers the cis learner question “why do .Rproj session files show up?”. Mention hidden files exist (files starting with a dot are hidden by the operating system)."
+    "text": "My turn\n\n\n\n\n\n\n\n\n\nSit back and watch.\nNote down any questions as they come up. We pick them up right after.\n\n\n\nDemo script:\n\nCreate the repo on GitHub with a README so the clone is never empty.\nRStudio settings: Tools &gt; Global Options &gt; General: Save workspace to .RData on exit: Never. Tools &gt; Global Options &gt; Code: check use native pipe operator.\nClone into the pre-work folder structure (~/Documents/gitrepos/gh-org-gitforsci-ghe is the example from the setup test; for their own repos, gh-USERNAME).\nThe .Rproj and .gitignore explanation lives here, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees the files but nobody has told it what to do with them yet. This answers the recorded learner question “why do .Rproj session files show up?”. Mention that hidden files (starting with a dot) are hidden by the operating system."
   },
   {
     "objectID": "workshop/slides.html#your-turn",
     "href": "workshop/slides.html#your-turn",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\nOn github.com: create a repository called website, public, with a README.\nIn RStudio: File &gt; New Project &gt; Version Control &gt; Git, paste the HTTPS URL, create the project inside your gitrepos folder.\nFind .gitignore and website.Rproj in the Git tab with their yellow ? icons.\n\n\nPlace the yellow sticky note on your laptop when you see the two yellow ? icons.\n\n\n\n\n\n\n\n\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break."
+    "text": "Your turn\n\nThink about the last time you published a written document:\n\nWhich tasks gave you joy?\nWhich tasks were challenging or frustrating?\n\n\nTake some written notes."
   },
   {
     "objectID": "workshop/slides.html#take-a-break",
     "href": "workshop/slides.html#take-a-break",
     "title": "GitHub for Collaboration",
     "section": "Take a break",
-    "text": "Take a break\nPlease get up and move! Leave your emails alone. We continue at 11:15.\n\n\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
+    "text": "Take a break\nPlease get up and move!\n\n\n\n\n\n\n\nImage generated with DALL-E 3 by OpenAI"
   },
   {
     "objectID": "workshop/slides.html#live-drawing-the-commit-cycle",
@@ -130,42 +130,42 @@
     "href": "workshop/slides.html#my-turn-1",
     "title": "GitHub for Collaboration",
     "section": "My turn",
-    "text": "My turn\n\nWatch first; your turn comes next.\n\nEdit README.md: add the line “This repo contains a personal website.” Save, and spot the blue M in the Git tab.\nThe cycle, always in this order: Pull, Stage, Commit, Push.\nLook at the history: the commit is a labelled snapshot, on GitHub too.\nNow on purpose: one bad commit, and one revert.\n\n\nFollow along on the screen.\n\n\n\nDemo script:\n\nEdit README, save, point out the blue M next to the file in the Git tab.\nSync in 4 steps, said as a mantra: Pull (nothing to get, but build the habit), Stage (checkbox), Commit (message: “describe the repo content”), Push. Then open the repo on GitHub and show the commit message and the file change there.\nRevert demo, instructor only: make a deliberately bad commit (for example delete half the README), commit it, then revert it via the history; show that the history keeps both the mistake and the undo. Say the safety-net message out loud: almost everything in Git is reversible. This answers the recorded cis question “how do I take a commit back?”\nCredentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 4. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing."
+    "text": "My turn\n\n\n\n\n\n\n\n\n\nSit back and watch.\nNote down any questions as they come up. We pick them up right after.\n\n\n\nDemo script:\n\nEdit README, save, point out the blue M next to the file in the Git tab.\nSync in 4 steps, said as a mantra: Pull (nothing to get, but build the habit), Stage (checkbox), Commit (message: “describe the repo content”), Push. Then open the repo on GitHub and show the commit message and the file change there.\nRevert demo, instructor only: make a deliberately bad commit (for example delete half the README), commit it, then revert it via the history; show that the history keeps both the mistake and the undo. Say the safety-net message out loud: almost everything in Git is reversible. This answers the recorded learner question “how do I take a commit back?”.\nCredentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 4. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing."
   },
   {
     "objectID": "workshop/slides.html#your-turn-1",
     "href": "workshop/slides.html#your-turn-1",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\nEdit your README.md: describe your website in one sentence. Save.\nRun the full cycle: Pull, Stage, Commit, Push, with a commit message that says what changed.\nOpen your repository on github.com and find your commit message and your change.\n\n\nPlace the yellow sticky note on your laptop when you can see your commit on GitHub.\n\n\n\n\n\n\n\n\nGoal: every learner has at least 2 commits pushed to their own repo by 11:45. The revert stays instructor-only in this block; learners do not revert here.\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch."
+    "text": "Your turn\n\n   On github.com\n\nCreate a repository called website, public, with a README (so the clone is never empty).\n\n   In RStudio\n\nSet two options once (Tools &gt; Global Options): General &gt; never save .RData on exit; Code &gt; use the native pipe |&gt;.\nClone: File &gt; New Project &gt; Version Control &gt; Git, paste the HTTPS URL, create the project inside your gitrepos folder.\nFind .gitignore and website.Rproj in the Git tab with their yellow ? icons.\n\n\n   In the room: place the yellow sticky note on your laptop when you see the two yellow ? icons.\n   On Zoom: write “done” in the chat.\n\n\n\n\n\n\n\n\nScreenshots of the Code button, the New Project dialog, and the Git tab go here once available. .Rproj holds RStudio project settings; .gitignore lists what Git should not track; the yellow ? icons mean Git sees the files but has no instruction for them yet. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break."
   },
   {
     "objectID": "workshop/slides.html#find-your-partner",
     "href": "workshop/slides.html#find-your-partner",
     "title": "GitHub for Collaboration",
     "section": "Find your partner",
-    "text": "Find your partner\n\n\nTurn to your neighbour: you are now a pair (three is fine if the row runs out).\nWrite each other’s GitHub username on your sticky notes.\nKeep that sticky note. Your partner returns after lunch.\n\n\n\nPairs are formed on the day from who is present; no pre-baked table. The sticky notes with usernames are the pairing record and carry into B6 as reviewer assignments. If someone has no partner, they pair with the helper or the instructor."
+    "text": "Find your partner\n\n\nYou are in a pair with the partner you were told about before today.\nWrite each other’s GitHub username on your sticky notes.\nKeep that sticky note. Your partner returns after lunch.\n\n\n\nThe sticky notes with usernames are the pairing record and carry into the pull-request block as reviewer assignments. If someone has no partner, they pair with the helper or the instructor."
   },
   {
     "objectID": "workshop/slides.html#your-turn-2",
     "href": "workshop/slides.html#your-turn-2",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\nBrowse to github.com/USERNAME, where USERNAME is your partner’s username.\nClone their website repository (Code button, HTTPS URL, File &gt; New Project &gt; Version Control &gt; Git).\nEdit the README: add “This repo contains a personal website for USERNAME.”\nSave, stage, commit, and push.\n\nWhat happens?\n\nPlace the yellow sticky note on your laptop when something unexpected happens.\n\n\n\n\n\n\n\n\nEveryone hits the push wall: 403, no write access. That is the plan; it is the safe-to-fail moment with the lowest stakes of the day. Nobody’s work is harmed, nothing to clean up.\nBounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch."
+    "text": "Your turn\n\nThe cycle, always in this order: Pull, Stage, Commit, Push (PSCP).\n   In RStudio\n\nEdit your README.md: describe your website in one sentence. Save, and spot the blue M in the Git tab.\nRun the full cycle: Pull, Stage, Commit (a message that says what changed), Push.\n\n   On github.com\n\nOpen your repository and find your commit message and your change.\n\n\n   In the room: place the yellow sticky note on your laptop when you can see your commit on GitHub.\n   On Zoom: write “done” in the chat.\n\n\n\n\n\n\n\n\nGoal: every learner has at least 2 commits pushed to their own repo by the break. The revert stays instructor-only in this block; learners do not revert here. PSCP is the mantra; say it every time. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch."
   },
   {
     "objectID": "workshop/slides.html#what-just-happened",
     "href": "workshop/slides.html#what-just-happened",
     "title": "GitHub for Collaboration",
     "section": "What just happened?",
-    "text": "What just happened?\n\nYour push failed: you can read their repository, but you have no write access.\nGiving everyone write access (“collaborator”) exists, but it does not scale, and it means anyone can change anything at any time.\n(Forking, making your own copy under your account, exists too; one sentence, not today’s topic.)\nSo how do teams actually propose and review changes? That is exactly what we solve after lunch: branches and pull requests.\n\n\nThe cliffhanger, stated explicitly. The morning ends with a question the afternoon answers. Do not resolve it now."
+    "text": "What just happened?\n\nYour push failed: you can read their repository, but you have no write access.\nGiving everyone write access (“collaborator”) exists, but it does not scale, and it means anyone can change anything at any time.\nSo how do teams actually propose and review changes? That is exactly what we solve after lunch: branches and pull requests.\n\n\nThe cliffhanger, stated explicitly. The morning ends with a question the afternoon answers. Do not resolve it now. The fork route (contributing to someone else’s repo without write access) is the follow-up offer for building a personal website; mention it exists, do not teach it here."
   },
   {
     "objectID": "workshop/slides.html#lunch",
     "href": "workshop/slides.html#lunch",
     "title": "GitHub for Collaboration",
     "section": "Lunch",
-    "text": "Lunch\nBack at 12:55. The afternoon starts hands-on, and your partner is waiting for you.\n\n\n\n\n\n\nHard 12:55 return. B5 starts hands-on as the re-energizer; latecomers can join mid-exercise without missing slides."
+    "text": "Lunch\n\nThe afternoon starts hands-on, and your partner is waiting for you.\n\n\n\n\n\n\n\nReturn time is set on the day (timing to be finalised with a fresh schedule). The afternoon starts hands-on as the re-energizer; anyone who arrives late can join mid-exercise without missing slides."
   },
   {
     "objectID": "workshop/slides.html#live-drawing-branching",
@@ -179,21 +179,21 @@
     "href": "workshop/slides.html#branching",
     "title": "GitHub for Collaboration",
     "section": "Branching",
-    "text": "Branching\n\n\nProjector wakes up. Run through the digital version: the main line splits, commits land on the dev branch, and the merge point stays empty until the pull request in B6."
+    "text": "Branching\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe summary of what we just did. Advance one element per press: the main line, the dev branch splitting off, commits landing on the branch, and the merge point left empty until the pull request in the next block."
   },
   {
     "objectID": "workshop/slides.html#my-turn-2",
     "href": "workshop/slides.html#my-turn-2",
     "title": "GitHub for Collaboration",
     "section": "My turn",
-    "text": "My turn\n\nWatch first; your turn comes next. New repo, new superpower.\n\nIn the org, find man-washinvestments-USERNAME and clone it (same moves as this morning).\nGit pane: New Branch, name it dev. Read the message about origin out loud.\nOpen index.qmd, edit the author details (name, ORCID, email, institution), Render.\nSwitch between main and dev in the Git pane: before the commit nothing differs; after the commit, the change lives only on dev.\nCommit “update author details”, push.\n\n\nFollow along on the screen.\n\n\n\nPackages are already installed from the pre-work setup test (its Step 6), so the render takes seconds. Fallback only, if someone’s render fails on a missing package, the commented install chunk sits at the top of index.qmd:\n# install.packages(c(\"devtools\", \"ggplot2\", \"ggthemes\",\n#                    \"countrycode\", \"dplyr\", \"rmarkdown\"))\n# devtools::install_github(\"openwashdata/washinvestments\")\nDo not run installs for the room; park that learner and pair them.\nThe branch created here feeds the B6 pull request in 30 minutes, so keep momentum."
+    "text": "My turn\n\n\n\n\n\n\n\n\n\nSit back and watch.\nNote down any questions as they come up. We pick them up right after.\n\n\n\nDemo script:\n\nNew repo, new move. Clone the team manuscript repo (same moves as this morning).\nGit pane: New Branch, name it dev. Read the message about origin out loud.\nOpen index.qmd, edit the author details, Render.\nSwitch between main and dev in the Git pane: before the commit nothing differs; after the commit, the change lives only on dev.\nCommit “update author details”, push.\n\nPackages are already installed from the pre-work setup test, so the render takes seconds. If a render fails on a missing package, the commented install chunk sits at the top of index.qmd; do not run installs for the room, park that learner and pair them. The branch created here feeds the pull request in the next block, so keep momentum."
   },
   {
     "objectID": "workshop/slides.html#your-turn-3",
     "href": "workshop/slides.html#your-turn-3",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\nFind and clone your man-washinvestments-USERNAME repository (org page, search “man-”).\nGit pane: New Branch, name it dev.\nIn index.qmd: put in your own author details. Render.\nCommit “update author details”, push.\n\n\nPlace the yellow sticky note on your laptop when your push has finished.\n\n\n\n\n\n\n\n\nThe render updates docs/index.html, so the commit stages two files together: index.qmd and docs/index.html.\nIf the roster pivot happened (kill criterion 1), learners without their own repo work in the shared demo repos instead: same steps, repo name from the board. Mark the default before the day.\nBounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up. Every learner needs a pushed dev branch with one commit by 13:30."
+    "text": "Your turn\n\n   On github.com\n\nBrowse to github.com/USERNAME, where USERNAME is your partner’s username.\n\n   In RStudio\n\nClone their website repository (Code button, HTTPS URL, File &gt; New Project &gt; Version Control &gt; Git).\nEdit the README: add “This repo contains a personal website for USERNAME.”\nRun the mantra: Pull, Stage, Commit, Push.\n\nWhat happens?\n\n   In the room: place the yellow sticky note on your laptop when something unexpected happens.\n   On Zoom: write “blocked” in the chat.\n\n\n\n\n\n\n\n\nEveryone hits the push wall: 403, no write access. That is the plan; it is the safe-to-fail moment with the lowest stakes of the day. Nobody’s work is harmed, nothing to clean up. Screenshot of the 403 error goes here once available. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch."
   },
   {
     "objectID": "workshop/slides.html#live-drawing-the-pull-request",
@@ -207,28 +207,28 @@
     "href": "workshop/slides.html#the-pull-request",
     "title": "GitHub for Collaboration",
     "section": "The pull request",
-    "text": "The pull request\n\n\nProjector wakes up. Run through the digital version: the merge point from the branching drawing is completed, with the human review sitting at the join before the lines meet."
+    "text": "The pull request\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe summary of what we just did. Advance one element per press: the open merge point from the branching drawing, the pull request, the human review at the join, then the merge."
   },
   {
     "objectID": "workshop/slides.html#my-turn-3",
     "href": "workshop/slides.html#my-turn-3",
     "title": "GitHub for Collaboration",
     "section": "My turn",
-    "text": "My turn\n\nWatch first; your turn comes next. This is the moment the day was built for.\n\nOn GitHub: switch to dev, click Compare & pull request. Title: “Add author details to manuscript”.\nRequest a reviewer. Walk the tabs: Commits, Files changed.\nAs the reviewer: start a review, leave line comments, submit.\nOpen an issue with a task list next to the PR.\nMerge, confirm, tick off the task in the issue.\nBack in RStudio: switch to main, read the message, Pull. Then the gotcha: switch back to dev.\n\n\nFollow along on the screen.\n\n\n\nDemo script from the cis lesson plan. Review comment examples to reuse verbatim: “That’s not a good title for a manuscript. Please suggest 2 alternatives.” and “This list is not complete.”\nRead the “behind origin/main, can be fast-forwarded” message out loud when switching to main. The switch-back-to-dev gotcha is a recorded cis learner stumble; name it as a habit: merged? Then pull main, and go back to your working branch."
+    "text": "My turn\n\n\n\n\n\n\n\n\n\nSit back and watch.\nNote down any questions as they come up. We pick them up right after.\n\n\n\nDemo script:\n\nOn GitHub: switch to dev, click Compare & pull request. Title: “Add author details to manuscript”.\nRequest a reviewer. Walk the tabs: Commits, Files changed.\nAs the reviewer: start a review, leave line comments, submit. Review comment examples to reuse verbatim: “That’s not a good title for a manuscript. Please suggest 2 alternatives.” and “This list is not complete.”\nOpen an issue with a task list next to the PR. Merge, confirm, tick off the task.\nBack in RStudio: switch to main, read the “behind origin/main, can be fast-forwarded” message out loud, Pull. Then the gotcha: switch back to dev. Name it as a habit: merged? Then pull main, and go back to your working branch."
   },
   {
     "objectID": "workshop/slides.html#your-turn-4",
     "href": "workshop/slides.html#your-turn-4",
     "title": "GitHub for Collaboration",
     "section": "Your turn",
-    "text": "Your turn\n\n\nOpen a pull request from your dev branch. Title it so your reviewer knows what changed.\nRequest a review from your B4 partner (the username on your sticky note).\nReview your partner’s pull request: at least one line comment, then submit the review.\nAfter your review arrives: merge your own PR, confirm.\nIn RStudio: switch to main, Pull, and switch back to dev.\n\nPartner not ready? Review the seed PR in your own repository instead. Nobody waits on anybody.\n\nPlace the yellow sticky note on your laptop after the switch back to dev.\n\n\n\n\n\n\n\n\nDefault path: partner-pair review with the B4 sticky-note pairs. Fallback path, on the slide itself: every manuscript repo has a pre-opened seed PR (“Seed: suggestions to review”), so the exercise never blocks on a partner’s progress. If no helper was found by 11 July (kill criterion 4), flip the default: everyone reviews their seed PR, pairs become the bonus.\nTarget: every learner opens a PR, writes at least one line comment, merges, and pulls, inside 35 minutes.\nThis block is protected. If the day is behind, B7 Publish is cut, never this. Bounded regroup: 2 minutes, then park-and-pair."
+    "text": "Your turn\n\nYour team shares one manuscript repository, washinvestments-&lt;team&gt; (for example washinvestments-red).\n   On github.com\n\nFind and clone your team’s washinvestments-&lt;team&gt; repository (org page, search your team name).\n\n   In RStudio (one person drives)\n\nGit pane: New Branch, name it dev.\nIn index.qmd: put in your own author details in one of the two author slots. Render.\nRun the mantra: Pull, Stage, Commit, Push with the message “update author details”.\n\n\n   In the room: place the yellow sticky note on your laptop when your push has finished.\n   On Zoom: write “done” in the chat.\n\n\n\n\n\n\n\n\nTeam repos are washinvestments-&lt;team&gt;, created from the reworked manuscript template (two author slots, no publishing). Team names are set on the day; use the placeholder until then. Screenshots of the New Branch, Render, and Git-tab buttons go here once available. One person drives so the branch and commit are shared; the partner reviews in the next block."
   },
   {
     "objectID": "workshop/slides.html#our-turn",
     "href": "workshop/slides.html#our-turn",
     "title": "GitHub for Collaboration",
     "section": "Our turn",
-    "text": "Our turn\n\nTogether, on your merged manuscript:\n\nOpen your man-washinvestments-USERNAME repository on GitHub.\nSettings &gt; Pages: Deploy from a branch, branch main, folder /docs, Save.\nWait for the address to appear, then paste it into the repository description (About, gear icon).\nOpen the address: your manuscript is on the web.\n\n\n\nFirst block to cut. If running behind at 14:05, skip to the fallback slide and hand the time to B8. Pages can take a minute to build; use the wait to point at the docs folder in the repo, which is where the rendered manuscript lives."
+    "text": "Our turn\n\nTogether, in your new website repository:\n   On github.com\n\nEdit README.md and commit the change (the pencil icon, then “Commit changes”).\nAdd a file inside a new folder (Add file &gt; Create new file, type data/notes.md).\n\n\n   Place the yellow sticky note on your laptop when your commit shows in the repository."
   },
   {
     "objectID": "workshop/slides.html#fallback-what-publishing-looks-like",
@@ -242,35 +242,35 @@
     "href": "workshop/slides.html#your-turn-your-map-revisited",
     "title": "GitHub for Collaboration",
     "section": "Your turn: your map, revisited",
-    "text": "Your turn: your map, revisited\n\nDraw a concept map of Git and GitHub as you understand them now.\n\nUse the words from today: repository, clone, commit, push, pull, branch, pull request, merge, review.\nThen put it next to your morning map and share both with your partner.\n\n\nWith your consent, I would like to photograph both maps (anonymously) to improve this workshop.\n\n\n\n\n\n\n\n\nHard start at 14:15: whatever block is running stops. B8 is protected and runs even on the worst day.\nThe comparison is the measurement instrument for the whole redesign. Consent is asked on the slide; photograph only the maps of learners who agree, no names on the photos.\nFallback if the morning baseline went badly: draw the Git concept map yourself on the board as the closing recap and have the room call out the verb for each arrow (see the handbook, concept maps as bookends)."
+    "text": "Your turn: your map, revisited\n\nDraw a concept map of Git and GitHub as you understand them now.\n\nUse the words from today: repository, clone, commit, push, pull, branch, pull request, merge, review.\nThen put it next to your morning map and share both with your partner.\n\n\nWith your consent, I would like to photograph both maps (anonymously) to improve this workshop.\n\n\n\n\n\n\n\n\nThis block is protected and runs even on the worst day.\nThe comparison is the measurement instrument for the whole redesign. Consent is asked on the slide; photograph only the maps of learners who agree, no names on the photos.\nFallback if the morning baseline went badly: draw the Git concept map yourself on the board as the closing recap and have the room call out the verb for each arrow (see the handbook, concept maps as bookends)."
   },
   {
     "objectID": "workshop/slides.html#the-day-in-one-line",
     "href": "workshop/slides.html#the-day-in-one-line",
     "title": "GitHub for Collaboration",
     "section": "The day in one line",
-    "text": "The day in one line\ncreate , clone , commit , push , branch , pull request , review , merge , publish\n\nRecap as verbs, spoken while pointing at the drawings on the board. What you also picked up on the side: RStudio fluency, a first taste of Quarto, and reversibility as a habit."
+    "text": "The day in one line\ncreate , clone , commit , push , pull , branch , pull request , review , merge\n\nRecap as verbs, spoken while pointing at the drawings on the board. What you also picked up on the side: RStudio fluency, a first taste of Quarto, and reversibility as a habit."
   },
   {
     "objectID": "workshop/slides.html#what-you-also-learned-today",
     "href": "workshop/slides.html#what-you-also-learned-today",
     "title": "GitHub for Collaboration",
     "section": "What you also learned today",
-    "text": "What you also learned today\n\nRStudio, now with muscle memory\nQuarto: one document, rendered to the web\nReversibility as a habit: commit early, revert without fear"
+    "text": "What you also learned today\n\nRStudio, now with muscle memory\nQuarto: one document you can render\nReversibility as a habit: commit early, revert without fear"
   },
   {
     "objectID": "workshop/slides.html#what-comes-next",
     "href": "workshop/slides.html#what-comes-next",
     "title": "GitHub for Collaboration",
     "section": "What comes next",
-    "text": "What comes next\n\nWorking with AI coding agents is the follow-up workshop, and it builds on exactly what you did today: branches, pull requests, review.\nInterested? Email me and you will hear from me when dates are set.\nStart your first own project with Git and GitHub this week (already have a project? Read here).\nKeep learning by doing: open pull requests to yourself, review your own diffs."
+    "text": "What comes next\n\nWorking with AI coding agents is the follow-up workshop, and it builds on exactly what you did today: branches, pull requests, review.\nWant a personal website? I offer a follow-up to build a one-page site with your profile links and bio.\nInterested in either? Email me and you will hear from me when dates are set.\nStart your first own project with Git and GitHub this week (already have a project? Read here).\nKeep learning by doing: open pull requests to yourself, review your own diffs."
   },
   {
     "objectID": "workshop/slides.html#feedback-and-thanks",
     "href": "workshop/slides.html#feedback-and-thanks",
     "title": "GitHub for Collaboration",
     "section": "Feedback, and thanks!",
-    "text": "Feedback, and thanks!\n\nPlease fill in the post-course survey (link shared by email, 5 minutes, anonymous).\nEmail me your open questions; I answer all of them this week.\n\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\nSurvey link goes out by email right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks, done by 14:30."
+    "text": "Feedback, and thanks!\n\nPlease fill in the post-course survey (link shared by email, 5 minutes, anonymous).\nEmail me your open questions; I answer all of them this week.\n\nAll material is licensed under Creative Commons Attribution Share Alike 4.0 International.\n\nSurvey link goes out by email right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks."
   },
   {
     "objectID": "workshop/slides.html#thanks",
@@ -662,5 +662,138 @@
       "Workshop",
       "Git for Scientists"
     ]
+  },
+  {
+    "objectID": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120746f6f6c626f78203e7d7d",
+    "href": "workshop/slides.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120746f6f6c626f78203e7d7d",
+    "title": "GitHub for Collaboration",
+    "section": "",
+    "text": "Git and GitHub -&gt; what we learn today\nQuarto and R -&gt; you will see them, not learn them\nRStudio IDE -&gt; our interface, could also be VS Code, Positron IDE, GitHub Desktop, and others"
+  },
+  {
+    "objectID": "workshop/slides.html#meeting-you-where-you-are",
+    "href": "workshop/slides.html#meeting-you-where-you-are",
+    "title": "GitHub for Collaboration",
+    "section": "Meeting you where you are",
+    "text": "Meeting you where you are"
+  },
+  {
+    "objectID": "workshop/slides.html#what-you-want-to-learn",
+    "href": "workshop/slides.html#what-you-want-to-learn",
+    "title": "GitHub for Collaboration",
+    "section": "What you want to learn",
+    "text": "What you want to learn\nFrom your pre-course survey (n = 18), three groups:\n\nCovered directly today (10): use Git without fear, the full commit cycle, branching, documenting a reproducible workflow, and collaborating and reviewing through pull requests.\nPartially covered (1): rebasing and staging in a systematic way. We build the foundation; the advanced moves are a natural next step.\nThe follow-up workshop (7): Git together with AI coding agents. Today is the Git foundation that makes it possible.\n\n\nCounts are editorial (n = 18); refresh them if the roster changes. The three buckets map onto the three personas in learner-persona.md: Arti wants to stop being afraid of Git, Bianca wants confident collaboration and pull-request review, Cem wants control and provenance of AI-assisted work. Around seven of you asked for agentic-coding topics; name that and tie it back to the “not an AI workshop today” framing from the opening. One off-topic answer (analysing data) folds into the R-you-will-see-not-learn framing."
+  },
+  {
+    "objectID": "workshop/slides.html#meet-arti",
+    "href": "workshop/slides.html#meet-arti",
+    "title": "GitHub for Collaboration",
+    "section": "Meet Arti",
+    "text": "Meet Arti\n\n\nThree personas describe this room (Arti, Bianca, Cem). My focus learner is Arti.\n\nBackground: post-doc, in a group of mixed Git fluency.\nKnows: some R; lives in Word, Docs, and email; versions files by hand. Tried Git once, an error stopped them cold.\nWants: to collaborate without fear.\nNeeds: a safe-to-fail room.\n\n\n\n\n\n\n\n\n\n\nLearner personas in the Greg Wilson / Teaching Tech Together sense, synthesised from this cohort’s survey (see learner-persona.md). Say the focus-learner idea out loud: I teach to Arti, which also serves Bianca (early finisher, curious about the command behind each click) and Cem (wants AI provenance; today is the foundation, agentic coding is the follow-up)."
+  },
+  {
+    "objectID": "workshop/slides.html#course-structure",
+    "href": "workshop/slides.html#course-structure",
+    "title": "GitHub for Collaboration",
+    "section": "Course structure",
+    "text": "Course structure\n\nMy turn: Lecture segments + live coding\nYour turn: Individual or 2-people team exercises (in break-out rooms on Zoom)"
+  },
+  {
+    "objectID": "workshop/slides.html#course-icons",
+    "href": "workshop/slides.html#course-icons",
+    "title": "GitHub for Collaboration",
+    "section": "Course icons",
+    "text": "Course icons\nTwo icons tell you where a step happens:\n\n   in the RStudio IDE, on your own machine\n   on GitHub, in the browser\n\nWatch for these on every “Your turn” slide."
+  },
+  {
+    "objectID": "workshop/slides.html#concept-maps-1",
+    "href": "workshop/slides.html#concept-maps-1",
+    "title": "GitHub for Collaboration",
+    "section": "Concept maps",
+    "text": "Concept maps\nA concept map is things (nodes) joined by labelled arrows, where every label is a verb.\n\n\nPer Greg Wilson, Teaching Tech Together: concepts as nodes, labelled relationships as edges. Not a flowchart, not a timeline, not a list; no start, no end.\nOne sentence on why: experts use concept maps to make their mental models visible. Yours today will show how you currently think documents travel, and this evening the second map will show what changed.\n8-10 minutes for this intro including the exemplar walk-through."
+  },
+  {
+    "objectID": "workshop/slides.html#artis-project",
+    "href": "workshop/slides.html#artis-project",
+    "title": "GitHub for Collaboration",
+    "section": "Arti’s project",
+    "text": "Arti’s project\n\n\nArti (before)\n\nstarts a new folder on her laptop\nadds data as .xlsx\nadds a .docx report\nadds an R script\n\n\nArti (after)\n\ncreates a repository on GitHub\nclones it and opens an RStudio project\nadds data as .csv\nadds a Quarto document and an R script\n\n\n\nSame project, two ways. Read the columns as pairs: each line on the left has a Git/GitHub answer on the right. This is the whole block in one slide; the highlighted lines are what we do together next."
+  },
+  {
+    "objectID": "workshop/slides.html#a-button-is-a-command",
+    "href": "workshop/slides.html#a-button-is-a-command",
+    "title": "GitHub for Collaboration",
+    "section": "A button is a command",
+    "text": "A button is a command\n\nRStudio is a GUI, a graphical user interface.\nWhen you click Pull in the Git tab, RStudio runs git pull for you.\nEvery button we use today is a Git command underneath. Clicking it is not a lesser path.\n\n\nThis is the slide for Arti: the point-and-click interface is not cheating. The push button runs git push. Say it plainly and come back to it whenever someone worries they are “not really doing Git”."
+  },
+  {
+    "objectID": "workshop/slides.html#artis-commit",
+    "href": "workshop/slides.html#artis-commit",
+    "title": "GitHub for Collaboration",
+    "section": "Arti’s commit",
+    "text": "Arti’s commit\n\n\nArti (before)\n\nopens a .docx\nedits the text\nthe file autosaves\n\n\nArti (after)\n\nopens a Quarto file\nedits the text, it autosaves\nafter meaningful changes: pull, stage, commit, push\nthe commit message says what changed and why"
+  },
+  {
+    "objectID": "workshop/slides.html#the-commit-cycle-1",
+    "href": "workshop/slides.html#the-commit-cycle-1",
+    "title": "GitHub for Collaboration",
+    "section": "The commit cycle",
+    "text": "The commit cycle\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe summary of what we just did. Advance one element per press: working files, stage, commit as a labelled snapshot, the history line growing, then push."
+  },
+  {
+    "objectID": "workshop/slides.html#arti-joins-a-team",
+    "href": "workshop/slides.html#arti-joins-a-team",
+    "title": "GitHub for Collaboration",
+    "section": "Arti joins a team",
+    "text": "Arti joins a team\n\n\nArti (before)\n\nopens SharePoint\nfinds Cem’s file\nedits it in track changes\nemails Cem to say it is done\n\n\nArti (after)\n\nopens the project in RStudio\nopens the Quarto file, edits\nruns the PSCP mantra\nand gets blocked\n\n\n\nThis slide sets up the cliffhanger. Arti does everything right and still cannot push to a teammate’s repository. That is the safe-to-fail moment: nothing is broken, and the afternoon answers why."
+  },
+  {
+    "objectID": "workshop/slides.html#match-the-git-command-to-the-button",
+    "href": "workshop/slides.html#match-the-git-command-to-the-button",
+    "title": "GitHub for Collaboration",
+    "section": "Match the Git command to the button",
+    "text": "Match the Git command to the button\n\nA one-page handout: draw a line from each Git command to the button that runs it in RStudio or on GitHub.\n\n3 minutes on your own.\n5 minutes comparing with your partner.\nThe point: clicking a button runs the same command a terminal user types.\n\n\n\nHandout from gitforsci-dev/exercises (command-gui-matching). Print one learner sheet per person; remote participants receive it by email. Review as a group with the answer key afterwards. This is the “a button is a command” idea from B3, made concrete."
+  },
+  {
+    "objectID": "workshop/slides.html#artis-branch",
+    "href": "workshop/slides.html#artis-branch",
+    "title": "GitHub for Collaboration",
+    "section": "Arti’s branch",
+    "text": "Arti’s branch\n\n\nArti (before)\n\none shared file\neveryone edits the same copy\nchanges collide\n\n\nArti (after)\n\ncreates a branch for her work\nedits safely, away from main\nher changes wait until the team is ready to bring them in"
+  },
+  {
+    "objectID": "workshop/slides.html#artis-review",
+    "href": "workshop/slides.html#artis-review",
+    "title": "GitHub for Collaboration",
+    "section": "Arti’s review",
+    "text": "Arti’s review\n\n\nArti (before)\n\nemails the file back and forth\ncomments live in track changes\nno record of who changed what, when\n\n\nArti (after)\n\nopens a pull request\nher partner leaves line comments\nthe change is merged after review, with a full record\n\n\n\nSame review habit Arti already has (comments in tracked changes), now on GitHub with a record. This is the moment the day was built for."
+  },
+  {
+    "objectID": "workshop/slides.html#your-turn-5",
+    "href": "workshop/slides.html#your-turn-5",
+    "title": "GitHub for Collaboration",
+    "section": "Your turn",
+    "text": "Your turn\n\n   On github.com\n\nOpen a pull request from your dev branch. Title it so your reviewer knows what changed.\nRequest a review from your partner (the username on your sticky note).\nReview your partner’s pull request: at least one line comment, then submit the review.\nAfter your review arrives: merge the PR, confirm.\n\n   In RStudio\n\nSwitch to main, Pull, and switch back to dev.\n\nPartner not ready? Review the seed PR in your team repository instead. Nobody waits on anybody.\n\n   In the room: place the yellow sticky note on your laptop after the switch back to dev.\n   On Zoom: write “done” in the chat.\n\n\n\n\n\n\n\n\nDefault path: partner-pair review with the sticky-note pairs. Fallback path, on the slide itself: every team repo has a pre-opened seed PR (“Seed: suggestions to review”), so the exercise never blocks on a partner’s progress.\nTarget: every learner opens a PR, writes at least one line comment, merges, and pulls. This block is protected: if the day is behind, cut elsewhere, never this. Bounded regroup: 2 minutes, then park-and-pair."
+  },
+  {
+    "objectID": "workshop/slides.html#todo-text-too-small.-remove-white-box-or-make-the-same-colour-as-slide.-labels-dont-fit-on-columns.-should-state-the-question-either-in-slide-title-or-in-labstitle-include-primary-data-format-as-variable.-todo-i-have-removed-two-participoants-recreate-text-and-pots",
+    "href": "workshop/slides.html#todo-text-too-small.-remove-white-box-or-make-the-same-colour-as-slide.-labels-dont-fit-on-columns.-should-state-the-question-either-in-slide-title-or-in-labstitle-include-primary-data-format-as-variable.-todo-i-have-removed-two-participoants-recreate-text-and-pots",
+    "title": "GitHub for Collaboration",
+    "section": "TODO: text too small. remove white box or make the same colour as slide. labels don’t fit on columns. should state the question either in slide title or in labs(title) include primary data format as variable. TODO: i have removed two participoants recreate text and pots",
+    "text": "TODO: text too small. remove white box or make the same colour as slide. labels don’t fit on columns. should state the question either in slide title or in labs(title) include primary data format as variable. TODO: i have removed two participoants recreate text and pots\n\nSelf-reported experience across the cohort (pre-course survey, n = 20)."
+  },
+  {
+    "objectID": "workshop/slides.html#what-you-want-to-learn-.smaller-todo-refresh-counts",
+    "href": "workshop/slides.html#what-you-want-to-learn-.smaller-todo-refresh-counts",
+    "title": "GitHub for Collaboration",
+    "section": "What you want to learn {.smaller} TODO: refresh counts",
+    "text": "What you want to learn {.smaller} TODO: refresh counts\nFrom your pre-course survey (n = 20), three groups:\n\nCovered directly today: use Git without fear, the full commit cycle, branching, and collaborating and reviewing through pull requests.\nPartially covered: resolving merge conflicts, rebasing, staging in a systematic way. We build the foundation; the advanced moves are a natural next step.\nThe follow-up workshop: Git together with AI coding agents. Roughly half of you asked for this. Today is the Git foundation that makes it possible.\n\n\nCounts are editorial; refresh them if the roster changes. The three buckets map onto the three personas in learner-persona.md: Arti wants to stop being afraid of Git, Bianca wants confident collaboration and pull-request review, Cem wants control and provenance of AI-assisted work. Roughly half the cohort asked for agentic-coding topics; name that and tie it back to the “not an AI workshop today” framing from the opening."
+  },
+  {
+    "objectID": "workshop/slides.html#how-you-store-your-data-today",
+    "href": "workshop/slides.html#how-you-store-your-data-today",
+    "title": "GitHub for Collaboration",
+    "section": "How you store your data today",
+    "text": "How you store your data today\n\n\nMost of you already store data in machine-readable formats, which is exactly what Git and Quarto reward. The spreadsheet users are Arti’s group; the day nudges toward CSV without making a fuss about it."
   }
 ]
