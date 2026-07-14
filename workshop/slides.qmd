@@ -553,42 +553,67 @@ Anything from the commit cycle you'd like clarified before we move on?
 countdown(minutes = 2)
 ```
 
-# B4: Collaboration cliffhanger {background-color="#0F4C81"} TODO: different title. Team work. 
+# Team work {background-color="#0F4C81"}
 
-## TODO: Arti opening slide (maybe this slide only comes afer lunch to open up branching concept. Show blocked version, then how branching sorts it out.)
+## Arti joins a team {.smaller}
 
-Arti (before)
+:::: columns
 
-- opens SharePoint -> finds file of Cem -> edits file in track changes -> informs Cem via email
+::: {.column width="50%"}
+### Arti (before)
 
-Arti (after)
+-   opens SharePoint
+-   finds Cem's file
+-   edits it in track changes
+-   emails Cem to say it is done
+:::
 
-- opens Project in RStudio -> opens Quarto file -> edits -> PSCP mantra -> blocked 
+::: {.column width="50%"}
+### Arti (after)
 
-## Find your partner (TODO: Teams will be set. people will know before.)
+-   opens the project in RStudio
+-   opens the Quarto file, edits
+-   runs the [PSCP mantra]{.highlight-yellow}
+-   and gets [blocked]{.highlight-yellow}
+:::
+
+::::
+
+::: {.notes}
+This slide sets up the cliffhanger. Arti does everything right and still cannot push to a teammate's repository. That is the safe-to-fail moment: nothing is broken, and the afternoon answers why.
+:::
+
+## Find your partner {.smaller}
 
 ::: task
--   Turn to your neighbour: you are now a pair (three is fine if the row runs out).
+-   You are in a pair with the partner you were told about before today.
 -   Write [each other's GitHub username]{.highlight-yellow} on your sticky notes.
 -   Keep that sticky note. Your partner returns after lunch.
 :::
 
 ::: {.notes}
-Pairs are formed on the day from who is present; no pre-baked table. The sticky notes with usernames are the pairing record and carry into B6 as reviewer assignments. If someone has no partner, they pair with the helper or the instructor.
+The sticky notes with usernames are the pairing record and carry into the pull-request block as reviewer assignments. If someone has no partner, they pair with the helper or the instructor.
 :::
 
 ## Your turn {.smaller}
 
 :::: task
+{{< fa brands github >}} &nbsp; On **github.com**
+
 1.  Browse to `github.com/USERNAME`, where USERNAME is [your partner's]{.highlight-yellow} username.
+
+{{< fa laptop-code >}} &nbsp; In **RStudio**
+
 2.  Clone their `website` repository (Code button, HTTPS URL, File \> New Project \> Version Control \> Git).
 3.  Edit the README: add "This repo contains a personal website for USERNAME."
-4.  Save, stage, commit, and [push]{.highlight-yellow}. TODO: Pull mantra everwhere.
+4.  Run the mantra: [Pull, Stage, Commit, Push]{.highlight-yellow}.
 
 [What happens?]{.highlight-yellow}
 
 ::: hand
-Place the yellow sticky note on your laptop when something unexpected happens. 
+{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop when something unexpected happens.
+
+{{< fa comment >}} &nbsp; On Zoom: write "blocked" in the chat.
 :::
 ::::
 
@@ -598,35 +623,40 @@ countdown(minutes = 10)
 ```
 
 ::: {.notes}
-Everyone hits the push wall: 403, no write access. That is the plan; it is the safe-to-fail moment with the lowest stakes of the day. Nobody's work is harmed, nothing to clean up.
-
-Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.
+Everyone hits the push wall: 403, no write access. That is the plan; it is the safe-to-fail moment with the lowest stakes of the day. Nobody's work is harmed, nothing to clean up. Screenshot of the 403 error goes here once available. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.
 :::
-
-TODO: Show a screenshot. 
 
 ## What just happened? {.smaller}
 
 ::: incremental
--   Your push [failed]{.highlight-yellow}: you can read.highligh-yellow their repository, but you have no write.highlight-yellow access.
+-   Your push [failed]{.highlight-yellow}: you can read their repository, but you have no write access.
 -   Giving everyone write access ("collaborator") exists, but it does not scale, and it means anyone can change anything at any time.
-- TODO: this would need a fork, which I will practice with you in a follow-up offer to prepare your personal website with my support. 
 -   So how do teams actually propose and review changes? [That is exactly what we solve after lunch: branches and pull requests.]{.highlight-yellow}
 :::
 
 ::: {.notes}
-The cliffhanger, stated explicitly. The morning ends with a question the afternoon answers. Do not resolve it now.
+The cliffhanger, stated explicitly. The morning ends with a question the afternoon answers. Do not resolve it now. The fork route (contributing to someone else's repo without write access) is the follow-up offer for building a personal website; mention it exists, do not teach it here.
 :::
 
-## TODO: new slide with Match git commands exercise. It's a print out. Only participants need to receive differently. (Email?)
+## Match the Git command to the button {.smaller}
 
-- Slide: Match Git commands
-    - TODO: Slide. 3 minutes to work on your own and then 5 minutes to compare with your team partner.
-    https://github.com/gitforsci-dev/exercises
+::: task
+A one-page handout: draw a line from each Git command to the button that runs it in RStudio or on GitHub.
 
-## Lunch (TODO: this need to be at 12, got to be back by 12:45)
+-   [3 minutes]{.highlight-yellow} on your own.
+-   [5 minutes]{.highlight-yellow} comparing with your partner.
+-   The point: clicking a button runs the same command a terminal user types.
+:::
 
-[Back at 12:55.]{.highlight-yellow} The afternoon starts hands-on, and your partner is waiting for you.
+::: {.notes}
+Handout from gitforsci-dev/exercises (command-gui-matching). Print one learner sheet per person; remote participants receive it by email. Review as a group with the answer key afterwards. This is the "a button is a command" idea from B3, made concrete.
+:::
+
+## Lunch
+
+::: {.hand-purple style="text-align: center;"}
+The afternoon starts hands-on, and your partner is waiting for you.
+:::
 
 ```{r}
 #| echo: false
@@ -634,65 +664,82 @@ countdown(minutes = 45)
 ```
 
 ::: {.notes}
-Hard 12:55 return. B5 starts hands-on as the re-energizer; latecomers can join mid-exercise without missing slides.
+Return time is set on the day (timing to be finalised with a fresh schedule). The afternoon starts hands-on as the re-energizer; anyone who arrives late can join mid-exercise without missing slides.
 :::
 
-# B5: Branch (manuscript repo) {background-color="#0F4C81"}
+# Branch {background-color="#0F4C81"}
 
+## Arti's branch {.smaller}
 
-## Branching {.smaller} TODO: as above
+:::: columns
 
-![](images/drawing-3-branching.png){fig-align="center" width="70%" fig-alt="Digital version of the branching drawing: the main line splits into a branch, commits land on the branch, and the merge point is left empty for now."}
+::: {.column width="50%"}
+### Arti (before)
 
-::: {.notes}
-Projector wakes up. Run through the digital version: the main line splits, commits land on the dev branch, and the merge point stays empty until the pull request in B6.
+-   one shared file
+-   everyone edits the same copy
+-   changes collide
 :::
 
-## My turn {.smaller} TODO: replace with new slide
+::: {.column width="50%"}
+### Arti (after)
 
-:::: task
-Watch first; your turn comes next. New repo, new superpower.
-
-1.  In the org, find `man-washinvestments-USERNAME` and clone it (same moves as this morning).
-2.  Git pane: [New Branch]{.highlight-yellow}, name it `dev`. Read the message about `origin` out loud.
-3.  Open `index.qmd`, edit the author details (name, ORCID, email, institution), [Render]{.highlight-yellow}.
-4.  Switch between `main` and `dev` in the Git pane: before the commit nothing differs; after the commit, the change lives [only on dev]{.highlight-yellow}.
-5.  Commit "update author details", push.
-
-::: hand
-Follow along on the screen.
+-   [creates a branch]{.highlight-yellow} for her work
+-   edits safely, away from `main`
+-   her changes wait until the team is ready to bring them in
 :::
+
+::::
+
+## My turn {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+![](images/lars-sit-back.png){fig-align="center" width="90%" fig-alt="Photo of the instructor at the keyboard."}
+:::
+
+::: {.column width="50%"}
+::: {.hand-purple style="margin-top: 1em;"}
+Sit back and watch.
+
+Note down any questions as they come up. We pick them up right after.
+:::
+:::
+
 ::::
 
 ::: {.notes}
-Packages are already installed from the pre-work setup test (its Step 6), so the render takes seconds. Fallback only, if someone's render fails on a missing package, the commented install chunk sits at the top of index.qmd:
+Demo script:
 
-```
-# install.packages(c("devtools", "ggplot2", "ggthemes",
-#                    "countrycode", "dplyr", "rmarkdown"))
-# devtools::install_github("openwashdata/washinvestments")
-```
+- New repo, new move. Clone the team manuscript repo (same moves as this morning).
+- Git pane: New Branch, name it dev. Read the message about origin out loud.
+- Open index.qmd, edit the author details, Render.
+- Switch between main and dev in the Git pane: before the commit nothing differs; after the commit, the change lives only on dev.
+- Commit "update author details", push.
 
-Do not run installs for the room; park that learner and pair them.
-
-The branch created here feeds the B6 pull request in 30 minutes, so keep momentum.
+Packages are already installed from the pre-work setup test, so the render takes seconds. If a render fails on a missing package, the commented install chunk sits at the top of index.qmd; do not run installs for the room, park that learner and pair them. The branch created here feeds the pull request in the next block, so keep momentum.
 :::
 
-## Your turn {.smaller} TODO: this will be a team repo (e.g. team red)
+## Your turn {.smaller}
 
 :::: task
-TODO: add another task to change something else? Repo will be restructured, see below, not publish anymore.
-1.  Find and clone [your]{.highlight-yellow} `washinvestments-red` repository (org page, search "-red").
-2.  One person: Git pane: New Branch, name it `dev`. In `index.qmd`: put in [your own]{.highlight-yellow} author details. Render. 4. PSCP mantra  Commit "update author details", push. 
+Your team shares one manuscript repository, `washinvestments-<team>` (for example `washinvestments-red`).
 
-TODO: add small screenshots of the buttons from RStudio. Add the RStudio icon you identified. I will provide the scrrenshpots.
-TODO: add issue to man-washinvestments for everything that needs to change:
+{{< fa brands github >}} &nbsp; On **github.com**
 
-- two placeholders for two authors.
-- this repo will not be published anymore. It can have a structure that would better align with reality, not the docs/index.qmd structure
+1.  Find and clone [your team's]{.highlight-yellow} `washinvestments-<team>` repository (org page, search your team name).
+
+{{< fa laptop-code >}} &nbsp; In **RStudio** (one person drives)
+
+2.  Git pane: New Branch, name it `dev`.
+3.  In `index.qmd`: put in [your own]{.highlight-yellow} author details in one of the two author slots. Render.
+4.  Run the mantra: [Pull, Stage, Commit, Push]{.highlight-yellow} with the message "update author details".
 
 ::: hand
-Place the yellow sticky note on your laptop when your push has finished.
+{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop when your push has finished.
+
+{{< fa comment >}} &nbsp; On Zoom: write "done" in the chat.
 :::
 ::::
 
@@ -702,9 +749,23 @@ countdown(minutes = 10)
 ```
 
 ::: {.notes}
-TODO: add to description above: The render updates `docs/index.html`, so the commit stages two files together: `index.qmd` and `docs/index.html`. 
+Team repos are `washinvestments-<team>`, created from the reworked manuscript template (two author slots, no publishing). Team names are set on the day; use the placeholder until then. Screenshots of the New Branch, Render, and Git-tab buttons go here once available. One person drives so the branch and commit are shared; the partner reviews in the next block.
+:::
 
+## Branching {.smaller}
 
+::: {.r-stack}
+![](images/drawing-3-branching-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="The main line with a couple of commits."}
+
+![](images/drawing-3-branching-01.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A dev branch splitting off from main."}
+
+![](images/drawing-3-branching-02.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="Commits landing on the dev branch."}
+
+![](images/drawing-3-branching-03.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="The branch and main lines with the merge point left empty for now."}
+:::
+
+::: {.notes}
+The summary of what we just did. Advance one element per press: the main line, the dev branch splitting off, commits landing on the branch, and the merge point left empty until the pull request in the next block.
 :::
 
 # B6: Pull request, review, merge {background-color="#0F4C81"}
