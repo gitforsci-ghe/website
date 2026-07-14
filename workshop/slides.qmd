@@ -613,7 +613,7 @@ The summary of what we just did. Advance one element per press: working files, s
 ## {.unlisted}
 
 ::: {.hand-purple style="text-align: center;"}
-Anything from the [commit cycle]highlight-yellow you'd like clarified before we move on?
+Anything from the [commit cycle]{.highlight-yellow} you'd like clarified before we move on?
 :::
 
 ```{r}
