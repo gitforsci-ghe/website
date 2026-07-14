@@ -232,8 +232,8 @@ Three personas describe this room (Arti, Bianca, Cem). My [focus learner is Arti
 
 ::: {.column width="40%"}
 <!-- Image spec for Arti: wears a hat with a rainbow on it and a shirt
-     with a train on it. Generate via the Hugging Face MCP once connected;
-     images/arti-persona.png is a placeholder until then. -->
+     with a train on it. images/arti-persona.png generated via the Hugging
+     Face MCP (FLUX.1 schnell). Regenerate there to update. -->
 ![](images/arti-persona.png){fig-align="center" fig-alt="Illustration of Arti, the focus learner persona."}
 :::
 
@@ -261,7 +261,7 @@ Watch for these on every "Your turn" slide.
 
 By the end of this workshop, you will be able to:
 
-::: incremental
+::: incremental 
 1.  **Commit cycle**: create and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.
 
 2.  **Collaboration**: create a branch and open a pull request, review a colleague's pull request, and merge it after review.
@@ -333,7 +333,7 @@ Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
 
 # Create and clone {background-color="{{< var brand.section-bg >}}"}
 
-## Arti's project {.smaller}
+## Create and clone: Arti's project {.smaller}
 
 :::: columns
 
@@ -388,9 +388,9 @@ Demo script:
 - The .Rproj and .gitignore explanation lives here, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees the files but nobody has told it what to do with them yet. This answers the recorded learner question "why do .Rproj session files show up?". Mention that hidden files (starting with a dot) are hidden by the operating system.
 :::
 
-## Your turn {.smaller}
+## Your turn
 
-:::: task
+:::: {.task .task-lg}
 {{< fa brands github >}} &nbsp; On **github.com**
 
 1.  Create a repository called `website`, public, [with a README]{.highlight-yellow} (so the clone is never empty).
@@ -398,7 +398,9 @@ Demo script:
 {{< fa laptop-code >}} &nbsp; In **RStudio**
 
 2.  Set two options once (Tools \> Global Options): General \> never save `.RData` on exit; Code \> use the native pipe `|>`.
-3.  Clone: File \> New Project \> Version Control \> Git, paste the HTTPS URL, create the project inside your `gitrepos` folder.
+
+3.  Clone: File \> New Project \> Version Control \> Git, paste the HTTPS URL, create the project inside your `gitrepos/gh-USERNAME` folder.
+
 4.  Find `.gitignore` and `website.Rproj` in the Git tab with their yellow ? icons.
 
 ::: hand
@@ -417,36 +419,24 @@ countdown(minutes = 10)
 Screenshots of the Code button, the New Project dialog, and the Git tab go here once available. `.Rproj` holds RStudio project settings; `.gitignore` lists what Git should not track; the yellow ? icons mean Git sees the files but has no instruction for them yet. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
 :::
 
-## Our turn {.smaller}
+## {.unlisted}
 
-:::: task
-Together, in your new `website` repository:
+::: {.hand-purple style="text-align: center;"}
+{{< fa note-sticky >}} &nbsp; Everyone with the two yellow ? icons? Take your sticky note back down.
 
-{{< fa brands github >}} &nbsp; On **github.com**
-
-1.  Edit `README.md` and commit the change (the pencil icon, then "Commit changes").
-2.  Add a file inside a new folder (Add file \> Create new file, type `data/notes.md`).
-
-::: hand
-{{< fa note-sticky >}} &nbsp; Place the yellow sticky note on your laptop when your commit shows in the repository.
+We move on together.
 :::
-::::
-
-```{r}
-#| echo: false
-countdown(minutes = 5)
-```
 
 ## Local and remote {.smaller}
 
 ::: {.r-stack}
-![](images/drawing-1-local-remote-00.png){.fragment .fade-in width="60%" fig-align="center" fig-alt="A remote repository, drawn as a cloud labelled GitHub, at the top."}
+![](images/drawing-1-local-remote-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A local repository on your laptop."}
 
-![](images/drawing-1-local-remote-01.png){.fragment .fade-in width="60%" fig-align="center" fig-alt="The remote cloud on top and a local repository box on your laptop below."}
+![](images/drawing-1-local-remote-01.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A local repository and a remote repository on GitHub, side by side."}
 
-![](images/drawing-1-local-remote-02.png){.fragment .fade-in width="60%" fig-align="center" fig-alt="A clone arrow pointing down from the remote cloud to the local box."}
+![](images/drawing-1-local-remote-02.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A clone arrow copying the remote repository down to the local one."}
 
-![](images/drawing-1-local-remote-03.png){.fragment .fade-in width="60%" fig-align="center" fig-alt="Remote cloud on top, local box below, joined by clone and pull arrows pointing down and a push arrow pointing up."}
+![](images/drawing-1-local-remote-03.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="Local and remote repositories connected by clone, push, and pull."}
 :::
 
 ::: {.notes}
@@ -456,7 +446,7 @@ The summary of what we just did. Advance one element per press: the remote on Gi
 ## {.unlisted}
 
 ::: {.hand-purple style="text-align: center;"}
-Anything from creating and cloning you'd like clarified before the break?
+Anything from [creating and cloning]{.highlight-yellow} you'd like clarified before the break?
 :::
 
 ```{r}
@@ -479,7 +469,7 @@ countdown(minutes = 15)
 Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-# The commit cycle {background-color="{{< var brand.section-bg >}}"}
+# Changes to files: the commit cycle {background-color="{{< var brand.section-bg >}}"}
 
 ## A button is a command {.smaller}
 
@@ -491,7 +481,7 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 This is the slide for Arti: the point-and-click interface is not cheating. The push button runs git push. Say it plainly and come back to it whenever someone worries they are "not really doing Git".
 :::
 
-## Arti's commit {.smaller}
+## The commit cycle: Arti's commit {.smaller}
 
 :::: columns
 
@@ -499,8 +489,8 @@ This is the slide for Arti: the point-and-click interface is not cheating. The p
 ### Arti (before)
 
 -   opens a `.docx`
--   edits the text
--   the file autosaves
+-   edits the text, it autosaves
+-   automated version history
 :::
 
 ::: {.column width="50%"}
@@ -541,9 +531,9 @@ Demo script:
 - Credentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 4. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing.
 :::
 
-## Your turn {.smaller}
+## Your turn
 
-:::: task
+:::: {.task .task-lg}
 The cycle, always in this order: [Pull, Stage, Commit, Push]{.highlight-yellow} (PSCP).
 
 {{< fa laptop-code >}} &nbsp; In **RStudio**
@@ -569,6 +559,35 @@ countdown(minutes = 10)
 
 ::: {.notes}
 Goal: every learner has at least 2 commits pushed to their own repo by the break. The revert stays instructor-only in this block; learners do not revert here. PSCP is the mantra; say it every time. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.
+:::
+
+## Our turn {.smaller}
+
+:::: task
+Now the same cycle, but starting on GitHub. In your `website` repository:
+
+{{< fa brands github >}} &nbsp; On **github.com**
+
+1.  Edit `README.md` and commit the change (the pencil icon, then "Commit changes").
+
+2.  Add a file inside a new folder (Add file \> Create new file, type `data/notes.md`).
+
+{{< fa laptop-code >}} &nbsp; In **RStudio**
+
+3.  [Pull]{.highlight-yellow} to bring both commits down to your laptop.
+
+::: hand
+{{< fa note-sticky >}} &nbsp; Place the yellow sticky note on your laptop when the two new commits show up in RStudio.
+:::
+::::
+
+```{r}
+#| echo: false
+countdown(minutes = 5)
+```
+
+::: {.notes}
+This closes the loop: a commit can start on GitHub, not just in RStudio, and Pull is how it reaches the laptop. It sets up why Pull leads the PSCP mantra.
 :::
 
 ## The commit cycle {.smaller}
@@ -602,7 +621,7 @@ countdown(minutes = 2)
 
 # Team work {background-color="{{< var brand.section-bg >}}"}
 
-## Arti joins a team {.smaller}
+## Team work {.smaller}
 
 :::: columns
 
@@ -610,8 +629,9 @@ countdown(minutes = 2)
 ### Arti (before)
 
 -   opens SharePoint
--   finds Cem's file
+-   finds Cem's docx file
 -   edits it in track changes
+-   autosaves
 -   emails Cem to say it is done
 :::
 
@@ -619,9 +639,10 @@ countdown(minutes = 2)
 ### Arti (after)
 
 -   opens the project in RStudio
--   opens the Quarto file, edits
+-   finds Cem's Quarto file
+-   edits
 -   runs the [PSCP mantra]{.highlight-yellow}
--   and gets [blocked]{.highlight-yellow}
+-   comments / closes open issue to say it's done
 :::
 
 ::::
@@ -630,9 +651,9 @@ countdown(minutes = 2)
 This slide sets up the cliffhanger. Arti does everything right and still cannot push to a teammate's repository. That is the safe-to-fail moment: nothing is broken, and the afternoon answers why.
 :::
 
-## Find your partner {.smaller}
+## Find your partner
 
-::: task
+::: {.task .task-lg}
 -   You are in a pair with the partner you were told about before today.
 -   Write [each other's GitHub username]{.highlight-yellow} on your sticky notes.
 -   Keep that sticky note. Your partner returns after lunch.
@@ -642,17 +663,19 @@ This slide sets up the cliffhanger. Arti does everything right and still cannot 
 The sticky notes with usernames are the pairing record and carry into the pull-request block as reviewer assignments. If someone has no partner, they pair with the helper or the instructor.
 :::
 
-## Your turn {.smaller}
+## Your turn
 
-:::: task
+:::: {.task .task-lg}
 {{< fa brands github >}} &nbsp; On **github.com**
 
 1.  Browse to `github.com/USERNAME`, where USERNAME is [your partner's]{.highlight-yellow} username.
 
 {{< fa laptop-code >}} &nbsp; In **RStudio**
 
-2.  Clone their `website` repository (Code button, HTTPS URL, File \> New Project \> Version Control \> Git).
+2.  Clone their `website` repository (Code button, HTTPS URL, File \> New Project \> Version Control \> Git) into a new folder `gitrepos/gh-USERNAME` that reflects [your partner's]{.highlight-yellow} username.
+
 3.  Edit the README: add "This repo contains a personal website for USERNAME."
+
 4.  Run the mantra: [Pull, Stage, Commit, Push]{.highlight-yellow}.
 
 [What happens?]{.highlight-yellow}
@@ -675,17 +698,16 @@ Everyone hits the push wall: 403, no write access. That is the plan; it is the s
 
 ## What just happened? {.smaller}
 
-::: incremental
 -   Your push [failed]{.highlight-yellow}: you can read their repository, but you have no write access.
 -   Giving everyone write access ("collaborator") exists, but it does not scale, and it means anyone can change anything at any time.
 -   So how do teams actually propose and review changes? [That is exactly what we solve after lunch: branches and pull requests.]{.highlight-yellow}
-:::
+-   But before that, one last exercise to tie the morning together.
 
 ::: {.notes}
 The cliffhanger, stated explicitly. The morning ends with a question the afternoon answers. Do not resolve it now. The fork route (contributing to someone else's repo without write access) is the follow-up offer for building a personal website; mention it exists, do not teach it here.
 :::
 
-## Match the Git command to the button {.smaller}
+## Exercise: Match the Git command to the button {.smaller}
 
 ::: task
 A one-page handout: draw a line from each Git command to the button that runs it in RStudio or on GitHub.
@@ -695,7 +717,14 @@ A one-page handout: draw a line from each Git command to the button that runs it
 -   The point: clicking a button runs the same command a terminal user types.
 :::
 
+```{r}
+#| echo: false
+countdown(minutes = 3)
+```
+
 ::: {.notes}
+Timer is set to 3 minutes for the solo pass; restart it for 5 minutes when pairs start comparing.
+
 Handout from gitforsci-dev/exercises (command-gui-matching). Print one learner sheet per person; remote participants receive it by email. Review as a group with the answer key afterwards. This is the "a button is a command" idea from B3, made concrete.
 :::
 
@@ -714,9 +743,9 @@ countdown(minutes = 45)
 Return time is set on the day (timing to be finalised with a fresh schedule). The afternoon starts hands-on as the re-energizer; anyone who arrives late can join mid-exercise without missing slides.
 :::
 
-# Branch {background-color="{{< var brand.section-bg >}}"}
+# Work on a branch {background-color="{{< var brand.section-bg >}}"}
 
-## Arti's branch {.smaller}
+## Work on a branch: Arti's branch {.smaller}
 
 :::: columns
 
@@ -725,15 +754,15 @@ Return time is set on the day (timing to be finalised with a fresh schedule). Th
 
 -   one shared file
 -   everyone edits the same copy
--   changes collide
+-   edits clash: two people change the same line and one overwrites the other
 :::
 
 ::: {.column width="50%"}
 ### Arti (after)
 
--   [creates a branch]{.highlight-yellow} for her work
+-   [creates a branch]{.highlight-yellow} for their work
 -   edits safely, away from `main`
--   her changes wait until the team is ready to bring them in
+-   their changes wait until the team is ready to bring them in
 :::
 
 ::::
@@ -817,16 +846,16 @@ The summary of what we just did. Advance one element per press: the main line, t
 
 # Pull request, review, merge {background-color="{{< var brand.section-bg >}}"}
 
-## Arti's review {.smaller}
+## Review {.smaller}
 
 :::: columns
 
 ::: {.column width="50%"}
 ### Arti (before)
 
--   emails the file back and forth
--   comments live in track changes
--   no record of who changed what, when
+-   emails file / SharePoint 
+-   uses comment function
+-   poor record of who changed what, when
 :::
 
 ::: {.column width="50%"}
@@ -873,26 +902,43 @@ Demo script:
 
 ## Your turn {.smaller}
 
-:::: task
+You each take a role, then swap. [Author]{.highlight-yellow} owns the pull request; [Reviewer]{.highlight-yellow} reviews it.
+
+:::: columns
+
+::: {.column width="50%"}
+### Author
+
 {{< fa brands github >}} &nbsp; On **github.com**
 
 1.  Open a pull request from your `dev` branch. Title it so your reviewer knows what changed.
-2.  Request a review [from your partner]{.highlight-yellow} (the username on your sticky note).
-3.  Review [your partner's]{.highlight-yellow} pull request: at least [one line comment]{.highlight-yellow}, then submit the review.
-4.  After your review arrives: [merge the PR]{.highlight-yellow}, confirm.
+2.  Request a review [from your partner]{.highlight-yellow}.
+3.  Read the review. Then either [make the proposed changes]{.highlight-yellow} and push again, or [merge as is]{.highlight-yellow}. Confirm the merge.
 
 {{< fa laptop-code >}} &nbsp; In **RStudio**
 
-5.  Switch to `main`, [Pull]{.highlight-yellow}, and [switch back to `dev`]{.highlight-yellow}.
+4.  Switch to `main`, [Pull]{.highlight-yellow}, and [switch back to `dev`]{.highlight-yellow}.
+:::
 
-[Partner not ready? Review the seed PR in your team repository instead. Nobody waits on anybody.]{.highlight-yellow}
+::: {.column width="50%"}
+### Reviewer
+
+{{< fa brands github >}} &nbsp; On **github.com**
+
+1.  Open your partner's pull request.
+2.  Start a review: leave at least [one line comment]{.highlight-yellow}.
+3.  Add an [overall comment]{.highlight-yellow}, then submit the review.
+:::
+
+::::
+
+<!-- TODO: add GitHub screenshots (Compare & pull request, the review tab with a line comment, the merge button) once captured. -->
 
 ::: hand
-{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop after the switch back to dev.
+{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop after the switch back to `dev`. Then swap roles.
 
 {{< fa comment >}} &nbsp; On Zoom: write "done" in the chat.
 :::
-::::
 
 ```{r}
 #| echo: false
@@ -900,7 +946,7 @@ countdown(minutes = 15)
 ```
 
 ::: {.notes}
-Default path: partner-pair review with the sticky-note pairs. Fallback path, on the slide itself: every team repo has a pre-opened seed PR ("Seed: suggestions to review"), so the exercise never blocks on a partner's progress.
+Two roles, then swap, so everyone both opens a PR and reviews one. Everyone has read access to their partner's repo, so no seed PR is needed. Screenshots go in the placeholder above once captured.
 
 Target: every learner opens a PR, writes at least one line comment, merges, and pulls. This block is protected: if the day is behind, cut elsewhere, never this. Bounded regroup: 2 minutes, then park-and-pair.
 :::
@@ -921,6 +967,88 @@ Target: every learner opens a PR, writes at least one line comment, merges, and 
 The summary of what we just did. Advance one element per press: the open merge point from the branching drawing, the pull request, the human review at the join, then the merge.
 :::
 
+# Merge conflict {background-color="{{< var brand.section-bg >}}"}
+
+## When two edits meet: Arti's conflict {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+### Arti (before)
+
+-   two people edit the same line
+-   last save wins
+-   the other edit is silently lost
+:::
+
+::: {.column width="50%"}
+### Arti (after)
+
+-   Git spots the clash and [stops]{.highlight-yellow}
+-   it marks [both versions]{.highlight-yellow} in the file
+-   Arti [chooses]{.highlight-yellow}, nothing is lost
+:::
+
+::::
+
+::: {.notes}
+The reassuring frame: a merge conflict is not a failure, it is Git refusing to guess. Nothing is lost; the human decides. This is the payoff of the "safe to fail" promise from the morning.
+:::
+
+## My turn {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+![](images/lars-sit-back.png){fig-align="center" width="90%" fig-alt="Photo of the instructor at the keyboard."}
+:::
+
+::: {.column width="50%"}
+::: {.hand-purple style="margin-top: 1em;"}
+Sit back and watch.
+
+A conflict is coming. Watch how Git asks me to choose.
+:::
+:::
+
+::::
+
+::: {.notes}
+Demo script (instructor only, no learner exercise in this block):
+
+- Set up the clash on purpose. On GitHub, edit one line of `index.qmd` on `main` directly (for example the manuscript title) and commit.
+- In RStudio, on `dev`, edit the same line differently. Commit.
+- Pull. Git stops and reports a conflict in `index.qmd`.
+- Open the file. Walk the conflict markers out loud: `<<<<<<< HEAD` is your version, `=======` is the divider, `>>>>>>>` is the incoming version.
+- Choose: delete the markers and keep the line you want (or combine both). Save.
+- Stage, Commit ("resolve conflict in title"), Push.
+- Say the safety message: Git never threw away either edit; it handed you both and waited. Almost everything in Git is reversible, and a conflict is Git protecting your work, not breaking it.
+
+Keep this instructor-only; a learner conflict exercise is a natural follow-up but risks eating the protected pull-request time.
+:::
+
+## Resolving a conflict {.smaller}
+
+When Git stops, it writes both versions into the file:
+
+```
+<<<<<<< HEAD
+Investments in WASH: a five-year review
+=======
+WASH investments: evidence from five years
+>>>>>>> main
+```
+
+-   [`<<<<<<< HEAD`]{.highlight-yellow}: your version
+-   [`=======`]{.highlight-yellow}: the divider
+-   [`>>>>>>> main`]{.highlight-yellow}: the incoming version
+
+Delete the markers, keep the text you want, then [Stage, Commit, Push]{.highlight-yellow}.
+
+::: {.notes}
+The reference slide learners can look back at. Keep it plain: a conflict is a normal part of collaboration, resolved by choosing.
+:::
+
 # Concept map revisit and wrap-up {background-color="{{< var brand.section-bg >}}"}
 
 ## Your turn: your map, revisited {.smaller}
@@ -928,8 +1056,9 @@ The summary of what we just did. Advance one element per press: the open merge p
 :::: task
 [Draw a concept map of Git and GitHub as you understand them now.]{.highlight-yellow}
 
--   Use the words from today: repository, clone, commit, push, pull, branch, pull request, merge, review.
--   Then put it [next to your morning map]{.highlight-yellow} and share both with your partner.
+-   5 minutes: Use the words from today: repository, clone, commit, push, pull, branch, pull request, merge, review.
+-   5 minutes: Pin it on the wall [next to your morning map]{.highlight-yellow}, so both maps sit side by side.
+-   5 minutes: Walk to your team member's two maps and talk through what changed between morning and now.
 
 ::: hand
 With your consent, I would like to photograph both maps (anonymously) to improve this workshop.
@@ -938,30 +1067,24 @@ With your consent, I would like to photograph both maps (anonymously) to improve
 
 ```{r}
 #| echo: false
-countdown(minutes = 8)
+countdown(minutes = 15)
 ```
 
 ::: {.notes}
 This block is protected and runs even on the worst day.
 
-The comparison is the measurement instrument for the whole redesign. Consent is asked on the slide; photograph only the maps of learners who agree, no names on the photos.
+The comparison is the measurement instrument for the whole redesign. Consent is asked on the slide; photograph only the maps of learners who agree, no names on the photos. Send the written consent request by email ahead of the workshop, so the on-slide ask is a reminder, not the first time they hear it.
 
 Fallback if the morning baseline went badly: draw the Git concept map yourself on the board as the closing recap and have the room call out the verb for each arrow (see the handbook, concept maps as bookends).
 :::
 
-## The day in one line
-
-[create]{.highlight-yellow} , [clone]{.highlight-yellow} , [commit]{.highlight-yellow} , [push]{.highlight-yellow} , [pull]{.highlight-yellow} , [branch]{.highlight-yellow} , [pull request]{.highlight-yellow} , [review]{.highlight-yellow} , [merge]{.highlight-yellow}
-
-::: {.notes}
-Recap as verbs, spoken while pointing at the drawings on the board. What you also picked up on the side: RStudio fluency, a first taste of Quarto, and reversibility as a habit.
-:::
+# Wrap-up
 
 ## What you also learned today
 
 -   RStudio, now with muscle memory
 -   Quarto: one document you can render
--   Reversibility as a habit: commit early, revert without fear
+-   Reversibility as a habit: commit early, revert when needed
 
 ## What comes next {.smaller}
 
@@ -992,4 +1115,3 @@ Access slides as [PDF on GitHub](https://github.com/gitforsci-ghe/website/raw/ma
 
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 
-## References
