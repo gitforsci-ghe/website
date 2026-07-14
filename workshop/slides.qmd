@@ -29,7 +29,7 @@ library(tidyverse)
 library(countdown)
 ```
 
-# B1: Welcome, concept-map intro, baseline map {background-color="#0F4C81"}
+# Welcome! TODO: hand-wave fa icon {background-color="#0F4C81"}
 
 ## Meet the lecturer {.smaller}
 
@@ -41,6 +41,25 @@ library(countdown)
 -   Retired researcher {{< fa bed >}}
 -   [RStudio certified instructor](https://education.rstudio.com/trainers/)
 -   [Data steward at ETHZ](https://ghe.ethz.ch/ghe-blog-news/2024/02/blog-attention-prof-you-need-a-data-steward-for-your-team.html)
+
+## Your turn
+
+::: task
+Think about the last time you published a written document:
+
+-   Which tasks gave you joy?
+-   Which tasks were challenging or frustrating?
+
+::: hand
+Take some written notes.
+:::
+:::
+
+```{r}
+#| echo: false
+
+countdown(minutes = 2)
+```
 
 ## What this day is, and is not
 
@@ -54,9 +73,50 @@ library(countdown)
 Defuse the AI-agent expectation gap now, in minute 5, not in minute 90. Say the safe-to-fail promise out loud; it comes back in B3 with the revert demo.
 :::
 
+
+## {{< fa toolbox >}} {.center-align auto-animate="true"}
+
+::: {style="margin-top: 50px; font-size: 1.5em"}
+Git -> core
+GitHub -> core 
+Quarto -> only see, not learn
+R -> onle see, not learn
+RStudio IDE -> our interface, could also be VS Code, Positron IDE, GitHub Desktop, etc.
+:::
+
+## Meeting you where you are
+
+TODO: use data from data/private to recreate these plots for this slide deck
+https://github.com/quarto-rdmss-26/website/blob/6fb9bcdc5278995c1512cd52441434da0f49a5fb/1-1-hello-quarto/1-1-hello-quarto.qmd#L174
+
+## What you want to learn {.smaller}
+
+TODO: Recreate similar example using learning_goals column: https://github.com/quarto-rdmss-26/website/blob/6fb9bcdc5278995c1512cd52441434da0f49a5fb/1-1-hello-quarto/1-1-hello-quarto.qmd#L234-L245
+
+## Learner persona
+
+TODO: Write up "Meet Arti" page
+
+image on the right, text on the left. Provide one-liners for each of the four learner personas categories. see also notes of this slide. 
+
+::: {.notes}
+TODO: here is my description for above: we have a room full of people with diverse backgrounds and prior experience, the pre-course survey shows that clearly. For some of you, the interface is entirely new, some of you are very experienced. I have learner personas that describe most of you, but my focus learner is Arti. 
+:::
+
+## Course structure
+
+-   [My turn]{.highlight-yellow}: Lecture segments + live coding
+-   [Your turn]{.highlight-yellow}: Individual or 2-people team exercises (in break-out rooms on Zoom)
+
+## Course icons
+
+TODO: I need two icons for learners to idenfiy what happens on RStudio IDE and when they are expected to work on GitHub. Can be fontawesome icons. Or suggest alternatives. 
+
 ## Learning objectives
 
 By the end of this workshop, participants will be able to:
+
+TODO: Are these learning objectives fitting Bloom's Taxonomy? I have decided to remove Publish (I will offer a follow-up collaboration on the website repository to create a basic 1-page website with profile links and bio)
 
 ::: incremental
 1.  [Create]{.highlight-yellow} and [clone]{.highlight-yellow} a repository, and run the full [pull, stage, commit, push]{.highlight-yellow} cycle from the RStudio IDE, including reverting a commit.
@@ -66,15 +126,10 @@ By the end of this workshop, participants will be able to:
 3.  [Publish]{.highlight-yellow} a rendered document via GitHub Pages, and draw a [concept map]{.highlight-yellow} of how Git and GitHub fit together.
 :::
 
-## Teaching strategy
-
--   Teaching Git on a "need to know" basis
--   Teaching only a very small subset of Git's functionality
--   Creating a safe space for learning and getting support
--   Focus on collaboration aspects of GitHub
--   Rhythm in every block: short slides, my turn (watch), your turn (do)
 
 ## Schedule
+
+TODO: make slide scrollable
 
 ```{r}
 #| tbl-colwidths: [25,75]
@@ -87,59 +142,13 @@ read_csv(here::here("data/tbl-01-gitforsci-ghe-course-schedule.csv")) |>
 
 ```
 
-##  {background-image="images/github_friends.png"}
-
-::: footer
-Illustrations from the [Openscapes](https://openscapes.org/) blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes
-:::
-
-::: {.notes}
-Why GitHub?
-
-"Collaboration is the most compelling reason to manage a project with Git and GitHub. My definition of collaboration includes hands-on participation by multiple people, including your past and future self, as well as an asymmetric model, in which some people are active makers and others only read or review." - Jenny Bryan
-
-Bryan J. 2017. Excuse me, do you have a moment to talk about version control? PeerJ Preprints 5:e3159v2 https://doi.org/10.7287/peerj.preprints.3159v2
-:::
-
-##  {background-image="images/github_fall.png"}
-
-::: footer
-Illustrations from the [Openscapes](https://openscapes.org/) blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes
-:::
-
-::: {.notes}
-GitHub helps us fail safely. Because we can return to previous versions easily, painful consequences of failing are reduced. We can bravely try things knowing that some will fail, and that failing is not catastrophic: we start again from where we left off, with a clear history to learn from.
-
-This is the safe-to-fail promise from the expectations slide, now with a picture.
-:::
-
-##  {background-image="images/github_compare_text.png"}
-
-::: footer
-Illustrations from the [Openscapes](https://openscapes.org/) blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes
-:::
-
-::: {.notes}
-GitHub streamlines our work: it takes care of otherwise time-consuming bookkeeping and unrelenting file tracking. Instead of fretting over whether "analysis_final_v2.xls" or "analysis_final_final.xls" is truly the final version, we can be confident in the completed analysis and move on. This connects directly to what learners draw in the baseline map in a few minutes: email attachments and file naming.
-:::
-
-##  {background-image="images/github_harness.jpeg"}
-
-::: footer
-Illustrations from the [Openscapes](https://openscapes.org/) blog GitHub for supporting, contributing, and failing safely by Allison Horst and Julia Lowndes
-:::
-
-::: {.notes}
-Once we are empowered to work collaboratively with GitHub, a whole new world of projects opens up, because we can contribute in many different ways. This transferrable ability to collaborate might just be the best thing about GitHub. Keep this to one breath; the motivation section ends here at about minute 10.
-:::
+# Concept maps
 
 ## Concept maps {.smaller}
 
 A concept map is [things]{.highlight-yellow} (nodes) joined by [labelled arrows]{.highlight-yellow}, where every label is a verb.
 
 ![](images/concept-map-exemplar.png){width="70%" fig-alt="A concept map about making tea. Five oval nodes labelled kettle, water, tea leaves, cup, and tea are joined by arrows labelled with capitalised verbs: HEATS, STEEPS, BECOME, MAKES, and HOLDS."}
-
-Read an arrow out loud and it becomes a sentence: "the kettle [HEATS]{.highlight-yellow} the water."
 
 ::: {.notes}
 Per Greg Wilson, Teaching Tech Together: concepts as nodes, labelled relationships as edges. Not a flowchart, not a timeline, not a list; no start, no end.
@@ -159,7 +168,8 @@ One sentence on why: experts use concept maps to make their mental models visibl
 -   Keep the map. You will need it at 14:15.
 
 ::: hand
-Place the yellow sticky note on your laptop when your map is done.
+TODO: room-fa-icon: Place the yellow sticky note on your laptop when your map is done. 
+TODO: zoom-fa-icon: Write "done" in Zoom Chat.
 :::
 ::::
 
@@ -174,17 +184,30 @@ One single prompt, not a fused double question. Expected content: email attachme
 Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
 :::
 
-# B2: Create and clone (website repo) {background-color="#0F4C81"}
+# TODO: remove all the B refs B2: Create and clone {background-color="#0F4C81"}
 
-## Live drawing: local and remote
 
-[Projector goes to sleep.]{.highlight-yellow} We draw this one by hand.
+## Live drawing: local and remote TODO: no more live drawing. All drawings will already be done with excalidraw
 
-::: {.notes}
-Live drawing 1 (local and remote): two boxes, clone first, then push and pull. Under 3 minutes. Fallback: the export in the appendix of the handbook, images/drawing-1-local-remote.png.
-:::
+## TODO: I need a new opening here. As in: whata re we going to do:
+
+- left side
+- Arti (before)
+- starts a new folder on laptop -> adds data as XLSX, adds DOCX, adds R script
+
+- right side
+- Arti (after)
+- creates repository on GitHub, clones repo to laptop -> starts RStudio project -> adds data as CSV, adds Quarto document, adds R script
+
+TODO: That's the concept here. How could I best show that visually? Just a two-column layout where each line on the left matches a line on the right? What other suggestions do you have?
+
+## TODO: My turn slides
+
+TODO: All my turn slides do not show instructions at all. They are two-columns. One is an image of me that I still need to create. One is: Sit back and note down questions.
 
 ## Local and remote {.smaller}
+
+TODO: Rework excalidraw drawings. Also check the git drawings in here: https://github.com/rstatszh-k013/website/tree/main/folien/img/md-04 I want to build up the drawings in a similar way, but use excalidraw. Spin out sub-agents to take of that.
 
 ![](images/drawing-1-local-remote.png){fig-align="center" width="70%" fig-alt="Digital version of the local and remote drawing: a local repository and a remote repository, with clone, push, and pull connecting them."}
 
@@ -192,7 +215,7 @@ Live drawing 1 (local and remote): two boxes, clone first, then push and pull. U
 Projector wakes up. Walk the room through the digital version of what we just drew by hand: clone first, then push and pull between local and remote.
 :::
 
-## My turn {.smaller}
+## My turn {.smaller} TODO: rework as mentioned above.
 
 :::: task
 Watch first; your turn comes next. Hands off the keyboards.
@@ -208,6 +231,7 @@ Follow along on the screen.
 ::::
 
 ::: {.notes}
+TODO: I don't need these notes here. Will write up a better lesson plan.
 Demo script, letter by letter as rehearsed:
 
 - Create the repo on GitHub with README so the clone is never empty.
@@ -216,7 +240,12 @@ Demo script, letter by letter as rehearsed:
 - The .Rproj and .gitignore explanation lives here in the notes, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees them but nobody has told it what to do with them yet. This answers the cis learner question "why do .Rproj session files show up?". Mention hidden files exist (files starting with a dot are hidden by the operating system).
 :::
 
-## Your turn {.smaller}
+## Your turn {.smaller} TODO: this needs to be more detailed and add icons. Potentially small screenshots.
+
+TODO: Take details from here, because that's what I am doing live: - Create the repo on GitHub with README so the clone is never empty.
+- RStudio settings: Tools > Global Options > General: Save workspace to .RData on exit: Never. Tools > Global Options > Code: check use native pipe operator.
+- Clone into the pre-work folder structure (~/Documents/gitrepos/gh-org-gitforsci-ghe is the example from the setup test; for their own repos, gh-USERNAME).
+- The .Rproj and .gitignore explanation lives here in the notes, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees them but nobody has told it what to do with them yet. This answers the cis learner question "why do .Rproj session files show up?". Mention hidden files exist (files starting with a dot are hidden by the operating system).
 
 :::: task
 1.  On github.com: create a repository called `website`, public, with a README.
@@ -237,7 +266,26 @@ countdown(minutes = 10)
 Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
 :::
 
-## Take a break
+## TODO: add slide for Our turn: 
+
+- Edit README and commit on GitHub
+- Add a file to a folder
+
+
+## TODO: At the end of each "Block" add the following slide:
+
+## {.unlisted}
+
+::: {.hand-purple style="text-align: center;"}
+Anything from Hello Quarto you'd like clarified before the break?
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 2)
+```
+
+## Take a break TODO: remove the "Leave emails alone" sentence. 
 
 [Please get up and move!]{.highlight-yellow} Leave your emails alone. We continue at 11:15.
 
@@ -254,7 +302,17 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 
 # B3: The commit cycle (website repo) {background-color="#0F4C81"}
 
-## Live drawing: the commit cycle
+- TODO: Opening slide on GUI and Terminal
+    - RStudio is a GUI, a graphical user interface
+    - We interact with git commands (e.g. git pull) through the GUI  by clicking the pull button
+
+- TODO: Also add the Arti comparison for the work in this block:
+- Arti (before)
+  - opens docx, edits text, file autosaves
+- Arti (after)
+  - opens quarto file, edits text, file autosaves, after significant changes -> pull add commit (with message describing what changes and WHY) -> push
+
+## Live drawing: the commit cycle TODO: remove as listed above
 
 [Projector goes to sleep.]{.highlight-yellow} We draw this one by hand.
 
@@ -262,7 +320,9 @@ Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 Live drawing 2 (commit cycle): working files, stage, commit as labelled snapshot on the history line, push. Leave room for the history line to grow. Under 3 minutes. Fallback: images/drawing-2-commit-cycle.png.
 :::
 
-## The commit cycle {.smaller}
+## The commit cycle {.smaller} 
+
+TODO: Provide me with an alternative drawing based on my inpout for drawings above. I do like this one. The figure is also only placed after My turn and Your turn. It's the summary of what we did. 
 
 ![](images/drawing-2-commit-cycle.png){fig-align="center" width="70%" fig-alt="Digital version of the commit cycle drawing: working files move through stage and commit as a labelled snapshot on the history line, then push."}
 
@@ -270,7 +330,7 @@ Live drawing 2 (commit cycle): working files, stage, commit as labelled snapshot
 Projector wakes up. Run through the digital version: working files, stage, commit as a labelled snapshot on the history line, push.
 :::
 
-## My turn {.smaller}
+## My turn {.smaller} TODO: as above remove and add new slide.
 
 :::: task
 Watch first; your turn comes next.
@@ -294,7 +354,7 @@ Demo script:
 - Credentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 4. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing.
 :::
 
-## Your turn {.smaller}
+## Your turn {.smaller} TODO: Use a shorter version of the notes above to better describe the your turn task. make sure that the pull, stage, commit, push (PSCP) mantra is everywhere. This could go into a hand-out with the most important information and also be another hands-on exercise like the one in: https://github.com/gitforsci-dev/exercises
 
 :::: task
 1.  Edit your `README.md`: describe your website in one sentence. Save.
@@ -317,9 +377,19 @@ Goal: every learner has at least 2 commits pushed to their own repo by 11:45. Th
 Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.
 :::
 
-# B4: Collaboration cliffhanger {background-color="#0F4C81"}
+# B4: Collaboration cliffhanger {background-color="#0F4C81"} TODO: different title. Team work. 
 
-## Find your partner
+## TODO: Arti opening slide (maybe this slide only comes afer lunch to open up branching concept. Show blocked version, then how branching sorts it out.)
+
+Arti (before)
+
+- opens SharePoint -> finds file of Cem -> edits file in track changes -> informs Cem via email
+
+Arti (after)
+
+- opens Project in RStudio -> opens Quarto file -> edits -> PSCP mantra -> blocked 
+
+## Find your partner (TODO: Teams will be set. people will know before.)
 
 ::: task
 -   Turn to your neighbour: you are now a pair (three is fine if the row runs out).
@@ -337,12 +407,12 @@ Pairs are formed on the day from who is present; no pre-baked table. The sticky 
 1.  Browse to `github.com/USERNAME`, where USERNAME is [your partner's]{.highlight-yellow} username.
 2.  Clone their `website` repository (Code button, HTTPS URL, File \> New Project \> Version Control \> Git).
 3.  Edit the README: add "This repo contains a personal website for USERNAME."
-4.  Save, stage, commit, and [push]{.highlight-yellow}.
+4.  Save, stage, commit, and [push]{.highlight-yellow}. TODO: Pull mantra everwhere.
 
 [What happens?]{.highlight-yellow}
 
 ::: hand
-Place the yellow sticky note on your laptop when something unexpected happens.
+Place the yellow sticky note on your laptop when something unexpected happens. 
 :::
 ::::
 
@@ -357,12 +427,14 @@ Everyone hits the push wall: 403, no write access. That is the plan; it is the s
 Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.
 :::
 
+TODO: Show a screenshot. 
+
 ## What just happened? {.smaller}
 
 ::: incremental
--   Your push [failed]{.highlight-yellow}: you can read their repository, but you have no write access.
+-   Your push [failed]{.highlight-yellow}: you can read.highligh-yellow their repository, but you have no write.highlight-yellow access.
 -   Giving everyone write access ("collaborator") exists, but it does not scale, and it means anyone can change anything at any time.
--   (Forking, making your own copy under your account, exists too; one sentence, not today's topic.)
+- TODO: this would need a fork, which I will practice with you in a follow-up offer to prepare your personal website with my support. 
 -   So how do teams actually propose and review changes? [That is exactly what we solve after lunch: branches and pull requests.]{.highlight-yellow}
 :::
 
@@ -370,7 +442,13 @@ Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.
 The cliffhanger, stated explicitly. The morning ends with a question the afternoon answers. Do not resolve it now.
 :::
 
-## Lunch
+## TODO: new slide with Match git commands exercise. It's a print out. Only participants need to receive differently. (Email?)
+
+- Slide: Match Git commands
+    - TODO: Slide. 3 minutes to work on your own and then 5 minutes to compare with your team partner.
+    https://github.com/gitforsci-dev/exercises
+
+## Lunch (TODO: this need to be at 12, got to be back by 12:45)
 
 [Back at 12:55.]{.highlight-yellow} The afternoon starts hands-on, and your partner is waiting for you.
 
@@ -385,15 +463,8 @@ Hard 12:55 return. B5 starts hands-on as the re-energizer; latecomers can join m
 
 # B5: Branch (manuscript repo) {background-color="#0F4C81"}
 
-## Live drawing: branching
 
-[Projector goes to sleep.]{.highlight-yellow} We draw this one by hand.
-
-::: {.notes}
-Live drawing 3 (branching): the main line splits, commits land on the branch, the merge point stays empty until drawing 4. Under 3 minutes. Fallback: images/drawing-3-branching.png.
-:::
-
-## Branching {.smaller}
+## Branching {.smaller} TODO: as above
 
 ![](images/drawing-3-branching.png){fig-align="center" width="70%" fig-alt="Digital version of the branching drawing: the main line splits into a branch, commits land on the branch, and the merge point is left empty for now."}
 
@@ -401,7 +472,7 @@ Live drawing 3 (branching): the main line splits, commits land on the branch, th
 Projector wakes up. Run through the digital version: the main line splits, commits land on the dev branch, and the merge point stays empty until the pull request in B6.
 :::
 
-## My turn {.smaller}
+## My turn {.smaller} TODO: replace with new slide
 
 :::: task
 Watch first; your turn comes next. New repo, new superpower.
@@ -431,13 +502,18 @@ Do not run installs for the room; park that learner and pair them.
 The branch created here feeds the B6 pull request in 30 minutes, so keep momentum.
 :::
 
-## Your turn {.smaller}
+## Your turn {.smaller} TODO: this will be a team repo (e.g. team red)
 
 :::: task
-1.  Find and clone [your]{.highlight-yellow} `man-washinvestments-USERNAME` repository (org page, search "man-").
-2.  Git pane: New Branch, name it `dev`.
-3.  In `index.qmd`: put in [your own]{.highlight-yellow} author details. Render.
-4.  Commit "update author details", push.
+TODO: add another task to change something else? Repo will be restructured, see below, not publish anymore.
+1.  Find and clone [your]{.highlight-yellow} `washinvestments-red` repository (org page, search "-red").
+2.  One person: Git pane: New Branch, name it `dev`. In `index.qmd`: put in [your own]{.highlight-yellow} author details. Render. 4. PSCP mantra  Commit "update author details", push. 
+
+TODO: add small screenshots of the buttons from RStudio. Add the RStudio icon you identified. I will provide the scrrenshpots.
+TODO: add issue to man-washinvestments for everything that needs to change:
+
+- two placeholders for two authors.
+- this repo will not be published anymore. It can have a structure that would better align with reality, not the docs/index.qmd structure
 
 ::: hand
 Place the yellow sticky note on your laptop when your push has finished.
@@ -450,14 +526,14 @@ countdown(minutes = 10)
 ```
 
 ::: {.notes}
-The render updates `docs/index.html`, so the commit stages two files together: `index.qmd` and `docs/index.html`.
+TODO: add to description above: The render updates `docs/index.html`, so the commit stages two files together: `index.qmd` and `docs/index.html`. 
 
-If the roster pivot happened (kill criterion 1), learners without their own repo work in the shared demo repos instead: same steps, repo name from the board. Mark the default before the day.
 
-Bounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your branch pushed? Thumbs up. Every learner needs a pushed dev branch with one commit by 13:30.
 :::
 
 # B6: Pull request, review, merge {background-color="#0F4C81"}
+
+## TODO: Arti (before), Arti (now). And then actulla stop revisions here. I am will go through a first round and then pick up here again, once I see the direction that previous content has taken. 
 
 ## Live drawing: the pull request
 
@@ -467,7 +543,7 @@ Bounded regroup: 2 minutes, then park-and-pair. Regroup check before B6: is your
 Live drawing 4 (pull request): complete the merge point from drawing 3, pause at the join for the human review, then the lines meet. Under 3 minutes. Fallback: images/drawing-4-pull-request.png.
 :::
 
-## The pull request {.smaller}
+## The pull request {.smaller} TODO: still provide new drawing suggestions based on above.
 
 ![](images/drawing-4-pull-request.png){fig-align="center" width="70%" fig-alt="Digital version of the pull request drawing: the branch and main lines meet at the merge point, with a pause at the join for the human review before the lines meet."}
 
@@ -475,7 +551,7 @@ Live drawing 4 (pull request): complete the merge point from drawing 3, pause at
 Projector wakes up. Run through the digital version: the merge point from the branching drawing is completed, with the human review sitting at the join before the lines meet.
 :::
 
-## My turn {.smaller}
+## My turn {.smaller} 
 
 :::: task
 Watch first; your turn comes next. This is the moment the day was built for.
