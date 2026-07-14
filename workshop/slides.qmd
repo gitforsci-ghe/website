@@ -264,7 +264,7 @@ One sentence on why: experts use concept maps to make their mental models visibl
 
 -   Things as nodes, arrows with verb labels.
 -   There is no wrong map; this one is yours.
--   Keep the map. You will need it at 14:15.
+-   Keep the map. You will need it again at the end of the day.
 
 ::: hand
 {{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop when your map is done.
@@ -768,62 +768,82 @@ Team repos are `washinvestments-<team>`, created from the reworked manuscript te
 The summary of what we just did. Advance one element per press: the main line, the dev branch splitting off, commits landing on the branch, and the merge point left empty until the pull request in the next block.
 :::
 
-# B6: Pull request, review, merge {background-color="#0F4C81"}
+# Pull request, review, merge {background-color="#0F4C81"}
 
-## TODO: Arti (before), Arti (now). And then actulla stop revisions here. I am will go through a first round and then pick up here again, once I see the direction that previous content has taken. 
+## Arti's review {.smaller}
 
-## Live drawing: the pull request
+:::: columns
 
-[Projector goes to sleep.]{.highlight-yellow} We draw this one by hand.
+::: {.column width="50%"}
+### Arti (before)
 
-::: {.notes}
-Live drawing 4 (pull request): complete the merge point from drawing 3, pause at the join for the human review, then the lines meet. Under 3 minutes. Fallback: images/drawing-4-pull-request.png.
+-   emails the file back and forth
+-   comments live in track changes
+-   no record of who changed what, when
 :::
 
-## The pull request {.smaller} TODO: still provide new drawing suggestions based on above.
+::: {.column width="50%"}
+### Arti (after)
 
-![](images/drawing-4-pull-request.png){fig-align="center" width="70%" fig-alt="Digital version of the pull request drawing: the branch and main lines meet at the merge point, with a pause at the join for the human review before the lines meet."}
-
-::: {.notes}
-Projector wakes up. Run through the digital version: the merge point from the branching drawing is completed, with the human review sitting at the join before the lines meet.
+-   opens a [pull request]{.highlight-yellow}
+-   her partner leaves [line comments]{.highlight-yellow}
+-   the change is [merged]{.highlight-yellow} after review, with a full record
 :::
 
-## My turn {.smaller} 
-
-:::: task
-Watch first; your turn comes next. This is the moment the day was built for.
-
-1.  On GitHub: switch to `dev`, click [Compare & pull request]{.highlight-yellow}. Title: "Add author details to manuscript".
-2.  Request a [reviewer]{.highlight-yellow}. Walk the tabs: Commits, Files changed.
-3.  As the reviewer: start a review, leave [line comments]{.highlight-yellow}, submit.
-4.  Open an issue with a task list next to the PR.
-5.  [Merge]{.highlight-yellow}, confirm, tick off the task in the issue.
-6.  Back in RStudio: switch to `main`, read the message, [Pull]{.highlight-yellow}. Then the gotcha: [switch back to dev]{.highlight-yellow}.
-
-::: hand
-Follow along on the screen.
-:::
 ::::
 
 ::: {.notes}
-Demo script from the cis lesson plan. Review comment examples to reuse verbatim: "That's not a good title for a manuscript. Please suggest 2 alternatives." and "This list is not complete."
+Same review habit Arti already has (comments in tracked changes), now on GitHub with a record. This is the moment the day was built for.
+:::
 
-Read the "behind origin/main, can be fast-forwarded" message out loud when switching to main. The switch-back-to-dev gotcha is a recorded cis learner stumble; name it as a habit: merged? Then pull main, and go back to your working branch.
+## My turn {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+![](images/lars-sit-back.png){fig-align="center" width="90%" fig-alt="Photo of the instructor at the keyboard."}
+:::
+
+::: {.column width="50%"}
+::: {.hand-purple style="margin-top: 1em;"}
+Sit back and watch.
+
+Note down any questions as they come up. We pick them up right after.
+:::
+:::
+
+::::
+
+::: {.notes}
+Demo script:
+
+- On GitHub: switch to dev, click Compare & pull request. Title: "Add author details to manuscript".
+- Request a reviewer. Walk the tabs: Commits, Files changed.
+- As the reviewer: start a review, leave line comments, submit. Review comment examples to reuse verbatim: "That's not a good title for a manuscript. Please suggest 2 alternatives." and "This list is not complete."
+- Open an issue with a task list next to the PR. Merge, confirm, tick off the task.
+- Back in RStudio: switch to main, read the "behind origin/main, can be fast-forwarded" message out loud, Pull. Then the gotcha: switch back to dev. Name it as a habit: merged? Then pull main, and go back to your working branch.
 :::
 
 ## Your turn {.smaller}
 
 :::: task
-1.  Open a pull request from your `dev` branch. Title it so your reviewer knows what changed.
-2.  Request a review [from your B4 partner]{.highlight-yellow} (the username on your sticky note).
-3.  Review [your partner's]{.highlight-yellow} pull request: at least [one line comment]{.highlight-yellow}, then submit the review.
-4.  After your review arrives: [merge your own PR]{.highlight-yellow}, confirm.
-5.  In RStudio: switch to `main`, Pull, and switch back to `dev`.
+{{< fa brands github >}} &nbsp; On **github.com**
 
-[Partner not ready? Review the seed PR in your own repository instead. Nobody waits on anybody.]{.highlight-yellow}
+1.  Open a pull request from your `dev` branch. Title it so your reviewer knows what changed.
+2.  Request a review [from your partner]{.highlight-yellow} (the username on your sticky note).
+3.  Review [your partner's]{.highlight-yellow} pull request: at least [one line comment]{.highlight-yellow}, then submit the review.
+4.  After your review arrives: [merge the PR]{.highlight-yellow}, confirm.
+
+{{< fa laptop-code >}} &nbsp; In **RStudio**
+
+5.  Switch to `main`, [Pull]{.highlight-yellow}, and [switch back to `dev`]{.highlight-yellow}.
+
+[Partner not ready? Review the seed PR in your team repository instead. Nobody waits on anybody.]{.highlight-yellow}
 
 ::: hand
-Place the yellow sticky note on your laptop after the switch back to dev.
+{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop after the switch back to dev.
+
+{{< fa comment >}} &nbsp; On Zoom: write "done" in the chat.
 :::
 ::::
 
@@ -833,42 +853,28 @@ countdown(minutes = 15)
 ```
 
 ::: {.notes}
-Default path: partner-pair review with the B4 sticky-note pairs. Fallback path, on the slide itself: every manuscript repo has a pre-opened seed PR ("Seed: suggestions to review"), so the exercise never blocks on a partner's progress. If no helper was found by 11 July (kill criterion 4), flip the default: everyone reviews their seed PR, pairs become the bonus.
+Default path: partner-pair review with the sticky-note pairs. Fallback path, on the slide itself: every team repo has a pre-opened seed PR ("Seed: suggestions to review"), so the exercise never blocks on a partner's progress.
 
-Target: every learner opens a PR, writes at least one line comment, merges, and pulls, inside 35 minutes.
-
-This block is protected. If the day is behind, B7 Publish is cut, never this. Bounded regroup: 2 minutes, then park-and-pair.
+Target: every learner opens a PR, writes at least one line comment, merges, and pulls. This block is protected: if the day is behind, cut elsewhere, never this. Bounded regroup: 2 minutes, then park-and-pair.
 :::
 
-# B7: Publish {background-color="#0F4C81"}
+## The pull request {.smaller}
 
-## Our turn {.smaller}
+::: {.r-stack}
+![](images/drawing-4-pull-request-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="The dev branch and main line with an open merge point."}
 
-::: task
-Together, on your merged manuscript:
+![](images/drawing-4-pull-request-01.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A pull request opened at the join between the branch and main."}
 
-1.  Open your `man-washinvestments-USERNAME` repository on GitHub.
-2.  [Settings \> Pages]{.highlight-yellow}: Deploy from a branch, branch `main`, folder `/docs`, Save.
-3.  Wait for the address to appear, then paste it into the repository [description]{.highlight-yellow} (About, gear icon).
-4.  Open the address: your manuscript is [on the web]{.highlight-yellow}.
+![](images/drawing-4-pull-request-02.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A human review pausing at the join before the lines meet."}
+
+![](images/drawing-4-pull-request-03.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="The branch merged into main, the lines meeting."}
 :::
 
 ::: {.notes}
-First block to cut. If running behind at 14:05, skip to the fallback slide and hand the time to B8. Pages can take a minute to build; use the wait to point at the docs folder in the repo, which is where the rendered manuscript lives.
+The summary of what we just did. Advance one element per press: the open merge point from the branching drawing, the pull request, the human review at the join, then the merge.
 :::
 
-## Fallback: what publishing looks like {.smaller}
-
--   One published example: <https://gitforsci-ghe.github.io/website/>
--   The steps, in one breath: [Settings, Pages, deploy from branch, docs folder, save]{.highlight-yellow}.
--   The website index and the slides you used today are published [exactly this way]{.highlight-yellow}.
--   Your manuscript repo is ready for it whenever you try, tonight included.
-
-::: {.notes}
-This slide stands alone for the cut case: show it, say the one breath, hand the time to B8.
-:::
-
-# B8: Concept map revisit and wrap-up {background-color="#0F4C81"}
+# Concept map revisit and wrap-up {background-color="#0F4C81"}
 
 ## Your turn: your map, revisited {.smaller}
 
@@ -889,7 +895,7 @@ countdown(minutes = 8)
 ```
 
 ::: {.notes}
-Hard start at 14:15: whatever block is running stops. B8 is protected and runs even on the worst day.
+This block is protected and runs even on the worst day.
 
 The comparison is the measurement instrument for the whole redesign. Consent is asked on the slide; photograph only the maps of learners who agree, no names on the photos.
 
@@ -898,7 +904,7 @@ Fallback if the morning baseline went badly: draw the Git concept map yourself o
 
 ## The day in one line
 
-[create]{.highlight-yellow} , [clone]{.highlight-yellow} , [commit]{.highlight-yellow} , [push]{.highlight-yellow} , [branch]{.highlight-yellow} , [pull request]{.highlight-yellow} , [review]{.highlight-yellow} , [merge]{.highlight-yellow} , [publish]{.highlight-yellow}
+[create]{.highlight-yellow} , [clone]{.highlight-yellow} , [commit]{.highlight-yellow} , [push]{.highlight-yellow} , [pull]{.highlight-yellow} , [branch]{.highlight-yellow} , [pull request]{.highlight-yellow} , [review]{.highlight-yellow} , [merge]{.highlight-yellow}
 
 ::: {.notes}
 Recap as verbs, spoken while pointing at the drawings on the board. What you also picked up on the side: RStudio fluency, a first taste of Quarto, and reversibility as a habit.
@@ -907,14 +913,15 @@ Recap as verbs, spoken while pointing at the drawings on the board. What you als
 ## What you also learned today
 
 -   RStudio, now with muscle memory
--   Quarto: one document, rendered to the web
+-   Quarto: one document you can render
 -   Reversibility as a habit: commit early, revert without fear
 
 ## What comes next {.smaller}
 
 ::: incremental
 -   [Working with AI coding agents]{.highlight-yellow} is the follow-up workshop, and it builds on exactly what you did today: branches, pull requests, review.
--   Interested? Email me and you will hear from me when dates are set.
+-   Want a [personal website]{.highlight-yellow}? I offer a follow-up to build a one-page site with your profile links and bio.
+-   Interested in either? Email me and you will hear from me when dates are set.
 -   Start your first own project with Git and GitHub this week (already have a project? [Read here](https://happygitwithr.com/existing-github-first#existing-github-first)).
 -   Keep learning by doing: open pull requests to yourself, review your own diffs.
 :::
@@ -927,7 +934,7 @@ Recap as verbs, spoken while pointing at the drawings on the board. What you als
 All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ::: {.notes}
-Survey link goes out by email right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks, done by 14:30.
+Survey link goes out by email right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks.
 :::
 
 ## Thanks!
