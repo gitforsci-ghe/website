@@ -66,8 +66,10 @@ library(readr)
 #| tbl-colwidths: [25,75]
 
 read_csv(here::here("data/tbl-01-gitforsci-ghe-course-schedule.csv")) |>
-  filter(day == 1) |> 
-  select(Time = time, Module = title) |> 
+  filter(day == 1) |>
+  select(Time = time, Module = title) |>
+  # strip any [text](link) markdown so the schedule shows plain module names
+  mutate(Module = gsub("\\[([^]]+)\\]\\([^)]*\\)", "\\1", Module)) |>
   kable()
   
 ```

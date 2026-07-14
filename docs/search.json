@@ -561,7 +561,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612063616c656e646172203e7d7d-schedule",
     "title": "Pre-course work: Git for Scientists",
     "section": " Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:30 - 10:00\nArrival\n\n\n10:00 - 10:30\nPart 1: Welcome, concept-map intro, baseline map\n\n\n10:30 - 10:50\nPart 2: Create & Clone\n\n\n10:50 - 11:00\nBreak\n\n\n11:00 - 11:20\nPart 3: The commit cycle\n\n\n11:20 - 11:50\nPart 4: Team work\n\n\n11:50 - 12:45\nLunch Break\n\n\n12:45 - 13:05\nPart 5: Work on a branch\n\n\n13:05 - 13:45\nPart 6: Pull Request, Review, Merge\n\n\n13:45 - 13:50\nMovement Break\n\n\n13:50 - 14:00\nPart 7: Merge conflict\n\n\n14:00 - 14:30\nPart 8: Concept map revisit and wrap-up",
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\nTime\nModule\n\n\n\n\n09:30 - 10:00\nArrival\n\n\n10:00 - 10:30\nPart 1: Welcome, concept-map intro, baseline map\n\n\n10:30 - 10:50\nPart 2: Create & Clone\n\n\n10:50 - 11:00\nBreak\n\n\n11:00 - 11:30\nPart 3: The commit cycle\n\n\n11:30 - 11:50\nPart 4: Team work\n\n\n11:50 - 12:45\nLunch Break\n\n\n12:45 - 13:05\nPart 5: Work on a branch\n\n\n13:05 - 13:45\nPart 6: Pull Request, Review, Merge\n\n\n13:45 - 13:50\nMovement Break\n\n\n13:50 - 14:00\nPart 7: Merge conflict\n\n\n14:00 - 14:30\nPart 8: Concept map revisit and wrap-up",
     "crumbs": [
       "Pre-course work"
     ]
@@ -571,7 +571,7 @@
     "href": "index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062756c6c73657965203e7d7d-learning-objectives",
     "title": "Pre-course work: Git for Scientists",
     "section": " Learning objectives",
-    "text": "Learning objectives\nBy the end of this workshop, participants will be able to:\n\nCreate and clone a repository, and apply the standard Git workflow from the RStudio IDE: pulling, staging, committing, and pushing changes, including reverting a commit.\nWork with branches and pull requests: create a development branch, open a pull request, review and comment on a colleague’s pull request, and merge after review.\nPublish a rendered document via GitHub Pages, and draw a concept map of how Git and GitHub fit together as a foundation for collaboration.",
+    "text": "Learning objectives\nBy the end of this workshop, participants will be able to:\n\nCommit cycle: create and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.\nCollaboration: create a branch and open a pull request, review a colleague’s pull request, and merge it after review.\nConcept map: draw how Git and GitHub fit together.",
     "crumbs": [
       "Pre-course work"
     ]
