@@ -228,9 +228,9 @@ Repo: the team manuscript repo `washinvestments-<team>`.
 1. Clone the team manuscript repo (same moves as this morning). (3)
 2. Git pane: **New Branch**, name it `dev`. Read the message about origin out
    loud. (2)
-3. Open `index.qmd`, edit the author details, **Render**. Packages are
+3. Open `manuscript.qmd`, edit the author details, **Render**. Packages are
    pre-installed from pre-work, so render takes seconds. If a render fails on a
-   missing package, the commented install chunk is at the top of `index.qmd`; do
+   missing package, the commented install chunk is at the top of `manuscript.qmd`; do
    not run installs for the room, park that learner. (3)
 4. Switch between `main` and `dev` in the Git pane: before the commit nothing
    differs; after the commit, the change lives only on `dev`. (2)
@@ -305,10 +305,10 @@ Slides: Arti's conflict (before/after) -> My turn -> Resolving a conflict
 
 Repo: the team manuscript repo.
 
-1. Set up the clash on purpose: on GitHub, edit one line of `index.qmd` on `main`
+1. Set up the clash on purpose: on GitHub, edit one line of `manuscript.qmd` on `main`
    directly (for example the manuscript title) and commit.
 2. In RStudio, on `dev`, edit the same line differently. Commit.
-3. **Pull.** Git stops and reports a conflict in `index.qmd`.
+3. **Pull.** Git stops and reports a conflict in `manuscript.qmd`.
 4. Open the file. Walk the conflict markers out loud: `<<<<<<< HEAD` is your
    version, `=======` is the divider, `>>>>>>>` is the incoming version.
 5. Choose: delete the markers, keep the line you want (or combine both). Save.
