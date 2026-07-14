@@ -284,76 +284,80 @@ One single prompt, not a fused double question. Expected content: email attachme
 Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
 :::
 
-# TODO: remove all the B refs B2: Create and clone {background-color="#0F4C81"}
+# Create and clone {background-color="#0F4C81"}
 
+## Arti's project {.smaller}
 
-## Live drawing: local and remote TODO: no more live drawing. All drawings will already be done with excalidraw
+:::: columns
 
-## TODO: I need a new opening here. As in: whata re we going to do:
+::: {.column width="50%"}
+### Arti (before)
 
-- left side
-- Arti (before)
-- starts a new folder on laptop -> adds data as XLSX, adds DOCX, adds R script
-
-- right side
-- Arti (after)
-- creates repository on GitHub, clones repo to laptop -> starts RStudio project -> adds data as CSV, adds Quarto document, adds R script
-
-TODO: That's the concept here. How could I best show that visually? Just a two-column layout where each line on the left matches a line on the right? What other suggestions do you have?
-
-## TODO: My turn slides
-
-TODO: All my turn slides do not show instructions at all. They are two-columns. One is an image of me that I still need to create. One is: Sit back and note down questions.
-
-## Local and remote {.smaller}
-
-TODO: Rework excalidraw drawings. Also check the git drawings in here: https://github.com/rstatszh-k013/website/tree/main/folien/img/md-04 I want to build up the drawings in a similar way, but use excalidraw. Spin out sub-agents to take of that.
-
-![](images/drawing-1-local-remote.png){fig-align="center" width="70%" fig-alt="Digital version of the local and remote drawing: a local repository and a remote repository, with clone, push, and pull connecting them."}
-
-::: {.notes}
-Projector wakes up. Walk the room through the digital version of what we just drew by hand: clone first, then push and pull between local and remote.
+-   starts a new folder on her laptop
+-   adds data as `.xlsx`
+-   adds a `.docx` report
+-   adds an R script
 :::
 
-## My turn {.smaller} TODO: rework as mentioned above.
+::: {.column width="50%"}
+### Arti (after)
 
-:::: task
-Watch first; your turn comes next. Hands off the keyboards.
-
-1.  On github.com: create a new repository called `website`, public, with a README.
-2.  In RStudio: two settings that save future pain (Tools \> Global Options): never save `.RData` on exit, and use the native pipe `|>`.
-3.  Clone: green "Code" button, copy the HTTPS URL, then File \> New Project \> Version Control \> Git.
-4.  Inspect what arrived: the Files tab, the Git tab, and two new files with yellow ? icons: `.gitignore` and `website.Rproj`.
-
-::: hand
-Follow along on the screen.
+-   [creates a repository on GitHub]{.highlight-yellow}
+-   [clones it]{.highlight-yellow} and opens an RStudio project
+-   adds data as `.csv`
+-   adds a Quarto document and an R script
 :::
+
 ::::
 
 ::: {.notes}
-TODO: I don't need these notes here. Will write up a better lesson plan.
-Demo script, letter by letter as rehearsed:
-
-- Create the repo on GitHub with README so the clone is never empty.
-- RStudio settings: Tools > Global Options > General: Save workspace to .RData on exit: Never. Tools > Global Options > Code: check use native pipe operator.
-- Clone into the pre-work folder structure (~/Documents/gitrepos/gh-org-gitforsci-ghe is the example from the setup test; for their own repos, gh-USERNAME).
-- The .Rproj and .gitignore explanation lives here in the notes, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees them but nobody has told it what to do with them yet. This answers the cis learner question "why do .Rproj session files show up?". Mention hidden files exist (files starting with a dot are hidden by the operating system).
+Same project, two ways. Read the columns as pairs: each line on the left has a Git/GitHub answer on the right. This is the whole block in one slide; the highlighted lines are what we do together next.
 :::
 
-## Your turn {.smaller} TODO: this needs to be more detailed and add icons. Potentially small screenshots.
+## My turn {.smaller}
 
-TODO: Take details from here, because that's what I am doing live: - Create the repo on GitHub with README so the clone is never empty.
+:::: columns
+
+::: {.column width="50%"}
+![](images/lars-sit-back.png){fig-align="center" width="90%" fig-alt="Photo of the instructor at the keyboard."}
+:::
+
+::: {.column width="50%"}
+::: {.hand-purple style="margin-top: 1em;"}
+Sit back and watch.
+
+Note down any questions as they come up. We pick them up right after.
+:::
+:::
+
+::::
+
+::: {.notes}
+Demo script:
+
+- Create the repo on GitHub with a README so the clone is never empty.
 - RStudio settings: Tools > Global Options > General: Save workspace to .RData on exit: Never. Tools > Global Options > Code: check use native pipe operator.
 - Clone into the pre-work folder structure (~/Documents/gitrepos/gh-org-gitforsci-ghe is the example from the setup test; for their own repos, gh-USERNAME).
-- The .Rproj and .gitignore explanation lives here in the notes, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees them but nobody has told it what to do with them yet. This answers the cis learner question "why do .Rproj session files show up?". Mention hidden files exist (files starting with a dot are hidden by the operating system).
+- The .Rproj and .gitignore explanation lives here, not on a slide: .Rproj holds RStudio project settings, .gitignore lists what Git should not track; the yellow ? icons mean Git sees the files but nobody has told it what to do with them yet. This answers the recorded learner question "why do .Rproj session files show up?". Mention that hidden files (starting with a dot) are hidden by the operating system.
+:::
+
+## Your turn {.smaller}
 
 :::: task
-1.  On github.com: create a repository called `website`, public, with a README.
-2.  In RStudio: File \> New Project \> Version Control \> Git, paste the HTTPS URL, create the project inside your `gitrepos` folder.
-3.  Find `.gitignore` and `website.Rproj` in the Git tab with their yellow ? icons.
+{{< fa brands github >}} &nbsp; On **github.com**
+
+1.  Create a repository called `website`, public, [with a README]{.highlight-yellow} (so the clone is never empty).
+
+{{< fa laptop-code >}} &nbsp; In **RStudio**
+
+2.  Set two options once (Tools \> Global Options): General \> never save `.RData` on exit; Code \> use the native pipe `|>`.
+3.  Clone: File \> New Project \> Version Control \> Git, paste the HTTPS URL, create the project inside your `gitrepos` folder.
+4.  Find `.gitignore` and `website.Rproj` in the Git tab with their yellow ? icons.
 
 ::: hand
-Place the yellow sticky note on your laptop when you see the two yellow ? icons.
+{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop when you see the two yellow ? icons.
+
+{{< fa comment >}} &nbsp; On Zoom: write "done" in the chat.
 :::
 ::::
 
@@ -363,21 +367,49 @@ countdown(minutes = 10)
 ```
 
 ::: {.notes}
-Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
+Screenshots of the Code button, the New Project dialog, and the Git tab go here once available. `.Rproj` holds RStudio project settings; `.gitignore` lists what Git should not track; the yellow ? icons mean Git sees the files but has no instruction for them yet. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
 :::
 
-## TODO: add slide for Our turn: 
+## Our turn {.smaller}
 
-- Edit README and commit on GitHub
-- Add a file to a folder
+:::: task
+Together, in your new `website` repository:
 
+{{< fa brands github >}} &nbsp; On **github.com**
 
-## TODO: At the end of each "Block" add the following slide:
+1.  Edit `README.md` and commit the change (the pencil icon, then "Commit changes").
+2.  Add a file inside a new folder (Add file \> Create new file, type `data/notes.md`).
+
+::: hand
+{{< fa note-sticky >}} &nbsp; Place the yellow sticky note on your laptop when your commit shows in the repository.
+:::
+::::
+
+```{r}
+#| echo: false
+countdown(minutes = 5)
+```
+
+## Local and remote {.smaller}
+
+::: {.r-stack}
+![](images/drawing-1-local-remote-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A local repository on your laptop."}
+
+![](images/drawing-1-local-remote-01.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A local repository and a remote repository on GitHub, side by side."}
+
+![](images/drawing-1-local-remote-02.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A clone arrow copying the remote repository down to the local one."}
+
+![](images/drawing-1-local-remote-03.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="Local and remote repositories connected by clone, push, and pull."}
+:::
+
+::: {.notes}
+The summary of what we just did. Advance one element per press: local repository, then the remote on GitHub, then clone, then push and pull between them.
+:::
 
 ## {.unlisted}
 
 ::: {.hand-purple style="text-align: center;"}
-Anything from Hello Quarto you'd like clarified before the break?
+Anything from creating and cloning you'd like clarified before the break?
 :::
 
 ```{r}
@@ -385,9 +417,9 @@ Anything from Hello Quarto you'd like clarified before the break?
 countdown(minutes = 2)
 ```
 
-## Take a break TODO: remove the "Leave emails alone" sentence. 
+## Take a break
 
-[Please get up and move!]{.highlight-yellow} Leave your emails alone. We continue at 11:15.
+[Please get up and move!]{.highlight-yellow}
 
 ![](images/pixel-art-tree.png){width="50%" fig-alt="Pixel art of a small character resting under a large leafy tree on a green hill, next to a gentle stream under a clear blue sky."}
 
@@ -400,49 +432,57 @@ countdown(minutes = 15)
 Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-# B3: The commit cycle (website repo) {background-color="#0F4C81"}
+# The commit cycle {background-color="#0F4C81"}
 
-- TODO: Opening slide on GUI and Terminal
-    - RStudio is a GUI, a graphical user interface
-    - We interact with git commands (e.g. git pull) through the GUI  by clicking the pull button
+## A button is a command {.smaller}
 
-- TODO: Also add the Arti comparison for the work in this block:
-- Arti (before)
-  - opens docx, edits text, file autosaves
-- Arti (after)
-  - opens quarto file, edits text, file autosaves, after significant changes -> pull add commit (with message describing what changes and WHY) -> push
-
-## Live drawing: the commit cycle TODO: remove as listed above
-
-[Projector goes to sleep.]{.highlight-yellow} We draw this one by hand.
+-   RStudio is a [GUI]{.highlight-yellow}, a graphical user interface.
+-   When you click **Pull** in the Git tab, RStudio runs `git pull` for you.
+-   Every button we use today [is]{.highlight-yellow} a Git command underneath. Clicking it is not a lesser path.
 
 ::: {.notes}
-Live drawing 2 (commit cycle): working files, stage, commit as labelled snapshot on the history line, push. Leave room for the history line to grow. Under 3 minutes. Fallback: images/drawing-2-commit-cycle.png.
+This is the slide for Arti: the point-and-click interface is not cheating. The push button runs git push. Say it plainly and come back to it whenever someone worries they are "not really doing Git".
 :::
 
-## The commit cycle {.smaller} 
+## Arti's commit {.smaller}
 
-TODO: Provide me with an alternative drawing based on my inpout for drawings above. I do like this one. The figure is also only placed after My turn and Your turn. It's the summary of what we did. 
+:::: columns
 
-![](images/drawing-2-commit-cycle.png){fig-align="center" width="70%" fig-alt="Digital version of the commit cycle drawing: working files move through stage and commit as a labelled snapshot on the history line, then push."}
+::: {.column width="50%"}
+### Arti (before)
 
-::: {.notes}
-Projector wakes up. Run through the digital version: working files, stage, commit as a labelled snapshot on the history line, push.
+-   opens a `.docx`
+-   edits the text
+-   the file autosaves
 :::
 
-## My turn {.smaller} TODO: as above remove and add new slide.
+::: {.column width="50%"}
+### Arti (after)
 
-:::: task
-Watch first; your turn comes next.
-
-1.  Edit `README.md`: add the line "This repo contains a personal website." Save, and spot the blue M in the Git tab.
-2.  The cycle, always in this order: [Pull, Stage, Commit, Push]{.highlight-yellow}.
-3.  Look at the history: the commit is a labelled snapshot, on GitHub too.
-4.  Now on purpose: one bad commit, and [one revert]{.highlight-yellow}.
-
-::: hand
-Follow along on the screen.
+-   opens a Quarto file
+-   edits the text, it autosaves
+-   after meaningful changes: [pull, stage, commit, push]{.highlight-yellow}
+-   the commit message says what changed [and why]{.highlight-yellow}
 :::
+
+::::
+
+## My turn {.smaller}
+
+:::: columns
+
+::: {.column width="50%"}
+![](images/lars-sit-back.png){fig-align="center" width="90%" fig-alt="Photo of the instructor at the keyboard."}
+:::
+
+::: {.column width="50%"}
+::: {.hand-purple style="margin-top: 1em;"}
+Sit back and watch.
+
+Note down any questions as they come up. We pick them up right after.
+:::
+:::
+
 ::::
 
 ::: {.notes}
@@ -450,19 +490,28 @@ Demo script:
 
 - Edit README, save, point out the blue M next to the file in the Git tab.
 - Sync in 4 steps, said as a mantra: Pull (nothing to get, but build the habit), Stage (checkbox), Commit (message: "describe the repo content"), Push. Then open the repo on GitHub and show the commit message and the file change there.
-- Revert demo, instructor only: make a deliberately bad commit (for example delete half the README), commit it, then revert it via the history; show that the history keeps both the mistake and the undo. Say the safety-net message out loud: almost everything in Git is reversible. This answers the recorded cis question "how do I take a commit back?"
+- Revert demo, instructor only: make a deliberately bad commit (for example delete half the README), commit it, then revert it via the history; show that the history keeps both the mistake and the undo. Say the safety-net message out loud: almost everything in Git is reversible. This answers the recorded learner question "how do I take a commit back?".
 - Credentials moment: hands up, who was asked for a username and password? Walk through gitcreds::gitcreds_set() in the console with the PAT from pre-work step 4. This is the moment credentials get fixed for everyone, before the afternoon depends on pushing.
 :::
 
-## Your turn {.smaller} TODO: Use a shorter version of the notes above to better describe the your turn task. make sure that the pull, stage, commit, push (PSCP) mantra is everywhere. This could go into a hand-out with the most important information and also be another hands-on exercise like the one in: https://github.com/gitforsci-dev/exercises
+## Your turn {.smaller}
 
 :::: task
-1.  Edit your `README.md`: describe your website in one sentence. Save.
-2.  Run the full cycle: [Pull, Stage, Commit, Push]{.highlight-yellow}, with a commit message that says what changed.
-3.  Open your repository on github.com and find your commit message and your change.
+The cycle, always in this order: [Pull, Stage, Commit, Push]{.highlight-yellow} (PSCP).
+
+{{< fa laptop-code >}} &nbsp; In **RStudio**
+
+1.  Edit your `README.md`: describe your website in one sentence. Save, and spot the blue M in the Git tab.
+2.  Run the full cycle: [P]{.highlight-yellow}ull, [S]{.highlight-yellow}tage, [C]{.highlight-yellow}ommit (a message that says what changed), [P]{.highlight-yellow}ush.
+
+{{< fa brands github >}} &nbsp; On **github.com**
+
+3.  Open your repository and find your commit message and your change.
 
 ::: hand
-Place the yellow sticky note on your laptop when you can see your commit on GitHub.
+{{< fa note-sticky >}} &nbsp; In the room: place the yellow sticky note on your laptop when you can see your commit on GitHub.
+
+{{< fa comment >}} &nbsp; On Zoom: write "done" in the chat.
 :::
 ::::
 
@@ -472,10 +521,37 @@ countdown(minutes = 10)
 ```
 
 ::: {.notes}
-Goal: every learner has at least 2 commits pushed to their own repo by 11:45. The revert stays instructor-only in this block; learners do not revert here.
-
-Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.
+Goal: every learner has at least 2 commits pushed to their own repo by the break. The revert stays instructor-only in this block; learners do not revert here. PSCP is the mantra; say it every time. Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at lunch.
 :::
+
+## The commit cycle {.smaller}
+
+::: {.r-stack}
+![](images/drawing-2-commit-cycle-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="Working files in your project."}
+
+![](images/drawing-2-commit-cycle-01.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="Working files moved to the staging area."}
+
+![](images/drawing-2-commit-cycle-02.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A commit as a labelled snapshot on the history line."}
+
+![](images/drawing-2-commit-cycle-03.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A second commit growing the history line."}
+
+![](images/drawing-2-commit-cycle-04.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="The commits pushed from the local history line to the remote."}
+:::
+
+::: {.notes}
+The summary of what we just did. Advance one element per press: working files, stage, commit as a labelled snapshot, the history line growing, then push.
+:::
+
+## {.unlisted}
+
+::: {.hand-purple style="text-align: center;"}
+Anything from the commit cycle you'd like clarified before we move on?
+:::
+
+```{r}
+#| echo: false
+countdown(minutes = 2)
+```
 
 # B4: Collaboration cliffhanger {background-color="#0F4C81"} TODO: different title. Team work. 
 
