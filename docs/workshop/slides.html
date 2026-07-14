@@ -185,7 +185,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_44cc55d0" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_04b46552" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -220,20 +220,37 @@ Lars Schöbitz
 </ul>
 </div>
 </section>
-<section id="meeting-you-where-you-are" class="slide level2 smaller">
+<section id="meeting-you-where-you-are" class="slide level2">
 <h2>Meeting you where you are</h2>
 
-<img data-src="slides_files/figure-revealjs/unnamed-chunk-3-1.png" width="864" class="r-stretch quarto-figure-center"><p class="caption">Self-reported experience across the cohort (pre-course survey, n = 20).</p></section>
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section id="how-you-store-your-data-today" class="slide level2">
+<h2>How you store your data today</h2>
+
+<img data-src="slides_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><aside class="notes">
+<p>Most of you already store data in machine-readable formats, which is exactly what Git and Quarto reward. The spreadsheet users are Arti’s group; the day nudges toward CSV without making a fuss about it.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="what-you-want-to-learn" class="slide level2 smaller">
 <h2>What you want to learn</h2>
-<p>From your pre-course survey (n = 20), three groups:</p>
+<p>From your pre-course survey (n = 18), three groups:</p>
 <ul>
-<li class="fragment"><span class="highlight-yellow">Covered directly today</span>: use Git without fear, the full commit cycle, branching, and collaborating and reviewing through pull requests.</li>
-<li class="fragment"><span class="highlight-yellow">Partially covered</span>: resolving merge conflicts, rebasing, staging in a systematic way. We build the foundation; the advanced moves are a natural next step.</li>
-<li class="fragment"><span class="highlight-yellow">The follow-up workshop</span>: Git together with AI coding agents. Roughly half of you asked for this. Today is the Git foundation that makes it possible.</li>
+<li class="fragment"><span class="highlight-yellow">Covered directly today (10)</span>: use Git without fear, the full commit cycle, branching, documenting a reproducible workflow, and collaborating and reviewing through pull requests.</li>
+<li class="fragment"><span class="highlight-yellow">Partially covered (1)</span>: rebasing and staging in a systematic way. We build the foundation; the advanced moves are a natural next step.</li>
+<li class="fragment"><span class="highlight-yellow">The follow-up workshop (7)</span>: Git together with AI coding agents. Today is the Git foundation that makes it possible.</li>
 </ul>
 <aside class="notes">
-<p>Counts are editorial; refresh them if the roster changes. The three buckets map onto the three personas in learner-persona.md: Arti wants to stop being afraid of Git, Bianca wants confident collaboration and pull-request review, Cem wants control and provenance of AI-assisted work. Roughly half the cohort asked for agentic-coding topics; name that and tie it back to the “not an AI workshop today” framing from the opening.</p>
+<p>Counts are editorial (n = 18); refresh them if the roster changes. The three buckets map onto the three personas in learner-persona.md: Arti wants to stop being afraid of Git, Bianca wants confident collaboration and pull-request review, Cem wants control and provenance of AI-assisted work. Around seven of you asked for agentic-coding topics; name that and tie it back to the “not an AI workshop today” framing from the opening. One off-topic answer (analysing data) folds into the R-you-will-see-not-learn framing.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -250,14 +267,17 @@ Lars Schöbitz
 <h2>Meet Arti</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
-<p>This room is diverse, and the pre-course survey shows it. For some of you the interface is entirely new; some of you are very experienced. I designed for three personas (Arti, Bianca, Cem). My <span class="highlight-yellow">focus learner is Arti</span>.</p>
+<p>Three personas describe this room (Arti, Bianca, Cem). My <span class="highlight-yellow">focus learner is Arti</span>.</p>
 <ul>
-<li><strong>Background</strong>: environmental-science post-doc, works in English, in a group of mixed Git fluency.</li>
-<li><strong>Knows</strong>: short R scripts; lives in Google Docs, Word, and email; versions files by hand; reaches for Excel over CSV. Tried Git once, an error stopped them cold.</li>
-<li><strong>Wants</strong>: to collaborate confidently, and to see that clicking push <span class="highlight-yellow">is</span> <code>git push</code>.</li>
-<li><strong>Needs</strong>: a safe-to-fail room. Almost everything in Git is reversible.</li>
+<li><strong>Background</strong>: post-doc, in a group of mixed Git fluency.</li>
+<li><strong>Knows</strong>: some R; lives in Word, Docs, and email; versions files by hand. Tried Git once, an error stopped them cold.</li>
+<li><strong>Wants</strong>: to collaborate without fear.</li>
+<li><strong>Needs</strong>: a safe-to-fail room.</li>
 </ul>
 </div><div class="column" style="width:40%;">
+<!-- Image spec for Arti: wears a hat with a rainbow on it and a shirt
+     with a train on it. Generate via the Hugging Face MCP once connected;
+     images/arti-persona.png is a placeholder until then. -->
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/arti-persona.png" class="quarto-figure quarto-figure-center" alt="Illustration of Arti, the focus learner persona."></p>
@@ -298,9 +318,9 @@ Lars Schöbitz
 <h2>Learning objectives</h2>
 <p>By the end of this workshop, you will be able to:</p>
 <ol type="1">
-<li class="fragment"><p><span class="highlight-yellow">Create</span> and <span class="highlight-yellow">clone</span> a repository, and <span class="highlight-yellow">run</span> the full pull, stage, commit, push cycle from the RStudio IDE, including <span class="highlight-yellow">reverting</span> a commit.</p></li>
-<li class="fragment"><p><span class="highlight-yellow">Create</span> a branch and <span class="highlight-yellow">open</span> a pull request, <span class="highlight-yellow">review</span> a colleague’s pull request, and <span class="highlight-yellow">merge</span> it after review.</p></li>
-<li class="fragment"><p><span class="highlight-yellow">Draw</span> a concept map of how Git and GitHub fit together.</p></li>
+<li class="fragment"><p><strong>Commit cycle</strong>: create and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.</p></li>
+<li class="fragment"><p><strong>Collaboration</strong>: create a branch and open a pull request, review a colleague’s pull request, and merge it after review.</p></li>
+<li class="fragment"><p><strong>Concept map</strong>: draw how Git and GitHub fit together.</p></li>
 </ol>
 <aside class="notes">
 <p>Bloom check: objective 1 is Apply (create, clone, run, revert are observable procedures you can check in the room); objective 2 is Apply plus Evaluate (reviewing a pull request is a judgement); objective 3 is Understand/Create (drawing the concept map externalises the mental model, and it is the measurement bookend for the day). Publish was removed as a core objective; publishing and a one-page personal website are offered as a follow-up on the website repository (profile links and bio), not dropped silently.</p>
@@ -422,7 +442,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f508745c" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_ccb5c4cc" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -534,7 +554,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_37a12801" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_b3e795ce" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -566,7 +586,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_a0d98b4d" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_b047b9a5" minutes="5" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -575,27 +595,27 @@ Lars Schöbitz
 <div class="r-stack">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/drawing-1-local-remote-00.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="A local repository on your laptop."></p>
+<p><img data-src="images/drawing-1-local-remote-00.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:60.0%" alt="A remote repository, drawn as a cloud labelled GitHub, at the top."></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/drawing-1-local-remote-01.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="A local repository and a remote repository on GitHub, side by side."></p>
+<p><img data-src="images/drawing-1-local-remote-01.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:60.0%" alt="The remote cloud on top and a local repository box on your laptop below."></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/drawing-1-local-remote-02.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="A clone arrow copying the remote repository down to the local one."></p>
+<p><img data-src="images/drawing-1-local-remote-02.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:60.0%" alt="A clone arrow pointing down from the remote cloud to the local box."></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/drawing-1-local-remote-03.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:70.0%" alt="Local and remote repositories connected by clone, push, and pull."></p>
+<p><img data-src="images/drawing-1-local-remote-03.png" class="fragment fade-in quarto-figure quarto-figure-center" style="width:60.0%" alt="Remote cloud on top, local box below, joined by clone and pull arrows pointing down and a push arrow pointing up."></p>
 </figure>
 </div>
 </div>
 <aside class="notes">
-<p>The summary of what we just did. Advance one element per press: local repository, then the remote on GitHub, then clone, then push and pull between them.</p>
+<p>The summary of what we just did. Advance one element per press: the remote on GitHub (a cloud), then your local repository, then clone down, then push up and pull down.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -615,7 +635,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_7dbe7b5d" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_bd7e3741" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section>
@@ -625,7 +645,7 @@ Lars Schöbitz
 
 <img data-src="images/pixel-art-tree.png" style="width:50.0%" alt="Pixel art of a small character resting under a large leafy tree on a green hill, next to a gentle stream under a clear blue sky." class="r-stretch"><div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_92f3d2a8" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_e6c7132a" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <div class="footer">
@@ -733,7 +753,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_9271ddcd" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_20e2dd7c" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -800,7 +820,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_3c989a1b" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_5018e571" minutes="2" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 </section></section>
@@ -887,7 +907,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_736be31c" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_f18104c1" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -956,7 +976,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_0f857079" minutes="45" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_8be918d5" minutes="45" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -1055,7 +1075,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_97c7b40b" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_0b6bff9c" minutes="10" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -1205,7 +1225,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_c30a83e3" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_123977eb" minutes="15" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">
@@ -1280,7 +1300,7 @@ Lars Schöbitz
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_3ee74dbe" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_dd3a9bcf" minutes="8" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
 <aside class="notes">

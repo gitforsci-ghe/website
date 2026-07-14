@@ -18,7 +18,7 @@
     "href": "workshop/slides.html#learning-objectives",
     "title": "GitHub for Collaboration",
     "section": "Learning objectives",
-    "text": "Learning objectives\nBy the end of this workshop, you will be able to:\n\nCreate and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.\nCreate a branch and open a pull request, review a colleague’s pull request, and merge it after review.\nDraw a concept map of how Git and GitHub fit together.\n\n\nBloom check: objective 1 is Apply (create, clone, run, revert are observable procedures you can check in the room); objective 2 is Apply plus Evaluate (reviewing a pull request is a judgement); objective 3 is Understand/Create (drawing the concept map externalises the mental model, and it is the measurement bookend for the day). Publish was removed as a core objective; publishing and a one-page personal website are offered as a follow-up on the website repository (profile links and bio), not dropped silently."
+    "text": "Learning objectives\nBy the end of this workshop, you will be able to:\n\nCommit cycle: create and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.\nCollaboration: create a branch and open a pull request, review a colleague’s pull request, and merge it after review.\nConcept map: draw how Git and GitHub fit together.\n\n\nBloom check: objective 1 is Apply (create, clone, run, revert are observable procedures you can check in the room); objective 2 is Apply plus Evaluate (reviewing a pull request is a judgement); objective 3 is Understand/Create (drawing the concept map externalises the mental model, and it is the measurement bookend for the day). Publish was removed as a core objective; publishing and a one-page personal website are offered as a follow-up on the website repository (profile links and bio), not dropped silently."
   },
   {
     "objectID": "workshop/slides.html#teaching-strategy",
@@ -88,7 +88,7 @@
     "href": "workshop/slides.html#local-and-remote",
     "title": "GitHub for Collaboration",
     "section": "Local and remote",
-    "text": "Local and remote\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe summary of what we just did. Advance one element per press: local repository, then the remote on GitHub, then clone, then push and pull between them."
+    "text": "Local and remote\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe summary of what we just did. Advance one element per press: the remote on GitHub (a cloud), then your local repository, then clone down, then push up and pull down."
   },
   {
     "objectID": "workshop/slides.html#my-turn",
@@ -675,21 +675,21 @@
     "href": "workshop/slides.html#meeting-you-where-you-are",
     "title": "GitHub for Collaboration",
     "section": "Meeting you where you are",
-    "text": "Meeting you where you are\n\nSelf-reported experience across the cohort (pre-course survey, n = 20)."
+    "text": "Meeting you where you are"
   },
   {
     "objectID": "workshop/slides.html#what-you-want-to-learn",
     "href": "workshop/slides.html#what-you-want-to-learn",
     "title": "GitHub for Collaboration",
     "section": "What you want to learn",
-    "text": "What you want to learn\nFrom your pre-course survey (n = 20), three groups:\n\nCovered directly today: use Git without fear, the full commit cycle, branching, and collaborating and reviewing through pull requests.\nPartially covered: resolving merge conflicts, rebasing, staging in a systematic way. We build the foundation; the advanced moves are a natural next step.\nThe follow-up workshop: Git together with AI coding agents. Roughly half of you asked for this. Today is the Git foundation that makes it possible.\n\n\nCounts are editorial; refresh them if the roster changes. The three buckets map onto the three personas in learner-persona.md: Arti wants to stop being afraid of Git, Bianca wants confident collaboration and pull-request review, Cem wants control and provenance of AI-assisted work. Roughly half the cohort asked for agentic-coding topics; name that and tie it back to the “not an AI workshop today” framing from the opening."
+    "text": "What you want to learn\nFrom your pre-course survey (n = 18), three groups:\n\nCovered directly today (10): use Git without fear, the full commit cycle, branching, documenting a reproducible workflow, and collaborating and reviewing through pull requests.\nPartially covered (1): rebasing and staging in a systematic way. We build the foundation; the advanced moves are a natural next step.\nThe follow-up workshop (7): Git together with AI coding agents. Today is the Git foundation that makes it possible.\n\n\nCounts are editorial (n = 18); refresh them if the roster changes. The three buckets map onto the three personas in learner-persona.md: Arti wants to stop being afraid of Git, Bianca wants confident collaboration and pull-request review, Cem wants control and provenance of AI-assisted work. Around seven of you asked for agentic-coding topics; name that and tie it back to the “not an AI workshop today” framing from the opening. One off-topic answer (analysing data) folds into the R-you-will-see-not-learn framing."
   },
   {
     "objectID": "workshop/slides.html#meet-arti",
     "href": "workshop/slides.html#meet-arti",
     "title": "GitHub for Collaboration",
     "section": "Meet Arti",
-    "text": "Meet Arti\n\n\nThis room is diverse, and the pre-course survey shows it. For some of you the interface is entirely new; some of you are very experienced. I designed for three personas (Arti, Bianca, Cem). My focus learner is Arti.\n\nBackground: environmental-science post-doc, works in English, in a group of mixed Git fluency.\nKnows: short R scripts; lives in Google Docs, Word, and email; versions files by hand; reaches for Excel over CSV. Tried Git once, an error stopped them cold.\nWants: to collaborate confidently, and to see that clicking push is git push.\nNeeds: a safe-to-fail room. Almost everything in Git is reversible.\n\n\n\n\n\n\n\n\n\nLearner personas in the Greg Wilson / Teaching Tech Together sense, synthesised from this cohort’s survey (see learner-persona.md). Say the focus-learner idea out loud: I teach to Arti, which also serves Bianca (early finisher, curious about the command behind each click) and Cem (wants AI provenance; today is the foundation, agentic coding is the follow-up)."
+    "text": "Meet Arti\n\n\nThree personas describe this room (Arti, Bianca, Cem). My focus learner is Arti.\n\nBackground: post-doc, in a group of mixed Git fluency.\nKnows: some R; lives in Word, Docs, and email; versions files by hand. Tried Git once, an error stopped them cold.\nWants: to collaborate without fear.\nNeeds: a safe-to-fail room.\n\n\n\n\n\n\n\n\n\n\nLearner personas in the Greg Wilson / Teaching Tech Together sense, synthesised from this cohort’s survey (see learner-persona.md). Say the focus-learner idea out loud: I teach to Arti, which also serves Bianca (early finisher, curious about the command behind each click) and Cem (wants AI provenance; today is the foundation, agentic coding is the follow-up)."
   },
   {
     "objectID": "workshop/slides.html#course-structure",
@@ -774,5 +774,26 @@
     "title": "GitHub for Collaboration",
     "section": "Your turn",
     "text": "Your turn\n\n   On github.com\n\nOpen a pull request from your dev branch. Title it so your reviewer knows what changed.\nRequest a review from your partner (the username on your sticky note).\nReview your partner’s pull request: at least one line comment, then submit the review.\nAfter your review arrives: merge the PR, confirm.\n\n   In RStudio\n\nSwitch to main, Pull, and switch back to dev.\n\nPartner not ready? Review the seed PR in your team repository instead. Nobody waits on anybody.\n\n   In the room: place the yellow sticky note on your laptop after the switch back to dev.\n   On Zoom: write “done” in the chat.\n\n\n\n\n\n\n\n\nDefault path: partner-pair review with the sticky-note pairs. Fallback path, on the slide itself: every team repo has a pre-opened seed PR (“Seed: suggestions to review”), so the exercise never blocks on a partner’s progress.\nTarget: every learner opens a PR, writes at least one line comment, merges, and pulls. This block is protected: if the day is behind, cut elsewhere, never this. Bounded regroup: 2 minutes, then park-and-pair."
+  },
+  {
+    "objectID": "workshop/slides.html#todo-text-too-small.-remove-white-box-or-make-the-same-colour-as-slide.-labels-dont-fit-on-columns.-should-state-the-question-either-in-slide-title-or-in-labstitle-include-primary-data-format-as-variable.-todo-i-have-removed-two-participoants-recreate-text-and-pots",
+    "href": "workshop/slides.html#todo-text-too-small.-remove-white-box-or-make-the-same-colour-as-slide.-labels-dont-fit-on-columns.-should-state-the-question-either-in-slide-title-or-in-labstitle-include-primary-data-format-as-variable.-todo-i-have-removed-two-participoants-recreate-text-and-pots",
+    "title": "GitHub for Collaboration",
+    "section": "TODO: text too small. remove white box or make the same colour as slide. labels don’t fit on columns. should state the question either in slide title or in labs(title) include primary data format as variable. TODO: i have removed two participoants recreate text and pots",
+    "text": "TODO: text too small. remove white box or make the same colour as slide. labels don’t fit on columns. should state the question either in slide title or in labs(title) include primary data format as variable. TODO: i have removed two participoants recreate text and pots\n\nSelf-reported experience across the cohort (pre-course survey, n = 20)."
+  },
+  {
+    "objectID": "workshop/slides.html#what-you-want-to-learn-.smaller-todo-refresh-counts",
+    "href": "workshop/slides.html#what-you-want-to-learn-.smaller-todo-refresh-counts",
+    "title": "GitHub for Collaboration",
+    "section": "What you want to learn {.smaller} TODO: refresh counts",
+    "text": "What you want to learn {.smaller} TODO: refresh counts\nFrom your pre-course survey (n = 20), three groups:\n\nCovered directly today: use Git without fear, the full commit cycle, branching, and collaborating and reviewing through pull requests.\nPartially covered: resolving merge conflicts, rebasing, staging in a systematic way. We build the foundation; the advanced moves are a natural next step.\nThe follow-up workshop: Git together with AI coding agents. Roughly half of you asked for this. Today is the Git foundation that makes it possible.\n\n\nCounts are editorial; refresh them if the roster changes. The three buckets map onto the three personas in learner-persona.md: Arti wants to stop being afraid of Git, Bianca wants confident collaboration and pull-request review, Cem wants control and provenance of AI-assisted work. Roughly half the cohort asked for agentic-coding topics; name that and tie it back to the “not an AI workshop today” framing from the opening."
+  },
+  {
+    "objectID": "workshop/slides.html#how-you-store-your-data-today",
+    "href": "workshop/slides.html#how-you-store-your-data-today",
+    "title": "GitHub for Collaboration",
+    "section": "How you store your data today",
+    "text": "How you store your data today\n\n\nMost of you already store data in machine-readable formats, which is exactly what Git and Quarto reward. The spreadsheet users are Arti’s group; the day nudges toward CSV without making a fuss about it."
   }
 ]

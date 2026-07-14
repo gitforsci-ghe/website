@@ -30,7 +30,7 @@ library(countdown)
 library(ggthemes)
 ```
 
-# Welcome! {{< fa hand >}} {background-color="#0F4C81"}
+# Welcome! {{< fa hand >}} {background-color="{{< var brand.section-bg >}}"}
 
 ## Meet the lecturer {.smaller}
 
@@ -83,16 +83,15 @@ Defuse the AI-agent expectation gap now, in minute 5, not in minute 90. Say the 
 -   **RStudio IDE** -> our interface, could also be VS Code, Positron IDE, GitHub Desktop, and others
 :::
 
-## Meeting you where you are {.smaller}
+## Meeting you where you are
 
 ```{r}
+#| label: setup-survey
 #| echo: false
-#| fig-cap: "Self-reported experience across the cohort (pre-course survey, n = 20)."
-#| fig-width: 9
-#| fig-height: 5.5
 
 survey <- read_csv(here::here("data/private/participants-raw.csv"),
                    show_col_types = FALSE)
+n_survey <- nrow(survey)
 
 exp_levels_prog <- c(
   "I have none."                                                              = "None",
@@ -108,69 +107,114 @@ exp_levels_git <- c(
   "I have used Git extensively for collaborative development, including advanced workflows (e.g., pull requests, rebasing, resolving complex merge conflicts)." = "Extensively"
 )
 
-# each experience column is ordered novice -> expert; rank captures that
-# order so one shared colour scale reads the same across all three domains
-prog_long <- survey |>
-  select(
-    `Programming (general)` = experience_programming_general,
-    `Programming (R)`       = experience_programming_r
-  ) |>
-  pivot_longer(everything(), names_to = "domain", values_to = "raw") |>
-  mutate(
-    label = recode(raw, !!!exp_levels_prog),
-    rank  = match(label, unname(exp_levels_prog))
-  )
+# count one experience column, keeping an in-domain novice->expert rank (1..4)
+count_domain <- function(col, levels, domain) {
+  tibble(raw = survey[[col]]) |>
+    mutate(
+      label  = factor(recode(raw, !!!levels), levels = unname(levels)),
+      rank   = as.integer(label),
+      domain = domain
+    ) |>
+    count(domain, rank, .drop = FALSE)
+}
 
-git_long <- survey |>
-  select(`Git` = experience_git) |>
-  pivot_longer(everything(), names_to = "domain", values_to = "raw") |>
-  mutate(
-    label = recode(raw, !!!exp_levels_git),
-    rank  = match(label, unname(exp_levels_git))
-  )
-
-exp_counts <- bind_rows(git_long, prog_long) |>
+exp_counts <- bind_rows(
+  count_domain("experience_git",                 exp_levels_git,  "Git experience"),
+  count_domain("experience_programming_general", exp_levels_prog, "Programming experience"),
+  count_domain("experience_programming_r",       exp_levels_prog, "R experience")
+) |>
+  filter(!is.na(rank)) |>
   mutate(domain = factor(domain,
-                         levels = c("Git", "Programming (general)", "Programming (R)"))) |>
-  count(domain, rank, label, name = "n")
+    levels = c("Git experience", "Programming experience", "R experience")))
+```
 
-ggplot(exp_counts, aes(x = domain, y = n, fill = factor(rank),
-                       group = rank)) +
-  geom_col(position = position_stack(reverse = TRUE)) +
-  geom_text(aes(label = ifelse(n > 0, paste0(label, " (", n, ")"), "")),
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 5
+
+ggplot(exp_counts, aes(x = domain, y = n, fill = factor(rank), group = rank)) +
+  geom_col(position = position_stack(reverse = TRUE), width = 0.7) +
+  geom_text(aes(label = ifelse(n > 0, n, "")),
             position = position_stack(vjust = 0.5, reverse = TRUE),
-            size = 3.2, colour = "white") +
+            size = 5.5, colour = "white", fontface = "bold") +
   facet_wrap(~ domain, ncol = 1, scales = "free_y", strip.position = "left") +
-  scale_fill_viridis_d(
-    name   = NULL,
-    option = "cividis",
-    labels = c("least experienced", "", "", "most experienced")
-  ) +
+  scale_fill_viridis_d(name = NULL, option = "cividis",
+                       labels = c("none / never", "a little", "regular", "advanced")) +
   coord_flip() +
-  labs(x = NULL, y = "Participants") +
-  theme_minimal(base_size = 15) +
+  labs(title = paste0("How much experience do you bring?  (n = ", n_survey, ")"),
+       x = NULL, y = NULL) +
+  theme_minimal(base_size = 17) +
   theme(
-    axis.text.y  = element_blank(),
-    axis.ticks.y = element_blank(),
-    strip.placement = "outside",
-    strip.text.y.left = element_text(angle = 0, hjust = 1, face = "bold"),
-    legend.position = "bottom",
-    panel.grid.major.y = element_blank()
+    plot.title        = element_text(face = "bold", size = 17, hjust = 0),
+    axis.text.y       = element_blank(),
+    axis.ticks.y      = element_blank(),
+    axis.text.x       = element_blank(),
+    strip.placement   = "outside",
+    strip.text.y.left = element_text(angle = 0, hjust = 1, face = "bold", size = 15),
+    legend.position   = "bottom",
+    legend.text       = element_text(size = 13),
+    panel.grid        = element_blank(),
+    plot.background   = element_rect(fill = NA, colour = NA),
+    panel.background  = element_rect(fill = NA, colour = NA)
   )
 ```
 
+## How you store your data today
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 4.2
+
+fmt_levels <- c(
+  "In a spreadsheet-based format (e.g MS Excel xlsx or Google Sheets)" = "Spreadsheets (Excel, Sheets)",
+  "In machine readible files (e.g. CSV, JSON)"                          = "Machine-readable (CSV, JSON)",
+  "Mixed: spreadsheet, machine readible, relational db"                 = "Mixed",
+  "dta"                                                                 = "Other (Stata .dta)"
+)
+
+fmt <- tibble(raw = survey$primary_data_format) |>
+  mutate(label = factor(recode(raw, !!!fmt_levels), levels = unname(fmt_levels))) |>
+  count(label, .drop = FALSE) |>
+  mutate(is_csv = label == "Machine-readable (CSV, JSON)")
+
+ggplot(fmt, aes(x = fct_rev(label), y = n, fill = is_csv)) +
+  geom_col(width = 0.68) +
+  geom_text(aes(label = n), hjust = -0.4, size = 5.5, fontface = "bold", colour = "#1e1e1e") +
+  scale_fill_manual(values = c("TRUE" = "#0F4C81", "FALSE" = "#b9b3a9"), guide = "none") +
+  coord_flip(clip = "off") +
+  expand_limits(y = max(fmt$n) + 1) +
+  labs(title = paste0("How do you store your data today?  (n = ", n_survey, ")"),
+       x = NULL, y = NULL) +
+  theme_minimal(base_size = 17) +
+  theme(
+    plot.title       = element_text(face = "bold", size = 17, hjust = 0),
+    axis.text.x      = element_blank(),
+    axis.text.y      = element_text(size = 14),
+    panel.grid       = element_blank(),
+    plot.background  = element_rect(fill = NA, colour = NA),
+    panel.background = element_rect(fill = NA, colour = NA),
+    plot.margin      = margin(6, 30, 6, 6)
+  )
+```
+
+::: {.notes}
+Most of you already store data in machine-readable formats, which is exactly what Git and Quarto reward. The spreadsheet users are Arti's group; the day nudges toward CSV without making a fuss about it.
+:::
+
 ## What you want to learn {.smaller}
 
-From your pre-course survey (n = 20), three groups:
+From your pre-course survey (n = 18), three groups:
 
 ::: incremental
--   [Covered directly today]{.highlight-yellow}: use Git without fear, the full commit cycle, branching, and collaborating and reviewing through pull requests.
--   [Partially covered]{.highlight-yellow}: resolving merge conflicts, rebasing, staging in a systematic way. We build the foundation; the advanced moves are a natural next step.
--   [The follow-up workshop]{.highlight-yellow}: Git together with AI coding agents. Roughly half of you asked for this. Today is the Git foundation that makes it possible.
+-   [Covered directly today (10)]{.highlight-yellow}: use Git without fear, the full commit cycle, branching, documenting a reproducible workflow, and collaborating and reviewing through pull requests.
+-   [Partially covered (1)]{.highlight-yellow}: rebasing and staging in a systematic way. We build the foundation; the advanced moves are a natural next step.
+-   [The follow-up workshop (7)]{.highlight-yellow}: Git together with AI coding agents. Today is the Git foundation that makes it possible.
 :::
 
 ::: {.notes}
-Counts are editorial; refresh them if the roster changes. The three buckets map onto the three personas in learner-persona.md: Arti wants to stop being afraid of Git, Bianca wants confident collaboration and pull-request review, Cem wants control and provenance of AI-assisted work. Roughly half the cohort asked for agentic-coding topics; name that and tie it back to the "not an AI workshop today" framing from the opening.
+Counts are editorial (n = 18); refresh them if the roster changes. The three buckets map onto the three personas in learner-persona.md: Arti wants to stop being afraid of Git, Bianca wants confident collaboration and pull-request review, Cem wants control and provenance of AI-assisted work. Around seven of you asked for agentic-coding topics; name that and tie it back to the "not an AI workshop today" framing from the opening. One off-topic answer (analysing data) folds into the R-you-will-see-not-learn framing.
 :::
 
 ## Meet Arti {.smaller}
@@ -178,15 +222,18 @@ Counts are editorial; refresh them if the roster changes. The three buckets map 
 :::: columns
 
 ::: {.column width="60%"}
-This room is diverse, and the pre-course survey shows it. For some of you the interface is entirely new; some of you are very experienced. I designed for three personas (Arti, Bianca, Cem). My [focus learner is Arti]{.highlight-yellow}.
+Three personas describe this room (Arti, Bianca, Cem). My [focus learner is Arti]{.highlight-yellow}.
 
--   **Background**: environmental-science post-doc, works in English, in a group of mixed Git fluency.
--   **Knows**: short R scripts; lives in Google Docs, Word, and email; versions files by hand; reaches for Excel over CSV. Tried Git once, an error stopped them cold.
--   **Wants**: to collaborate confidently, and to see that clicking push [is]{.highlight-yellow} `git push`.
--   **Needs**: a safe-to-fail room. Almost everything in Git is reversible.
+-   **Background**: post-doc, in a group of mixed Git fluency.
+-   **Knows**: some R; lives in Word, Docs, and email; versions files by hand. Tried Git once, an error stopped them cold.
+-   **Wants**: to collaborate without fear.
+-   **Needs**: a safe-to-fail room.
 :::
 
 ::: {.column width="40%"}
+<!-- Image spec for Arti: wears a hat with a rainbow on it and a shirt
+     with a train on it. Generate via the Hugging Face MCP once connected;
+     images/arti-persona.png is a placeholder until then. -->
 ![](images/arti-persona.png){fig-align="center" fig-alt="Illustration of Arti, the focus learner persona."}
 :::
 
@@ -215,11 +262,11 @@ Watch for these on every "Your turn" slide.
 By the end of this workshop, you will be able to:
 
 ::: incremental
-1.  [Create]{.highlight-yellow} and [clone]{.highlight-yellow} a repository, and [run]{.highlight-yellow} the full pull, stage, commit, push cycle from the RStudio IDE, including [reverting]{.highlight-yellow} a commit.
+1.  **Commit cycle**: create and clone a repository, and run the full pull, stage, commit, push cycle from the RStudio IDE, including reverting a commit.
 
-2.  [Create]{.highlight-yellow} a branch and [open]{.highlight-yellow} a pull request, [review]{.highlight-yellow} a colleague's pull request, and [merge]{.highlight-yellow} it after review.
+2.  **Collaboration**: create a branch and open a pull request, review a colleague's pull request, and merge it after review.
 
-3.  [Draw]{.highlight-yellow} a concept map of how Git and GitHub fit together.
+3.  **Concept map**: draw how Git and GitHub fit together.
 :::
 
 ::: {.notes}
@@ -284,7 +331,7 @@ One single prompt, not a fused double question. Expected content: email attachme
 Bounded regroup: 2 minutes, then park-and-pair; 1:1 fix at the next break.
 :::
 
-# Create and clone {background-color="#0F4C81"}
+# Create and clone {background-color="{{< var brand.section-bg >}}"}
 
 ## Arti's project {.smaller}
 
@@ -393,17 +440,17 @@ countdown(minutes = 5)
 ## Local and remote {.smaller}
 
 ::: {.r-stack}
-![](images/drawing-1-local-remote-00.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A local repository on your laptop."}
+![](images/drawing-1-local-remote-00.png){.fragment .fade-in width="60%" fig-align="center" fig-alt="A remote repository, drawn as a cloud labelled GitHub, at the top."}
 
-![](images/drawing-1-local-remote-01.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A local repository and a remote repository on GitHub, side by side."}
+![](images/drawing-1-local-remote-01.png){.fragment .fade-in width="60%" fig-align="center" fig-alt="The remote cloud on top and a local repository box on your laptop below."}
 
-![](images/drawing-1-local-remote-02.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="A clone arrow copying the remote repository down to the local one."}
+![](images/drawing-1-local-remote-02.png){.fragment .fade-in width="60%" fig-align="center" fig-alt="A clone arrow pointing down from the remote cloud to the local box."}
 
-![](images/drawing-1-local-remote-03.png){.fragment .fade-in width="70%" fig-align="center" fig-alt="Local and remote repositories connected by clone, push, and pull."}
+![](images/drawing-1-local-remote-03.png){.fragment .fade-in width="60%" fig-align="center" fig-alt="Remote cloud on top, local box below, joined by clone and pull arrows pointing down and a push arrow pointing up."}
 :::
 
 ::: {.notes}
-The summary of what we just did. Advance one element per press: local repository, then the remote on GitHub, then clone, then push and pull between them.
+The summary of what we just did. Advance one element per press: the remote on GitHub (a cloud), then your local repository, then clone down, then push up and pull down.
 :::
 
 ## {.unlisted}
@@ -432,7 +479,7 @@ countdown(minutes = 15)
 Image generated with [DALL-E 3 by OpenAI](https://openai.com/blog/dall-e/)
 :::
 
-# The commit cycle {background-color="#0F4C81"}
+# The commit cycle {background-color="{{< var brand.section-bg >}}"}
 
 ## A button is a command {.smaller}
 
@@ -553,7 +600,7 @@ Anything from the commit cycle you'd like clarified before we move on?
 countdown(minutes = 2)
 ```
 
-# Team work {background-color="#0F4C81"}
+# Team work {background-color="{{< var brand.section-bg >}}"}
 
 ## Arti joins a team {.smaller}
 
@@ -667,7 +714,7 @@ countdown(minutes = 45)
 Return time is set on the day (timing to be finalised with a fresh schedule). The afternoon starts hands-on as the re-energizer; anyone who arrives late can join mid-exercise without missing slides.
 :::
 
-# Branch {background-color="#0F4C81"}
+# Branch {background-color="{{< var brand.section-bg >}}"}
 
 ## Arti's branch {.smaller}
 
@@ -768,7 +815,7 @@ Team repos are `washinvestments-<team>`, created from the reworked manuscript te
 The summary of what we just did. Advance one element per press: the main line, the dev branch splitting off, commits landing on the branch, and the merge point left empty until the pull request in the next block.
 :::
 
-# Pull request, review, merge {background-color="#0F4C81"}
+# Pull request, review, merge {background-color="{{< var brand.section-bg >}}"}
 
 ## Arti's review {.smaller}
 
@@ -874,7 +921,7 @@ Target: every learner opens a PR, writes at least one line comment, merges, and 
 The summary of what we just did. Advance one element per press: the open merge point from the branching drawing, the pull request, the human review at the join, then the merge.
 :::
 
-# Concept map revisit and wrap-up {background-color="#0F4C81"}
+# Concept map revisit and wrap-up {background-color="{{< var brand.section-bg >}}"}
 
 ## Your turn: your map, revisited {.smaller}
 

@@ -71,6 +71,66 @@ sketch_arrow <- function(x0, y0, x1, y1, col = col_ink, lwd = 5, label = NULL,
     sketch_text(mx, my + lab_dy, label, cex = 1.7, col = col, font = 2)
 }
 
+# clean (non-wobbly) helpers, used where a tidy diagram reads better than a sketch
+
+# a rounded rectangle with straight edges
+clean_box <- function(xc, yc, w, h, fill = col_fill_b, border = col_blue, lwd = 5) {
+  x0 <- xc - w/2; x1 <- xc + w/2; y0 <- yc - h/2; y1 <- yc + h/2
+  r  <- 26
+  # rounded corners via a polygon with arc segments
+  arc <- function(cx, cy, a0, a1) {
+    a <- seq(a0, a1, length.out = 12)
+    cbind(cx + r*cos(a), cy + r*sin(a))
+  }
+  pts <- rbind(
+    arc(x1 - r, y0 + r, -pi/2, 0),
+    arc(x1 - r, y1 - r, 0, pi/2),
+    arc(x0 + r, y1 - r, pi/2, pi),
+    arc(x0 + r, y0 + r, pi, 3*pi/2)
+  )
+  polygon(pts[,1], pts[,2], col = fill, border = border, lwd = lwd)
+}
+
+# a cloud shape (overlapping circles) for the remote
+clean_cloud <- function(xc, yc, s = 1, fill = col_fill_g, border = col_green, lwd = 5) {
+  bumps <- list(c(-150, -10, 78), c(-70, 40, 92), c(30, 48, 96),
+                c(120, 22, 82), c(150, -18, 70), c(0, -34, 120))
+  for (b in bumps) {
+    a <- seq(0, 2*pi, length.out = 60)
+    polygon(xc + b[1]*s + b[3]*s*cos(a), yc + b[2]*s + b[3]*s*sin(a),
+            col = fill, border = NA)
+  }
+  # single outline pass on the union silhouette (approximate with the outer bumps)
+  for (b in bumps) {
+    a <- seq(0, 2*pi, length.out = 60)
+    lines(xc + b[1]*s + b[3]*s*cos(a), yc + b[2]*s + b[3]*s*sin(a),
+          col = fill, lwd = 1)
+  }
+  # a clean base line + top arcs to suggest a cloud edge
+  a <- seq(0, 2*pi, length.out = 200)
+  # redraw outer bumps' borders only on top
+  for (b in bumps[1:5]) {
+    aa <- seq(0.05*pi, 0.95*pi, length.out = 40)
+    lines(xc + b[1]*s + b[3]*s*cos(aa), yc + b[2]*s + b[3]*s*sin(aa),
+          col = border, lwd = lwd)
+  }
+}
+
+# a straight arrow with a filled head
+clean_arrow <- function(x0, y0, x1, y1, col = col_ink, lwd = 6, label = NULL,
+                        lab_side = 1) {
+  lines(c(x0, x1), c(y0, y1), col = col, lwd = lwd, lend = 1)
+  ang <- atan2(y1 - y0, x1 - x0); hl <- 34; hw <- 0.42
+  polygon(c(x1, x1 - hl*cos(ang - hw), x1 - hl*cos(ang + hw)),
+          c(y1, y1 - hl*sin(ang - hw), y1 - hl*sin(ang + hw)),
+          col = col, border = col)
+  if (!is.null(label)) {
+    mx <- (x0 + x1)/2; my <- (y0 + y1)/2
+    text(mx + 46*lab_side, my, label, cex = 1.6, col = col, font = 2,
+         family = "Comic Sans MS")
+  }
+}
+
 open_frame <- function(path) {
   ragg::agg_png(path, width = W, height = H, background = col_paper, res = 150)
   par(mar = c(0,0,0,0))
@@ -92,24 +152,28 @@ save_frames <- function(base, draw_steps) {
 }
 
 # ---- Drawing 1: local and remote -----------------------------------------
-lx <- 430; rx <- 1170; cy <- 560
+# remote (cloud) on top, local (box) below; clean straight directed arrows.
+cx <- 800; ry <- 780; ly <- 250   # remote top, local bottom
 save_frames("drawing-1-local-remote", list(
-  function() {                                   # 00 local
-    sketch_box(lx, cy, 360, 200, col_fill_b, col_blue)
-    sketch_text(lx, cy + 20, "local")
-    sketch_text(lx, cy - 34, "your laptop", cex = 1.5, col = col_blue)
+  function() {                                   # 00 remote (cloud) on top
+    clean_cloud(cx, ry, s = 1, fill = col_fill_g, border = col_green)
+    text(cx, ry + 6, "remote", cex = 2.3, font = 1, family = "Comic Sans MS")
+    text(cx, ry - 58, "GitHub", cex = 1.5, col = col_green, family = "Comic Sans MS")
   },
-  function() {                                   # 01 remote
-    sketch_box(rx, cy, 360, 200, col_fill_g, col_green)
-    sketch_text(rx, cy + 20, "remote")
-    sketch_text(rx, cy - 34, "GitHub", cex = 1.5, col = col_green)
+  function() {                                   # 01 local (box) below
+    clean_box(cx, ly, 420, 180, col_fill_b, col_blue)
+    text(cx, ly + 12, "local", cex = 2.3, family = "Comic Sans MS")
+    text(cx, ly - 46, "your laptop", cex = 1.5, col = col_blue, family = "Comic Sans MS")
   },
-  function()                                     # 02 clone
-    sketch_arrow(rx - 190, cy + 40, lx + 190, cy + 40, col_violet,
-                 label = "clone", curve = 0),
-  function()                                     # 03 push / pull
-    sketch_arrow(lx + 190, cy - 40, rx - 190, cy - 40, col_orange,
-                 label = "push / pull", lab_dy = -46, curve = 0)
+  function()                                     # 02 clone: remote -> local
+    clean_arrow(cx - 250, ry - 90, cx - 250, ly + 100, col_violet,
+                label = "clone", lab_side = -1.6),
+  function() {                                   # 03 push (up) and pull (down)
+    clean_arrow(cx + 170, ly + 100, cx + 170, ry - 90, col_orange,
+                label = "push", lab_side = 1.4)
+    clean_arrow(cx + 320, ry - 90, cx + 320, ly + 100, col_blue,
+                label = "pull", lab_side = 1.4)
+  }
 ))
 
 # ---- Drawing 2: the commit cycle -----------------------------------------
