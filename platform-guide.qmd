@@ -1,0 +1,68 @@
+---
+title: "{{< fa signs-post >}} Which tool does what? Git, GitHub, and Quarto"
+format: html
+---
+
+During the workshop, several tools appear on your screen at the same time, and their names sound alike. It is completely normal to lose track of which one is doing what. This page is the plain-English map: what each tool is, and which tool runs each command or button you use during the day.
+
+## The tools in one sentence each
+
+**Git** is a version control program that runs [on your computer]{.highlight-yellow}. It records the history of your files: every commit, every branch, every merge. Git works even without an internet connection.
+
+**GitHub** is a website ([github.com](https://github.com)) that hosts a copy of your Git repository [in the cloud]{.highlight-yellow}. Everything that involves other people happens here: pull requests, reviews, issues, and forks. GitHub is built on top of Git, but it is a separate product made by a separate company.
+
+**Quarto** is a publishing program that turns a plain-text document (a `.qmd` file) into a finished report, website, or presentation. When you click **Render**, Quarto runs your R code and builds the output document. Quarto knows nothing about version control.
+
+**RStudio** is the cockpit where you do all of this. It is not a platform of its own: the buttons in RStudio run Git, Quarto, or R commands for you. When you click **Push** in the Git pane, RStudio runs `git push`. [A button is a command.]{.highlight-yellow}
+
+## A rule of thumb
+
+-   If it records or moves the [history of your files]{.highlight-yellow}, it is **Git**.
+-   If it involves [another person or a web browser]{.highlight-yellow}, it is **GitHub**.
+-   If it turns [text and code into a document]{.highlight-yellow}, it is **Quarto**.
+-   If it is a [button you click]{.highlight-yellow}, it is **RStudio** running one of the above for you.
+
+## Every action of the day, mapped
+
+| What you do | Where you click | Command underneath | Technology |
+|------|------|------|------|
+| Create a repository | GitHub: **New repository** | — | GitHub |
+| Clone a repository | RStudio: **New Project > Version Control > Git** | `git clone` | Git |
+| Pull | RStudio Git pane: **Pull** | `git pull` | Git |
+| Stage a file | RStudio Git pane: **Staged** checkbox | `git add` | Git |
+| Commit | RStudio Git pane: **Commit** | `git commit -m "message"` | Git |
+| Push | RStudio Git pane: **Push** | `git push` | Git |
+| Create a branch | RStudio Git pane: **New Branch** | `git branch`, then `git switch` | Git |
+| Switch branches | RStudio Git pane: branch dropdown | `git switch` | Git |
+| Open a pull request | GitHub: **Compare & pull request** | — | GitHub |
+| Review a pull request | GitHub: **Files changed > Review changes** | — | GitHub |
+| Merge a pull request | GitHub: **Merge pull request** | `git merge` (run on GitHub's servers) | Git, via GitHub |
+| Open an issue | GitHub: **Issues > New issue** | — | GitHub |
+| Render a document | RStudio: **Render** | `quarto render` | Quarto |
+| Store your PAT | RStudio Console: `gitcreds::gitcreds_set()` | — | R, talking to Git's credential store |
+
+: {tbl-colwidths="[30,30,25,15]"}
+
+A dash (—) in the command column means there is [no Git command for it at all]{.highlight-yellow}: that action only exists on the GitHub website.
+
+## Only on GitHub
+
+Some of the most important things you do during the day are not Git features. They were invented by GitHub as a collaboration layer on top of Git:
+
+-   **Pull requests** and **reviews**
+-   **Issues**
+-   **Forks**
+
+This is why you cannot find a `git pull request` command: it does not exist. A pull request lives on the website, not in your local repository.
+
+## Common mix-ups
+
+**Git is not GitHub.** Git is the program on your computer that tracks history. GitHub is the website that hosts a copy and adds collaboration. You can use Git without GitHub; you cannot use GitHub meaningfully without Git.
+
+**Pull is not a pull request.** *Pull* (`git pull`) downloads changes from GitHub to your computer. A *pull request* is a request on GitHub asking a person to review and merge a branch. Despite the shared word, one is a file transfer and the other is a conversation.
+
+**Commit is not push.** *Commit* saves a snapshot in the history [on your computer]{.highlight-yellow}. *Push* uploads your commits to GitHub. Until you push, nobody else can see your commits. This is why the cycle has both: Pull, Stage, Commit, Push.
+
+**Render has nothing to do with Git.** Clicking **Render** runs Quarto, which builds your document. It does not save a version, and it does not touch GitHub. If you want the rendered result in your history, you still commit and push afterwards.
+
+If a term on this page is unfamiliar, look it up in the [glossary](glossary.qmd).

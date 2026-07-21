@@ -66,6 +66,18 @@ website:
         contents:
           - href: workshop/index.qmd
             text: "Git for Scientists"
+      - section: "Reference"
+        contents:
+          - href: platform-guide.qmd
+            text: "Which tool does what?"
+          - href: glossary.qmd
+            text: "Glossary"
+          - href: glossary-expanded.qmd
+            text: "Glossary (self-contained)"
+          - href: glossary-plain.qmd
+            text: "Glossary (plain language)"
+          - href: glossary-combined.qmd
+            text: "Glossary (combined)"
 
 format:
   html:

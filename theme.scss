@@ -53,3 +53,13 @@ h1, h2, h3 {
   background-color: lighten(#ED6D37, 30%);
   padding: 0.0em 0.1em;
 }
+
+// combined glossary: the technical (Glosario) wording sits under the
+// plain-language definition as a visually quieter block
+.glossary-technical {
+  font-size: 0.9em;
+  color: $ghe-gray;
+  border-left: 3px solid lighten($ghe-gray, 40%);
+  padding-left: 0.75em;
+  margin-top: 0.4em;
+}
