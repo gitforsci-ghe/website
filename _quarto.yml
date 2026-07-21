@@ -72,6 +72,10 @@ website:
             text: "Which tool does what?"
           - href: glossary.qmd
             text: "Glossary"
+          - href: glossary-expanded.qmd
+            text: "Glossary (self-contained)"
+          - href: glossary-plain.qmd
+            text: "Glossary (plain language)"
 
 format:
   html:

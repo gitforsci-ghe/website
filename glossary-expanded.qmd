@@ -1,0 +1,130 @@
+---
+title: "{{< fa book-open >}} Glossary (self-contained)"
+format: html
+---
+
+The terms you meet during the pre-work and the workshop, in alphabetical order. This version of the glossary is self-contained: [every technical term that appears inside a definition has its own entry on this page]{.highlight-yellow}, so you never hit a word like "snapshot" or "server" without being able to look it up two scrolls away. Definitions marked [(Glosario)]{.highlight-yellow} are reused or lightly adapted from [Glosario](https://glosario.carpentries.org/), the multilingual glossary for computing and data science terms maintained by [The Carpentries](https://carpentries.org/), and are used under the [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). Each of those terms links to its Glosario entry, where translations into other languages are available. If you are unsure which *tool* a term belongs to, see [Which tool does what?](platform-guide.qmd)
+
+[branch](https://glosario.carpentries.org/en/#git_branch) (Glosario)
+:   A snapshot of a version of a Git repository. Multiple branches can capture multiple versions of the same repository. In the workshop, you create a branch to make changes without touching `main` until they are reviewed.
+
+[bug report](https://glosario.carpentries.org/en/#bug_report) (Glosario, adapted)
+:   A description of an unexpected error or wrong output from a program, written down so that someone can find and fix the problem. On GitHub, bug reports are usually filed as issues.
+
+[clone](https://glosario.carpentries.org/en/#git_clone) (Glosario)
+:   A copy (usually downloaded) of a Git remote repository on a local computer, or the act of making that copy. In RStudio: **New Project > Version Control > Git**.
+
+cloud
+:   Computers, storage, and services that you reach over the internet instead of running on your own machine. When we say GitHub stores your repository "in the cloud", we mean it stores the repository on GitHub's servers.
+
+[commit](https://glosario.carpentries.org/en/#commit) (Glosario)
+:   As a verb, the act of saving a set of changes to a version control repository. As a noun, the changes saved. Each commit is a labelled snapshot on your project's history line.
+
+[commit message](https://glosario.carpentries.org/en/#commit_message) (Glosario)
+:   A comment attached to a commit that explains what was done [and why]{.highlight-yellow}.
+
+credential
+:   A piece of information that proves to a computer system who you are, such as a password or a personal access token. Git keeps your GitHub credential in a credential store on your computer, so you do not have to retype it for every push and pull.
+
+default branch (`main`)
+:   The permanent, central branch of a repository, which should contain a working version of the project. New work happens on separate branches and is merged into `main` through a pull request. Older projects call this branch `master`.
+
+[fork](https://glosario.carpentries.org/en/#fork) (Glosario)
+:   A copy of one person's Git repository that lives in another person's GitHub account. Changes made in a fork can be offered back to the original repository via a pull request. We mention forks in the workshop but do not use them; our teams collaborate on branches within a shared repository.
+
+[Git](https://glosario.carpentries.org/en/#git) (Glosario)
+:   A version control tool to record and manage changes to a project. Git runs on your own computer.
+
+[GitHub](https://glosario.carpentries.org/en/#github) (Glosario)
+:   A cloud-based platform built around Git that allows you to save versions of your project online and collaborate with other Git users.
+
+history
+:   The ordered record of all commits made in a repository: who changed what, when, and why, from the very first commit to the newest. Git stores the full history in every clone, which is why you can recover any earlier state of the project.
+
+[HTML](https://glosario.carpentries.org/en/#html) (Glosario, adapted)
+:   The standard markup language used for web pages. Rendering a Quarto document usually produces an HTML page that you can open in any web browser.
+
+HTTPS
+:   The secure version of HTTP, the protocol computers use to exchange data on the web (the same one behind every `https://` address). Git talks to GitHub over HTTPS, which is why GitHub asks for a personal access token to prove who you are.
+
+[issue](https://glosario.carpentries.org/en/#issue) (Glosario)
+:   A bug report, feature request, or other to-do item associated with a project, tracked on the repository's page on GitHub. Issues can be assigned to people and referenced from commits and pull requests.
+
+local repository
+:   The copy of a repository on your own computer, including its full history. You commit here first; pushing sends those commits to the remote repository.
+
+[Markdown](https://glosario.carpentries.org/en/#markdown) (Glosario)
+:   A markup language with a simple syntax for formatting plain text (headings, links, bold, lists). Markdown is used for README files, for issues and pull requests on GitHub, and for the text portions of Quarto documents.
+
+[markup language](https://glosario.carpentries.org/en/#markup_language) (Glosario)
+:   A set of rules for annotating text to define its meaning or how it should be displayed. The markup is usually not displayed, but instead controls how the underlying text is interpreted or shown. Markdown and HTML are widely used markup languages.
+
+[merge](https://glosario.carpentries.org/en/#git_merge) (Glosario)
+:   Incorporating the development histories of two branches into one. If both branches changed the same part of a file, a merge conflict occurs. In the workshop, merging happens when a pull request is accepted on GitHub.
+
+[merge conflict](https://glosario.carpentries.org/en/#git_conflict) (Glosario)
+:   A situation in which incompatible or overlapping changes have been made on different branches that are now being merged. Git stops, marks the conflicting lines in the file, and asks you to choose what the result should be. A conflict is not an error; it is Git refusing to guess.
+
+metadata
+:   Information that describes other information. The author, date, and message attached to each commit are metadata about the changes in that commit.
+
+open source
+:   Software whose source code is public and licensed so that anyone may use, change, and share it. Git and Quarto are open source. GitHub is not, although it hosts millions of open-source projects.
+
+origin
+:   The conventional name your local repository uses for its remote repository — a short bookmark, so you don't have to type the full GitHub address. When you clone from GitHub, Git names that remote `origin` automatically.
+
+personal access token (PAT)
+:   A long, generated password that proves to GitHub who you are when Git pushes or pulls over HTTPS. You created one in [pre-work step 4](pre-work/04-github-pat.qmd) and store it with `gitcreds::gitcreds_set()`.
+
+plain text
+:   Text stored as ordinary characters only, with no hidden formatting, so that any editor on any computer can open it. Git works best with plain text, because it can show exactly which lines changed between versions. Quarto documents, R scripts, and CSV files are all plain text.
+
+[pull](https://glosario.carpentries.org/en/#git_pull) (Glosario)
+:   Downloads and synchronizes changes from a remote repository into your local repository. The first step of the commit cycle: Pull, Stage, Commit, Push.
+
+[pull request](https://glosario.carpentries.org/en/#pull_request) (Glosario, adapted)
+:   A request to merge changes from one branch (or fork) of a repository into another, usually into `main`. The reviewer is notified, reads the changes, comments or suggests edits, and eventually merges. Despite the name, it is not the same as `git pull`; a pull request lives on GitHub, not in Git.
+
+[push](https://glosario.carpentries.org/en/#git_push) (Glosario)
+:   Uploads and synchronizes changes from your local repository to a remote repository. Until you push, your commits exist only on your computer.
+
+Quarto
+:   An open-source scientific publishing system. A Quarto document (`.qmd` file) combines Markdown text, code, and a YAML header; rendering it produces a finished report, website, or presentation. Quarto is independent of Git and GitHub — it builds documents, not history.
+
+[README](https://glosario.carpentries.org/en/#readme) (Glosario)
+:   A plain text file containing important information about a project. On GitHub, the `README.md` of a repository is displayed on its front page.
+
+[remote repository](https://glosario.carpentries.org/en/#remote_repository) (Glosario)
+:   A repository located on another computer — for us, on GitHub's servers. Git synchronizes changes between local and remote repositories so that work can be shared.
+
+render
+:   To turn a Quarto source document into its output (for example HTML or PDF), running any code it contains along the way. In RStudio, the **Render** button runs `quarto render`.
+
+[repository](https://glosario.carpentries.org/en/#repository) (Glosario)
+:   A place where a version control system stores the files that make up a project and the metadata that describes their history. Usually one project, one repository.
+
+RStudio Git pane
+:   The tab in RStudio that shows the state of your repository and offers buttons for the everyday Git actions: Pull, staging checkboxes, Commit, Push, and branch tools. Every button runs a real Git command underneath — clicking **Push** *is* `git push`.
+
+[server](https://glosario.carpentries.org/en/#server) (Glosario, adapted)
+:   A computer, or a program running on it, that provides data or services to other computers over a network. The remote copies of your repositories live on GitHub's servers.
+
+snapshot
+:   The complete state of all files in your project at one moment in time, saved so that you can return to it later. Every commit stores a snapshot; the history is the ordered line of those snapshots.
+
+stage / staging area
+:   Selecting which changed files will be included in the next commit, and the waiting room they sit in until you commit. In the RStudio Git pane, ticking the **Staged** checkbox runs `git add` for that file.
+
+synchronize
+:   To bring two copies of the same thing to the same state, so that neither is missing changes the other has. Pull and push are how you synchronize your local repository with the remote repository on GitHub.
+
+[version control](https://glosario.carpentries.org/en/#version_control_system) (Glosario)
+:   A system for managing changes made to files during a project's development, so that any earlier state can be recovered and the reason for every change is recorded. Git is the version control system we use.
+
+[YAML](https://glosario.carpentries.org/en/#yaml) (Glosario)
+:   A way to represent nested data using indentation, often used in configuration files. The block between the two `---` lines at the top of a Quarto document is its YAML header, holding options such as the title and output format.
+
+## Attribution
+
+Definitions marked (Glosario) are from [Glosario](https://glosario.carpentries.org/) by [The Carpentries](https://carpentries.org/), licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/); some have been shortened or adapted to the context of this workshop. The remaining definitions were written for this course.
