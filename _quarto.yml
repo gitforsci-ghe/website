@@ -76,6 +76,8 @@ website:
             text: "Glossary (self-contained)"
           - href: glossary-plain.qmd
             text: "Glossary (plain language)"
+          - href: glossary-combined.qmd
+            text: "Glossary (combined)"
 
 format:
   html:
