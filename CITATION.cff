@@ -12,10 +12,8 @@ authors:
     given-names: "Lars"
     orcid: "https://orcid.org/0000-0003-2196-5015"
     affiliation: "Global Health Engineering, ETH Zurich"
-# TODO (release-time, via Zenodo from a GitHub release; cannot be minted now):
-#   version, date-released, and doi. See the Zenodo release checklist issue.
-version: "{{VERSION}}"
-date-released: "{{DATE_RELEASED}}"
+version: "0.1.0"
+date-released: "2026-07-30"
 doi: "{{DOI}}"
 url: "https://gitforsci.github.io/website/"
 repository-code: "https://github.com/gitforsci/website/"
