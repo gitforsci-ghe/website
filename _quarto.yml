@@ -27,7 +27,7 @@ website:
     left: |
       Funding and support: [Swiss Reproducibility Network (SwissRN)](https://www.swissrn.org/contents/community/nodes/) local node at ETH Zurich and the [Data Stewardship Network at ETH Zurich](https://library.ethz.ch/en/researching-and-publishing/data-management-and-policies/research-data-management/data-stewardship.html), funded by the [swissuniversities Open Science Programme](https://www.swissuniversities.ch/en/topics/open-science/open-science-programme), and the [Global Health Engineering group at ETH Zurich](https://ghe.ethz.ch/).
 
-      Cite this iteration: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21704115.svg)](https://doi.org/10.5281/zenodo.21704115)
+      Cite this iteration: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21704114.svg)](https://doi.org/10.5281/zenodo.21704114)
     right: "This page is built with [Quarto](https://quarto.org/)."
     background: "#F5F5F5"
 
