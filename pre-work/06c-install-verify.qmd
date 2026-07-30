@@ -26,7 +26,7 @@ Copy the full error message and email it to me. Getting this resolved before the
 
 1. Open the landing page for the GitHub organization 'gitforsci-ghe': <https://github.com/gitforsci-ghe> (try to use your bookmark)
 
-2. Navigate down the page to the section "Repositories" and use the search field to find the repository called `01-setup-USERNAME` where USERNAME is your GitHub username.
+2. Navigate down the page to the section "Repositories" and use the search field to find the repository called `setup-USERNAME` where USERNAME is your GitHub username.
 
 3. Click on the repository name to open it.
 

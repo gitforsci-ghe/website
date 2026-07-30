@@ -1124,7 +1124,7 @@ The next workshop date (26 August) is tentative; confirm before the slide goes l
 ## Feedback, and thanks!
 
 -   Please fill in the post-course survey (link shared by email, 5 (max 10 minutes), anonymous).
--   Share your open questions: Google Doc or Issue tracker; I will answer all of them nexr week
+-   Share your open questions: Google Doc or Issue tracker; I will answer all of them next week
 
 ::: {.notes}
 Survey link goes out by email right now, while the slide is up, so phones can grab it. End on momentum: recap done, next step named, thanks.
@@ -1136,5 +1136,5 @@ Slides created via revealjs and Quarto: <https://quarto.org/docs/presentations/r
 
 Access slides as [PDF on GitHub](https://github.com/gitforsci-ghe/website/raw/main/workshop/slides.pdf)
 
-All material is licensed under [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+All material is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
 
