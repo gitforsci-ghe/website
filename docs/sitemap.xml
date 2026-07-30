@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gitforsci-ghe.github.io/website/workshop/slides.html</loc>
-    <lastmod>2026-07-30T08:55:00.725Z</lastmod>
+    <lastmod>2026-07-30T12:50:29.178Z</lastmod>
   </url>
   <url>
     <loc>https://gitforsci-ghe.github.io/website/pre-work/07-big-picture.html</loc>
-    <lastmod>2026-07-30T08:55:18.866Z</lastmod>
+    <lastmod>2026-07-30T12:50:29.177Z</lastmod>
   </url>
   <url>
     <loc>https://gitforsci-ghe.github.io/website/pre-work/06b-configure-git.html</loc>
-    <lastmod>2026-07-30T08:55:18.864Z</lastmod>
+    <lastmod>2026-07-30T12:50:29.176Z</lastmod>
   </url>
   <url>
     <loc>https://gitforsci-ghe.github.io/website/pre-work/05-install-git.html</loc>
@@ -29,6 +29,26 @@
     <lastmod>2026-07-14T20:10:07.582Z</lastmod>
   </url>
   <url>
+    <loc>https://gitforsci-ghe.github.io/website/glossary-plain.html</loc>
+    <lastmod>2026-07-30T13:09:08.466Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-ghe.github.io/website/glossary-combined.html</loc>
+    <lastmod>2026-07-30T13:09:08.466Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-ghe.github.io/website/glossary-expanded.html</loc>
+    <lastmod>2026-07-30T13:09:08.466Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-ghe.github.io/website/glossary.html</loc>
+    <lastmod>2026-07-30T13:09:08.467Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gitforsci-ghe.github.io/website/platform-guide.html</loc>
+    <lastmod>2026-07-30T13:09:08.467Z</lastmod>
+  </url>
+  <url>
     <loc>https://gitforsci-ghe.github.io/website/pre-work/02-github-acc.html</loc>
     <lastmod>2026-07-07T13:49:34.160Z</lastmod>
   </url>
@@ -38,11 +58,11 @@
   </url>
   <url>
     <loc>https://gitforsci-ghe.github.io/website/pre-work/06a-clone-repo.html</loc>
-    <lastmod>2026-07-30T08:55:18.863Z</lastmod>
+    <lastmod>2026-07-30T12:50:29.176Z</lastmod>
   </url>
   <url>
     <loc>https://gitforsci-ghe.github.io/website/pre-work/06c-install-verify.html</loc>
-    <lastmod>2026-07-30T08:55:18.865Z</lastmod>
+    <lastmod>2026-07-30T12:50:29.177Z</lastmod>
   </url>
   <url>
     <loc>https://gitforsci-ghe.github.io/website/workshop/index.html</loc>
