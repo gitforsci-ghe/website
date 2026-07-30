@@ -16,7 +16,7 @@ Do this once the site is final and the cohort is complete.
 - [x] Display the DOI badge on the site if desired.
 
 Completed 2026-07-30 with release v0.1.0. Per-iteration concept DOI:
-10.5281/zenodo.21704115. Canonical course concept DOI, referenced in
+10.5281/zenodo.21704114 (version DOI of the v0.1.0 archive: 10.5281/zenodo.21704115). Canonical course concept DOI, referenced in
 `CITATION.cff`: 10.5281/zenodo.21703566.
 
 The canonical course DOI stays the same across iterations; this one points
