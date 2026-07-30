@@ -88,7 +88,7 @@ Above the top left window, you will now see the sentence "Your branch is ahead o
 
 ![](images/06b-configuration/10-push-result.png){width=100%}
 
-9. Verify that the changes have been pushed to GitHub by refreshing the page for your repository `01-setup-USERNAME` in your browser (for example, `01-setup-rainbow-train`). You should see the commit message you just wrote next to `02-git-configuration.R`.
+9. Verify that the changes have been pushed to GitHub by refreshing the page for your repository `setup-USERNAME` in your browser (for example, `setup-rainbow-train`). You should see the commit message you just wrote next to `02-git-configuration.R`.
 
 TODO: screenshot of the GitHub repository page after push (to be added).
 

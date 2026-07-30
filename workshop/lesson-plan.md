@@ -211,8 +211,8 @@ handout spill into the start of lunch rather than eating the core.
 
 ## Lunch (11:50-12:45, 55 min)
 
-Eat, then prep the board for drawings 3 and 4 (they share one story). Confirm
-partner pairs are recorded.
+Eat, then cue the afternoon deck at Part 5; the drawing build-ups for 3 and 4
+share one story. Confirm partner pairs are recorded.
 
 ---
 

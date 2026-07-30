@@ -9,6 +9,6 @@ Before we start our workshop on Wednesday, it is important to learn about the bi
 
 1. Read the chapter, "Why Git? Why GitHub?" <https://happygitwithr.com/big-picture>
 
-2. Take notes and write down questions. Bring them to the workshop, or open an issue on your `01-setup-USERNAME` repository and assign it to `larnsce` (the same way you did in [Step 6c](06c-install-verify.qmd)). That way I can answer before we meet.
+2. Take notes and write down questions. Bring them to the workshop, or open an issue on your `setup-USERNAME` repository and assign it to `larnsce` (the same way you did in [Step 6c](06c-install-verify.qmd)). That way I can answer before we meet.
 
 [Reading this chapter beforehand lets me focus on the practical aspects of Git and GitHub during the workshop, rather than spending time on the theory. I will assume you have read it and understand the big picture of why we are using these tools.]{.highlight-yellow}
