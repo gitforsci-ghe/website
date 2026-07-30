@@ -14,7 +14,7 @@ authors:
     affiliation: "Global Health Engineering, ETH Zurich"
 version: "0.1.0"
 date-released: "2026-07-30"
-doi: "{{DOI}}"
+doi: "10.5281/zenodo.21704115"
 url: "https://gitforsci.github.io/website/"
 repository-code: "https://github.com/gitforsci/website/"
 license: "CC-BY-4.0"
