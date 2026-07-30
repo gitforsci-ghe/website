@@ -26,3 +26,17 @@ keywords:
   - data-stewardship
   - research-data-management
   - workshop
+# The doi field above is the per-iteration DOI for the gitforsci-ghe
+# (Summer 2026) cohort snapshot. The reference below points to the canonical
+# course, whose concept DOI stays the same across iterations.
+references:
+  - type: software
+    title: "Git for Scientists"
+    authors:
+      - family-names: "Schöbitz"
+        given-names: "Lars"
+        orcid: "https://orcid.org/0000-0003-2196-5015"
+        affiliation: "Global Health Engineering, ETH Zurich"
+    doi: "10.5281/zenodo.21703566"
+    repository-code: "https://github.com/gitforsci/website/"
+    notes: "Canonical course DOI, minted from gitforsci/website and stable across cohort iterations."
